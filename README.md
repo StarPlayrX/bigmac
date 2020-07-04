@@ -1,5 +1,6 @@
-This patcher works 2008 Mac Pro 3,1. Mac Pro 2009, 2010, 2012 users may also benefit from this package
+Disclaimer: If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will can some knowledge of setting up an unsupported Mac and some this readme will made sense. Before running any of these shell scripts, please back up your important data. This software is provided as is without warranty.
 
+This patcher works 2008 Mac Pro 3,1. Mac Pro 2009, 2010, 2012 users may also benefit from this package
 
 Credits
 
@@ -20,7 +21,7 @@ usage
 
 `sudo ./preinstall.sh`
 
-SSD installation is recommended and here's why. Always install with -v. You will want to catch the apfs_sealvolume command and turn off the power to your Mac, or if installing to external SSD, simply unplug the SSD. Apple tries to create a sealed snapshot along with an encrypted boot disk. On a Mac Pro 3,1 and possibly other unsupported Macs, this can lead to kernal panics with CoreCrpyto. This unorthodox method eliminates this issue.
+SSD installation is recommended and here's why. Always install with `-v`. You will want to catch the apfs_sealvolume command and turn off the power to your Mac, or if installing to external SSD, simply unplug the SSD. The apfs_sealvolume command is displayed in the console and will be add the bottom when it runs. Apple tries to create a sealed snapshot along with an encrypted boot disk. On a Mac Pro 3,1 and possibly other unsupported Macs, this can lead to kernal panics with CoreCrpyto. This unorthodox method eliminates this issue. Also use `-v`. you can add this to the boot args prompt in `sudo ./preinstall.sh`. also use `-no_compat-check`
 
 
 

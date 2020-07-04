@@ -7,9 +7,6 @@ cat './🎨/pre-art.ans'
 
 mount -uw /
 
-## run this from Catalina
-
-
 bootArgs=$(nvram -p | grep boot-args)
 
 echo ""

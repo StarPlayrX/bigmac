@@ -2,8 +2,6 @@ Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
 
 💻 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012.
 
-Testing is underway for Mac Book Pro 2009. If successful, will add it to the list of supported Macs
-
 Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
 
 Catalina:

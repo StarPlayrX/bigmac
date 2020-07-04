@@ -1,6 +1,6 @@
 Introducing Big Mac 🍔 Burgers and Fries 🍟
 
-Turn you Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
+Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
 
 Disclaimer: If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. Before running any of these shell scripts, please back up your important data. This software is provided as is without warranty.
 

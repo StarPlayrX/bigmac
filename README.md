@@ -12,8 +12,9 @@ Credits by no means endorse this product.
 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 
 
-
 This patcher constains a preinstall.sh that allows users to run the installer to a HFS+ disk. The installer will erase it as an APFS volume.
+
+Using the terminal, cd to the bigmac directory.
 
 usage
 
@@ -27,11 +28,13 @@ The post install for Mac Pro 3,1 fixes AppleHDA Audio, CD/DVD access, and Teleme
 
 This patcher container a postinstall.sh
 
+Using the terminal, cd to the bigmac directory.
+
 usage
 
 `sudo ./postinstall.sh`
 
 
-
 Future plans
+
 Mac OS Standard HFS disk mounting (This is pre HFS+)

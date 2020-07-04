@@ -3,6 +3,8 @@
 #  preinstall.sh v0.0.3
 #  Created by StarPlayrX on 7/1/20.
 
+# Hax.dylib by ASentientBot
+
 cat './🎨/pre-art.ans'
 
 mount -uw /

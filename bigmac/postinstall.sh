@@ -3,6 +3,8 @@
 #  postinstall.sh v0.0.3
 #  Created by StarPlayrX on 7/1/20.
 
+# Recommended for Mac Pro 3,1: APFS ROM Patcher by Dosdude1, see 😎 folder. Use with extreme care! No warranty is provided.
+
 cat './🎨/post-art.ans'
 
 destVolume="/"

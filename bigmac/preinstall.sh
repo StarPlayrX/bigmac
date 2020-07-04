@@ -1,9 +1,10 @@
 #!/bin/sh
 
-#  preinstall.sh v0.0.3
+#  preinstall.sh  v0.0.4
 #  Created by StarPlayrX on 7/1/20.
 
-# Hax.dylib by ASentientBot
+# Credits
+# Hax.dylib by ASentientBot, see the fries 🍟 with dat folder.
 
 cat './🎨/pre-art.ans'
 

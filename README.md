@@ -1,6 +1,6 @@
 Disclaimer: If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. Before running any of these shell scripts, please back up your important data. This software is provided as is without warranty.
 
-This patcher works 2008 Mac Pro 3,1. Mac Pro 2009, 2010, 2012 users may also benefit from this package
+This patcher works on a 2008 Mac Pro 3,1. Mac Pro 2009, 2010, 2012 users may also benefit from this package
 
 Credits
 

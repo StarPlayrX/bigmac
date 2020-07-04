@@ -14,11 +14,11 @@ Before running any of these shell scripts, please back up your important data. T
 
 Credits
 
-Hax.dylib by ASentientBot.
-APFS ROM Patcher by DosDude1.
-SPX Big Mac PatchToolX by StarPlayrX.
-Kexts created by Apple.
-Credits by no means endorse this product.
+🍟 Hax.dylib by ASentientBot.
+😎 APFS ROM Patcher by DosDude1.
+🍔 SPX Big Mac PatchToolX by StarPlayrX.
+🍿 Kexts created by Apple.
+🥤 Credits by no means endorse this product.
 
 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 

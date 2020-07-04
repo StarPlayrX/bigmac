@@ -2,6 +2,8 @@ Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
 
 💻 This SPX Big Mac PatchToolX may also work for work for Mac Pro 2009, 2010 and 2012.
 
+Testing is underway for Mac Book Pro 2009. If successful, will add it to the list of supported Macs
+
 Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
 
 Disclaimer & Catalina: If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html. Good Luck, Happy Hacking and Your Milage May Vary. I hope this tool helps you.

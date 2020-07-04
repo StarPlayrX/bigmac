@@ -1,0 +1,1 @@
+boot-args	-no_compat_check amfi_get_out_of_my_way=1 keepsyms=1 -v

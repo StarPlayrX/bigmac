@@ -1,4 +1,9 @@
-cat './🎨/ascii-art.ans'
+#!/bin/sh
+
+#  postinstall.sh v0.0.3
+#  Created by StarPlayrX on 7/1/20.
+
+cat './🎨/post-art.ans'
 
 destVolume="/"
 kexts="/🍔/"
@@ -6,15 +11,16 @@ source=$(pwd)$kexts
 read -p "
 🖥  Destination Volume [ $destVolume = return key | drag volume here -> ]: " destVolume2
 
-read -p "
-🍔 Resources [ $source = return key ]: " source2
-
 if [ "$destVolume2" != "" ]
  then
    destVolume="$destVolume2"
 fi
 
 mount -uw $destVolume
+
+read -p "
+🍔 Resources [ $source = return key ]: " source2
+
 
 if [ "$source2" != "" ]
   then

@@ -1,17 +1,35 @@
 #!/bin/sh
 
-#  installer.sh
+#  preinstall.sh v0.0.3
 #  Created by StarPlayrX on 7/1/20.
 
-cat './🎨/ascii-art.ans'
+cat './🎨/pre-art.ans'
 
 mount -uw /
 
 ## run this from Catalina
 
-echo "\r\ncurrent boot args"
-nvram -p | grep boot-args
-nvram boot-args="-no_compat_check amfi_get_out_of_my_way=1 keepsyms=1 -v rootless=1"
+
+bootArgs=$(nvram -p | grep boot-args)
+
+echo ""
+
+bootArgs=$(echo $bootArgs | cut -d " " -f2-)
+
+echo "nvram check"
+echo $bootArgs
+
+default="-no_compat_check -v"
+
+read -p "
+🖥  Set Boot Args: [enter = default]: " default
+
+if [ "$default" != "" ]
+  then
+    bootArgs="$default"
+fi
+
+sudo nvram boot-args="$bootArgs"
 
 echo "\r\nset boot args"
 nvram -p | grep boot-args
@@ -31,7 +49,10 @@ defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist D
 
 echo "\r\nLoading Hax into Memory"
 hax="/🍟/Hax.dylib"
-launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
 
 echo $(pwd)$hax
 echo ""
+
+## APFS ROM Patcher by DosDude1
+##"Some Macs have old firmware and the installer may require an HFS+ disk. The macOS installer will erase it and set it to APFS. If you have one of these Macs, be sure to use Dosdude1's ROM patcher prior to running the installer. See the Sunglasses emoji folder. The firmware too will allow your Mac to natively boot APFS volumes without relying on a software patch, Clover or Open Core. Use at your own risk. This software is provided as is without warranty. Do not power off when using any firmware tool."

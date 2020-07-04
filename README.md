@@ -20,7 +20,7 @@ Credits by no means endorse this product.
 
 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 
-This patch tool currently does not include an SSE Emulator. Support for this may be added based on demand. This patecher assumes you have an NVidia graphics card that supports metal. This cards include Nvidia GTX 680 2GB, 4GB, and Kepler Titan 6GB. Kepler Black Titan is currently not supported. You may be able to get it supported through MacVidCards who does an awesome job flashing non 680 cards.
+This patch tool currently does not include an SSE Emulator. Support for this may be added based on demand. This tool assumes you have an NVidia graphics card that supports metal. These cards include Nvidia GTX 680 2GB, 4GB, and Kepler Titan 6GB. Kepler Black Titan is currently not supported. You may be able to get it supported through MacVidCards who does an awesome job flashing non 680 cards.
 
 PreInstall allows you to run the Big Sur beta 1 installer from Catalina:
 This patcher constains a preinstall.sh that allows users to run the installer to a HFS+ disk. The installer will erase it as an APFS volume.

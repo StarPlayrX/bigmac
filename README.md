@@ -35,6 +35,9 @@ usage
 `sudo ./postinstall.sh`
 
 
+
 Future plans
 
+Digital HDMI out.
+Patched WiFi option for other Broadcom cards.
 Mac OS Standard HFS disk mounting (This is pre HFS+)

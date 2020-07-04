@@ -3,9 +3,6 @@ MIT License
 SPX Big Mac CLI PatchToolX
 Copyright (c) 2020 Todd Bruss | StarPlayrX
 
-Hax.dylib binary by ASentientBot.
-APFS ROM Patcher binary by Dosdude1.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -23,3 +20,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+ 
+-----------------------------------------------------------------------------------
+All new and existing third parties hold the copyright and rights to their software.
+These include Hax.dylib, APFS ROM Patcher and vendor Kexts. 
+
+Credits
+Hax.dylib binary by ASentientBot
+APFS ROM Patcher binary by Dosdude1
+Kexts created by Apple
+Created by do not imply endorsement, copyright, usage or warranty.
+-----------------------------------------------------------------------------------

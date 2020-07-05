@@ -12,14 +12,6 @@ Before running any of these shell scripts, please back up your important data. T
 
 🖥 This command line interface patch tool works on a 2008 Mac Pro 3,1. Mac Pro 2009, 2010, 2012 users may also benefit.
 
-Credits
-
-🍟 Hax.dylib by ASentientBot.
-😎 APFS ROM Patcher by DosDude1.
-🍔 SPX Big Mac PatchToolX by StarPlayrX.
-🍿 Kexts created by Apple.
-🥤 Credits by no means endorse this product.
-
 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 
 This patch tool currently does not include an SSE4 Emulator. Support for this may be added based on demand. This tool assumes you have an NVidia graphics card that supports metal. These cards include Nvidia GTX 680 2GB, 4GB, and Kepler Titan 6GB. Kepler Black Titan is currently not supported. You may be able to get it supported through MacVidCards who does an awesome job flashing non 680 cards.

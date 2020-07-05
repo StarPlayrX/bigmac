@@ -3,11 +3,6 @@
 #  postinstall.sh v0.0.6
 #  Created by StarPlayrX on 7/1/20.
 
-# Credits
-# APFS ROM Patcher by Dosdude1, see the dude 😎 folder.
-# LegacyUSBInjector by ParrotGeek
-# Recommended for Mac Pro 3,1. Use with extreme care! No warranty is provided.
-
 cat './🎨/post-art.ans'
 
 destVolume="/"
@@ -122,12 +117,8 @@ if [ $version != "10.16" ] && [ $version != "10.16.1" ] && [ $version != "11.0" 
    kcditto
 fi
 
-
 ##Clean up our mess
 ##kmutil create -n boot --boot-path /Library/Apple/System/Library/PrelinkedKernels/prelinkedkernel --kernel /System/Library/Kernels/kernel --repository /System/Library/Extensions --repository /Library/Extensions --repository /System/Library/DriverExtensions --repository /Library/DriverExtensions --repository /Library/Apple/System/Library/Extensions
-
-
-
 
 echo "\r\nThis script was brought to you by StarPlayrX\r\nThe Most Awesome Sirius XM Radio player,\r\nVersion 1.1 is in public beta via TestFlight:\r\nhttps://testflight.apple.com/join/Ecz0xXvf\r\n"
 

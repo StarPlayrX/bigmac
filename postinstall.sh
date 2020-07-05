@@ -11,12 +11,13 @@ source=$(pwd)$kexts
 read -p "
 🖥  Destination Volume [ $destVolume = return key | drag volume here -> ]: " destVolume2
 
+mount -uw $destVolume
+
 if [ "$destVolume2" != "" ]
  then
    destVolume="$destVolume2/"
 fi
 
-mount -uw "$destVolume"
 
 read -p "
 🍔 Resources [ $source = return key ]: " source2
@@ -47,17 +48,23 @@ appleHDA="AppleHDA.kext"
 telemetry="com.apple.telemetry.plugin"
 ioATAFamily="IOATAFamily.kext"
 
-#Third Party - To Add Credits
+#Third Party Add ons
 VoodooHDA="VoodooHDA.kext"
 AAAMouSSE="AAAMouSSE.kext"
 
 #HFSEncodings="HFSEncodings.kext"
 #HFSStandard="HFS.kext"
 #HFSfs="hfs.fs"
+#fsDriver="AppleFileSystemDriver.kext"
 
 echo "SSE3 compatible Telemetry plugin"
 ditto -v "$source$telemetry" "$plugins$telemetry"
 echo "\r"
+
+echo "Apple CD/DVD drive Intel PIIX ATA"
+ditto -v "$source$ioATAFamily" "$dest$ioATAFamily"
+echo "\r"
+
 
 echo "Apple High Def Audio"
 ditto -v "$source$appleHDA" "$dest$appleHDA"
@@ -71,22 +78,24 @@ echo "MouSSE SSE4.2 Emulator"
 ditto -v "$source$AAAMouSSE" "$libDest$AAAMouSSE"
 echo "\r"
 
-echo "Apple CD/DVD drive Intel PIIX ATA"
-ditto -v "$source$ioATAFamily" "$dest$ioATAFamily"
-echo "\r"
 
 ## On hold until I can compile a new Kext
 ##echo "Apple Standard HFS and HFS+ Disks"
 ##ditto -v $source$HFSStandard $dest$HFSStandard
 ##echo "\r"
 
-##echo "Apple Standard HFS and HFS+ Encodings"
-##ditto -v $source$HFSEncodings $fs$HFSEncodings
+##echo "Apple Standard HFS and HFS+ FileSystem"
+##ditto -v $source$HFSfs $fs$HFSfs
 ##echo "\r"
 
-##echo "Apple Standard HFS and HFS+ FileSystem"
-##ditto -v $source$HFSfs $dest$HFSfs
+##echo  "Apple Standard HFS and HFS+ Encodings"
+##ditto -v $source$HFSEncodings $dest$HFSEncodings
 ##echo "\r"
+
+##echo  "Apple Standard HFS and HFS+ Encodings"
+##ditto -v $source$fsDriver $dest$fsDriver
+##echo "\r"
+
 
 bin="/📠/"
 vers="/sw_vers"
@@ -113,7 +122,7 @@ if [ $version != "10.16" ] && [ $version != "10.16.1" ] && [ $version != "11.0" 
    fi
  
  else
-   kmutil install --force --volume-root "$destVolume"
+   kmutil install --update-all --volume-root "$destVolume"
    kcditto
 fi
 

@@ -65,32 +65,32 @@ AppleCameraInterface="AppleCameraInterface.kext"
 #HFSfs="hfs.fs"
 
 echo "SSE3 compatible Telemetry plugin"
-ditto -v $source$telemetry $plugins$telemetry
+ditto -v "$source$telemetry" "$plugins$telemetry"
 echo "\r"
 
 echo "Apple High Def Audio"
-ditto -v $source$appleHDA $dest$appleHDA
+ditto -v "$source$appleHDA" "$dest$appleHDA"
 echo "\r"
 
 echo "Apple CD/DVD drive"
-ditto -v $source$ioATAFamily $dest$ioATAFamily
+ditto -v "$source$ioATAFamily" "$dest$ioATAFamily"
 echo "\r"
 
 echo "Apple iSight"
-ditto -v $source$Apple_iSight $dest$Apple_iSight
+ditto -v "$source$Apple_iSight" "$dest$Apple_iSight"
 echo "\r"
 
 echo "Apple Camera Interface"
-ditto -v $source$AppleCameraInterface $dest$AppleCameraInterface
+ditto -v "$source$AppleCameraInterface" "$dest$AppleCameraInterface"
 echo "\r"
 
 ##By ParrotGeek
 echo "LegacyUSBInjector (ParrotGeek)"
-ditto -v $source$legacyUSBInjector $libKext$legacyUSBInjector
+ditto -v "$source$legacyUSBInjector" "$libKext$legacyUSBInjector"
 echo "\r"
 
 echo "legacyUSBVideoSupport"
-ditto -v $source$legacyUSBVideoSupport $libKext$legacyUSBVideoSupport
+ditto -v "$source$legacyUSBVideoSupport" "$libKext$legacyUSBVideoSupport"
 echo "\r"
 
 
@@ -132,7 +132,7 @@ if [ $version != "10.16" ] && [ $version != "10.16.1" ] && [ $version != "11.0" 
    fi
  
  else
-   kmutil install --force --volume-root $destVolume
+   kmutil install --force --volume-root "$destVolume"
    kcditto
 fi
 

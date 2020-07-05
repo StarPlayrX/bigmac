@@ -21,7 +21,7 @@ if [ "$destVolume2" != "" ]
    destVolume="$destVolume2/"
 fi
 
-mount -uw $destVolume
+mount -uw "$destVolume"
 
 read -p "
 🍔 Resources [ $source = return key ]: " source2
@@ -46,19 +46,15 @@ fs="/System/Library/Filesystems/"
 
 libDest=$destVolume$libKext
 dest=$destVolume$kext
-
 userEventPlugins=$destVolume$plugins
+
 appleHDA="AppleHDA.kext"
 telemetry="com.apple.telemetry.plugin"
 ioATAFamily="IOATAFamily.kext"
-ioHIDFamily="IOHIDFamily.kext"
-legacyUSBInjector="LegacyUSBInjector.kext"
-legacyUSBVideoSupport="LegacyUSBVideoSupport.kext"
-legacyUSBInjector="LegacyUSBInjector.kext"
-Apple_iSight="Apple_iSight.kext"
-AppleCameraInterface="AppleCameraInterface.kext"
 
-
+#Third Party - To Add Credits
+VoodooHDA="VoodooHDA.kext"
+AAAMouSSE="AAAMouSSE.kext"
 
 #HFSEncodings="HFSEncodings.kext"
 #HFSStandard="HFS.kext"
@@ -72,27 +68,17 @@ echo "Apple High Def Audio"
 ditto -v "$source$appleHDA" "$dest$appleHDA"
 echo "\r"
 
+echo "Voohoo High Def Audio (Digital over HDMI, Nvidia Video Card)"
+ditto -v "$source$VoodooHDA" "$libDest$VoodooHDA"
+echo "\r"
+
+echo "MouSSE SSE4.2 Emulator"
+ditto -v "$source$AAAMouSSE" "$libDest$AAAMouSSE"
+echo "\r"
+
 echo "Apple CD/DVD drive"
 ditto -v "$source$ioATAFamily" "$dest$ioATAFamily"
 echo "\r"
-
-echo "Apple iSight"
-ditto -v "$source$Apple_iSight" "$dest$Apple_iSight"
-echo "\r"
-
-echo "Apple Camera Interface"
-ditto -v "$source$AppleCameraInterface" "$dest$AppleCameraInterface"
-echo "\r"
-
-##By ParrotGeek
-echo "LegacyUSBInjector (ParrotGeek)"
-ditto -v "$source$legacyUSBInjector" "$libKext$legacyUSBInjector"
-echo "\r"
-
-echo "legacyUSBVideoSupport"
-ditto -v "$source$legacyUSBVideoSupport" "$libKext$legacyUSBVideoSupport"
-echo "\r"
-
 
 ## On hold until I can compile a new Kext
 ##echo "Apple Standard HFS and HFS+ Disks"
@@ -151,6 +137,6 @@ echo "\r\n"
 if [ "$rebootArgs" != "" ]
 then
     reboot "-$rebootArgs"
-elsex
+else
     reboot
 fi

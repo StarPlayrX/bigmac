@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  postinstall.sh v0.0.5
+#  postinstall.sh v0.0.6
 #  Created by StarPlayrX on 7/1/20.
 
 # Credits
@@ -76,7 +76,7 @@ echo "MouSSE SSE4.2 Emulator"
 ditto -v "$source$AAAMouSSE" "$libDest$AAAMouSSE"
 echo "\r"
 
-echo "Apple CD/DVD drive"
+echo "Apple CD/DVD drive Intel PIIX ATA"
 ditto -v "$source$ioATAFamily" "$dest$ioATAFamily"
 echo "\r"
 

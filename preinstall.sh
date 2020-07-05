@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  preinstall.sh  v0.0.4
+#  preinstall.sh  v0.0.5
 #  Created by StarPlayrX on 7/1/20.
 
 # Credits

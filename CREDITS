@@ -5,10 +5,11 @@ These include Hax.dylib, APFS ROM Patcher and vendor Kexts.
 Credits
 🍔 SPX Big Mac PatchToolX by StarPlayrX
 🍟 Hax.dylib binary by ASentientBot
-🔊 VooDooHDA by autumnrain, slice2009, zenith432
-🧀 MouSSE SSE4.2 Emulator by Syncretic
 😎 APFS ROM Patcher binary by Dosdude1
 🍿 original Kexts, eject.menu and sw_vers created by Apple
 🥤 Credit does not imply endorsement, copyright, usage or warranty.
 -----------------------------------------------------------------------------------
+
+🔊 VoodooHDA by autumnrain, slice2009, zenith432 (investigating an issue OFF)
+🧀 MouSSE SSE4.2 Emulator by Syncretic (investigating an issue OFF) 
 

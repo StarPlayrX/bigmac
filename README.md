@@ -24,7 +24,7 @@ usage
 `sudo ./preinstall.sh`
 
 IMPORTANT:
-Always install with `-v`. You will want to catch the apfs_sealvolume command and turn off the power to your Mac, or if installing to external SSD, simply unplug the SSD. The apfs_sealvolume command is displayed in the console and will be 2nd line from the bottom. Apple tries to create a sealed snapshot along with an encrypted boot disk. On a Mac Pro 3,1 and possibly other unsupported Macs, this will lead to kernel panics with CoreCrpyto. This unorthodox approach eliminates this issue. During preinstall you can add `-v` along with `-no_compat_check` to your boot args via the `preinstall.sh` tool
+Always install with `-v`. You will want to catch the apfs_sealvolume command and turn off the power to your Mac, or if installing to external SSD, simply unplug the SSD. The apfs_sealvolume command is displayed in the console and will be 2nd line from the bottom. It comes after a reboot and will show in about 2-3 minutes after the reboot in verboe mode. Apple tries to create a sealed snapshot along with an encrypted boot disk. On a Mac Pro 3,1 and possibly other unsupported Macs, this will lead to kernel panics with CoreCrpyto. This unorthodox approach eliminates this issue. During preinstall you can add `-v` along with `-no_compat_check` to your boot args via the `preinstall.sh` tool
 
 PostInstall patches your installation.
 The post install for Mac Pro 3,1 fixes AppleHDA Audio, CD/DVD access, and Telemetry that is SSE3 compatible. If you have upgraded your WiFi and Bluetooth to 802.11ac combo card, your WiFi and BT4 should work out of the box. USB2, USB3, and USBC all work out of the box on Mac Pro with Big Sur. If you would like something added, you can contact me through https://StarPlayrX.com

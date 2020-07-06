@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
 All new and existing third parties hold the copyright and rights to their software.
-These include Hax.dylib, APFS ROM Patcher and vendor Kexts.
+These include Hax.dylib, APFS ROM Patcher, vendor Kexts and other miscellaneous items.
 
 Credits
 🍔 SPX Big Mac PatchToolX by StarPlayrX
@@ -9,7 +9,6 @@ Credits
 🍿 original Kexts, eject.menu and sw_vers created by Apple
 🥤 Credit does not imply endorsement, copyright, usage or warranty.
 -----------------------------------------------------------------------------------
-
-🔊 VoodooHDA by autumnrain, slice2009, zenith432 (investigating an issue OFF)
-🧀 MouSSE SSE4.2 Emulator by Syncretic (investigating an issue OFF) 
+🔊 VoodooHDA by autumnrain, slice2009, zenith432 [status: REMOVED]
+🧀 MouSSE SSE4.2 Emulator by Syncretic [status: investigating an issue, ON HOLD]
 

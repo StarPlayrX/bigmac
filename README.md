@@ -56,6 +56,7 @@ and if possible
 `csrutil authenticated-root disable`
 
 You can do this by mounting a Big Sur recovery volume, clone the DMG using ASR to an external USB drive:
+
 `diskutil list`
 
 get the disk#
@@ -65,4 +66,5 @@ get the disk#
 set the terminal to All Disk Access in settings privacy then run this command 
 
 `sudo mount -uw /path/to/target`
+
 `sudo asr -s /path/to/dmg -t /path/to/usb --erase --noverify`

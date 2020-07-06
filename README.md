@@ -1,6 +1,6 @@
 Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
 
-💻 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012.
+🍔 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012.
 
 Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
 
@@ -10,9 +10,7 @@ If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do t
 Disclaimer:
 Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty. Good Luck. I hope this tool helps you install Big Sur on an unsupported Mac Pro.
 
-🖥 This command line interface patch tool works on a 2008 Mac Pro 3,1. Mac Pro 2009, 2010, 2012 users may also benefit.
-
-This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
+🍟 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 
 This patch tool currently does not include an SSE4 Emulator. Support for this may be added based on demand. This tool assumes you have an NVidia graphics card that supports metal. These cards include Nvidia GTX 680 2GB, 4GB, and Kepler Titan 6GB. Kepler Black Titan is currently not supported. You may be able to get it supported through MacVidCards who does an awesome job flashing non 680 cards.
 

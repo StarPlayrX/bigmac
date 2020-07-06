@@ -63,5 +63,6 @@ get the disk#
 `sudo diskutil mountDisk /dev/disk#`
 
 set the terminal to All Disk Access in settings privacy then run this command 
+
 `sudo mount -uw /path/to/target`
 `sudo asr -s /path/to/dmg -t /path/to/usb --erase --noverify`

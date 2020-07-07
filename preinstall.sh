@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  preinstall.sh  v0.0.7
+#  preinstall.sh  v0.0.8
 #  Created by StarPlayrX on 7/1/20.
 
 cat './🎨/pre-art.ans'

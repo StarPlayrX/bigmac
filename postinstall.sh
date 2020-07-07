@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  postinstall.sh v0.0.7
+#  postinstall.sh v0.0.8
 #  Created by StarPlayrX on 7/1/20.
 
 cat './🎨/post-art.ans'

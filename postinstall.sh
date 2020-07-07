@@ -45,7 +45,7 @@ telemetry="com.apple.telemetry.plugin"
 ioATAFamily="IOATAFamily.kext"
 
 #Third Party Add ons - will later conflict with AppleHDA
-#VoodooHDA="VoodooHDA.kext"
+VoodooHDA="VoodooHDA.kext"
 #AAAMouSSE="AAAMouSSE.kext"
 
 #HFSEncodings="HFSEncodings.kext"
@@ -65,9 +65,12 @@ echo "Apple High Def Audio"
 ditto -v "$source$appleHDA" "$dest$appleHDA"
 echo "\r"
 
-#echo "Voodoo High Def Audio (Digital over HDMI, Nvidia Video Card)"
-#ditto -v "$source$VoodooHDA" "$libDest$VoodooHDA"
-#echo "\r"
+
+#comment out if you don't want this installed
+echo "Voodoo Digital audio out HDMI over all Nvidia ports."
+ditto -v "$source$VoodooHDA" "$libDest$VoodooHDA"
+echo "\r"
+
 
 #echo "MouSSE SSE4.2 Emulator"
 #ditto -v "$source$AAAMouSSE" "$libDest$AAAMouSSE"

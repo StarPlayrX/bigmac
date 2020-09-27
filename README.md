@@ -1,7 +1,10 @@
 
 Update This patch tool works for only DP Beta 1 and DP Beta 2 of BigSur.
 
-If I make progress on DP Beta 6 or 8, I will post and update!
+If I make progress on DP Beta 6 or 8, I will post the update.
+
+
+
 
 Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
 

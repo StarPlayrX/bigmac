@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>19A603003</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>IOATAPIProtocolTransport</string>
+	<key>CFBundleGetInfoString</key>
+	<string>3.5.0, Copyright Apple Inc. 1999-2011</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.iokit.IOATAPIProtocolTransport</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>IOATAPIProtocolTransport</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.5.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>3.5.0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>12A121</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.16</string>
+	<key>DTSDKBuild</key>
+	<string>20A4299p</string>
+	<key>DTSDKName</key>
+	<string>macosx10.16internal</string>
+	<key>DTXcode</key>
+	<string>1200</string>
+	<key>DTXcodeBuild</key>
+	<string>12A121</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>IOATAPIProtocolTransport</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IOATAPIProtocolTransport</string>
+			<key>IOClass</key>
+			<string>IOATAPIProtocolTransport</string>
+			<key>IOProviderClass</key>
+			<string>IOATADevice</string>
+			<key>Physical Interconnect</key>
+			<string>ATAPI</string>
+			<key>Physical Interconnect Location</key>
+			<string>Internal</string>
+			<key>Read Time Out Duration</key>
+			<integer>15000</integer>
+			<key>Retry Count</key>
+			<integer>1</integer>
+			<key>Write Time Out Duration</key>
+			<integer>15000</integer>
+			<key>ata device type</key>
+			<string>atapi</string>
+		</dict>
+	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.16</string>
+	<key>OSBundleCompatibleVersion</key>
+	<string>1.0.0</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOATAFamily</key>
+		<string>1.4.8f1</string>
+		<key>com.apple.iokit.IOSCSIArchitectureModelFamily</key>
+		<string>1.0.0</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>9.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+</dict>
+</plist>

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #  postinstall.sh v0.0.8
-#  Created by StarPlayrX on 7/1/20.
+#  Created by StarPlayrX on 9/30/20
 
 cat './🎨/post-art.ans'
 
@@ -44,56 +44,26 @@ appleHDA="AppleHDA.kext"
 telemetry="com.apple.telemetry.plugin"
 ioATAFamily="IOATAFamily.kext"
 
-#Third Party Add ons - will later conflict with AppleHDA
-VoodooHDA="VoodooHDA.kext"
-#AAAMouSSE="AAAMouSSE.kext"
-
-#HFSEncodings="HFSEncodings.kext"
-#HFSStandard="HFS.kext"
-#HFSfs="hfs.fs"
-#fsDriver="AppleFileSystemDriver.kext"
-
 echo "SSE3 compatible Telemetry plugin"
+rm -Rf "$plugins$telemetry"
 ditto -v "$source$telemetry" "$plugins$telemetry"
+chown -R 0:0 "$plugins$telemetry"
+chmod -R 755 "$plugins$telemetry"
 echo "\r"
 
 echo "Apple CD/DVD drive Intel PIIX ATA"
+rm -Rf "$dest$ioATAFamily"
 ditto -v "$source$ioATAFamily" "$dest$ioATAFamily"
+chown -R 0:0 "$dest$ioATAFamily"
+chmod -R 755 "$dest$ioATAFamily"
 echo "\r"
 
 echo "Apple High Def Audio"
+rm -Rf "$dest$appleHDA"
 ditto -v "$source$appleHDA" "$dest$appleHDA"
+chown -R 0:0 "$dest$appleHDA"
+chmod -R 755 "$dest$appleHDA"
 echo "\r"
-
-
-#comment out if you don't want this installed
-echo "Voodoo Digital audio out HDMI over all Nvidia ports."
-ditto -v "$source$VoodooHDA" "$libDest$VoodooHDA"
-echo "\r"
-
-
-#echo "MouSSE SSE4.2 Emulator"
-#ditto -v "$source$AAAMouSSE" "$libDest$AAAMouSSE"
-#echo "\r"
-
-
-## On hold until I can compile a new Kext
-##echo "Apple Standard HFS and HFS+ Disks"
-##ditto -v $source$HFSStandard $dest$HFSStandard
-##echo "\r"
-
-##echo "Apple Standard HFS and HFS+ FileSystem"
-##ditto -v $source$HFSfs $fs$HFSfs
-##echo "\r"
-
-##echo  "Apple Standard HFS and HFS+ Encodings"
-##ditto -v $source$HFSEncodings $dest$HFSEncodings
-##echo "\r"
-
-##echo  "Apple Standard HFS and HFS+ Encodings"
-##ditto -v $source$fsDriver $dest$fsDriver
-##echo "\r"
-
 
 bin="/📠/"
 vers="/sw_vers"
@@ -121,26 +91,20 @@ if [ $version != "10.16" ] && [ $version != "10.16.1" ] && [ $version != "11.0" 
    fi
  
  else
- ##Clean up our mess
-    
-    if [ $destVolume == "/" ]
-    then
-        kernel="/📚/🍎/💾/📚/🍿/prelinkedkernel"
-        currentDir=$(pwd)
-        sudo ditto -v "$currentDir$kernel" /Library/Apple/System/Library/PrelinkedKernels/prelinkedkernel
-    
-        kmutil create -n boot --boot-path /Library/Apple/System/Library/PrelinkedKernels/prelinkedkernel --kernel /System/Library/Kernels/kernel --repository /System/Library/Extensions --repository /Library/Extensions --repository /System/Library/DriverExtensions --repository /Library/DriverExtensions --repository /Library/Apple/System/Library/Extensions
-    fi
-   kmutil install --force --volume-root "$destVolume"
+    ##Barry's version
+    echo "\r\nUpdating Boot BootKernelExtensions..."
+    kmutil create -n boot --kernel /System/Library/Kernels/kernel --variant-suffix release --volume-root "$destVolume" --boot-path /System/Library/KernelCollections/BootKernelExtensions.kc
+
+    echo "\r\nUpdating System BootKernelExtensions..."
+    kmutil create -n sys --kernel /System/Libary/Kernels/kernel --variant-suffix release --volume-root "$destVolume" --system-path /System/Library/KernelCollections/SystemKernelExtensions.kc --boot-path /System/Library/KernelCollections/BootKernelExtensions.kc
+
     
    kcditto="kcditto"
    sbin="/usr/sbin/"
-   $destVolume$sbin$kcditto
+   "$destVolume$sbin$kcditto"
 fi
 
-
-
-echo "\r\nThis script was brought to you by StarPlayrX\r\nThe Most Awesome Sirius XM Radio player,\r\nVersion 1.1 is in public beta via TestFlight:\r\nhttps://testflight.apple.com/join/Ecz0xXvf\r\n"
+echo "\r\nThis script was brought to you by StarPlayrX\r\nThe Most Awesome Sirius XM Radio player,\r\nVersion 1.1 available now in the iOS AppStore!"
 
 read -p "Press return to Reboot [ options : q for quick ]: " rebootArgs
 echo "\r\n"

@@ -44,9 +44,12 @@ csrutil status
 echo "\r\nDisabling Library Validation"
 defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
 
-echo "\r\nLoading Hax into Memory"
-hax="/🍟/Hax.dylib"
+echo "\r\nLoading Hax Do Not Seal into Memory - credit ASentientBot & BarryKN :)"
+hax="/🍟/HaxDoNotSeal.dylib"
+
 sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+#export $SUDO_USER=bigmac
 
 echo $(pwd)$hax
-echo ""
+echo sudo user is: $SUDO_USER
+echo "You can now open the Big Sur macOS Installer app."

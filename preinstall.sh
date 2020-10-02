@@ -34,10 +34,12 @@ nvram -p | grep boot-args
 echo "\r\nCheck System Integrity"
 csrutil status
 
-#csrutil authenticated-root status
+echo "\r\nCheck Root Status"
+csrutil authenticated-root status
 
 ## may be able to set csr programically
-#nvram csr-active-config="w%08%00%00"
+echo '\n\rCheck csr-active-config:'
+nvram -p | grep csr-active-config
 
 #./'Install macOS Beta.app/Contents/MacOS/InstallAssistant' & echo '\r\n' &
 
@@ -46,10 +48,22 @@ defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist D
 
 echo "\r\nLoading Hax Do Not Seal into Memory - credit ASentientBot & BarryKN :)"
 hax="/🍟/HaxDoNotSeal.dylib"
+echo $(pwd)$hax
 
-sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+#Check if sudo is available or not
+if sudo -n true
+then
+  sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+  echo sudo user is: $SUDO_USER
+  echo ''
+else
+  launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+  echo Recovery mode detected, running Hax without sudo
+  echo ''
+fi
+
 #export $SUDO_USER=bigmac
 
-echo $(pwd)$hax
-echo sudo user is: $SUDO_USER
 echo "You can now open the Big Sur macOS Installer app."
+echo ''
+

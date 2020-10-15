@@ -58,6 +58,7 @@ chown -R 0:0 "$dest$ioATAFamily"
 chmod -R 755 "$dest$ioATAFamily"
 echo "\r"
 
+##This also fixes USB Video crash bug in Quicktime Player.
 echo "Apple High Def Audio"
 rm -Rf "$dest$appleHDA"
 ditto -v "$source$appleHDA" "$dest$appleHDA"

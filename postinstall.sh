@@ -105,7 +105,7 @@ if [ $version != "10.16" ] && [ $version != "10.16.1" ] && [ $version != "11.0" 
    "$destVolume$sbin$kcditto"
 fi
 
-echo "\r\nThis script was brought to you by StarPlayrX\r\nThe Most Awesome Sirius XM Radio player,\r\nVersion 1.1 available now in the iOS AppStore!"
+echo "\r\nThis script was brought to you by StarPlayrX\r\nThe Most Awesome Sirius XM Radio player,\r\nVersion 1.1.6 available now in the iOS AppStore!"
 
 read -p "Press return to Reboot [ options : q for quick ]: " rebootArgs
 echo "\r\n"

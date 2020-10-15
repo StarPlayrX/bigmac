@@ -1,18 +1,9 @@
 
 Updated for Big SIr Developer Beta 9 [ Full Install ] 
 
-If installing from beta 9 you may need to setup the $SUDO_USER
-
-export SUDO_USER=$(whoami) 
-
-or
-
-export SUDO_USER=short_user_name
-
-
 Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
 
-🍔 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012. I will be getting one in within a week so 2009 - 2012  Mac Pros will be officially supported.
+🍔 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012.
 
 Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
 

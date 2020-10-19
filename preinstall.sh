@@ -3,7 +3,15 @@
 #  preinstall.sh  v0.0.8
 #  Created by StarPlayrX on 7/1/20.
 
-cat './🎨/pre-art.ans'
+
+printf '\e[48;5;0m\r\n' #black background
+
+printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
+printf "[38;5;112mStarPlayrX -=> Big Mac Pre Installation Tool for Mac Pros v0.0.11\r\n"
+printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
+printf "[38;5;112m"
+
+printf "🍟 = Hax Do Not Seal Installation\r\n"
 
 mount -uw /
 

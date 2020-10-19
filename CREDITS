@@ -8,5 +8,15 @@ Credits
 😎 APFS ROM Patcher binary by Dosdude1
 🥤 Credit does not imply endorsement, copyright, usage or warranty.
 -----------------------------------------------------------------------------------
-🧀 MouSSE SSE4.2 Emulator by Syncretic [status: investigating an issue, ON HOLD]
+🧀 MouSSE SSE4.2 Emulator by Syncretic [Added to post install]
+
+Post install tool now includes and integrated snapshot removal tool is now in the post installer by StarPlayrX. If it detects a snapshot and the system is not booted from it, it should be able to remove it provided that authenticated-root status is turned off.
+
+
+Recently Added (Credits pending):
+
+HDMIAudio.kext,
+
+LegacyUSBInjector.kext (I am not sure if this is helping. I've been having issues with USB 2.0 mouse and keyboard devices not reconnecting after detaching and also cannot get any 1.0 mouse and keyboard devices that work with SDL MAME.
+
 

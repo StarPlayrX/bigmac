@@ -12,7 +12,7 @@ printf "[38;5;112m"
 printf "🍔 = Apple HD Audio, SSE4.1 Telemetry, SuperDrive Support\r\n"
 printf "🧀 = MousSSE 4.2 Emulator for AMD Radeon Video Drivers\r\n"
 printf "🥤 = HDMI Audio, Legacy USB Injector\r\n"
-Printf "📸 = Bonus Snapshot removal tool by StarPlayrX"
+Printf "📸 = Bonus Snapshot removal tool by StarPlayrX\r\n"
 
 printf '\e[48;5;0m' #black background
 

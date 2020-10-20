@@ -1,11 +1,7 @@
 
-Updated for Big SIr Developer Beta 9 [ Full Install ] 
+Updated for Big SIr Developer Beta 10 [ Clean Install ]. Introducing Big Mac 🍔 Burgers and Fries 🍟 Designed For Mac Pro (Early 2008). Should also work for Mac Pro 2009, 2010, 2012. 3,1 4,1 5,1. 
 
-Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
-
-🍔 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012.
-
-Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
+Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. It also does not install Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1.
 
 Supporting developer betas 1, 2, 6, 9 and 10 [Complete installers only].
 
@@ -13,14 +9,15 @@ Catalina:
 If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html.
 
 Disclaimer:
-Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty. Good Luck. I hope this tool helps you install Big Sur on an unsupported Mac Pro.
+Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
 
-🍟 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
+🍟 This patch tool contains HaxDoNotSeal.dylib to assist with running the Installer from Catalina.
 
-This patch tool currently does not include an SSE4 Emulator. Support for this may be added based on demand. This tool assumes you have an NVidia graphics card that supports metal. These cards include Nvidia GTX 680 2GB, 4GB, and Kepler Titan 6GB. Kepler Black Titan is currently not supported. You may be able to get it supported through MacVidCards who does an awesome job flashing non 680 cards.
+It also contains Dosdude1's APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 
-PreInstall allows you to run the Big Sur beta 1 installer from Catalina:
-This patcher constains a preinstall.sh that allows users to run the installer to a HFS+ disk. The installer will erase it as an APFS volume.
+AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables it and works well enough, please let me know.
+
+This patcher contains a preinstall.sh that allows users to run the installer to a HFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
 
 Using the terminal, cd to the bigmac directory.
 

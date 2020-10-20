@@ -11,7 +11,7 @@ If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do t
 Disclaimer:
 Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
 
-🍟 This patch tool contains HaxDoNotSeal.dylib to assist with running the Installer from Catalina.
+🍟 This patch tool contains HaxDoNotSeal.dylib to assist with running the Installer from Catalina and Big Sur.
 
 It also contains Dosdude1's APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 

@@ -43,8 +43,8 @@ usage
 Future plans
 Patched WiFi option for other Broadcom cards.
 
-
-p.s.
+---
+p.s. from a Big Sur recovery disk
 
 You will want to run
 

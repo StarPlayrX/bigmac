@@ -62,10 +62,6 @@ get the disk# (from the Big Sur installation).
 
 `sudo diskutil mountDisk /dev/disk#`
 
-set the terminal to All Disk Access in settings privacy then run this command 
-
-`sudo mount -uw /path/to/target`
-
 open terminal and type "open /Volumes". Look for Recovery partition, it will has the DMG that you are looking for to create a recovery USB disk. 
 
 `sudo asr -s /path/to/dmg -t /path/to/usb --erase --noverify`

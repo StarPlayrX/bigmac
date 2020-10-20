@@ -1,5 +1,5 @@
 
-Updated for Big SIr Developer Beta 10 [ Clean Install ]. Introducing Big Mac 🍔 Burgers and Fries 🍟 Designed For Mac Pro (Early 2008). Should also work for Mac Pro 2009, 2010, 2012. 3,1 4,1 5,1. 
+Updated for Big SIr Developer Beta 10 [ Clean Install ]. Introducing Big Mac 🍔 🍟 Patch tool designed For Mac Pro (Early 2008). Should also work for Mac Pro 2009, 2010, 2012. 3,1 4,1 5,1. 
 
 Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. It also does not install Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1.
 
@@ -40,12 +40,9 @@ usage
 `sudo ./postinstall.sh`
 
 
-
 Future plans
-
-Digital HDMI out.
 Patched WiFi option for other Broadcom cards.
-Mac OS Standard HFS disk mounting (This is pre HFS+)
+
 
 p.s.
 

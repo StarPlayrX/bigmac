@@ -7,8 +7,7 @@ Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
 
 Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
 
-Supporting Big Sur Dev. Beta 1, Dev Beta 2, Dev Beta 9
-Known issue: turn off sleep in energy saver, CD/DVD gets lost.
+Supporting developer betas 1, 2, 6, 9 and 10 [Complete installers only].
 
 Catalina:
 If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html.

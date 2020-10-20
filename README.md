@@ -65,12 +65,14 @@ You can do this by mounting a Big Sur recovery volume, clone the DMG using ASR t
 
 `diskutil list`
 
-get the disk#
+get the disk# (from the Big Sur installation).
 
 `sudo diskutil mountDisk /dev/disk#`
 
 set the terminal to All Disk Access in settings privacy then run this command 
 
 `sudo mount -uw /path/to/target`
+
+open terminal and type "open /Volumes". Look for Recovery partition. 
 
 `sudo asr -s /path/to/dmg -t /path/to/usb --erase --noverify`

@@ -10,9 +10,9 @@ printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v0.
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
 printf "🍔 = Apple HD Audio, SSE4.1 Telemetry, SuperDrive Support\r\n"
-printf "🧀 = MousSSE 4.2 Emulator for AMD Radeon Video Drivers\r\n"
+printf "🧀 = MouSSE 4.2 Emulator for AMD Radeon Video Drivers\r\n"
 printf "🥤 = HDMI Audio, Legacy USB Injector\r\n"
-Printf "📸 = Bonus Snapshot removal tool by StarPlayrX\r\n"
+printf "📸 = Snapshot removal tool by StarPlayrX\r\n"
 
 printf '\e[48;5;0m' #black background
 

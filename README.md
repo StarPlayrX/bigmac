@@ -44,7 +44,7 @@ Future plans
 Patched WiFi option for other Broadcom cards.
 
 ---
-p.s. from a Big Sur recovery disk
+p.s. from a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
 
 You will want to run
 
@@ -62,6 +62,10 @@ get the disk# (from the Big Sur installation).
 
 `sudo diskutil mountDisk /dev/disk#`
 
-open terminal and type "open /Volumes". Look for Recovery partition, it will have the DMG that you are looking for to create a recovery USB disk. 
+open terminal and type `open /Volumes`. Look for Recovery partition, it will have the DMG that you are looking for to create a recovery USB disk. 
 
-`sudo asr -s /path/to/dmg -t /path/to/usb --erase --noverify`
+`sudo asr -s /path/to/dmg -t /path/to/external/usb/drive --erase --noverify`
+
+Then reboot using the option key and select the yellow USB drive labelled `EFI`
+
+use `cmd-v` when selecting if you want to see that it is loading.

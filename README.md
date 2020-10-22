@@ -48,7 +48,7 @@ Announcement:
 MacEleven is coming soon to Supported Macs.
 It will allow unsealed, APFS snapshot free installs on Supported Macs
 ---
-
+---
 p.s. from a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
 
 You will want to run

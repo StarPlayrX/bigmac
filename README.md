@@ -62,7 +62,7 @@ get the disk# (from the Big Sur installation).
 
 `sudo diskutil mountDisk disk#`
 
-open terminal and type `open /Volumes`. Look for 'Recovery' mount, it will have the DMG that you are looking for to create a recovery USB disk. 
+open terminal and type `open /Volumes`. Look for 'Recovery' mount. Inside a UUID folder, it will have the DMG that you are looking for to create a recovery USB disk. 
 
 `sudo asr -s /path/to/dmg -t /path/to/external/usb/drive --erase --noverify`
 

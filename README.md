@@ -44,6 +44,11 @@ Future plans
 Patched WiFi option for other Broadcom cards.
 
 ---
+Announcement:
+MacEleven is coming soon to Supported Macs.
+It will allow unsealed, APFS snapshot free installs on Suppported Macs
+---
+
 p.s. from a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
 
 You will want to run
@@ -62,7 +67,7 @@ get the disk# (from the Big Sur installation).
 
 `sudo diskutil mountDisk disk#`
 
-open terminal and type `open /Volumes`. Look for 'Recovery' mount. Inside a UUID folder, it will have the DMG that you are looking for to create a recovery USB disk. 
+open terminal and type `open /Volumes` Look for 'Recovery' mount. Inside a UUID folder, it will have the DMG that you are looking for to create a recovery USB disk. 
 
 `sudo asr -s /path/to/dmg -t /path/to/external/usb/drive --erase --noverify`
 

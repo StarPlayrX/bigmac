@@ -1,27 +1,23 @@
 
-Updated for Big SIr Developer Beta 9 [ Full Install ] 
+Big Mac 🍔 🍟 The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 
-Introducing Big Mac 🍔 Burgers and Fries 🍟 For Mac Pro (Early 2008)
+Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.
 
-🍔 This SPX Big Mac PatchToolX may also for work for Mac Pro 2009, 2010 and 2012.
-
-Turn your Mac Pro into a Big Mac and run Big Sur on unsupported Apple branded hardware
-
-Supporting Big Sur Dev. Beta 1, Dev Beta 2, Dev Beta 9
-Known issue: turn off sleep in energy saver, CD/DVD gets lost.
+Officially supporting Big Sur Developer betas 1, 2, 6, 9 and 10 [Complete installers only]. There were some in-between installers than did not support Penryn CPUs.
 
 Catalina:
 If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html.
 
 Disclaimer:
-Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty. Good Luck. I hope this tool helps you install Big Sur on an unsupported Mac Pro.
+Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
 
-🍟 This patch tool contains Hax.dylib to assist with running the Installer from Catalina. It also contains APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
+🍟 This patch tool contains HaxDoNotSeal.dylib to assist with running the Installer from Catalina and Big Sur.
 
-This patch tool currently does not include an SSE4 Emulator. Support for this may be added based on demand. This tool assumes you have an NVidia graphics card that supports metal. These cards include Nvidia GTX 680 2GB, 4GB, and Kepler Titan 6GB. Kepler Black Titan is currently not supported. You may be able to get it supported through MacVidCards who does an awesome job flashing non 680 cards.
+It also contains Dosdude1's APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 
-PreInstall allows you to run the Big Sur beta 1 installer from Catalina:
-This patcher constains a preinstall.sh that allows users to run the installer to a HFS+ disk. The installer will erase it as an APFS volume.
+AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables 4k@60 with Nvidia and it works well enough, please let me know through https://StarPlayrX.com
+
+This patcher contains a preinstall.sh that allows users to run the installer to a HFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
 
 Using the terminal, cd to the bigmac directory.
 
@@ -44,14 +40,11 @@ usage
 `sudo ./postinstall.sh`
 
 
-
 Future plans
-
-Digital HDMI out.
 Patched WiFi option for other Broadcom cards.
-Mac OS Standard HFS disk mounting (This is pre HFS+)
 
-p.s.
+---
+p.s. from a Big Sur recovery disk
 
 You will want to run
 
@@ -65,12 +58,10 @@ You can do this by mounting a Big Sur recovery volume, clone the DMG using ASR t
 
 `diskutil list`
 
-get the disk#
+get the disk# (from the Big Sur installation).
 
 `sudo diskutil mountDisk /dev/disk#`
 
-set the terminal to All Disk Access in settings privacy then run this command 
-
-`sudo mount -uw /path/to/target`
+open terminal and type "open /Volumes". Look for Recovery partition, it will have the DMG that you are looking for to create a recovery USB disk. 
 
 `sudo asr -s /path/to/dmg -t /path/to/usb --erase --noverify`

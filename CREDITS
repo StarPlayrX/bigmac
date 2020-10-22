@@ -3,20 +3,32 @@ All new and existing third parties hold the copyright and rights to their softwa
 These include HaxDoNoSeal.dylib, APFS ROM Patcher, vendor Kexts and other miscellaneous items.
 
 Credits
-🍔 SPX Big Mac PatchToolX by StarPlayrX
+🍔 BigMac Mac Pro Patch tool by StarPlayrX
 🍟 Original Hax.dylib binary by ASentientBot and Updated HaxDoNoSeal.dylib binaries by BarryKN
 😎 APFS ROM Patcher binary by Dosdude1
-🥤 Credit does not imply endorsement, copyright, usage or warranty.
+🥤 LegacyUSBInjector (implemented) and SIPManager (in the repo, pending) by parrotgeek1.
 -----------------------------------------------------------------------------------
 🧀 MouSSE SSE4.2 Emulator by Syncretic [Added to post install]
+
+Credit does not imply endorsement, copyright, usage or warranty.
 
 Post install tool now includes and integrated snapshot removal tool is now in the post installer by StarPlayrX. If it detects a snapshot and the system is not booted from it, it should be able to remove it provided that authenticated-root status is turned off.
 
 
-Recently Added (Credits pending):
+Recently Added:
 
-HDMIAudio.kext,
+HDMIAudio.kext (Credit pending).
 
-LegacyUSBInjector.kext (I am not sure if this is helping. I've been having issues with USB 2.0 mouse and keyboard devices not reconnecting after detaching and also cannot get any 1.0 mouse and keyboard devices that work with SDL MAME.)
+LegacyUSBInjector.kext
 
+Known issues with macOS 11 Big Sur
+USB 2.0 mouse, trackpad and keyboard devices will not reconnect if detached and reconnected
+USB 1.0 mouse, trackpad and keyboard devices will power on but will not interact with the OS (mainly MAME/Arcade input devices have this issue)
 
+Workaround for USB2.0 devices:
+Use a USB 3.0 PCIe card and connect your USB 2.0 devices to it.
+
+There is no workaround for USB 1.0 MAME / Arcade devices.
+
+Removed from the repo:
+LegacyUSBVideo.kext by parrotgeek1

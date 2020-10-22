@@ -45,7 +45,7 @@ Patched WiFi option for other Broadcom cards.
 
 ---
 Announcement:
-MacEleven is coming soon to Supported Macs.
+MacEleven is coming soon.
 It will allow unsealed, APFS snapshot free installs on Supported Macs
 ---
 ---

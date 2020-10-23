@@ -35,10 +35,10 @@ PostInstall patches your installation.
 The post install for Mac Pro 3,1 fixes AppleHDA Audio, CD/DVD access, and Telemetry that is SSE3 compatible. If you have upgraded your WiFi and Bluetooth to 802.11ac combo card, your WiFi and BT4 should work out of the box. USB2, USB3, and USBC all work out of the box on Mac Pro with Big Sur. If you would like something added, you can contact me through https://StarPlayrX.com
 
 Known USB 2.0 Issue:
-USB 2.0 Keyboard, Mouse or Trackpad need to be plugged in prior to booting. After Big Sur is boot and your unplug them and re-plug them in, they will fail to work. This seems to be something that  broke. If you have a USB 3.0 PCIe card, your USB 2.0 devices there will be hot pluggable.
+USB 2.0 Keyboard, Mouse or Trackpad need to be plugged in prior to booting. After Big Sur is running and you attempt to unplug them and re-plug them in, those devices will fail to work. This seems to be something that  broke. If you have a USB 3.0 PCIe card, your USB 2.0 devices the devices will be hot pluggable. A USB 3.0 Hub may work as well.
 
 Known USB 1.0 Issue:
-This issue I found with all my MAME keyboard, mouse, joysticks, arcade buttons spinners and trackballs. Under Big Sur they will power on but will be inoperarable under Big Sur. This again is something I believe  broke.
+This issue I found with all my MAME keyboard, mouse, joysticks, arcade buttons spinners and trackballs. Under Big Sur they will power on but will be inoperarable under Big Sur. This again is something I believe  broke. It doesn't matter if they were plugged in to USB 3.0 PCIe card either. MAME / Arcade input devices are currently problem on Big Sur. Workaround: I highly recommend Mojave for SDL MAME.
 
 This patcher contains a postinstall shell script.
 

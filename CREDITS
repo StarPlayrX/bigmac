@@ -5,8 +5,8 @@ All new and existing third parties hold the copyright and rights to their softwa
 Third Party Credits:
 -----------------------------------------------------------------------------------
 🍟 Original Hax.dylib binary by ASentientBot and Updated HaxDoNoSeal.dylib binaries by BarryKN
-😎 APFS ROM Patcher binary by Dosdude1 [Not used directly]
-🥤 LegacyUSBInjector (implemented) and SIPManager (in the repo, pending) by Parrotgeek1, HDMIAudio.kext by Exvision
+😎 APFS ROM Patcher binary by Dosdude1 [Use at your own risk. You will need to be sure your Mac Pro 3,1 can boot APFS volumes directly.]
+🍺 LegacyUSBInjector (implemented) and SIPManager (in the repo, pending) by Parrotgeek1, HDMIAudio.kext by Exvision
 🧀 MouSSE SSE4.2 Emulator by Syncretic [Added to post install]
 
 Director's Cut:
@@ -29,12 +29,14 @@ USB 2.0 mouse, trackpad and keyboard devices will not reconnect if detached and 
 USB 1.0 mouse, trackpad and keyboard devices will power on but will not interact with the OS (mainly MAME/Arcade input devices have this issue)
 
 Workaround for USB2.0 devices:
+-----------------------------------------------------------------------------------
 Use a USB 3.0 PCIe card and connect your USB 2.0 devices to it.
 
-There is no workaround for USB 1.0 MAME / Arcade devices. My advice for SDL MAME users: macOS 10.14.6 Mojave
+There is no workaround for USB 1.0 MAME / Arcade devices.
+My advice for SDL MAME users: macOS 10.14.6 Mojave
 -----------------------------------------------------------------------------------
 
-Removed from the repo:
+Removed from the repo (was not in use):
 -----------------------------------------------------------------------------------
 LegacyUSBVideo.kext by Parrotgeek1
 -----------------------------------------------------------------------------------

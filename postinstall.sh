@@ -11,7 +11,7 @@ printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 printf "[38;5;112m"
 printf "🍔 = Apple HD Audio, SSE4.1 Telemetry, SuperDrive Support\r\n"
 printf "🧀 = MouSSE 4.2 Emulator for AMD Radeon Video Drivers\r\n"
-printf "🥤 = HDMI Audio, Legacy USB Injector\r\n"
+printf "🍺 = HDMI Audio, Legacy USB Injector\r\n"
 printf "📸 = Snapshot removal tool by StarPlayrX\r\n"
 
 printf '\e[48;5;0m' #black background
@@ -19,7 +19,7 @@ printf '\e[48;5;0m' #black background
 destVolume="/"
 kexts="/🍔/"
 cheese="/🧀/"
-pepsi="/🥤/"
+pepsi="/🍺/"
 
 source=$(pwd)$kexts
 cheesey=$(pwd)$cheese

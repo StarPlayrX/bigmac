@@ -16,7 +16,6 @@ If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do t
 Disclaimer:
 Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
 
-Movies:
 https://starplayrx.com/downloads/preinstall_bigmac.mov
 https://starplayrx.com/downloads/postinstall_bigmac.mov
 https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov

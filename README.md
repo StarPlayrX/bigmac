@@ -2,13 +2,13 @@
 ---
 Big Mac 🍔 🍟 The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 ---
--
+--
 Movies:
 
 https://starplayrx.com/downloads/preinstall_bigmac.mov
 https://starplayrx.com/downloads/postinstall_bigmac.mov
 https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
--
+--
 Coming Soon: a movie on How to turn off SIP and Authenticated-root
 
 Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.

@@ -4,9 +4,9 @@ Big Mac 🍔 🍟 The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 200
 ---
 Movies:
 
-https://starplayrx.com/downloads/preinstall_bigmac.mov
-
+`https://starplayrx.com/downloads/preinstall_bigmac.mov
 https://starplayrx.com/downloads/postinstall_bigmac.mov
+https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov`
 
 Coming Soon: a movie on How to turn off SIP and Authenticated-root
 

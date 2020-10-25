@@ -8,6 +8,8 @@ https://starplayrx.com/downloads/preinstall_bigmac.mov
 
 https://starplayrx.com/downloads/postinstall_bigmac.mov
 
+Coming Soon: a movie on How to turn off SIP and Authenticated-root
+
 Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.
 
 Officially supporting Big Sur Developer betas 1, 2, 6, 9 and 10 [Complete installers only]. There were some in-between installers than did not support Penryn CPUs.
@@ -18,7 +20,7 @@ If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do t
 Disclaimer:
 Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
 
-🍟 This patch tool contains HaxDoNotSeal.dylib to assist with running the Installer from Catalina and Big Sur.
+🍟 The preinstall too patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.
 
 It also contains Dosdude1's APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
 

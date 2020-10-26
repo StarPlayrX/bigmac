@@ -26,7 +26,7 @@ https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 Coming Soon: a completed end-to-end full install video.
 --
 
-🍟 The preinstall too patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.
+🍟 The preinstall patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.
 
 AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables 4k@60 with Nvidia and it works well enough, please let me know through https://StarPlayrX.com
 

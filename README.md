@@ -65,8 +65,7 @@ Future plans
 Patched WiFi option for other Broadcom cards.
 
 ---
-🥨 MacEleven is coming soon.
-It will allow unsealed, APFS snapshot free installs on Supported Intel Macs
+🥨 MacEleven is coming soon. Unsealed, APFS snapshot free installs on Supported Intel Macs! :)
 ---
 ---
 From a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]

@@ -1,7 +1,10 @@
 
 ---
-Big Mac 🍔 🍟 The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
+🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 ---
+---
+For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 
+
 
 Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.
 
@@ -13,13 +16,23 @@ If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do t
 Disclaimer:
 Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
 
-🍟 This patch tool contains HaxDoNotSeal.dylib to assist with running the Installer from Catalina and Big Sur.
+p.s. I was under the weather when these movies where made. I may re-record them when I get a new Mic.
 
-It also contains Dosdude1's APFS ROM Patcher for Macs that do not have the proper firmware to boot APFS volumes.
+---
+https://starplayrx.com/downloads/preinstall_bigmac.mov
+https://starplayrx.com/downloads/postinstall_bigmac.mov
+https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
+https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
+---
+---
+🍟 Coming Soon: a completed end-to-end full install video.
+---
+---
+The preinstall patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.
 
 AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables 4k@60 with Nvidia and it works well enough, please let me know through https://StarPlayrX.com
 
-This patcher contains a preinstall.sh that allows users to run the installer to a HFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
+This patcher contains a preinstall.sh that allows users to run the installer to a JHFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
 
 Using the terminal, cd to the bigmac directory.
 
@@ -52,11 +65,9 @@ Future plans
 Patched WiFi option for other Broadcom cards.
 
 ---
-Announcement:
-MacEleven is coming soon.
-It will allow unsealed, APFS snapshot free installs on Supported Intel Macs
+🥨 MacEleven. Unsealed, APFS snapshot free installs on Supported Intel Macs 01.21.21
 ---
-
+---
 From a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
 
 You will want to run

@@ -1,20 +1,21 @@
 #!/bin/sh
 
-#  postinstall.sh v0.0.10.17
+#  sudo ./postinstall.sh
+#  BigMac MacPro post install tool v0.0.12
 #  Created by StarPlayrX on 10.17.2020
 
 printf '\e[48;5;0m\r\n' #black background
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
-printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v0.0.11\r\n"
+printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v0.0.12\r\n"
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
+
 printf "🍔 = Apple HD Audio, SSE4.1 Telemetry, SuperDrive Support\r\n"
 printf "🧀 = MouSSE 4.2 Emulator for AMD Radeon Video Drivers\r\n"
 printf "🍺 = HDMI Audio, Legacy USB Injector\r\n"
 printf "📸 = Snapshot removal tool by StarPlayrX\r\n"
 
-printf '\e[48;5;0m' #black background
 
 destVolume="/"
 kexts="/🍔/"

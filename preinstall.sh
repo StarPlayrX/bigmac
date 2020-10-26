@@ -1,17 +1,19 @@
 #!/bin/sh
 
-#  preinstall.sh  v0.0.8
-#  Created by StarPlayrX on 7/1/20.
-
+#  sudo ./preinstall.sh
+#  BigMac MacPro pre-install tool v0.0.12
+#  Created by StarPlayrX on 10.17.2020
 
 printf '\e[48;5;0m\r\n' #black background
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
-printf "[38;5;112mStarPlayrX -=> Big Mac Pre Installation Tool for Mac Pros v0.0.11\r\n"
+printf "[38;5;112mStarPlayrX -=> Big Mac Pre-Installation Tool for Mac Pros v0.0.12\r\n"
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
 
-printf "🍟 = Hax Do Not Seal Installation\r\n"
+printf "🍟 = Hax Do Not Seal with No APFS Check (BarryKN fork) \r\n"
+
+printf '\e[48;5;0m' #black background
 
 mount -uw /
 
@@ -27,7 +29,7 @@ echo $bootArgs
 default="-no_compat_check -v"
 
 read -p "
-🖥  Set Boot Args: [enter = default]: " default
+🖥  boot-args: [enter = $bootArgs]: " default
 
 if [ "$default" != "" ]
   then
@@ -42,8 +44,22 @@ nvram -p | grep boot-args
 echo "\r\nCheck System Integrity"
 csrutil status
 
-echo "\r\nCheck Root Status"
-csrutil authenticated-root status
+bin="/📠/"
+vers="/sw_vers"
+sw=$(pwd)$bin$vers
+
+echo "\r\nSoftware Version Check"
+version=$($sw '-productVersion')
+echo $version
+
+if [ $version == "10.16" ] || [ $version == "11.0" ] || [ $version == "11.1" ] || [ $version == "11.0.1" ]
+ then
+ 
+    echo "\r\nCheck Root Status"
+    csrutil authenticated-root status
+
+fi
+
 
 ## may be able to set csr programically
 echo '\n\rCheck csr-active-config:'
@@ -55,7 +71,7 @@ echo "\r\nDisabling Library Validation"
 defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
 
 echo "\r\nLoading Hax Do Not Seal into Memory - credit ASentientBot & BarryKN :)"
-hax="/🍟/HaxDoNotSeal.dylib"
+hax="/🍟/HaxDoNotSealNoAPFSROMCheck.dylib"
 echo $(pwd)$hax
 
 #Check if sudo is available or not

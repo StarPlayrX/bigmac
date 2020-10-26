@@ -23,7 +23,7 @@ https://starplayrx.com/downloads/postinstall_bigmac.mov
 https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
 https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 --
-Coming Soon: a full install moving and on How to turn off SIP and Authenticated-root.
+Coming Soon: a completed end-to-end full install video.
 --
 
 🍟 The preinstall too patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.

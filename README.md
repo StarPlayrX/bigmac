@@ -21,6 +21,7 @@ p.s. I was under the weather when these movies where made. I may re-record them 
 https://starplayrx.com/downloads/preinstall_bigmac.mov
 https://starplayrx.com/downloads/postinstall_bigmac.mov
 https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
+https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 --
 Coming Soon: a full install moving and on How to turn off SIP and Authenticated-root.
 --

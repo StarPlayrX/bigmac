@@ -108,20 +108,6 @@ chown -R 0:0 "$dest$ioATAFamily"
 chmod -R 755 "$dest$ioATAFamily"
 echo "\r"
 
-##echo "IO USB Host Family"
-##rm -Rf "$dest$ioUSBHostFamily"
-##ditto -v "$source$ioUSBHostFamily" "$dest$ioUSBHostFamily"
-##chown -R 0:0 "$dest$ioUSBHostFamily"
-##chmod -R 755 "$dest$ioUSBHostFamily"
-##echo "\r"
-
-##echo "IO USB Family"
-##rm -Rf "$dest$ioUSBFamily"
-##ditto -v "$source$ioUSBFamily" "$dest$ioUSBFamily"
-##chown -R 0:0 "$dest$ioUSBFamily"
-##chmod -R 755 "$dest$ioUSBFamily"
-##echo "\r"
-
 ##This also fixes USB Video crash bug in Quicktime Player.
 echo "Apple HD Audio"
 rm -Rf "$dest$appleHDA"
@@ -169,7 +155,8 @@ if [ $version != "10.16" ] && [ $version != "11.0" ] && [ $version != "11.1" ] &
    "$destVolume$sbin$kcditto"
 fi
 
-#Snapshot deletion code by StarPlayrX
+
+#Snapshot deletion code by StarPlayrX 2020
 snapshots=$(diskutil apfs listsnapshots "$destVolume" | grep +-- | sed 's/^.\{4\}//')
 
 for uuid in $snapshots

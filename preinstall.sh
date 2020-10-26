@@ -13,13 +13,11 @@ printf "[38;5;112m"
 
 printf "🍟 = Hax Do Not Seal with No APFS Check (BarryKN fork) \r\n"
 
-printf '\e[48;5;0m' #black background
+printf '\e[48;5;0m\r\n' #black background
 
 mount -uw /
 
 bootArgs=$(nvram -p | grep boot-args)
-
-echo ""
 
 bootArgs=$(echo $bootArgs | cut -d " " -f2-)
 
@@ -57,15 +55,11 @@ if [ $version == "10.16" ] || [ $version == "11.0" ] || [ $version == "11.1" ] |
  
     echo "\r\nCheck Root Status"
     csrutil authenticated-root status
-
 fi
 
-
-## may be able to set csr programically
+## this cannot be set programmically to Mac Pro's nvram
 echo '\n\rCheck csr-active-config:'
 nvram -p | grep csr-active-config
-
-#./'Install macOS Beta.app/Contents/MacOS/InstallAssistant' & echo '\r\n' &
 
 echo "\r\nDisabling Library Validation"
 defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
@@ -86,8 +80,7 @@ else
   echo ''
 fi
 
-#export $SUDO_USER=bigmac
+echo "This script was brought to you by StarPlayrX\r\nThe best and only third party Sirius XM Radio player,\r\nVersion 1.1.6 available now in the iOS AppStore!\r\n"
 
-echo "You can now open the Big Sur macOS Installer app."
-echo ''
+echo "You can now open the Big Sur macOS Installer app.\r\n"
 

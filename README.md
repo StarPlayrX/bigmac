@@ -30,7 +30,7 @@ Coming Soon: a full install moving and on How to turn off SIP and Authenticated-
 
 AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables 4k@60 with Nvidia and it works well enough, please let me know through https://StarPlayrX.com
 
-This patcher contains a preinstall.sh that allows users to run the installer to a HFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
+This patcher contains a preinstall.sh that allows users to run the installer to a JHFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
 
 Using the terminal, cd to the bigmac directory.
 

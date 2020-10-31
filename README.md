@@ -1,9 +1,8 @@
-
 Update: APFS direct installs should now work. (untested).
----
+-
 
 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
----
+-
 
 For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 
 
@@ -65,10 +64,9 @@ usage
 Future plans
 Patched WiFi option for other Broadcom cards.
 
----
 🥨 MacEleven. Unsealed, APFS snapshot free installs on Supported Intel Macs 01.21.21
----
----
+-
+
 From a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
 
 You will want to run

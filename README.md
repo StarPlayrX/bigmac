@@ -1,4 +1,4 @@
---- Update: APFS direct installs should now work. (untested).
+## Update: APFS direct installs should now work. (untested).
 ---
 
 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.

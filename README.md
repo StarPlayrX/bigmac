@@ -1,8 +1,10 @@
 ---
 Update: APFS direct installs should now work. (untested).
 ---
+---
 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 ---
+
 For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 
 
 
@@ -24,8 +26,11 @@ https://starplayrx.com/downloads/postinstall_bigmac.mov
 https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
 https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 ---
+
+---
 🍟 Coming Soon: a complete end-to-end full install video.
 ---
+
 The preinstall patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.
 
 AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables 4k@60 with Nvidia and it works well enough, please let me know through https://StarPlayrX.com

@@ -1,3 +1,9 @@
+To those who may be having problems using BigMac, I understand your frustration. I am working hard to test the latest RC2 candidate from Apple and I'll let you know if we find any problems installing. 
+
+I recommend that your Mac can boot APFS drives natively using Dosdude1's AFPS ROM patcher. it is included the 😎 folder. It only needs to ran once, but you must follow the instructions that comes with it in its GUI precisely. It does require some patience.
+
+Thank you and looking forward to assising you further.
+
 
 ## Update: APFS direct installs should now work. (untested).
 ## 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.

@@ -3,7 +3,7 @@ To those who may be having problems using BigMac, I understand your frustration.
 I am looking forward to assisting you further and thanks for using BigMac.
 
 
-## Update: APFS direct installs currently do not work. There is a secondary check that needs to be Bypassed. Installing from OC may help.
+## Update: Currently only clean installs to a JHFS+ disk is supported. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Installing from Open Core may as a workaround until it's by passed.
 
 ## 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 

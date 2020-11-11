@@ -2,7 +2,7 @@ To those who may be having problems using BigMac, I understand your frustration.
 
 I recommend that your Mac can boot APFS drives natively using Dosdude1's AFPS ROM patcher. it is included the 😎 folder. It only needs to ran once, but you must follow the instructions that comes with it in its GUI precisely. It does require some patience.
 
-Thank you and looking forward to assising you further.
+I am looking forward to assisting you further and thanks for using BigMac.
 
 
 ## Update: APFS direct installs should now work. (untested).

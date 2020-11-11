@@ -1,4 +1,4 @@
-To those who may be having problems using BigMac, I understand your frustration. A new install system does have a learning curve and Big Sur can present problems. I am working hard to test the latest RC2 candidate from Apple and I'll let you know if we find any problems installing and will offer any tips that I have.
+To those who may be having problems using BigMac, I understand your frustration. A new install system does have a learning curve and Big Sur can present problems. I am working hard to test the latest RC2 candidate from  and I'll let you know if we find any problems installing and will offer any tips that I have.
 
 I am looking forward to assisting you further and thanks for using BigMac.
 

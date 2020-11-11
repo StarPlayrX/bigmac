@@ -1,4 +1,4 @@
-To those who may be having problems using BigMac, I understand your frustration. I am working hard to test the latest RC2 candidate from Apple and I'll let you know if we find any problems installing. 
+To those who may be having problems using BigMac, I understand your frustration. A new install system does have a learning curve and Big Sur can present problems. I am working hard to test the latest RC2 candidate from Apple and I'll let you know if we find any problems installing and will offer any tips that I have.
 
 I recommend that your Mac can boot APFS drives natively using Dosdude1's AFPS ROM patcher. it is included the 😎 folder. It only needs to ran once, but you must follow the instructions that comes with it in its GUI precisely. It does require some patience.
 

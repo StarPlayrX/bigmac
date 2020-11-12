@@ -75,7 +75,7 @@ You will want to run
 
 `csrutil disable`
 
-and if possible
+below may not be needed as it can boot off an unsigned apfs snapshot
 
 `csrutil authenticated-root disable`
 

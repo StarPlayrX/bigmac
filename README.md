@@ -4,7 +4,7 @@ I am looking forward to assisting you further and thanks for using BigMac.
 
 Highly recommended a flashed video card for this installation especially if you have a Mac Pro 3,1 (2008). You can get Nvidia GTX 680's 2GB cards cheap off eBay and flash them yourself.
 
-### Clean install working with 11.0.1 RC2. (it will booted at least three times. If you have a 3,1. let this for maybe 5 times because stopping it. On 3,1 it will reboot for Radeon or Telemetry. Stop it after 5+ times and reboot back to your old system.
+### Clean install working with 11.0.1 RC2. (it will booted at least three times. If you have a 3,1. let this for maybe 5 times before stopping it. On 3,1 it will reboot for Radeon Video or Telemetry. Stop it after 5+ times and reboot back to your old system and apply the post install.
 
 Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed with BigMac preinstall script avoids the sealant.
 

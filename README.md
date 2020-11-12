@@ -6,7 +6,7 @@ Highly recommended a flashed video card for this installation especially if you 
 
 ### Clean install working with 11.0.1 RC2. (it will booted at least three times. If you have a 3,1. let this for maybe 5 times before stopping it. On 3,1 it will reboot for Radeon Video or Telemetry. Stop it after 5+ times and reboot back to your old system and apply the post install.
 
-Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed with BigMac preinstall script avoids the sealant.
+Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed. BigMac's preinstall script avoids the disk from getting sealed thanks for ASentientBot and BarryKN.
 
 ## Update: Currently only clean installs to a JHFS+ disk is supported; it gets reformatted to APFS during the install. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Apple's Migration tool can be used to migrate data from another disk, or use a separate drive for your data. 
 

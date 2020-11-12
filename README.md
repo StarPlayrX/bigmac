@@ -52,6 +52,10 @@ Patience, it can take awhile sometimes to open the app after the Preinstall scri
 PostInstall patches your installation.
 The post install for Mac Pro 3,1 fixes AppleHDA Audio, CD/DVD access, and Telemetry that is SSE3 compatible. If you have upgraded your WiFi and Bluetooth to 802.11ac combo card, your WiFi and BT4 should work out of the box. USB2, USB3, and USBC all work out of the box on Mac Pro with Big Sur. If you would like something added, you can contact me through https://StarPlayrX.com
 
+If the post install cannot remove the APFS snapshot, the current work around is to clone it using ASR. Snapshots always seem to take presdence. Leaving authenticated-root on may help with this. I'll be doing a install with it left and and see if its easier for the post install to remove the snapshot.
+
+`sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
+
 Known USB 2.0 Issue:
 USB 2.0 Keyboard, Mouse or Trackpad need to be plugged in prior to booting. After Big Sur is running and you attempt to unplug them and re-plug them in, those devices will fail to work. This seems to be something that  broke. If you have a USB 3.0 PCIe card, your USB 2.0 devices the devices will be hot pluggable. A USB 3.0 Hub may work as well.
 

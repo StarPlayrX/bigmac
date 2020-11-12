@@ -2,6 +2,8 @@ To those who may be having problems using BigMac, I understand your frustration.
 
 I am looking forward to assisting you further and thanks for using BigMac.
 
+Clean install working with 11.0.1 RC2.
+Recommend leaving authenticated-root on to try to avoid booting off the apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed with BigMac preinstall script avoids the sealant.
 
 ## Update: Currently only clean installs to a JHFS+ disk is supported. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Installing from Open Core may as a workaround until proper solution is found.
 

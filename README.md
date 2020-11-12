@@ -45,7 +45,7 @@ usage
 
 `sudo ./preinstall.sh`
 
-## Follow the directions then open the Big Sur Mac OS Installer app
+## Follow the directions then open the Big Sur Mac OS Installer app (Patience, it can take awhile sometimes to open the app after the Preinstall scripts runs).
 
 
 PostInstall patches your installation.

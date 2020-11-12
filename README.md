@@ -5,7 +5,7 @@ I am looking forward to assisting you further and thanks for using BigMac.
 Clean install working with 11.0.1 RC2.
 Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed with BigMac preinstall script avoids the sealant.
 
-## Update: Currently only clean installs to a JHFS+ disk is supported. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Installing from Open Core may as a workaround until proper solution is found.
+## Update: Currently only clean installs to a JHFS+ disk is supported. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Apple's Migration tool can be used to migrate data from another disk, or use a separate drive for your data. 
 
 ## 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 

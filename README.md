@@ -2,7 +2,10 @@ To those who may be having problems using BigMac, I understand your frustration.
 
 I am looking forward to assisting you further and thanks for using BigMac.
 
-### Clean install working with 11.0.1 RC2.
+Highly recommended a flashed video card for this installation especially if you have a 3,1. You can get Nvidia GTX 680's 2GB cards cheap off eBay and flash them yourself.
+
+### Clean install working with 11.0.1 RC2. (it will booted at least three times. If you have a 3,1. let this for maybe 5 times because stopping it. On 3,1 it will reboot for Radeon or Telemetry. Stop it after 5+ times and reboot back to your old system.
+
 Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed with BigMac preinstall script avoids the sealant.
 
 ## Update: Currently only clean installs to a JHFS+ disk is supported; it gets reformatted to APFS during the install. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Apple's Migration tool can be used to migrate data from another disk, or use a separate drive for your data. 

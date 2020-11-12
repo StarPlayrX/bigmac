@@ -13,7 +13,7 @@ For this patch tool to work, you need to be able to boot APFS volumes directly. 
 
 Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.
 
-Officially supporting Big Sur Developer betas 1, 2, 6, 9 and 10 [Complete installers only]. There were some in-between installers than did not support Penryn CPUs.
+Officially supporting Big Sur Developer betas 1, 2, 6, 9, 10, 11.0.1 RC2 [Complete installers only].
 
 Catalina:
 If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html.

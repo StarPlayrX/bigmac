@@ -74,7 +74,7 @@ usage
 Future plans
 Patched WiFi option for other Broadcom cards.
 
-🥨 MacEleven. Unsealed, APFS snapshot free installs on Supported Intel Macs 01.21.21
+🥨 Create a Big Sur recovery disk to a USB thumb drive or an external USB HD/SSD.
 -
 
 From a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]

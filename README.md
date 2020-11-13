@@ -1,5 +1,5 @@
 
-Currently only Clean installs are supported to a Mac OS Extended (Journaled) disk.
+Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 ### For a boot screen, I recommend you have a flashed Nvidia or AMD card that supports Metal. If you do not have one, they are easy to find on eBay.
 

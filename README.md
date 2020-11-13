@@ -3,12 +3,13 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
-2. MacOS 11.0.1 Big Sur full installer app (RC2 or public release and later)
-3. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
-4. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
-5. Your GPU must support Metal. AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Nvidia cards with metal will have 4k @ 30 Hz only. If you have 4k on Nvidia use a 30 Hz port to get a boot screen.
-6. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
-7. A SSD or Hard drive with 60GB or more. 256GB Recommended.
+2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac!)
+3. MacOS 11.0.1 Big Sur full installer app (RC2 or public release and later)
+4. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
+5. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
+6. Your GPU must support Metal. AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Nvidia cards with metal will have 4k @ 30 Hz only. If you have 4k on Nvidia use a 30 Hz port to get a boot screen.
+7. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
+8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 ## Pre Install
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
@@ -55,7 +56,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 ### aka SIP from the Recovery disk
 1. Open Terminal in the booted recovery disk
 2. `csrutil disable`
-3. `csrutil authenticated-root disable`
+3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)
 4. Use Start up disk (top left to select your installation)
 
 

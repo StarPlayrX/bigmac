@@ -1,8 +1,11 @@
 
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
-### For a boot screen, I recommend you have a flashed Nvidia or AMD card that supports Metal. If you do not have one, they are easy to find on eBay.
-
+Requirements: 
+1. Mac Pro 2008 - 2012
+2. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
+3. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
+4. Your GPU must support Metal. AMD Cards like the RX 580 8 GB Support 4k @ 60 Hz on Big Sur. Nvidia cards with metal will have 4k @ 30 Hz.
 
 ## Pre Install
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)

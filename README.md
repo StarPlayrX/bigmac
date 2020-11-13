@@ -1,5 +1,5 @@
 
-🍔 BigMac Mac Pro pre install and post install patcher by Todd Bruss 
+🍔 BigMac Mac Pro pre install and post install patcher by StarPlayrX 
 
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 

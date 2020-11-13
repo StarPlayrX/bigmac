@@ -1,104 +1,79 @@
-To those who may be having problems using BigMac, I understand your frustration. A new install system does have a learning curve and Big Sur can present problems. I am working hard to test the latest RC2 candidate from  and I'll let you know if we find any problems installing and will offer any tips that I have.
 
-I am looking forward to assisting you further and thanks for using BigMac.
+### Currently only Clean installs are supported to a Mac OS Extended (Journaled) disk.
 
-Highly recommended a flashed video card for this installation especially if you have a Mac Pro 3,1 (2008). You can get Nvidia GTX 680's 2GB cards cheap off eBay and flash them yourself.
-
-### Clean install working with 11.0.1 RC2. (it will booted at least three times. If you have a 3,1. let this for maybe 5 times before stopping it. On 3,1 it will reboot for Radeon Video or Telemetry. Stop it after 5+ times and reboot back to your old system and apply the post install.
-
-Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed. BigMac's preinstall script avoids the disk from getting sealed thanks for ASentientBot and BarryKN.
-
-## Update: Currently only clean installs to a JHFS+ disk is supported; it gets reformatted to APFS during the install. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Apple's Migration tool can be used to migrate data from another disk, or use a separate drive for your data. 
-
-## 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
-For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 
+### For a boot screen, I recommend you have a flashed Nvidia or AMD card that supports Metal. If you do not have one, they are easy to find on eBay.
 
 
-Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.
-
-Officially supporting Big Sur Developer betas 1, 2, 6, 9, 10, 11.0.1 RC2 [Complete installers only].
-
-Catalina:
-If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html.
-
-Disclaimer:
-Before running any of these shell scripts, please back up your important data. This software is provided as is and without warranty.
-
-p.s. I was under the weather when these movies where made. I may re-record them when I get a new Mic.
-
-## https://starplayrx.com/downloads/preinstall_bigmac.mov
-## https://starplayrx.com/downloads/postinstall_bigmac.mov
-## https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
-## https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
-
-## 🍟 Coming Soon: a complete end-to-end full install video.
-
-The preinstall patch tool invokes HaxDoNotSeal.dylib to enable the Big Sur installer to work. It also turns off the sealed system volume from occuring.
-
-AMD and NVidia Metal cards are fully supported. Personally AMD does better at 4k@60 using Big Sur. Nvidia will support 4K@30 only. If you have found a hack that enables 4k@60 with Nvidia and it works well enough, please let me know through https://StarPlayrX.com
-
-This patcher contains a preinstall.sh that allows users to run the installer to a JHFS+ disk. When finished, the macOS Installer will format it as an APFS volume.
-
-Using the terminal, cd to the bigmac directory.
-
-usage
-
-`sudo ./preinstall.sh`
-
-## Follow the directions then open the Big Sur Mac OS Installer app.
-Patience, it can take awhile sometimes to open the app after the Preinstall scripts runs.
+## Pre-Install
+1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
+2. Open Terminal.app in Utilties 
+3. `cd bigmac.master`
+4. `sudo ./preinstall.sh`
+5.  set boot-args to `-no_compat_check amfi_get_out_of_my_way=1 -v` or  `-no_compat_check -v`
+6. open the macOS Big Sur installer.app
+7. select your newly JHFS+ disk.
+8. Big Sur 11.0.1 RC2 and later will reboot about 3 times
+9. once you see unsupported CPU you can kill it on the 4th boot.
 
 
-PostInstall patches your installation.
-The post install for Mac Pro 3,1 fixes AppleHDA Audio, CD/DVD access, and Telemetry that is SSE3 compatible. If you have upgraded your WiFi and Bluetooth to 802.11ac combo card, your WiFi and BT4 should work out of the box. USB2, USB3, and USBC all work out of the box on Mac Pro with Big Sur. If you would like something added, you can contact me through https://StarPlayrX.com
-
-If the post install cannot remove the APFS snapshot, the current work around is to clone it using ASR. Snapshots always seem to take presdence. Leaving authenticated-root on may help with this. I'll be doing a install with it left and and see if its easier for the post install to remove the snapshot.
-
-`sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
-
-Known USB 2.0 Issue:
-USB 2.0 Keyboard, Mouse or Trackpad need to be plugged in prior to booting. After Big Sur is running and you attempt to unplug them and re-plug them in, those devices will fail to work. This seems to be something that  broke. If you have a USB 3.0 PCIe card, your USB 2.0 devices the devices will be hot pluggable. A USB 3.0 Hub may work as well.
-
-Known USB 1.0 Issue:
-This issue I found with all my MAME keyboard, mouse, joysticks, arcade buttons spinners and trackballs. Under Big Sur they will power on but will be inoperarable under Big Sur. This again is something I believe  broke. It doesn't matter if they were plugged in to USB 3.0 PCIe card either. MAME / Arcade input devices are currently problem on Big Sur. Workaround: I highly recommend Mojave for SDL MAME.
-
-This patcher contains a postinstall shell script.
-
-Using the terminal, cd to the bigmac directory.
-
-usage
-
-`sudo ./postinstall.sh`
+## Post Install
+1. Boot back into your other system using the option key.
+2. `cd bigmac.master`
+3. `sudo ./postinstall.sh`
+4. from Finder, drag your macOS volume to the Terminal's prompt
+5. Press Enter.
+6. For Resources press Enter.
+7. Wait
+8. Press q and Enter to reboot.
 
 
-Future plans
-Patched WiFi option for other Broadcom cards.
+## How to create an external USB Recovery disk
+### From Big Sur Recovery volumes only.
+1. `diskutil list 'Mac Volume Name'`
+2. Copy disk#s#' let's say it is disk2s3 for this exercise.
+3. `diskutil mount disk2s3`
+4. `open /Volumes/Recovery`
+5. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this will vary and be unique)
+6. `sudo asr -s /Volumes/Recovery/13540289-83B3-3105-8EC7-B05C342DB382/BaseSystem.dmg -t /Volumes/externalUSB --er --nov`
+7. disk must be around 3GB or higher.
 
-🥨 Create a Big Sur recovery disk to a USB thumb drive or an external USB HD/SSD.
--
 
-From a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
+## How to boot Ext USB Recovery disk
+1. Boot and hold down option Key
+2. If only 1 external USB is connectioned it will say `EFI Boot` with a Yellow USB disk icon.
+3. select it. 
+4. at black screen wait until it boots (pen drives are slow, recommend a small USB SSD or External Hard Drive)
 
-You will want to run
 
-`csrutil disable`
+## How to turn off System Integrity Protection aka SIP from the Recovery disk
+1. Open Terminal in the booted recovery disk
+2. `csrutil disable`
+3. `csrutil authenticated-root disable`
+4. Use Start up disk (top left to select your installation)
 
-below may not be needed as it can boot off an unsigned apfs snapshot
 
-`csrutil authenticated-root disable`
+## Big Mac install scripts can run from recovery a disk.
+1. Use a second USB drive and put Big Mac on it
+2. cd /Volumes
+3. ls -a
+4. `cd bigmac.master`
+5. Follow Pre-Install or Post-Install track.
 
-You can do this by mounting a Big Sur recovery volume, clone the DMG using ASR to an external USB drive:
 
-`diskutil list`
+## Videos
+1. https://starplayrx.com/downloads/preinstall_bigmac.mov
+2. https://starplayrx.com/downloads/postinstall_bigmac.mov
+3. https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
+4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
-get the disk# (from the Big Sur installation).
 
-`sudo diskutil mountDisk disk#`
+## How to clone your system 
+### This can also help remove locked apfs snapshots easily.
+1. `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
 
-open terminal and type `open /Volumes` Look for 'Recovery' mount. Inside a UUID folder, it will have the DMG that you are looking for to create a recovery USB disk. 
 
-`sudo asr -s /path/to/dmg -t /path/to/external/usb/drive --erase --noverify`
+Updated for macOS 11.0.1
+Mac Pros 2008, 2009, 2010, 2012
 
-Then reboot using the option key and select the yellow USB drive labelled `EFI`
-
-use `cmd-v` when selecting if you want to see that it is loading.
+Big Mac Copyright 2020 by Todd Bruss
+See Credits file.

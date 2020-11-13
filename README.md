@@ -37,7 +37,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 ## How to create an external USB Recovery disk
 ### From Big Sur Recovery volumes only
 1. `diskutil list 'Mac Volume Name'`
-2. Copy disk#s# Let's say it is disk2s3 for this exercise
+2. copy `disk#s#` (let's say it is `disk2s3` for this exercise)
 3. `diskutil mount disk2s3`
 4. `open /Volumes/Recovery`
 5. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this will vary and be unique)

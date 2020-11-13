@@ -1,5 +1,5 @@
 
-🍔 bigmac Mac Pro patcher by StarPlayrX 
+🍔 bigmac Mac Pro patcher 
 
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 

@@ -28,7 +28,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 
 
 ## How to create an external USB Recovery disk
-### From Big Sur Recovery volumes only.
+### From Big Sur Recovery volumes only
 1. `diskutil list 'Mac Volume Name'`
 2. Copy disk#s#' let's say it is disk2s3 for this exercise.
 3. `diskutil mount disk2s3`
@@ -45,14 +45,15 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 4. at black screen wait until it boots (pen drives are slow, recommend a small USB SSD or External Hard Drive)
 
 
-## How to turn off System Integrity Protection aka SIP from the Recovery disk
+## How to turn off System Integrity Protection
+### aka SIP from the Recovery disk
 1. Open Terminal in the booted recovery disk
 2. `csrutil disable`
 3. `csrutil authenticated-root disable`
 4. Use Start up disk (top left to select your installation)
 
 
-## Big Mac install scripts can run from recovery a disk.
+## Big Mac install scripts can run from recovery a disk
 1. Use a second USB drive and put Big Mac on it
 2. cd /Volumes
 3. ls -a

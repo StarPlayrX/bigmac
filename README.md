@@ -50,7 +50,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 ## How to boot an external USB Recovery disk
 1. Boot and hold down option Key
 2. If only 1 external USB is connectioned it will say `EFI Boot` with a Yellow USB disk icon.
-3. select it. 
+3. select it
 4. at black screen wait until it boots (pen drives are slow, recommend a small USB SSD or External Hard Drive)
 
 

@@ -42,7 +42,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 2. copy `disk#s#` (let's say it is `disk2s3` for this exercise)
 3. `diskutil mount disk2s3`
 4. `open /Volumes/Recovery`
-5. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this will vary and be unique)
+5. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this id is unique)
 6. `sudo asr -s /Drag/BaseSystem.dmg/Here -t /Volumes/externalUSB_name --er --nov`
 7. disk must be around 3GB or higher.
 

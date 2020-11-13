@@ -20,7 +20,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 4. `sudo ./preinstall.sh`
 5.  set boot-args to `-no_compat_check amfi_get_out_of_my_way=1 -v` or  `-no_compat_check -v`
 6. open the macOS Big Sur installer.app
-7. select your newly erase JHFS+ disk.
+7. select your newly erased JHFS+ disk.
 8. Big Sur 11.0.1 RC2 and later will reboot about 3 times
 9. once you see unsupported CPU you can kill it on the 4th boot.
 

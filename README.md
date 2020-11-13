@@ -1,5 +1,5 @@
 
-🍔 BigMac Mac Pro patch tool by StarPlayrX 
+🍔 BigMac Mac Pro patcher by StarPlayrX 
 
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 

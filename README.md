@@ -2,8 +2,13 @@ To those who may be having problems using BigMac, I understand your frustration.
 
 I am looking forward to assisting you further and thanks for using BigMac.
 
+Highly recommended a flashed video card for this installation especially if you have a Mac Pro 3,1 (2008). You can get Nvidia GTX 680's 2GB cards cheap off eBay and flash them yourself.
 
-## Update: Currently only clean installs to a JHFS+ disk is supported. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Installing from Open Core may as a workaround until proper solution is found.
+### Clean install working with 11.0.1 RC2. (it will booted at least three times. If you have a 3,1. let this for maybe 5 times before stopping it. On 3,1 it will reboot for Radeon Video or Telemetry. Stop it after 5+ times and reboot back to your old system and apply the post install.
+
+Recommend leaving authenticated-root on to try to avoid booting off the unsigned apfs snapshot. Which tends to get locked if it boots from it. It is possible to remove the snapshot by cloning it using ASR provided the disk is also not sealed. BigMac's preinstall script avoids the disk from getting sealed thanks for ASentientBot and BarryKN.
+
+## Update: Currently only clean installs to a JHFS+ disk is supported; it gets reformatted to APFS during the install. APFS direct installs currently do not work. There is a secondary check that needs to be bypassed. Apple's Migration tool can be used to migrate data from another disk, or use a separate drive for your data. 
 
 ## 🍔 Big Mac -> The macOS 11 Big Sur patch tool designed For Mac Pro 2008, 2009, 2010, 2012. Models 3,1 4,1 and 5,1.
 For this patch tool to work, you need to be able to boot APFS volumes directly. For this I highly recommend Dosdude1's APFS ROM Patcher. You only need to run this patcher once but you will need follow the patcher's instruction's precisely. The Dosdude1's APFS ROM Patcher is inside this folder 😎 (smiling face with sunglasses): 
@@ -11,7 +16,7 @@ For this patch tool to work, you need to be able to boot APFS volumes directly. 
 
 Currently this patch tool does not install Apple's WiFi drivers. I have you a Broadcom BCM43xx 1.0 device. Native AirPort drivers should work. This card also has Bluetooth 4 on it. This tool also does not install any Video drivers except for MouSSE which enables AMD Radeon drivers on Mac Pro 3,1. Native AMD and Nvidia drivers on Big Sur support Metal out of the box.
 
-Officially supporting Big Sur Developer betas 1, 2, 6, 9 and 10 [Complete installers only]. There were some in-between installers than did not support Penryn CPUs.
+Officially supporting Big Sur Developer betas 1, 2, 6, 9, 10, 11.0.1 RC2 [Complete installers only].
 
 Catalina:
 If you have not upgraded your Mac Pro yet to Catalina, I recommend that you do that first. You will gain some knowledge of setting up an unsupported Mac and some this readme will make sense. For my Cat-Woman PatchTool v1.0.0 see page https://starplayrx.com/#macpro. Do not run my Cat-Woman patcher on Big Sur, it will cause an issue the legacy HFS.kext. For Dosdude1's Catalina page see http://dosdude1.com/software.html.
@@ -40,11 +45,16 @@ usage
 
 `sudo ./preinstall.sh`
 
-## Follow the directions then open the Big Sur Mac OS Installer app
+## Follow the directions then open the Big Sur Mac OS Installer app.
+Patience, it can take awhile sometimes to open the app after the Preinstall scripts runs.
 
 
 PostInstall patches your installation.
 The post install for Mac Pro 3,1 fixes AppleHDA Audio, CD/DVD access, and Telemetry that is SSE3 compatible. If you have upgraded your WiFi and Bluetooth to 802.11ac combo card, your WiFi and BT4 should work out of the box. USB2, USB3, and USBC all work out of the box on Mac Pro with Big Sur. If you would like something added, you can contact me through https://StarPlayrX.com
+
+If the post install cannot remove the APFS snapshot, the current work around is to clone it using ASR. Snapshots always seem to take presdence. Leaving authenticated-root on may help with this. I'll be doing a install with it left and and see if its easier for the post install to remove the snapshot.
+
+`sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
 
 Known USB 2.0 Issue:
 USB 2.0 Keyboard, Mouse or Trackpad need to be plugged in prior to booting. After Big Sur is running and you attempt to unplug them and re-plug them in, those devices will fail to work. This seems to be something that  broke. If you have a USB 3.0 PCIe card, your USB 2.0 devices the devices will be hot pluggable. A USB 3.0 Hub may work as well.
@@ -64,7 +74,7 @@ usage
 Future plans
 Patched WiFi option for other Broadcom cards.
 
-🥨 MacEleven. Unsealed, APFS snapshot free installs on Supported Intel Macs 01.21.21
+🥨 Create a Big Sur recovery disk to a USB thumb drive or an external USB HD/SSD.
 -
 
 From a Big Sur recovery disk [ This hack only works with Big Sur Recovery volumes. ]
@@ -73,7 +83,7 @@ You will want to run
 
 `csrutil disable`
 
-and if possible
+below may not be needed as it can boot off an unsigned apfs snapshot
 
 `csrutil authenticated-root disable`
 

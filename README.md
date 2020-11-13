@@ -7,6 +7,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 3. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
 4. Your GPU must support Metal. AMD Cards like the RX 580 8 GB Support 4k @ 60 Hz on Big Sur. Nvidia cards with metal will have 4k @ 30 Hz.
 5. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
+6. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 ## Pre Install
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)

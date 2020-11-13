@@ -4,7 +4,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 ### For a boot screen, I recommend you have a flashed Nvidia or AMD card that supports Metal. If you do not have one, they are easy to find on eBay.
 
 
-## Pre-Install
+## Pre Install
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
 2. Open Terminal.app in Utilties 
 3. `cd bigmac.master`

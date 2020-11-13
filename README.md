@@ -69,7 +69,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 
 
 ## How to clone your system 
-### This can also help remove locked apfs snapshots easily.
+### This can also help remove locked apfs snapshots easily
 1. `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
 
 

@@ -22,7 +22,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 6. open the macOS Big Sur installer.app
 7. select your newly erased JHFS+ disk.
 8. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
-9. on the 4th or 5th reboot, once you see unsupported CPU, hold down the power button. (this repeats endlessly on Mac Pro 3,1)
+9. on the 4th or 5th reboot, once you see unsupported CPU, hold down the power button. sometimes holding down the option-key works. (this will repeat endlessly on Mac Pro 3,1)
 
 
 ## Post Install

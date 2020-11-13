@@ -47,7 +47,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 7. disk must be around 3GB or higher.
 
 
-## How to boot Ext USB Recovery disk
+## How to boot an external USB Recovery disk
 1. Boot and hold down option Key
 2. If only 1 external USB is connectioned it will say `EFI Boot` with a Yellow USB disk icon.
 3. select it. 

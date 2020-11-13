@@ -1,4 +1,6 @@
 
+🍔 BigMac Mac Pro pre install and post install patcher by Todd Bruss 
+
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 ## Requirements 
@@ -83,4 +85,4 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 
 Updated for macOS 11.0.1, Mac Pros 2008, 2009, 2010, 2012, Big Mac Copyright 2020 by Todd Bruss, See Credits file
 
-Special thanks to the Unsupported Macs Team!
+🍟 Special thanks to the Unsupported Macs Team!

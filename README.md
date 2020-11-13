@@ -62,12 +62,13 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 4. Use Start up disk (top left to select your installation)
 
 
-## Big Mac install scripts can run from recovery a disk
-1. Use a second USB drive and put Big Mac on it
-2. cd /Volumes
-3. ls -a
-4. `cd bigmac.master`
-5. Follow Pre-Install or Post-Install track.
+## Big Mac install scripts can run from a recovery or installer disk
+1. Use a second USB drive and put Big Mac on it.
+2. Omit sudo
+3. cd /Volumes
+4. ls -a
+5. `cd bigmac.master`
+6. Follow Pre-Install or Post-Install track.
 
 
 ## Videos

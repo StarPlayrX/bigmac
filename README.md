@@ -3,7 +3,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
-2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac!)
+2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)
 3. MacOS 11.0.1 Big Sur full installer app (RC2 or public release and later)
 4. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
 5. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.

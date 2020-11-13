@@ -7,7 +7,7 @@
 printf '\e[48;5;0m\r\n' #black background
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
-printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v0.0.12\r\n"
+printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v11.0.1\r\n"
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
 
@@ -124,8 +124,8 @@ echo "Software Version Check"
 version=$($sw '-productVersion')
 echo $version
 echo ""
-
-if [ $version != "10.16" ] && [ $version != "11.0" ] && [ $version != "11.1" ] && [ $version != "11.0.1" ]
+##To Do: Move 10.16 and 11.0, maybe read the first 2 characters
+if [ $version != "10.16" ] && [ $version != "11.0" ] && [ $version != "11.0.1" ] && [ $version != "11.0.2" ] && [ $version != "11.0.3" ] && [ $version != "11.0.4" ] && [ $version != "11.0.5" ] && [ $version != "11.0.6" ] && [ $version != "11.0.7" ] && [ $version != "11.0.8" ] && [ $version != "11.0.9" ]
  then
    ## Use is not Catalina
    if [ "$destVolume" == "/" ]
@@ -159,6 +159,8 @@ fi
 #Snapshot deletion code by StarPlayrX 2020
 snapshots=$(diskutil apfs listsnapshots "$destVolume" | grep +-- | sed 's/^.\{4\}//')
 
+echo '\r\nChecking snapshots.'
+
 for uuid in $snapshots
 do
     printf '📸 Attempting to delete snapshot => '
@@ -168,6 +170,9 @@ do
     diskutil apfs deletesnapshot "$destVolume" -uuid $uuid
 done
 
+echo '\r\nCreating a bootable blessed snapshot. (tip: clone via asr to remove)'
+
+sudo bless --folder "$destVolume/System/Library/CoreServices" --bootefi --create-snapshot
 
 echo "\r\nThis script was brought to you by StarPlayrX\r\nThe best and only third party Sirius XM Radio player,\r\nVersion 1.1.6 available now in the iOS AppStore!\r\n"
 

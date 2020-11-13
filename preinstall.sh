@@ -7,7 +7,7 @@
 printf '\e[48;5;0m\r\n' #black background
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
-printf "[38;5;112mStarPlayrX -=> Big Mac Pre-Installation Tool for Mac Pros v0.0.12\r\n"
+printf "[38;5;112mStarPlayrX -=> Big Mac Pre-Installation Tool for Mac Pros v11.0.1\r\n"
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
 

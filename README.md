@@ -1,7 +1,11 @@
 
 🍔 bigmac Mac Pro patcher 
 
-Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
+### When running from an OS
+Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
+
+### When running from `Install macOS BigSur` unpatched media
+APFS installs and upgrades are even supported. I just upgraded beta10 to 11.0.1 (20B29) public release!
 
 ## Update createinstallmedia is now preferred
 ### APFS and upgrade old BS betas are now supported!

@@ -13,7 +13,7 @@ Currently only clean installs are supported to an erased Mac OS Extended (Journa
 6. boot to the `Install macOS Big Sur`
 7. run the `./preinstall.sh` from Terminal
 8. open the installer
-9. let it run all the way through
+9. let it run all the way through (takes like 45-60 minutes for the install to fully complete)
 10. when you start getting KP's on a 3,1
 11. reboot to `Install macOS Big Sur`
 12. run the `./postinstall.sh` in terminal

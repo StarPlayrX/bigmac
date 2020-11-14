@@ -3,6 +3,22 @@
 
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
+## Update (createinstallmedia is now preferred)
+a. If you want to upgrade old APFS install
+b. or you do not have an older system you cannot upgrade
+c. use the `createinstallmedia` method
+d. APFS installs are fully supported from an `Install macOS Big Sur` external USB disk
+e. create your install media
+f. boot to the `Install macOS Big Sur`
+f. run the preinstall.sh from Terminal
+g. open the installer
+h. let it run all the way through
+i. when you start getting KP's on a 3,1
+j. reboot to `Install macOS Big Sur`
+k. run the postinstall.sh in terminal
+l. select the startup disk
+m. reboot
+
 ## Requirements 
 1. Mac Pro 2008 - 2012
 2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)

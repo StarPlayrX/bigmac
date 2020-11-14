@@ -3,21 +3,22 @@
 
 Currently only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
-## Update (createinstallmedia is now preferred)
-a. If you want to upgrade old APFS install
-b. or you do not have an older system you cannot upgrade
-c. use the `createinstallmedia` method
-d. APFS installs are fully supported from an `Install macOS Big Sur` external USB disk
-e. create your install media
-f. boot to the `Install macOS Big Sur`
-f. run the preinstall.sh from Terminal
-g. open the installer
-h. let it run all the way through
-i. when you start getting KP's on a 3,1
-j. reboot to `Install macOS Big Sur`
-k. run the postinstall.sh in terminal
-l. select the startup disk
-m. reboot
+## Update createinstallmedia is now preferred
+### APFS and upgrade old BS betas are now supported!
+1. If you want to upgrade old APFS install
+2. or you do not have an older system you cannot upgrade
+3. use the `createinstallmedia` method
+4. APFS installs are fully supported from an `Install macOS Big Sur` external USB disk
+5. create your install media
+6. boot to the `Install macOS Big Sur`
+7. run the `./preinstall.sh` from Terminal
+8. open the installer
+9. let it run all the way through
+10. when you start getting KP's on a 3,1
+11. reboot to `Install macOS Big Sur`
+12. run the `./postinstall.sh` in terminal
+13. select the startup disk
+14. reboot
 
 ## Requirements 
 1. Mac Pro 2008 - 2012

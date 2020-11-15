@@ -6,6 +6,8 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 ### When running from an OS
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
+### When running from an Install macOS Bi Sur USB Disk
+APFS Clean installs are supported. You can even upgrade older versions of Big Sur!
 
 ## Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')
 1. In order to do this inside macOS, SIP must be disabled

@@ -75,7 +75,25 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 6. open the macOS Big Sur installer.app
 7. select your newly erased JHFS+ disk.
 8. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
-9. on the 4th or 5th reboot, once you see unsupported CPU, hold down the power button. sometimes holding down the option-key works. (this will repeat endlessly on Mac Pro 3,1)
+
+## Notes about Big Sur Installs
+1. The install goes through several steps to complete the install. -v boot arg helps monitor the progress.
+2. After about 45 - 60 minutes, the installer should be complete.
+
+## Special Mac Pro Early 2008 with Metal AMD Cards
+1. Big Sur's video drives are not compatible with the Penryn style CPU
+2. The Post Install script using MousSEE to emulate a couple instructions
+3. This allows AMD Radean cards that support Metal to be used on a MP3,1
+
+## Telemetry and Mac Pro 3,1
+1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU
+2. The post install script installs one that is compatible
+
+## Mac Pro 2008 Installation Notes
+1. In between installer tasks, Big Sur's install runs through 3 complete reboot cycles.
+2. If you see kernel panics, or fast reboots after the 5th reboot, you will need to kill the cycle by holding the power button down, or if possible hold down the Option-key see if you can get back to your boot screen.
+3. Then you can run the post install script from which method you ran the pre install script.
+4. The post install script patches your system and allows it to boot up.
 
 ## Pre Install Notes
 1. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur installer app/task, you will need to run the Preinstall script again. 

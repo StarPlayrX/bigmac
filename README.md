@@ -4,25 +4,51 @@
 ### When running from an OS
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
-### When running from `Install macOS BigSur` unpatched media
-APFS installs and upgrades are even supported. I just upgraded beta10 to 11.0.1 (20B29) public release!
 
-## Update createinstallmedia is now preferred
-### APFS and upgrade old BS betas are now supported!
-1. If you want to upgrade old APFS install
-2. or you do not have an older system you cannot upgrade
-3. use the `createinstallmedia` method
-4. APFS installs are fully supported from an `Install macOS Big Sur` external USB disk
-5. create your install media
-6. boot to the `Install macOS Big Sur`
-7. run the `./preinstall.sh` from Terminal
-8. open the installer
-9. let it run all the way through (takes like 45-60 minutes for the install to fully complete)
-10. when you start getting KP's on a 3,1
-11. reboot to `Install macOS Big Sur`
-12. run the `./postinstall.sh` in terminal
-13. select the startup disk
-14. reboot
+## Prequitiste (Terminal, set boot-args)
+1. set your boot arguments to at least `-no_compat_check`
+2. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`
+3. to set boot-args from a Recovery or Install disk : `nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
+4. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
+5. how to check your boot-argments `nvram -p | grep boot-args`
+6. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
+7. If you cannot set your boot-arguments, recommend creaitng a Catalina patch disk from `http://dosdude1.com/catalina/`
+8. With it you can set your boot-arguments very easily
+9. I may include an alternative method soon.
+
+
+## Update createinstallmedia is now preferred (APFS Supported!)
+1. Drag `Install macOS Big Sur.app` to the Desktop
+2. Open Terminal
+3. `cd ~/Desktop/Install\ macOS\ Big\ Sur.app/Contents/Resources`
+4. `sudo ./createinstallmedia -v /Volumes/externalUSB`
+5. type password
+6. Ready to Start.
+7. If you wish to continue type (Y) then press return: `y`
+8. Erasing disk: 0%... 10%... 20%... 30%... 100%
+9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%...
+10. When complete
+11. For convience Copy the `bigmac.master` folder to a separate thumb drive
+
+## Boot the  `Install macOS Big Sur` USB Drive
+1. Reboot boot using `option key` 
+2. At boot screen select `Install macOS Big Sur`  (It will be yellow if it is on an external drive)
+3. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`
+4. Wait for it the external media to boot up.
+5. From there open the terminal
+6. `cd /Volumes/pathToBigMacDisk/`
+7. `cd bigMaster.master`
+8. Omiting `sudo` follow the `Pre Install track in this guide`
+9. Quit the Terminal app
+10. Open the Big installer app. Here you can select previous installations of Big Sur betas and upgrade them!
+11. Complete the install
+12. Boot from the `Install mac OS Big Sir` disk again.
+13. Open Terminal 
+14. `cd /Volumes/pathToBigMacDisk/`
+15. `cd bigMaster.master`
+16. Omiting `sudo` follow the `Post Install track in this guide`
+19. Select the start up disk
+
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
@@ -33,6 +59,7 @@ APFS installs and upgrades are even supported. I just upgraded beta10 to 11.0.1 
 6. Your GPU must support Metal. AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Nvidia cards with metal will have 4k @ 30 Hz only. If you have 4k on Nvidia use a 30 Hz port to get a boot screen.
 7. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
 8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
+
 
 ## Pre Install
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)

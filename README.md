@@ -52,27 +52,31 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 4. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
 5. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.
 6. From there open the Terminal. It's under the Utilities menu.
-7. `cd /Volumes/pathToBigMacDisk/`
-8. `cd bigMaster.master`
-9. Omiting `sudo` follow the `Pre Install track in this guide`
-10. Quit the Terminal app
-11. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
-12. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
-13. Open Terminal 
-14. `cd /Volumes/pathToBigMacDisk/`
-15. `cd bigmac.master`
-16. Omiting `sudo` follow the `Post Install track in this guide`
-17. Select the start up disk
+7. `ls -a` to see where stuff is (great invention)
+8. `cd /Volumes/pathToBigMacDisk/`
+6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
+10. Omiting `sudo` follow the `Pre Install track in this guide`
+11. Quit the Terminal app
+12. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
+13. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
+14. Open Terminal 
+15. `cd /Volumes/pathToBigMacDisk/`
+16. `cd bigmac.master` (Do not omit cd'ing to this folder)
+17. Omiting `sudo` follow the `Post Install track in this guide`
+18. Select the start up disk
 
 ## Pre Install script (Works with All Macs)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
-2. Open Terminal.app in Utilties 
-3. `cd bigmac.master`
-4. `sudo ./preinstall.sh`
-5.  set boot-args to `-no_compat_check amfi_get_out_of_my_way=1 -v` or  `-no_compat_check -v`
-6. open the macOS Big Sur installer.app
-7. select your newly erased JHFS+ disk.
-8. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
+2. Open Terminal.app in Utilties
+3. `ls -a`
+4. `cd /Volumes'
+5. `cd whereYouHaveBigMac`
+6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
+7. `sudo ./preinstall.sh`
+8.  set boot-args to `-no_compat_check amfi_get_out_of_my_way=1 -v` or  `-no_compat_check -v`
+9. open the macOS Big Sur installer.app
+10. select your newly erased JHFS+ disk.
+11. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
 
 ## Notes about Big Sur Installs
 1. The install process is done in three stages each varying in time.
@@ -102,13 +106,15 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 
 ## Post Install script (Required for Mac Pro 3,1 Early 2008)
 1. Boot back into your other system using the option key.
-2. `cd bigmac.master`
-3. `sudo ./postinstall.sh`
-4. from Finder, drag your macOS volume to the Terminal's prompt
-5. Press Enter.
-6. For Resources press Enter.
-7. Wait
-8. Press q and Enter to reboot.
+3. `ls -a`
+4. `cd /Volumes'
+5. `cd whereYouHaveBigMac`
+6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
+7. from Finder, drag your macOS volume to the Terminal's prompt
+8. Press Enter.
+9. For Resources press Enter.
+10. Wait
+11. Press q and Enter to reboot.
 
 ## How to create an external USB Recovery disk
 1. Note: This trick works from Big Sur BaseSystem.dmg's only
@@ -131,8 +137,9 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 2. Omit the word `sudo`
 3. `cd /Volumes`
 4. `ls -a`
-5. `cd bigmac.master`
-6. Follow Pre-Install or Post-Install track.
+5. `cd /pathToBigMacDisk`
+6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
+7. Follow Pre-Install or Post-Install track.
 
 ## Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov

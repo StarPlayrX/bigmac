@@ -117,8 +117,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 8. disk must be around 3GB or higher.
 
 ## How to turn off System Integrity Protection
-### aka SIP from the Recovery disk (you can try a Big Sur USB installer disk as well)
-1. Open Terminal in the booted recovery disk
+1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia)
 2. `csrutil disable`
 3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)
 4. Use Start up disk (top left to select your installation)

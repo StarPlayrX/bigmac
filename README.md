@@ -77,7 +77,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 1. The install goes through several steps to complete the install. -v boot arg helps monitor the progress.
 2. After about 45 - 60 minutes, the installer should be complete.
 
-## Special Mac Pro Early 2008 with Metal AMD Cards 
+## Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
 1. Big Sur's video drives are not compatible with the Penryn style CPU
 2. The Post Install script using MousSEE to emulate a couple instructions
 3. This allows AMD Radean cards that support Metal to be used on a MP3,1

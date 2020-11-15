@@ -8,7 +8,7 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 ## Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')
 1. In order to do this inside macOS, SIP must be disabled
 2. In Terminal type `csrutil status` to check if SIP is enabled.
-3. If System Integrity Protection is not disabled, you can run it from a Recovery or try an Installer disk.
+3. If System Integrity Protection is not disabled, set your boot-args Recovery or an Installer disk.
 4. You can also set your boot-args from an Installer disk. 
 5. set your boot arguments to at least `-no_compat_check`
 6. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`

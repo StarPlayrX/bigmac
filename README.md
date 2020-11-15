@@ -131,7 +131,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 
 
 
-Updated for macOS 11.0.1, Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
+Updated for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 

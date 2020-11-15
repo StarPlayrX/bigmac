@@ -22,6 +22,17 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 10. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
 
 
+## Requirements 
+1. Mac Pro 2008 - 2012
+2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)
+3. MacOS 11.0.1 Big Sur full installer app (RC2 or public release and later)
+4. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
+5. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
+6. Your GPU must support Metal. AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Nvidia cards with metal will have 4k @ 30 Hz only. If you have 4k on Nvidia use a 30 Hz port to get a boot screen.
+7. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
+8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
+
+
 ## Update createinstallmedia is now preferred (APFS Supported!)
 1. Drag `Install macOS Big Sur.app` to the Desktop
 2. Open Terminal
@@ -35,7 +46,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 10. When complete
 11. For convience Copy the `bigmac.master` folder to a separate thumb drive
 
-## Boot the  `Install macOS Big Sur` USB Drive (run preinstall.sh and macOS install from this disk, all is done in memory)
+## Boot the  `Install macOS Big Sur` USB Drive (run preinstall.sh then macOS install from this disk, The pre install enables the Mac OS install in memory)
 1. Reboot boot using `option key` 
 2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
 3. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`
@@ -52,17 +63,6 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 15. `cd bigMaster.master`
 16. Omiting `sudo` follow the `Post Install track in this guide`
 19. Select the start up disk
-
-
-## Requirements 
-1. Mac Pro 2008 - 2012
-2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)
-3. MacOS 11.0.1 Big Sur full installer app (RC2 or public release and later)
-4. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
-5. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
-6. Your GPU must support Metal. AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Nvidia cards with metal will have 4k @ 30 Hz only. If you have 4k on Nvidia use a 30 Hz port to get a boot screen.
-7. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
-8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 
 ## Pre Install

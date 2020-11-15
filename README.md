@@ -1,7 +1,7 @@
 
 🍔 bigmac Mac Pro patcher 
 
-Now accepting donations via `https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ` NiceMac LLC | StarPlayrX 
+Now accepting donations via https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX 
 
 ### When running from an OS
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
@@ -18,7 +18,7 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 8. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
 9. how to check your boot-argments `nvram -p | grep boot-args`
 10. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
-11. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from `http://dosdude1.com/catalina/`
+11. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from http://dosdude1.com/catalina/
 12. With it you can set your boot-args very easily
 
 
@@ -132,6 +132,6 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 Updated for macOS 11.0.1, Mac Pros 2008, 2009, 2010, 2012, Big Mac Copyright 2020 by Todd Bruss, See Credits file
 
-Now accepting donations via `https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ` NiceMac LLC | StarPlayrX 
+Now accepting donations via https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX 
 
 🍟 Special thanks to the Unsupported Macs Team!

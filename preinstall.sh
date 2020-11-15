@@ -80,7 +80,7 @@ else
   echo ''
 fi
 
-echo "This script was brought to you by StarPlayrX\r\nThe best and only third party Sirius XM Radio player,\r\nVersion 1.1.6 available now in the iOS AppStore!\r\n"
+echo "\r\n 💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
 
-echo "You can now open the Big Sur macOS Installer app.\r\n"
+echo "Please open the Big Sur macOS Install. Do not reboot. The preinstaller script runs in memory.\r\n"
 

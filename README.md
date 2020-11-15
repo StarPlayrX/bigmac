@@ -1,7 +1,7 @@
 
 🍔 bigmac Mac Pro patcher 
 
-Now accepting donations via https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX | BigMac
+Now accepting donations via https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX | bigmac
 
 ### When running from an OS
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
@@ -108,7 +108,7 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 4. Use Start up disk (top left to select your installation)
 
 
-## Big Mac install scripts can run from a Recovery or Installer disk
+## bigmac install scripts can run from a Recovery or Installer disk
 1. Use a second USB drive and put Big Mac on it.
 2. Omit the word `sudo`
 3. `cd /Volumes`
@@ -130,8 +130,8 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 
 
-Updated for macOS 11.0.1, Mac Pros 2008, 2009, 2010, 2012, Big Mac Copyright 2020 by Todd Bruss, See Credits file
+Updated for macOS 11.0.1, Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
 
-Now accepting donations via https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX | BigMac
+Now accepting donations via https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX | bigmac
 
 🍟 Special thanks to the Unsupported Macs Team!

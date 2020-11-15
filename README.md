@@ -67,7 +67,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 19. Select the start up disk
 
 
-## Pre Install (Required for Mac Pro 3,1 2008)
+## Pre Install (Works with All Macs)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
 2. Open Terminal.app in Utilties 
 3. `cd bigmac.master`
@@ -79,7 +79,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 9. on the 4th or 5th reboot, once you see unsupported CPU, hold down the power button. sometimes holding down the option-key works. (this will repeat endlessly on Mac Pro 3,1)
 
 
-## Post Install
+## Post Install (Required for Mac Pro 3,1 Early 2008)
 1. Boot back into your other system using the option key.
 2. `cd bigmac.master`
 3. `sudo ./postinstall.sh`

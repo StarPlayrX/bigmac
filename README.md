@@ -75,8 +75,10 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 8. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
 
 ## Notes about Big Sur Installs
-1. The install goes through several steps to complete the install. -v boot arg helps monitor the progress.
-2. After about 45 - 60 minutes, the installer should be complete.
+1. The install process is done in three stages each varying in time.
+2. All all three stages to fully complete!
+3. the `-v` boot-arg helps monitor the progress.
+4. After about 45 - 60 minutes, the installer should be complete.
 
 ## Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
 1. Big Sur's video drives are not compatible with the Penryn style CPU

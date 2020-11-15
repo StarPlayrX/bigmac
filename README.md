@@ -21,7 +21,6 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 9. how to check your boot-argments `nvram -p | grep boot-args`
 10. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
 
-
 ## Requirements 
 1. Mac Pro 2008 - 2012
 2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)
@@ -31,7 +30,6 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 6. Your GPU must support Metal. AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Nvidia cards with metal will have 4k @ 30 Hz only. If you have 4k on Nvidia use a 30 Hz port to get a boot screen.
 7. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
 8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
-
 
 ## How to use createinstallmedia (Preferred method)
 1. Drag `Install macOS Big Sur.app` to the Desktop
@@ -64,7 +62,6 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 15. `cd bigMaster.master`
 16. Omiting `sudo` follow the `Post Install track in this guide`
 19. Select the start up disk
-
 
 ## Pre Install script (Works with All Macs)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
@@ -99,7 +96,6 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 1. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur installer app/task, you will need to run the Preinstall script again. 
 2. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
-
 ## Post Install script (Required for Mac Pro 3,1 Early 2008)
 1. Boot back into your other system using the option key.
 2. `cd bigmac.master`
@@ -110,17 +106,15 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 7. Wait
 8. Press q and Enter to reboot.
 
-
 ## How to create an external USB Recovery disk
-### From Big Sur Recovery volumes only
-1. `diskutil list 'Mac Volume Name'`
-2. copy `disk#s#` (let's say it is `disk2s3` for this exercise)
-3. `diskutil mount disk2s3`
-4. `open /Volumes/Recovery`
-5. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this id is unique)
-6. `sudo asr -s /Drag/BaseSystem.dmg/Here -t /Volumes/externalUSB_name --er --nov`
-7. disk must be around 3GB or higher.
-
+1. Note: This trick works from Big Sur BaseSystem.dmg's only
+2. `diskutil list 'Mac Volume Name'`
+3. copy `disk#s#` (let's say it is `disk2s3` for this exercise)
+4. `diskutil mount disk2s3`
+5. `open /Volumes/Recovery`
+6. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this id is unique)
+7. `sudo asr -s /Drag/BaseSystem.dmg/Here -t /Volumes/externalUSB_name --er --nov`
+8. disk must be around 3GB or higher.
 
 ## How to turn off System Integrity Protection
 ### aka SIP from the Recovery disk (you can try a Big Sur USB installer disk as well)
@@ -128,7 +122,6 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 2. `csrutil disable`
 3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)
 4. Use Start up disk (top left to select your installation)
-
 
 ## bigmac install scripts can run from a Recovery or Installer disk
 1. Use a second USB drive and put Big Mac on it.
@@ -138,18 +131,15 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 5. `cd bigmac.master`
 6. Follow Pre-Install or Post-Install track.
 
-
 ## Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov
 2. https://starplayrx.com/downloads/postinstall_bigmac.mov
 3. https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
-
 ## How to clone your system 
 ### This can help remove locked apfs snapshots easily
 1. `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
-
 
 
 Updated for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file

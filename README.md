@@ -33,7 +33,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 
-## Update createinstallmedia is now preferred (APFS Supported!)
+## How to use createinstallmedia (Preferred method)
 1. Drag `Install macOS Big Sur.app` to the Desktop
 2. Open Terminal
 3. `cd ~/Desktop/Install\ macOS\ Big\ Sur.app/Contents/Resources`
@@ -43,10 +43,9 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 7. If you wish to continue type (Y) then press return: `y`
 8. Erasing disk: 0%... 10%... 20%... 30%... 100%
 9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
-10. When complete
-11. For convience Copy the `bigmac.master` folder to a separate thumb drive
+10. For convience Copy the `bigmac.master` folder to a separate thumb drive
 
-## Boot the  `Install macOS Big Sur` USB Drive
+## How to boot your createinstallmedia (External USB `Install macOS Big Sur`)
 1. You will need to run preinstall.sh and then the macOS installer from this disk.
 2. The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
 3. Reboot boot using `option key` 
@@ -67,7 +66,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 19. Select the start up disk
 
 
-## Pre Install (Works with All Macs)
+## Pre Install script (Works with All Macs)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
 2. Open Terminal.app in Utilties 
 3. `cd bigmac.master`
@@ -81,7 +80,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 11. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
 
-## Post Install (Required for Mac Pro 3,1 Early 2008)
+## Post Install script (Required for Mac Pro 3,1 Early 2008)
 1. Boot back into your other system using the option key.
 2. `cd bigmac.master`
 3. `sudo ./postinstall.sh`

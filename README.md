@@ -29,7 +29,7 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 6. Ready to Start.
 7. If you wish to continue type (Y) then press return: `y`
 8. Erasing disk: 0%... 10%... 20%... 30%... 100%
-9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%...
+9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
 10. When complete
 11. For convience Copy the `bigmac.master` folder to a separate thumb drive
 

@@ -67,7 +67,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 19. Select the start up disk
 
 
-## Pre Install
+## Pre Install (Required for Mac Pro 3,1 2008)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
 2. Open Terminal.app in Utilties 
 3. `cd bigmac.master`

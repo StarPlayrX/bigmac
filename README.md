@@ -95,22 +95,15 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 7. disk must be around 3GB or higher.
 
 
-## How to boot an external USB Recovery disk
-1. Boot and hold down option Key
-2. If only 1 external USB is connectioned it will say `EFI Boot` with a Yellow USB disk icon.
-3. select it
-4. at black screen wait until it boots (pen drives are slow, recommend a small USB SSD or External Hard Drive)
-
-
 ## How to turn off System Integrity Protection
-### aka SIP from the Recovery disk
+### aka SIP from the Recovery disk (you can try a Big Sur USB installer disk as well)
 1. Open Terminal in the booted recovery disk
 2. `csrutil disable`
 3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)
 4. Use Start up disk (top left to select your installation)
 
 
-## Big Mac install scripts can run from a recovery or installer disk
+## Big Mac install scripts can run from a Recovery or Installer disk
 1. Use a second USB drive and put Big Mac on it.
 2. Omit the word `sudo`
 3. `cd /Volumes`

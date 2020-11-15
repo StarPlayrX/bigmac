@@ -77,16 +77,16 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 1. The install goes through several steps to complete the install. -v boot arg helps monitor the progress.
 2. After about 45 - 60 minutes, the installer should be complete.
 
-## Special Mac Pro Early 2008 with Metal AMD Cards
+## Special Mac Pro Early 2008 with Metal AMD Cards 
 1. Big Sur's video drives are not compatible with the Penryn style CPU
 2. The Post Install script using MousSEE to emulate a couple instructions
 3. This allows AMD Radean cards that support Metal to be used on a MP3,1
 
-## Telemetry and Mac Pro 3,1
+## Telemetry and Mac Pro Early 2008
 1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU
 2. The post install script installs one that is compatible
 
-## Mac Pro 2008 Installation Notes
+## Mac Pro Early 2008 Installation Notes
 1. In between installer tasks, Big Sur's install runs through 3 complete reboot cycles.
 2. If you see kernel panics, or fast reboots after the 5th reboot, you will need to kill the cycle by holding the power button down, or if possible hold down the Option-key see if you can get back to your boot screen.
 3. Then you can run the post install script from which method you ran the pre install script.

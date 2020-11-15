@@ -59,7 +59,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 13. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
 14. Open Terminal 
 15. `cd /Volumes/pathToBigMacDisk/`
-15. `cd bigMaster.master`
+15. `cd bigmac.master`
 16. Omiting `sudo` follow the `Post Install track in this guide`
 19. Select the start up disk
 

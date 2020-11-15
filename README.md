@@ -6,22 +6,20 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 ### When running from an OS
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
-### When running from an Install macOS Big Sur USB Disk
+### When running the preinstall.sh from an Install macOS Big Sur USB Disk
 APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
 
 ## Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')
 1. In order to do this inside macOS, SIP must be disabled
 2. In Terminal type `csrutil status` to check if SIP is enabled.
-3. If System Integrity Protection is not disabled, set your boot-args Recovery or an Installer disk.
-4. You can also set your boot-args from an Installer disk. 
+3. If System Integrity Protection is not disabled, set your boot-args from a Recovery disk.
+4. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from http://dosdude1.com/catalina/
 5. set your boot arguments to at least `-no_compat_check`
 6. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`
 7. to set boot-args from a Recovery or Install disk : `nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
 8. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
 9. how to check your boot-argments `nvram -p | grep boot-args`
 10. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
-11. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from http://dosdude1.com/catalina/
-12. With it you can set your boot-args very easily
 
 
 ## Update createinstallmedia is now preferred (APFS Supported!)
@@ -37,9 +35,9 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 10. When complete
 11. For convience Copy the `bigmac.master` folder to a separate thumb drive
 
-## Boot the  `Install macOS Big Sur` USB Drive
+## Boot the  `Install macOS Big Sur` USB Drive (run preinstall.sh and macOS install from this disk, all is done in memory)
 1. Reboot boot using `option key` 
-2. At boot screen select `Install macOS Big Sur`  (It will be yellow if it is on an external drive)
+2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
 3. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`
 4. Wait for it the external media to boot up.
 5. From there open the terminal
@@ -47,9 +45,8 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 7. `cd bigMaster.master`
 8. Omiting `sudo` follow the `Pre Install track in this guide`
 9. Quit the Terminal app
-10. Open the Big installer app. Here you can select previous installations of Big Sur betas and upgrade them!
-11. Complete the install
-12. Boot from the `Install mac OS Big Sir` disk again.
+10. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
+11. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
 13. Open Terminal 
 14. `cd /Volumes/pathToBigMacDisk/`
 15. `cd bigMaster.master`

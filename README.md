@@ -47,21 +47,21 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 11. For convience Copy the `bigmac.master` folder to a separate thumb drive
 
 ## Boot the  `Install macOS Big Sur` USB Drive
-#### run preinstall.sh then macOS install from this disk
-#### The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
-1. Reboot boot using `option key` 
-2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
-3. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`
-4. Wait for it the external media to boot up.
-5. From there open the terminal
-6. `cd /Volumes/pathToBigMacDisk/`
-7. `cd bigMaster.master`
-8. Omiting `sudo` follow the `Pre Install track in this guide`
-9. Quit the Terminal app
-10. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
-11. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
-13. Open Terminal 
-14. `cd /Volumes/pathToBigMacDisk/`
+1. You will need to run preinstall.sh and then the macOS installer from this disk.
+2. The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
+3. Reboot boot using `option key` 
+4. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
+5. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`
+6. Wait for it the external media to boot up.
+7. From there open the terminal
+8. `cd /Volumes/pathToBigMacDisk/`
+9. `cd bigMaster.master`
+10. Omiting `sudo` follow the `Pre Install track in this guide`
+11. Quit the Terminal app
+12. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
+13. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
+14. Open Terminal 
+15. `cd /Volumes/pathToBigMacDisk/`
 15. `cd bigMaster.master`
 16. Omiting `sudo` follow the `Post Install track in this guide`
 19. Select the start up disk

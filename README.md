@@ -12,8 +12,8 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 4. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
 5. how to check your boot-argments `nvram -p | grep boot-args`
 6. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
-7. If you cannot set your boot-arguments, recommend creaitng a Catalina patch disk from `http://dosdude1.com/catalina/`
-8. With it you can set your boot-arguments very easily
+7. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from `http://dosdude1.com/catalina/`
+8. With it you can set your boot-args very easily
 9. I may include an alternative method soon.
 
 

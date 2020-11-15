@@ -1,7 +1,7 @@
 
 🍔 bigmac Mac Pro patcher 
 
-Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX | bigmac
+Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ### When running from an OS
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
@@ -132,6 +132,6 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 Updated for macOS 11.0.1, Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
 
-Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC | StarPlayrX | bigmac
+Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 🍟 Special thanks to the Unsupported Macs Team!

@@ -41,15 +41,15 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 7. If you wish to continue type (Y) then press return: `y`
 8. Erasing disk: 0%... 10%... 20%... 30%... 100%
 9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
-10. For convience Copy the `bigmac.master` folder to a separate thumb drive
+10. For convience copy the `bigmac.master` folder to a separate thumb drive
 
 ## How to boot your createinstallmedia (External USB Install macOS Big Sur)
 1. You will need to run preinstall.sh and then the macOS installer from this disk.
 2. The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
 3. Reboot boot using `option key` 
 4. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
-5. Wait for it the external media to boot up.
-6. From there open the terminal
+5. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.
+6. From there open the Terminal. It's under the Utilities menu.
 7. `cd /Volumes/pathToBigMacDisk/`
 8. `cd bigMaster.master`
 9. Omiting `sudo` follow the `Pre Install track in this guide`

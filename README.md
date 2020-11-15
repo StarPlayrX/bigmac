@@ -136,7 +136,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 3. https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
-## How to clone your system (also can remove snapshots or allow you to delete them easier using diskutil)
+## How to clone your system
 1. `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
 
 

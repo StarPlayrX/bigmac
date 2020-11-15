@@ -77,7 +77,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 ## Notes about Big Sur Installs
 1. The install process is done in three stages each varying in time.
 2. Allow all three stages to fully complete!
-3. Mac Pro 3,1 Early 2008 owner will need to stop an infinite loop after the 4th or 5th reboot. (Wait until you see a pattern before killing it). Hold option-key to see if you can get to a boot screen between the kernal panic pattern. All else fails, old the power button down and then hold down the option-key.
+3. Mac Pro 3,1 Early 2008 owners will need to stop an infinite loop after the 4th or 5th reboot. Wait until you see a pattern before killing it). Hold option-key to see if you can get to a boot screen between the kernel panics. If all else fails, hold the power button down and then hold down the option-key.
 4. the `-v` boot-arg helps monitor the progress.
 5. After about 45 - 60 minutes, the installer should be complete.
 

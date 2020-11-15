@@ -77,6 +77,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 7. select your newly erased JHFS+ disk.
 8. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
 9. on the 4th or 5th reboot, once you see unsupported CPU, hold down the power button. sometimes holding down the option-key works. (this will repeat endlessly on Mac Pro 3,1)
+10. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur isntaller, you will need to run the Preinstall script again. 
 
 
 ## Post Install (Required for Mac Pro 3,1 Early 2008)

@@ -5,7 +5,7 @@
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 
-## Prequitiste (Terminal, set boot-args)
+## Prerequisite (Terminal, set boot-args=-no_compat_check)
 1. set your boot arguments to at least `-no_compat_check`
 2. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`
 3. to set boot-args from a Recovery or Install disk : `nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`

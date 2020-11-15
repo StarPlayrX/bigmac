@@ -46,7 +46,9 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 10. When complete
 11. For convience Copy the `bigmac.master` folder to a separate thumb drive
 
-## Boot the  `Install macOS Big Sur` USB Drive (run preinstall.sh then macOS install from this disk, The pre install enables the Mac OS install in memory)
+## Boot the  `Install macOS Big Sur` USB Drive
+### run preinstall.sh then macOS install from this disk
+#### The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
 1. Reboot boot using `option key` 
 2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
 3. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`

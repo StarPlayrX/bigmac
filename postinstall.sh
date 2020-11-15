@@ -174,7 +174,7 @@ echo '\r\nCreating a bootable blessed snapshot. (tip: clone via asr to remove)'
 
 sudo bless --folder "$destVolume/System/Library/CoreServices" --bootefi --create-snapshot
 
-echo "\r\nThis script was brought to you by StarPlayrX\r\nThe best and only third party Sirius XM Radio player,\r\nVersion 1.1.6 available now in the iOS AppStore!\r\n"
+echo "\r\n 💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
 
 read -p "Press return to Reboot [ options : q for quick ]: " rebootArgs
 echo "\r\n"

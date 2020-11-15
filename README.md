@@ -78,7 +78,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 8. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
 9. on the 4th or 5th reboot, once you see unsupported CPU, hold down the power button. sometimes holding down the option-key works. (this will repeat endlessly on Mac Pro 3,1)
 10. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur installer app/task, you will need to run the Preinstall script again. 
-11. Because the preinstall script run memory, do not attempt run the preinstall twice in the same session. This will cause major delays when opening the Big Sur install app/task.
+11. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
 
 ## Post Install (Required for Mac Pro 3,1 Early 2008)

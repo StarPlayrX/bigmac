@@ -43,7 +43,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
 10. For convience Copy the `bigmac.master` folder to a separate thumb drive
 
-## How to boot your createinstallmedia (External USB `Install macOS Big Sur`)
+## How to boot your createinstallmedia (External USB Install macOS Big Sur)
 1. You will need to run preinstall.sh and then the macOS installer from this disk.
 2. The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
 3. Reboot boot using `option key` 

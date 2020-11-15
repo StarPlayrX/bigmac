@@ -4,7 +4,7 @@
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ### When running from an OS
-Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
+Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 
 ### When running the preinstall.sh from an Install macOS Big Sur USB Disk
 APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!

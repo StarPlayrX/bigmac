@@ -7,16 +7,17 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk.
 
 ## Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')
 1. In order to do this inside macOS, SIP must be disabled
-2. If System Integrity Protection is not disabled, you can run it from a Recovery or try an Installer disk.
-3. You can also set your boot-args from an Installer disk. 
-4. set your boot arguments to at least `-no_compat_check`
-5. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`
-6. to set boot-args from a Recovery or Install disk : `nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
-7. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
-8. how to check your boot-argments `nvram -p | grep boot-args`
-9. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
-10. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from `http://dosdude1.com/catalina/`
-11. With it you can set your boot-args very easily
+2. In Terminal type `csrutil status` to check if SIP is enabled.
+3. If System Integrity Protection is not disabled, you can run it from a Recovery or try an Installer disk.
+4. You can also set your boot-args from an Installer disk. 
+5. set your boot arguments to at least `-no_compat_check`
+6. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`
+7. to set boot-args from a Recovery or Install disk : `nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
+8. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
+9. how to check your boot-argments `nvram -p | grep boot-args`
+10. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
+11. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from `http://dosdude1.com/catalina/`
+12. With it you can set your boot-args very easily
 
 
 ## Update createinstallmedia is now preferred (APFS Supported!)

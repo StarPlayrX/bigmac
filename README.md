@@ -48,20 +48,19 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 2. The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
 3. Reboot boot using `option key` 
 4. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
-5. You can also try `sudo bless -mount '/Volumes/Install macOS Big Sur' -setBoot --nextonly`
-6. Wait for it the external media to boot up.
-7. From there open the terminal
-8. `cd /Volumes/pathToBigMacDisk/`
-9. `cd bigMaster.master`
-10. Omiting `sudo` follow the `Pre Install track in this guide`
-11. Quit the Terminal app
-12. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
-13. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
-14. Open Terminal 
-15. `cd /Volumes/pathToBigMacDisk/`
+5. Wait for it the external media to boot up.
+6. From there open the terminal
+7. `cd /Volumes/pathToBigMacDisk/`
+8. `cd bigMaster.master`
+9. Omiting `sudo` follow the `Pre Install track in this guide`
+10. Quit the Terminal app
+11. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
+12. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
+13. Open Terminal 
+14. `cd /Volumes/pathToBigMacDisk/`
 15. `cd bigmac.master`
 16. Omiting `sudo` follow the `Post Install track in this guide`
-19. Select the start up disk
+17. Select the start up disk
 
 ## Pre Install script (Works with All Macs)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)

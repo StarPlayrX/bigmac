@@ -3,6 +3,9 @@
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
+### Update. Avoid using spaces.
+Please spaces for volumes and folders of where bigmac is stored. This notice will be removed after this issue is resolved.
+ 
 ### When running from an macOS Mojave, Catalina or Big Sur
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 

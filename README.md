@@ -17,7 +17,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 2. In Terminal type `csrutil status` to check if SIP is enabled.
 3. If System Integrity Protection is not disabled, set your boot-args from a Recovery disk.
 4. From a recovery or install disk disable SIP using `csrutil disable`
-5. From a recovery or install disk disable authenticated-root using `csrutil authenticated-root disable`
+5. From a Big Sur recovery or Big Sur install disk disable authenticated-root using `csrutil authenticated-root disable`
 4. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from http://dosdude1.com/catalina/
 5. set your boot arguments to at least `-no_compat_check`
 6. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`

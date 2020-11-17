@@ -1,5 +1,5 @@
 
-🍔 bigmac Big Sur Mac Pro patcher 
+🍔 bigmac Big Sur macOS 11 Mac Pro patcher 
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 

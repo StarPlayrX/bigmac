@@ -9,6 +9,9 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 3. Scripts folder within Recovery and USB Disk Installer.
 4. Possibly a special Recovery disk boot option for users who do not have boot screens.
 
+### Future Plans
+1. GUI for bigmac.
+
 ### Important Update, Avoid using spaces
 Please refrain from using spaces of volumes and folders of where bigmac is stored. It's not a bad idea to follow this rule in general. This notice will be removed after this issue is resolved.
  

@@ -12,6 +12,22 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 ### Future Plans
 1. GUI for bigmac.
 
+### No Boot Screen? Try this
+1. Take an external hard drive or SSD and erase it completely (something that is at least 64GB, not a thumb drive)
+2. create a USB installer using createinstallmedia to another external disk (something that can store 16GB of data, do not recommend a thumb drive)
+3. put the bigmac patcher on a thumb drive.
+3. open this file /System/Library/Preferences/SystemConfiguration/com.apple.Boot.plist of the Install macOS Big Sur installer disk add `-v` and `-no_compat_check` before where it says `root-dmg=file:///BaseSystem/BaseSystem.dmg`
+4. remove all other drives that have an OS from your system
+5. leave the usb drives connected
+6. reboot
+7. run the preinstall track
+8. install to your disk external USB that is 64GB or more.
+10. after the install is complete, for Mac Pro 3,1 2008, disconnect that USB drive (Big Sur macOS 11.0.1 takes 3 stages to complete an install)
+11. boot the install media again as its only drive on the system
+12. after that starts booting, connect your Big Sur external USB again
+13. run the postinstall track
+14. select that disk and boot it up. If all is well, follow the how to clone your system at the bottom of this readme.
+
 ### Important Update, Avoid using spaces
 Please refrain from using spaces of volumes and folders of where bigmac is stored. It's not a bad idea to follow this rule in general. This notice will be removed after this issue is resolved.
  
@@ -162,8 +178,19 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 ## How to clone your system
 1. `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
 
+## Known issues with USB 2.0
+1. Input devices that get disconnected do not reconnect. Workaround, get a USB 3.0 PCIe card and for everyday device connect them there. For option-key boot screen boot connect back to USB 2.0
+2. USB drive connected to USB 2.0 can connect and reconnect.
+3. If using certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
+4. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
 
-Updated for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
+## Known issues with MAME input devices
+1. Most of these devices have very old controller boards and use USB 1.0
+2. These devices will power on in Big Sur but the system will not use them
+3. Workaround, if you are using MAME on your Mac, revert back to Mojave or Catalina. Mojave is recommended for SDL MAME users.
+5. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
+
+Updated on November 17, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 

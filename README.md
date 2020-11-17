@@ -1,19 +1,19 @@
 
-### 🍔 bigmac
+## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-### Coming Soon in the NeXT Release
+## Coming Soon in the NeXT Release
 1. Auto USB Disk Installer disk creation from Big Sur installer app.
 2. Kernel Flags on Recovery, Install, and System to allow users to reset their PRAM and get rid of prohibited signs for good.
 3. Scripts folder within Recovery and USB Disk Installer.
 4. Possibly a special Recovery disk boot option for users who do not have boot screens.
 
-### Future Plans
+## Future Plans
 1. GUI for bigmac.
 
-### No Boot Screen? Try this
+## No Boot Screen? Try this
 1. Take an external hard drive or SSD and erase it completely (something that is at least 64GB, not a thumb drive)
 2. create a USB installer using createinstallmedia to another external disk (something that can store 16GB of data, do not recommend a thumb drive)
 3. put the bigmac patcher on a thumb drive.
@@ -29,13 +29,13 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 13. run the postinstall track
 14. select that disk and boot it up. If all is well, follow the how to clone your system at the bottom of this readme.
 
-### Important Update, Avoid using spaces
+## Important Update, Avoid using spaces
 Please refrain from using spaces of volumes and folders of where bigmac is stored. It's not a bad idea to follow this rule in general. This notice will be removed after this issue is resolved.
  
-### When running from an macOS Mojave, Catalina or Big Sur
+## When running from an macOS Mojave, Catalina or Big Sur
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 
-### When running the preinstall.sh from an Install macOS Big Sur USB Disk / createinstallmedia
+## When running the preinstall.sh from an Install macOS Big Sur USB Disk / createinstallmedia
 APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
 
 ## Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')

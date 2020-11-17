@@ -4,10 +4,10 @@
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ### Coming Soon in the NeXT Release
-1. Auto Recovery disk creation option
-2. Auto USB Disk Installer disk creation from Big Sur installer app, auto installer disk creation
-3. Kernel Flags on Recovery, Install, and System to allow users to reset their PRAM
-4. Scripts folder within Recovery and USB Disk Installer
+1. Auto USB Disk Installer disk creation from Big Sur installer app.
+2. Kernel Flags on Recovery, Install, and System to allow users to reset their PRAM and get rid of prohibited signs for good.
+3. Scripts folder within Recovery and USB Disk Installer.
+4. Possibly a special Recovery disk boot option for users who do not have boot screens.
 
 ### Important Update, Avoid using spaces
 Please refrain from using spaces of volumes and folders of where bigmac is stored. It's not a bad idea to follow this rule in general. This notice will be removed after this issue is resolved.

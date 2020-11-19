@@ -65,30 +65,20 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 15. Select the start up disk
 16. If you don't have a boot screen, there are some tips after running the bigmac.sh, which you should have run previously tool.
 
-### Pre Install script (Works with All Macs)
-1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
-2. Open Terminal.app in Utilties
-3. `ls -a`
-4. `cd /Volumes'
-5. `cd whereYouHaveBigMac`
-6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
-7. `sudo ./preinstall.sh`
-8.  set boot-args to `-no_compat_check amfi_get_out_of_my_way=1 -v` or  `-no_compat_check -v`
-9. open the macOS Big Sur installer.app
-10. select your newly erased JHFS+ disk.
-11. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
+### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
+1. Boot up the BigMac11USB (don't have it? run `sudo ./bigmac.sh`)
+2. `cd /Volumes/bigmac'
+7. `./preinstall.sh`
+8. set boot-args to `-no_compat_check -v`
+9. Quit the Terminal. Open the big Sur installer app.
+10. Big Sur installs in three stages
 
-### Post Install script (Required for Mac Pro 3,1 Early 2008)
-1. Boot back into your other system using the option key.
-3. `ls -a`
-4. `cd /Volumes'
-5. `cd whereYouHaveBigMac`
-6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
-7. from Finder, drag your macOS volume to the Terminal's prompt
-8. Press Enter.
-9. For Resources press Enter.
-10. Wait
-11. Press q and Enter to reboot.
+### Post Install Track, Required for Mac Pro 3,1
+1. Boot up the BigMac11USB (don't have it? run `sudo ./bigmac.sh`)
+2. `cd /Volumes/bigmac'
+7. `./postinstall.sh`
+8. type in the volume name of the install you just did `/Volumes/macosnamehere` (This will be improved in a future version), You may have to use `ls -a` in volumes to get the name before hand.
+9. Quit the Terminal. Select your startup disk.
 
 ### Notes about Big Sur Installs
 1. The install process is done in three stages each varying in time.

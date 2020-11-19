@@ -24,31 +24,15 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk 
 ### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB
 APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
 
-### Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')
-1. In order to do this inside macOS, SIP must be disabled
-2. In Terminal type `csrutil status` to check if SIP is enabled.
-3. If System Integrity Protection is not disabled, set your boot-args from a Recovery disk.
-4. From a recovery or install disk disable SIP using `csrutil disable`
-5. From a Big Sur recovery or Big Sur install disk disable authenticated-root using `csrutil authenticated-root disable`
-4. If you cannot set your boot-args, recommend creating a bootable installer Catalina patch disk from http://dosdude1.com/catalina/
-5. set your boot arguments to at least `-no_compat_check`
-6. recommended boot-args `-no_compat_check amfi_get_out_of_my_way=1 -v`
-7. to set boot-args from a Recovery or Install disk : `nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
-8. to set boot-args from a system with SIP disabled: `sudo nvram boot-args='-no_compat_check amfi_get_out_of_my_way=1 -v'`
-9. how to check your boot-argments `nvram -p | grep boot-args`
-10. you should see something like this `boot-args    -no_compat_check amfi_get_out_of_my_way=1 -v`
-
 ### Requirements 
 1. Mac Pro 2008 - 2012
 2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)
-3. MacOS 11.0.1 Big Sur full installer app (RC2 or public release and later)
-4. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
-5. Boot screen. I recommend you have a flashed Nvidia or AMD card that supports Metal. Some steps are difficult without one.
-6. Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Flashed Nvidia cards with metal will have 4k @ 30 Hz only. If you know how to get 4k@60Hz on NVidia on Big Sur please let us know. If you have 4k on Flashed Nvidia use a 30 Hz port to get a boot screen.
-7. 1 - 2 external USB SSDs or hard drives for Recovery or asr disk cloning.
-8. A SSD or Hard drive with 60GB or more. 256GB Recommended.
+3. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
+Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Flashed Nvidia cards with metal will have 4k @ 30 Hz only. If you know how to get 4k@60Hz on NVidia on Big Sur please let us know. If you have 4k on Flashed Nvidia use a 30 Hz port to get a boot screen.
+4. 1 - 2 external USB SSDs or hard drives for BigMac11USB or Mac Pro 3,1 no boot screen install.
+5. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
-### How to use createinstallmedia (Preferred method)
+### How to use createinstallmedia (bigmac.sh now does this for you and more!)
 1. Drag `Install macOS Big Sur.app` to the Desktop
 2. Open Terminal
 3. `cd ~/Desktop/Install\ macOS\ Big\ Sur.app/Contents/Resources`
@@ -101,9 +85,9 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 5. After about 45 - 60 minutes, the installer should be complete.
 
 ### Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
-1. Big Sur's video drives are not compatible with the Penryn style CPU
+1. Big Sur's video drivers are not compatible with the Penryn style CPU
 2. The Post Install script using MousSEE to emulate a couple instructions
-3. This allows AMD Radean cards that support Metal to be used on a MP3,1
+3. This allows AMD Radeon cards that support Metal to be used on a MP3,1
 
 ### Telemetry and Mac Pro Early 2008
 1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU
@@ -131,17 +115,7 @@ APFS clean and dirty installs are supported. You can even upgrade older versions
 10. Wait
 11. Press q and Enter to reboot.
 
-### How to create an external USB Recovery disk
-1. Note: This trick works from Big Sur BaseSystem.dmg's only
-2. `diskutil list 'Mac Volume Name'`
-3. copy `disk#s#` (let's say it is `disk2s3` for this exercise)
-4. `diskutil mount disk2s3`
-5. `open /Volumes/Recovery`
-6. Arrow down on the weird UUID tagged folder that looks like this '13540289-83B3-3105-8EC7-B05C342DB382' (this id is unique)
-7. `sudo asr -s /Drag/BaseSystem.dmg/Here -t /Volumes/externalUSB_name --er --nov`
-8. disk must be around 3GB or higher.
-
-### How to turn off System Integrity Protection
+### How to turn off System Integrity Protection (this is automated now in post installer)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia)
 2. `csrutil disable`
 3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)

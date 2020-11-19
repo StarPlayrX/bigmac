@@ -5,19 +5,19 @@ Big Sur macOS 11 Mac Pro patcher
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## Basic Workflow in a Nut Shell 🥜
-2. cd to the current directory where bigmac.master folder is located or where /Volumes/bigmac is residing later on.
-1. Create USB with `sudo ./bigmac.sh`
-2. Reboot to USB Installer using the option key. (This requires you to have a flashed video card).
-3. For not flashed video card users only, it is possible to run the USB installer without flashed card but you must disconnect all internal drives and boot up with one erased disk. Mac Pro Early 2008 3,1 users: use another external USB hard disk to install and you can clone it later using asr. For Mac Pro 2009 - 2012 4,1 5,1 users, you can leave one erased intaller disk in your system. You can also do all these steps on anothe mac that had a boot screen and transfer the drive or take advantage of Target Disk Mode and clone the install to it over FireWire.
-3. run `preinstall.sh` before you run you the Big Sur installer
-4. The Big Sur macOS 11 install takes 3 stages to recomplete.
-5. boot back into the usb
-5. run `postinstall.sh` 
-6. consult this README.md first before opening an issue
+1. Open the Terminal. cd (drag bigmac.master folder here) press Return.
+2. Create USB with `sudo ./bigmac.sh` follow the wizard.
+3. Reboot to USB Installer using the option key. (This requires you to have a flashed video card).
+4. For not flashed video card users only, it is possible to run the USB installer without flashed card but you must disconnect all internal drives and boot up with one erased disk. Mac Pro Early 2008 3,1 users: use another external USB hard disk to install and you can clone it later using asr. For Mac Pro 2009 - 2012 4,1 5,1 users, you can leave one erased intaller disk in your system. You can also do all these steps on anothe mac that had a boot screen and transfer the drive or take advantage of Target Disk Mode and clone the install to it over FireWire.
+5. `cd Volumes/bigmac`
+6. always run `preinstall.sh` before you run you the Big Sur installer this is true not matter if you are running the USB installer or from a system. A USB installer is highly recommend and `bigmac.sh` takes care of this for you.
+7. The Big Sur macOS 11 install takes 3 stages to recomplete.
+8. boot back into the USB installer
+9. `cd Volumes/bigmac`
+10. run `postinstall.sh` 
+11. If you find an error or a bug, you can report the issue. Support is not part of this software and issues for `I can't get this to work` will be closed. Please use other resources for support and always refer back to this readme.
 
-## 🍞 Fresh! Featuring bigmac.sh = BigMac11USB + bigmac 😃
-### Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator
-1. Easily create your USB boot disk with the bigmac patcher on its own partition! No need for a thumb drive!
+### How to create your USB boot disk with bigmac on it's own volume + a bootable USB installer!
 2.  `cd ~/Downloads/bigmac.master`
 3. `sudo ./bigmac.sh`
 4. Features an automated macOS 11 downloader directly from Apple's CDN.

@@ -77,7 +77,10 @@ then
   sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES "$asentientbot$barrykn"
   echo sudo user is: $SUDO_USER
   echo ''
-  echo "Please run quit the 'Install macOS Big Sur.app' Do not reboot. The preinstaller script runs in memory.\r\n"
+  echo "Do not reboot. Please run 'Install macOS Big Sur.app'. This script only runs in memory and does not write back anything.\r\n"
+  echo
+  echo "\r\n💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
+
 else
   launchctl setenv DYLD_INSERT_LIBRARIES "$asentientbot$barrykn"
   echo Recovery mode detected, running Hax without sudo
@@ -89,9 +92,10 @@ else
   echo '\r\nDisabling Authenticated Root'
   csrutil disable authenticated-root
   
+  echo "\r\nQuit the Terminal and Select 'Install macOS Big Sur' in the Window. Do not reboot. The preinstaller script runs in memory.\r\n"
+  
   echo "\r\n💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
 
-  echo "\r\nQuit the Terminal and Select 'Install macOS Big Sur' in the Window. Do not reboot. The preinstaller script runs in memory.\r\n"
 fi
 
 

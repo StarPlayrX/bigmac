@@ -5,7 +5,6 @@
 #  Created by StarPlayrX on 11.17.2020
 
 printf '\e[48;5;0m\r\n' #black background
-read -p 'Welcome to '
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
 printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v11.0.1 0.1\r\n"
@@ -169,7 +168,6 @@ if [ $version != "11.0.1" ] && [ $version != "11.0.2" ] && [ $version != "11.0.3
    "$destVolume$sbin$kcditto"
 fi
 
-
 #Snapshot deletion code by StarPlayrX 2020
 snapshots=$(diskutil apfs listsnapshots "$destVolume" | grep +-- | sed 's/^.\{4\}//')
 
@@ -184,18 +182,7 @@ do
     diskutil apfs deletesnapshot "$destVolume" -uuid $uuid
 done
 
-
-#Check if sudo is available or not
-if sudo -n true
-then
-  #Added bless the volume
- echo '\r\nBlessing the volume'
-  bless --folder "$destVolume/System/Library/CoreServices" --bootefi ##--create-snapshot
-else
-  echo '\r\nBlessing the volume'
-  bless --folder "$destVolume/System/Library/CoreServices" --bootefi ##--create-snapshot
-fi
-
+bless --folder "$destVolume/System/Library/CoreServices" --bootefi ##--create-snapshot
 
 echo "\r\nIf your system gets locked with a snapshot try cloning it with:"
 echo "\r\nsudo asr -s /Volumes/YourSoureVolName -t /Volumes/YourTargetVolName -er -nov"

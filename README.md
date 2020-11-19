@@ -38,7 +38,7 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 4. 1 - 2 external USB SSDs or hard drives for BigMac11USB or Mac Pro 3,1 no boot screen install.
 5. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
-### How to boot your BigMac11USB (system will call it `Install macOS Big Sur`)
+### How to boot your BigMac11USB (boot screenr will call it Install macOS Big Sur)
 1. Reboot boot using `option key` 
 2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
 3. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.

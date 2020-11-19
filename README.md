@@ -17,7 +17,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 10. run `postinstall.sh` 
 11. If you find an error or a bug, you can report the issue. Support is not part of this software and issues for `I can't get this to work` will be closed. Please use other resources for support and always refer back to this readme.
 
-### How to create your USB boot disk with bigmac on it's own volume + a bootable USB installer!
+### How to create your USB boot disk with bigmac preinstall and postinsall scripts on its own volume + a bootable USB installer!
 2.  `cd ~/Downloads/bigmac.master`
 3. `sudo ./bigmac.sh`
 4. Features an automated macOS 11 downloader directly from Apple's CDN.

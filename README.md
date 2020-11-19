@@ -24,36 +24,21 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 16. do the install
 17. follow the postinstall.sh track (reboot the USB installer first)
 
-### Future Plans
-1. GUI for bigmac.
+### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB (Ideal)
+APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
 
 ### When running from an macOS Mojave, Catalina or Big Sur (This method is not ideal)
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 
-### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB (Ideal)
-APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
-
 ### Requirements 
 1. Mac Pro 2008 - 2012
-2. You have MacOS 10.15.x Catalina installed already. (Or do these steps on a supported Mac to an external SSD!)
+2. If you don't have a boot screen there are some workarounds for this. I try to create a separate section soon for this.
 3. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
 Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Flashed Nvidia cards with metal will have 4k @ 30 Hz only. If you know how to get 4k@60Hz on NVidia on Big Sur please let us know. If you have 4k on Flashed Nvidia use a 30 Hz port to get a boot screen.
 4. 1 - 2 external USB SSDs or hard drives for BigMac11USB or Mac Pro 3,1 no boot screen install.
 5. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
-### How to use createinstallmedia (bigmac.sh now does this for you and more!)
-1. Drag `Install macOS Big Sur.app` to the Desktop
-2. Open Terminal
-3. `cd ~/Desktop/Install\ macOS\ Big\ Sur.app/Contents/Resources`
-4. `sudo ./createinstallmedia -v /Volumes/externalUSB`
-5. type password
-6. Ready to Start.
-7. If you wish to continue type (Y) then press return: `y`
-8. Erasing disk: 0%... 10%... 20%... 30%... 100%
-9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
-10. For convience copy the `bigmac.master` folder to a separate thumb drive
-
-### How to boot your BigMac11USB
+### How to boot your BigMac11USB (system will call it `Install macOS Big Sur`)
 1. Reboot boot using `option key` 
 2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
 3. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.
@@ -84,6 +69,18 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 10. select your newly erased JHFS+ disk.
 11. in order to complete the install, Big Sur 11.0.1 RC2 and later will reboot 3 times
 
+### Post Install script (Required for Mac Pro 3,1 Early 2008)
+1. Boot back into your other system using the option key.
+3. `ls -a`
+4. `cd /Volumes'
+5. `cd whereYouHaveBigMac`
+6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
+7. from Finder, drag your macOS volume to the Terminal's prompt
+8. Press Enter.
+9. For Resources press Enter.
+10. Wait
+11. Press q and Enter to reboot.
+
 ### Notes about Big Sur Installs
 1. The install process is done in three stages each varying in time.
 2. Allow all three stages to fully complete!
@@ -110,17 +107,18 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 1. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur installer app/task, you will need to run the Preinstall script again. 
 2. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
-### Post Install script (Required for Mac Pro 3,1 Early 2008)
-1. Boot back into your other system using the option key.
-3. `ls -a`
-4. `cd /Volumes'
-5. `cd whereYouHaveBigMac`
-6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
-7. from Finder, drag your macOS volume to the Terminal's prompt
-8. Press Enter.
-9. For Resources press Enter.
-10. Wait
-11. Press q and Enter to reboot.
+
+### How to use createinstallmedia (bigmac.sh now does this for you and more!)
+1. Drag `Install macOS Big Sur.app` to the Desktop
+2. Open Terminal
+3. `cd ~/Desktop/Install\ macOS\ Big\ Sur.app/Contents/Resources`
+4. `sudo ./createinstallmedia -v /Volumes/externalUSB`
+5. type password
+6. Ready to Start.
+7. If you wish to continue type (Y) then press return: `y`
+8. Erasing disk: 0%... 10%... 20%... 30%... 100%
+9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
+10. For convience copy the `bigmac.master` folder to a separate thumb drive
 
 ### How to turn off System Integrity Protection (this is now automated)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia)
@@ -157,6 +155,9 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 2. These devices will power on in Big Sur but the system will not use them
 3. Workaround, if you are using MAME on your Mac, revert back to Mojave or Catalina. Mojave is recommended for SDL MAME users.
 5. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
+
+### Future Plans
+1. GUI for bigmac.
 
 Updated on November 17, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
 

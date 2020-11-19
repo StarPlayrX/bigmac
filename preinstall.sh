@@ -82,9 +82,10 @@ else
   launchctl setenv DYLD_INSERT_LIBRARIES "$asentientbot$barrykn"
   echo Recovery mode detected, running Hax without sudo
 
-  echo '\r\nDisabling all System Integrity Protection (SIP)'
-  csrutil enable --no-internal --without kext --without fs --without debug --without dtrace --without nvram --without basesystem
-
+  echo '\r\nDisabling System Integrity Protection (SIP)'
+  ##csrutil enable --no-internal --without kext --without fs --without debug --without dtrace --without nvram --without basesystem
+  csrutil disable
+  
   echo '\r\nDisabling Authenticated Root'
   csrutil disable authenticated-root
   

@@ -8,7 +8,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 2. cd to the current directory where bigmac.master folder is located or where /Volumes/bigmac is residing later on.
 1. Create USB with `sudo ./bigmac.sh`
 2. Reboot to USB Installer using the option key. (This requires you to have a flashed video card).
-3. For not flashed video card users only, it is possible to run the USB installer without flashed card but you must disconnect all internal drives and boot up with one erased disk. Mac Pro Early 2008 3,1 users: use another external USB hard disk to install and you can clone it later using asr. For Mac Pro 2009 - 2012 4,1 5,1 users, you can leave one erased intaller disk in your system. You can also do all these steps on anothe mac that had a boot screen and transfer the drive or take advantage of Target Disk Mode and clone the install to it.
+3. For not flashed video card users only, it is possible to run the USB installer without flashed card but you must disconnect all internal drives and boot up with one erased disk. Mac Pro Early 2008 3,1 users: use another external USB hard disk to install and you can clone it later using asr. For Mac Pro 2009 - 2012 4,1 5,1 users, you can leave one erased intaller disk in your system. You can also do all these steps on anothe mac that had a boot screen and transfer the drive or take advantage of Target Disk Mode and clone the install to it over FireWire.
 3. run `preinstall.sh` before you run you the Big Sur installer
 4. The Big Sur macOS 11 install takes 3 stages to recomplete.
 5. boot back into the usb

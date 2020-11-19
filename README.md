@@ -32,7 +32,7 @@ Only clean installs are supported to an erased Mac OS Extended (Journaled) disk 
 
 ### Requirements 
 1. Mac Pro 2008 - 2012
-2. If you don't have a boot screen there are some workarounds for this. I try to create a separate section soon for this.
+2. If you don't have a boot screen there are some workarounds for this. I will try to create a separate section soon for this.
 3. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
 Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Flashed Nvidia cards with metal will have 4k @ 30 Hz only. If you know how to get 4k@60Hz on NVidia on Big Sur please let us know. If you have 4k on Flashed Nvidia use a 30 Hz port to get a boot screen.
 4. 1 - 2 external USB SSDs or hard drives for BigMac11USB or Mac Pro 3,1 no boot screen install.

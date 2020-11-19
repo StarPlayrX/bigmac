@@ -6,7 +6,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 
 ## 🍞 Fresh! Featuring bigmac.sh BigMac11USB + bigmac 😃
 ### Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator
-1  `cd ~/Downloads/bigmac.master`
+1.  `cd ~/Downloads/bigmac.master`
 2. `sudo ./bigmac.sh`
 3. Features an automated macOS 11 downloader directly from Apple's CDN.
 4. If you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 

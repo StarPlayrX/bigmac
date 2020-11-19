@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-### 🍞 Fresh! Featuring bigmac.sh BigMac11USB! :)
+### 🍞 Fresh! Featuring bigmac.sh BigMac11USB + bigmac! :)
 1. bigmac.sh script
 2. features a automated macOS 11 downloader directly from Apple's CDN.
 3. if you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 

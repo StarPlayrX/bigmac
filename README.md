@@ -5,7 +5,7 @@ Big Sur macOS 11 Mac Pro patcher
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## Basic Workflow in a Nut Shell 🥜
-1. Create USB with `bigmac.sh`
+1. Create USB with `sudo ./bigmac.sh`
 2. Reboot to USB Installer.
 3. run `preinstall.sh` before you run the Big Sur installer
 4. do the install. macOS 11 takes 3 stages to recomplete

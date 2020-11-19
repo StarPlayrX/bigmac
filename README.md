@@ -4,34 +4,16 @@ Big Sur macOS 11 Mac Pro patcher
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-### Coming Soon in the NeXT Release
-1. Auto USB Disk Installer disk creation from Big Sur installer app.
-2. Kernel Flags on Recovery, Install, and System to allow users to reset their PRAM and get rid of prohibited signs for good.
-3. Scripts folder within Recovery and USB Disk Installer.
-4. Possibly a special Recovery disk boot option for users who do not have boot screens.
+### Update in this NeXT Release! :)
+1. bigmac.sh script
+2. features a macOS 11 downloader from Apple's CDN plus USB installer maker with bigmac patcher on a separate volume of the same disk.
+3. the downloader is optional if you already have the Install Big Sur app in your /Applications folder
+4. it also puts -v and -no_compat_check in the boot.plist file for you.
+5. if you don't have a boot screen, it tips at the end.
 
 ### Future Plans
 1. GUI for bigmac.
 
-### No Boot Screen? Try this
-1. Take an external hard drive or SSD and erase it completely (something that is at least 64GB, not a thumb drive)
-2. create a USB installer using createinstallmedia to another external disk (something that can store 16GB of data, do not recommend a thumb drive)
-3. put the bigmac patcher on a thumb drive.
-3. open this file /System/Library/Preferences/SystemConfiguration/com.apple.Boot.plist of the Install macOS Big Sur installer disk add `-v` and `-no_compat_check` before where it says `root-dmg=file:///BaseSystem/BaseSystem.dmg`
-4. remove all other drives that have an OS from your system
-5. leave the usb drives connected
-6. reboot
-7. run the preinstall track
-8. install to your disk external USB that is 64GB or more.
-10. after the install is complete, for Mac Pro 3,1 2008, disconnect that USB drive (Big Sur macOS 11.0.1 takes 3 stages to complete an install)
-11. boot the install media again as its only drive on the system
-12. after that starts booting, connect your Big Sur external USB again
-13. run the postinstall track
-14. select that disk and boot it up. If all is well, follow the how to clone your system at the bottom of this readme.
-
-### Important Update, Avoid using spaces
-Please refrain from using spaces of volumes and folders of where bigmac is stored. It's not a bad idea to follow this rule in general. This notice will be removed after this issue is resolved.
- 
 ### When running from an macOS Mojave, Catalina or Big Sur
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 

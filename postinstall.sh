@@ -187,7 +187,7 @@ bless --folder "$destVolume/System/Library/CoreServices" --bootefi ##--create-sn
 echo "\r\nIf your system gets locked with a snapshot try cloning it with:"
 echo "\r\nsudo asr -s /Volumes/YourSoureVolName -t /Volumes/YourTargetVolName -er -nov"
 
-echo "\r\n💰wTips via PayPal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
+echo "\r\n💰Tips via PayPal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
 
 read -p "Press return to Reboot [ options : q for quick ]: " rebootArgs
 echo "\r\n"

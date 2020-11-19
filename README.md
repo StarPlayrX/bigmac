@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-### 🍞 Fresh! Featuring bigmac.sh BigMac11USB + bigmac! :)
+### 🍞 Fresh! Featuring bigmac.sh BigMac11USB + bigmac! 😄
 1. Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator
 1  `cd ~/Downloads/bigmac.master`
 2  `sudo ./bigmac.sh`

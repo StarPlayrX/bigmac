@@ -15,7 +15,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 8. boot back into the USB installer
 9. `cd Volumes/bigmac`
 10. run `postinstall.sh` 
-11. If you find an error or a bug, you can report the issue. Support is not part of this software and issues for `I can't get this to work` will be closed. Please use other resources for support and always refer back to this readme.
+11. If you find an error or a bug, you can report the issue. Please refrain from using it for support. There are other resources for this. Thank you!
 
 ### How to create your USB boot disk with bigmac preinstall and postinsall scripts on its own volume + a bootable USB installer!
 2.  `cd ~/Downloads/bigmac.master`

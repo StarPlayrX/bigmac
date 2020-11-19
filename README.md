@@ -5,13 +5,15 @@ Big Sur macOS 11 Mac Pro patcher
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ### 🍞 Fresh! Featuring bigmac.sh BigMac11USB + bigmac! :)
-1. bigmac.sh script
-2. features a automated macOS 11 downloader directly from Apple's CDN.
-3. if you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 
-3. Plus a fully automated USB installer maker with the bigmac patcher on one partion and BigMac11USB on the other.
-3. Please do not use thumb drives with the Big Sur External USB disk maker. Only use External SSDs or Hard Drives. Thank you!
-4. bigmac.sh also puts -v and -no_compat_check in the boot.plist file for you.
-5. if you don't have a boot screen, it has additional tips at the end.
+1. Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator
+1  `cd ~/Downloads/bigmac.master`
+2  `sudo ./bigmac.sh`
+3. Features an automated macOS 11 downloader directly from Apple's CDN.
+4. If you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 
+5. Plus a fully automated USB installer maker with the bigmac patcher on one partion and BigMac11USB on the other.
+6. Please do not use thumb drives with the Big Sur External USB disk maker. Only use External SSDs or Hard Drives. Thank you!
+7. bigmac.sh also puts -v and -no_compat_check in the boot.plist file for you.
+8. If you don't have a boot screen, bigmac.sh has additional tips at the end.
 
 ### Future Plans
 1. GUI for bigmac.

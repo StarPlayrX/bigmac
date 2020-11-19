@@ -6,9 +6,9 @@
 
 printf '\e[48;5;0m\r\n' #black background
 
-printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
-printf "[38;5;112mStarPlayrX -=> Big Mac Pre-Installation Tool for Mac Pros v11.0.1\r\n"
-printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
+printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
+printf "[38;5;112mStarPlayrX -=> Big Mac Pre-Installation Tool for Mac Pros v11.0.1 0.1\r\n"
+printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
 
 printf "🍟 = Hax Do Not Seal with No APFS Check (BarryKN fork) \r\n"
@@ -67,20 +67,31 @@ defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist D
 echo "\r\nLoading Hax Do Not Seal into Memory - credit ASentientBot & BarryKN :)"
 hax="/🍟/HaxDoNotSealNoAPFSROMCheck.dylib"
 echo $(pwd)$hax
+  
+asentientbot=$(pwd)
+barrykn=$hax
 
 #Check if sudo is available or not
 if sudo -n true
 then
-  sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+  sudo -u $SUDO_USER launchctl setenv DYLD_INSERT_LIBRARIES "$asentientbot$barrykn"
   echo sudo user is: $SUDO_USER
   echo ''
+  echo "Please run quit the 'Install macOS Big Sur.app' Do not reboot. The preinstaller script runs in memory.\r\n"
 else
-  launchctl setenv DYLD_INSERT_LIBRARIES $(pwd)$hax
+  launchctl setenv DYLD_INSERT_LIBRARIES "$asentientbot$barrykn"
   echo Recovery mode detected, running Hax without sudo
-  echo ''
+
+  echo '\r\nDisabling all System Integrity Protection (SIP)'
+  csrutil enable --no-internal --without kext --without fs --without debug --without dtrace --without nvram --without basesystem
+
+  echo '\r\nDisabling Authenticated Root'
+  csrutil disable authenticated-root
+  
+  echo "\r\n💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
+
+  echo "\r\nQuit the Terminal and Select 'Install macOS Big Sur' in the Window. Do not reboot. The preinstaller script runs in memory.\r\n"
 fi
 
-echo "\r\n 💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
 
-echo "Please open the Big Sur macOS Install. Do not reboot. The preinstaller script runs in memory.\r\n"
 

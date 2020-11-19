@@ -1,14 +1,15 @@
 #!/bin/sh
 
 #  sudo ./postinstall.sh
-#  BigMac MacPro post install tool v0.0.12
-#  Created by StarPlayrX on 10.17.2020
+#  BigMac MacPro post install tool v11.0.1 build 0.1
+#  Created by StarPlayrX on 11.17.2020
 
 printf '\e[48;5;0m\r\n' #black background
+read -p 'Welcome to '
 
-printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"
-printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v11.0.1\r\n"
-printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
+printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v11.0.1 0.1\r\n"
+printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n\r\n"
 printf "[38;5;112m"
 
 printf "🍔 = Apple HD Audio, SSE4.1 Telemetry, SuperDrive Support\r\n"
@@ -16,15 +17,18 @@ printf "🧀 = MouSSE 4.2 Emulator for AMD Radeon Video Drivers\r\n"
 printf "🍺 = HDMI Audio, Legacy USB Injector\r\n"
 printf "📸 = Snapshot removal tool by StarPlayrX\r\n"
 
-
 destVolume="/"
 kexts="/🍔/"
 cheese="/🧀/"
-pepsi="/🍺/"
+beer="/🍺/"
+boot="/💾/"
+
+bigsur="bigsur/"
 
 source=$(pwd)$kexts
 cheesey=$(pwd)$cheese
-coke=$(pwd)$pepsi
+rootbeer=$(pwd)$beer
+bootdisk=$(pwd)$boot
 
 read -p "
 🖥  Destination Volume [ $destVolume = return key | drag volume here -> ]: " destVolume2
@@ -52,7 +56,7 @@ read -p "Press return to proceed:" proceed
 kext="/System/Library/Extensions/"
 libKext="/Library/Extensions/"
 plugins="/System/Library/UserEventPlugins/"
-fs="/System/Library/Filesystems/"
+systemconfig="/Library/Preferences/SystemConfiguration/"
 
 libDest=$destVolume$libKext
 dest=$destVolume$kext
@@ -62,16 +66,26 @@ userEventPlugins=$destVolume$plugins
 appleHDA="AppleHDA.kext"
 ioATAFamily="IOATAFamily.kext"
 
-##SSE4.1 compatible plugin
+#SSE4.1 compatible plugin
 telemetry="com.apple.telemetry.plugin"
 
 #Third Party Kexts
 AAAMouSSE="AAAMouSSE.kext"
 LegacyUSBInjector="LegacyUSBInjector.kext"
+SIPManager="SIPManager.kext"
 HDMIAudio="HDMIAudio.kext"
+bootplist="com.apple.Boot.plist"
 
-##ioUSBHostFamily="IOUSBHostFamily.kext"
-##ioUSBFamily="IOUSBFamily.kext"
+echo "Boot.plist -no_compat_check"
+rm -Rf "$systemconfig$bootplist"
+ditto -v "$bootdisk$bigsur$bootplist" "$systemconfig$bootplist"
+chown -R 0:0 "$systemconfig$bootplist"
+chmod -R 755 "$systemconfig$bootplist"
+echo "\r"
+
+
+rm -Rf "$libDest$SIPManager"
+rm -Rf "$libDest$LegacyUSBInjector"
 
 echo "SSE4.2 AMD Radeon Driver Emulator MouSSE"
 rm -Rf "$libDest$AAAMouSSE"
@@ -80,16 +94,9 @@ chown -R 0:0 "$libDest$AAAMouSSE"
 chmod -R 755 "$libDest$AAAMouSSE"
 echo "\r"
 
-echo "Legacy USB Injector"
-rm -Rf "$libDest$LegacyUSBInjector"
-ditto -v "$coke$LegacyUSBInjector" "$libDest$LegacyUSBInjector"
-chown -R 0:0 "$libDest$LegacyUSBInjector"
-chmod -R 755 "$libDest$LegacyUSBInjector"
-echo "\r"
-
 echo "HDMI Audio"
 rm -Rf "$libDest$HDMIAudio"
-ditto -v "$coke$HDMIAudio" "$libDest$HDMIAudio"
+ditto -v "$rootbeer$HDMIAudio" "$libDest$HDMIAudio"
 chown -R 0:0 "$libDest$HDMIAudio"
 chmod -R 755 "$libDest$HDMIAudio"
 echo "\r"
@@ -116,6 +123,13 @@ chown -R 0:0 "$dest$appleHDA"
 chmod -R 755 "$dest$appleHDA"
 echo "\r"
 
+echo "Apple HD Audio"
+rm -Rf "$dest$appleHDA"
+ditto -v "$source$appleHDA" "$dest$appleHDA"
+chown -R 0:0 "$dest$appleHDA"
+chmod -R 755 "$dest$appleHDA"
+echo "\r"
+
 bin="/📠/"
 vers="/sw_vers"
 sw=$(pwd)$bin$vers
@@ -123,9 +137,9 @@ sw=$(pwd)$bin$vers
 echo "Software Version Check"
 version=$($sw '-productVersion')
 echo $version
-echo ""
-##To Do: Move 10.16 and 11.0, maybe read the first 2 characters
-if [ $version != "10.16" ] && [ $version != "11.0" ] && [ $version != "11.0.1" ] && [ $version != "11.0.2" ] && [ $version != "11.0.3" ] && [ $version != "11.0.4" ] && [ $version != "11.0.5" ] && [ $version != "11.0.6" ] && [ $version != "11.0.7" ] && [ $version != "11.0.8" ] && [ $version != "11.0.9" ]
+
+#Will find a better way to compare these strings (one day)
+if [ $version != "11.0.1" ] && [ $version != "11.0.2" ] && [ $version != "11.0.3" ] && [ $version != "11.0.4" ] && [ $version != "11.0.5" ] && [ $version != "11.0.6" ] && [ $version != "11.0.7" ] && [ $version != "11.0.8" ] && [ $version != "11.0.9" ] && [ $version != "11.1.0" ] && [ $version != "11.1.1" ]
  then
    ## Use is not Catalina
    if [ "$destVolume" == "/" ]
@@ -170,11 +184,23 @@ do
     diskutil apfs deletesnapshot "$destVolume" -uuid $uuid
 done
 
-echo '\r\nCreating a bootable blessed snapshot. (tip: clone via asr to remove)'
 
-sudo bless --folder "$destVolume/System/Library/CoreServices" --bootefi --create-snapshot
+#Check if sudo is available or not
+if sudo -n true
+then
+  #Added bless the volume
+ echo '\r\nBlessing the volume'
+  bless --folder "$destVolume/System/Library/CoreServices" --bootefi ##--create-snapshot
+else
+  echo '\r\nBlessing the volume'
+  bless --folder "$destVolume/System/Library/CoreServices" --bootefi ##--create-snapshot
+fi
 
-echo "\r\n 💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
+
+echo "\r\nIf your system gets locked with a snapshot try cloning it with:"
+echo "\r\nsudo asr -s /Volumes/YourSoureVolName -t /Volumes/YourTargetVolName -er -nov"
+
+echo "\r\n💰 Tips via PayPal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
 
 read -p "Press return to Reboot [ options : q for quick ]: " rebootArgs
 echo "\r\n"

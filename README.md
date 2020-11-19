@@ -6,22 +6,31 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 
 ## 🍞 Fresh! Featuring bigmac.sh = BigMac11USB + bigmac 😃
 ### Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator
-1.  `cd ~/Downloads/bigmac.master`
-2. `sudo ./bigmac.sh`
-3. Features an automated macOS 11 downloader directly from Apple's CDN.
-4. If you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 
-5. Plus a fully automated USB installer maker with the bigmac patcher on one partion and BigMac11USB on the other.
-6. Please do not use thumb drives with the Big Sur External USB disk maker. Only use External SSDs or Hard Drives. Thank you!
-7. bigmac.sh also puts -v and -no_compat_check in the boot.plist file for you.
-8. If you don't have a boot screen, bigmac.sh has additional tips at the end.
+1. Easily create your USB boot disk with the bigmac patcher on its own partition! No need for a thumb drive!
+2.  `cd ~/Downloads/bigmac.master`
+3. `sudo ./bigmac.sh`
+4. Features an automated macOS 11 downloader directly from Apple's CDN.
+5. If you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 
+6. Plus a fully automated USB installer maker with the bigmac patcher on one partion and BigMac11USB on the other.
+7. Please do not use thumb drives with the Big Sur External USB disk maker. Only use External SSDs or Hard Drives. Thank you!
+8. bigmac.sh also puts -v and -no_compat_check in the boot.plist file for you.
+9. Reboot holding the the option key (assuming you have a boot screen)
+10. No boot screen? Follow tips at the end of bigmac.sh for 3,1 and 4,1 5,1 respectively.
+11. If you don't have a boot screen, bigmac.sh has additional tips at the end.
+12. Once booted, open terminal
+13. If on a 4k display type cmd + to increase the font size.
+14. cd /Volumes/bigmac
+15. follow the preinstall.sh track (boot the USB installer first)
+16. do the install
+17. follow the postinstall.sh track (reboot the USB installer first)
 
 ### Future Plans
 1. GUI for bigmac.
 
-### When running from an macOS Mojave, Catalina or Big Sur
+### When running from an macOS Mojave, Catalina or Big Sur (This method is not ideal)
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 
-### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB
+### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB (Ideal)
 APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
 
 ### Requirements 
@@ -44,25 +53,23 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
 10. For convience copy the `bigmac.master` folder to a separate thumb drive
 
-### How to boot your createinstallmedia (External USB Install macOS Big Sur)
-1. You will need to run preinstall.sh and then the macOS installer from this disk.
-2. The preinstall enables the Mac OS installer in memory. The installer is not physically touched.
-3. Reboot boot using `option key` 
-4. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
-5. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.
-6. From there open the Terminal. It's under the Utilities menu.
-7. `ls -a` to see where stuff is (great invention)
-8. `cd /Volumes/pathToBigMacDisk/`
-6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
-10. Omiting `sudo` follow the `Pre Install track in this guide`
-11. Quit the Terminal app
-12. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
-13. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
-14. Open Terminal 
-15. `cd /Volumes/pathToBigMacDisk/`
-16. `cd bigmac.master` (Do not omit cd'ing to this folder)
-17. Omiting `sudo` follow the `Post Install track in this guide`
-18. Select the start up disk
+### How to boot your BigMac11USB
+1. Reboot boot using `option key` 
+2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
+3. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.
+4. From there open the Terminal. It's under the Utilities menu.
+5. `ls -a` to see where stuff is (great invention)
+6. `cd /Volumes/bigmac/`
+7. Omiting `sudo` follow the `Pre Install track in this guide`
+8. Quit the Terminal app
+9. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
+10. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
+11. Open Terminal 
+12. `cd /Volumes/bigmac/`
+13. Omiting `sudo` follow the `Post Install track in this guide`
+14. You will need to type in /Volumes/macOSName when it asks, This will be fixed.
+15. Select the start up disk
+16. If you don't have a boot screen, there are some tips after running the bigmac.sh, which you should have run previously tool.
 
 ### Pre Install script (Works with All Macs)
 1. Erase a disk using GUID Partition and Mac OS Extended (Journaled) aka JHFS+ (this step may be automated)
@@ -115,20 +122,20 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 10. Wait
 11. Press q and Enter to reboot.
 
-### How to turn off System Integrity Protection (this is automated now in post installer)
+### How to turn off System Integrity Protection (this is now automated)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia)
 2. `csrutil disable`
 3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)
 4. Use Start up disk (top left to select your installation)
 
-### bigmac install scripts can run from a Recovery or Installer disk
-1. Use a second USB drive and put Big Mac on it.
+### bigmac install scripts can run BigMac11USB
+1. No need for a thumb drive.
 2. Omit the word `sudo`
-3. `cd /Volumes`
+3. `cd /Volume/bigmac`
 4. `ls -a`
-5. `cd /pathToBigMacDisk`
-6. `cd bigmac.master` (Do not omit cd'ing to this folder it uses the working directory name to get its resources.)
-7. Follow Pre-Install or Post-Install track.
+5. `./preinstall.sh` then quit terminal and open up the installer.
+6. after the install reboot. run `./postinstall.sh` and type in your macOS path `/Volumes/macOSnamehere` I plan to make it easier soon.
+7. For more details follow Pre-Install or Post-Install track.
 
 ### Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov

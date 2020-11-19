@@ -4,12 +4,16 @@ Big Sur macOS 11 Mac Pro patcher
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-### Update in this NeXT Release! :)
-1. bigmac.sh script
-2. features a macOS 11 downloader from Apple's CDN plus USB installer maker with bigmac patcher on a separate volume of the same disk.
-3. the downloader is optional if you already have the Install Big Sur app in your /Applications folder
-4. it also puts -v and -no_compat_check in the boot.plist file for you.
-5. if you don't have a boot screen, it tips at the end.
+## 🍞 Fresh! Featuring bigmac.sh = BigMac11USB + bigmac 😃
+### Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator
+1.  `cd ~/Downloads/bigmac.master`
+2. `sudo ./bigmac.sh`
+3. Features an automated macOS 11 downloader directly from Apple's CDN.
+4. If you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 
+5. Plus a fully automated USB installer maker with the bigmac patcher on one partion and BigMac11USB on the other.
+6. Please do not use thumb drives with the Big Sur External USB disk maker. Only use External SSDs or Hard Drives. Thank you!
+7. bigmac.sh also puts -v and -no_compat_check in the boot.plist file for you.
+8. If you don't have a boot screen, bigmac.sh has additional tips at the end.
 
 ### Future Plans
 1. GUI for bigmac.
@@ -17,7 +21,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 ### When running from an macOS Mojave, Catalina or Big Sur
 Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
 
-### When running the preinstall.sh from an Install macOS Big Sur USB Disk / createinstallmedia
+### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB
 APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
 
 ### Prerequisite (Terminal, set sudo nvram boot-args='-no_compat_check')

@@ -6,7 +6,9 @@
 
 #AutoSwitch to current directory
 dir=$(dirname "$0")
-cd "$dir"3
+cd "$dir"
+
+bigmac=$(pwd)
 
 printf '\e[48;5;0m\e[K'
 printf '\e[K'

@@ -28,7 +28,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
 1. Boot up the Install macOS Big Sur USB Disk (don't have it? run `sudo ./bigmac.sh`)
-2. `cd /Volumes/bigmac'
+2. `cd /Volumes/bigmac`
 7. `./preinstall.sh`
 8. set boot-args to `-no_compat_check -v`
 9. Quit the Terminal. Open the big Sur installer app.

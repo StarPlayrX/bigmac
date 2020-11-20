@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-## Basic Workflow in a Nut Shell 🥜
+## BigMac's Workflow in a Nut Shell 🥜
 1. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
 1. `cd ~/Downloads/bigmac.master`
 2. `./bigmac.sh`

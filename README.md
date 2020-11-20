@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 #### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time for fun.
 
-#### Issues are to be used for reporting bugs in the software or sumbitting feature requests.
+#### Issues are to be used for reporting bugs or feature requests.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.

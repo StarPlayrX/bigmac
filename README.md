@@ -18,18 +18,19 @@ Big Sur macOS 11 Mac Pro patcher
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## BigMac's Workflow in a Nut Shell 🥜
-1. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
-1. `cd ~/Downloads/bigmac.master`
-2. `./bigmac.sh`
-1. Reboot -> hold down OPTION key -> macOS Big Sur Installer
-2. Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh
-3. Boot the USB installer, from its Terminal type:
-4. `cd /Volumes/bigmac`
-5. `./preinstall.sh`
-6. Wait for the install is fully completed (hint: it takes 3 stages to complete.)
+1. Workflow -> Download Big Sur -> Create USB Installer
+2. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
+3. `cd ~/Downloads/bigmac.master`
+4. `./bigmac.sh`
+5. Reboot -> hold down OPTION key -> macOS Big Sur Installer
+6. Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh
 7. Boot the USB installer, from its Terminal type:
 8. `cd /Volumes/bigmac`
-9. `./postinstall.sh`
+9. `./preinstall.sh`
+10. Wait for the install is fully completed (hint: it takes 3 stages to complete.)
+11. Boot the USB installer, from its Terminal type:
+12. `cd /Volumes/bigmac`
+13. `./postinstall.sh`
 
 ### Requirements 
 1. Mac Pro 2008 - 2012 

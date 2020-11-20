@@ -4,12 +4,15 @@
 #  BigMac MacPro pre-install tool v0.0.12
 #  Created by StarPlayrX on 10.17.2020
 
+#AutoSwitch to current directory
+dir=$(dirname "$0")
+cd "$dir"3
 
 printf '\e[48;5;0m\e[K'
 printf '\e[K'
 
 printf "\e[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
-printf "\r\n[38;5;112m  🥓 Welcome to 🍔 Bigmac's 🥤 USB downloader, 🍟 Installer and 🥞 Configurator"
+printf "\r\n[38;5;112m -=> 🥤 Big Sur Downloader 🍟 Big Mac USB Installer 🍔 mini bigmac partition <=-"
 printf '\e[K'
 printf "\r\n\e[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 printf '\e[K'
@@ -17,22 +20,6 @@ printf "\r\n[38;5;112m"
 printf '\e[K'
 printf "\r\n[38;5;112m"
 printf '\e[K'
-
-
-bigmac="$(pwd)"
-
-if [[ "$bigmac" != *"bigmac"* ]]
-    then
-        printf '\e[K'
-        echo
-        echo $bigmac
-        echo
-        printf '\e[K'
-        echo 'Please cd to the bigmac.master directory and run this script again.'
-        echo
-        printf '\e[K'
-        exit 0
-fi
 
 read -p "📦 Would you like to download Big Sur macOS 11.0.1 (20B29)? [y]: " install
 
@@ -42,6 +29,7 @@ if [[ "$install" == *"y"* ]]
         printf '\e[K'
         echo
         printf '\e[K'
+        rm -Rf ~/Downloads/InstallAssistant.pkg
         curl http://swcdn.apple.com/content/downloads/50/49/001-79699-A_93OMDU5KFG/dkjnjkq9eax1n2wpf8rik5agns2z43ikqu/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
         echo
         printf '\e[K'
@@ -76,7 +64,7 @@ if [[ "$create" == *"y"* ]]
             do
                 if [[ "$media" != *"$volumes"* ]] || [[ "$disk" != *"disk"* ]]
               then
-                read -p "🍪 Please drag your external USB disk here. 💾 The entire USB disk will be erased -> " media
+                read -p "🍪 Please drag your external USB disk here. The entire 💾 USB disk will be erased -> " media
                 disk=$(diskutil info "$media" | grep 'Part of Whole:' | sed 's/^.\{30\}//')
                 
                 echo
@@ -145,13 +133,15 @@ if [[ "$create" == *"y"* ]]
         done
 fi
 
-  echo "\r\nWith a flashed Mac video card -> Reboot and hold down the option key!"
-  
-  echo "\r\nWith no boot screen on Mac Pro 4,1 - 5,1 -> Install one internal erased disk. Connect the BigMac11USB and reboot"
+echo "\r\nWith your flashed Mac video card that supports Metal [Boot Screen] -> Reboot and hold down the option key and select the Big Sur USB Installer Disk!"
 
-  echo "\r\nWith no boot screen on Mac Pro 3,1 -> Remove all internal drives. Connect external SSD or HD via USB or Firewire with 64GB or more. Connect the BigMac11USB and reboot. After the install is complete your can install the disk or clone it using 'sudo asr -s /Volumes/sourceDiskName-t /Volumes/targetDiskName -er -nov"
+echo "\r\nPreinstall workflow (MacPro 3,1 4,1 5,1 users): with the USB installer booted. Open the terminal, type cd /Volumes/bigmac; ./preinstall.sh\r\nQuit the terminal, run the installer"
 
-  echo "\r\n💰 Tips via Paypal are accepted here: https://tinyurl.com/y2dsjtq3\r\n"
+echo "\r\Postinstall workflow (mostly MacPro 3,1 users): with the USB installer booted. Open the terminal, type cd /Volumes/bigmac; ./postinstall.sh\r\nQuit the terminal, select the startup disk and reboot"
+
+echo "\r\nIf you don't have a boot screen. I cannot offer support. However you can try diconnecting all drives, connect the USB installer and another USB drive to install to that is erased so your system doesn't boot up from it. From there you should be able to figure out your own workflow. My advice is to get a flashed video card that supports metal. It saves a time and headache!"
+
+echo "\r\n💰 If this software helped you in any way, please send a Tip via PayPal here: https://tinyurl.com/y2dsjtq3\r\n"
 
 
 

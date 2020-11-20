@@ -4,7 +4,16 @@
 #  BigMac MacPro post install tool v11.0.1 build 0.1
 #  Created by StarPlayrX on 11.17.2020
 
-printf '\e[48;5;0m\r\n' #black background
+
+#Auto Switch to the current directory
+dir=$(dirname "$0")
+cd "$dir"
+
+bigmac="$(pwd)"
+
+printf '\e[48;5;0m' #black background
+echo
+printf '\e[K'
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
 printf "[38;5;112mStarPlayrX -> Big Mac Post Installation Tool for Mac Pros v11.0.1 0.1\r\n"

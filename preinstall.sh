@@ -4,6 +4,10 @@
 #  BigMac MacPro pre-install tool v0.0.12
 #  Created by StarPlayrX on 10.17.2020
 
+#Auto Switch to the current directory
+dir=$(dirname "$0")
+cd "$dir"
+
 printf '\e[48;5;0m\r\n' #black background
 
 printf "[38;5;172m=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\r\n"

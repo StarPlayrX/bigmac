@@ -115,7 +115,6 @@ if [[ "$create" == *"y"* ]]
                 printf '\e[K'
                 echo
                 sudo /Applications/'Install macOS Big Sur.app'/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/installer_"$disk$number"
-                diskutil rename "Install macOS Big Sur" "BigMac11USB"
 
                 bootplist="com.apple.Boot.plist"
                 boot="/💾/"
@@ -129,8 +128,9 @@ if [[ "$create" == *"y"* ]]
                 chmod -R 755 "$systemconfig$bootplist"
                 echo
                 printf '\e[K'
-                echo "☠️  Renaming Install macOS Big Sur volume to BigMac11USB"
-                printf '\e[K'
+                ##echo "☠️  Renaming Install macOS Big Sur volume to BigMac11USB"
+                ##diskutil rename "Install macOS Big Sur" "BigMac11USB"
+                ##printf '\e[K'
             fi
         done
 fi

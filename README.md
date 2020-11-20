@@ -36,7 +36,7 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 3. Native APFS Boot support. Dosdude1's APFS ROM Patcher is included in the 😎 folder.
 4. Your GPU Must Support Metal. I highly recommended this GPU: Radeon RX 580 8 GB
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
-6. A SSD or Hard drive with 60GB or more. 256GB Recommended.
+6. For the actual installation, A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
 1. Boot up the Install macOS Big Sur USB Disk (don't have it? run `sudo ./bigmac.sh`)

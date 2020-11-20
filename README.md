@@ -4,6 +4,18 @@ Big Sur macOS 11 Mac Pro patcher
 
 #### Support is not included with bigmac. I work on many projects. This is one that I do in my spare time for fun.
 
+#### If you cannot boot a USB Installer. This tool may not be for you.
+
+## How to boot a USB from an Intel Processor (requires a Mac ROM Bootloader / Flashed Video card for Mac)
+1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.
+2. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
+3. Release the Option key when you see a gray boot screen showing your bootable volumes.
+4. Select the volume containing the bootable installer. Then click the up arrow or press Return. 
+5. Choose your language, if prompted.
+6. Open the Terminal
+7. `cd /Volumes/bigmac; .preinstall.sh`
+6. Select Install macOS (or Install OS X) from the Utilities window, then click Continue and follow the onscreen instructions.
+
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## BigMac's Workflow in a Nut Shell 🥜

@@ -6,7 +6,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 #### If you cannot boot a USB Installer. This tool may not be for you.
 
-## How to boot a USB from an Intel Processor (requires a Mac ROM Bootloader / Flashed Video card for Mac)
+## How to boot a USB (Flashed Mac Video Card Required)
 1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.
 2. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
 3. Release the Option key when you see a gray boot screen showing your bootable volumes.

@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 #### Support is not included with bigmac. I work on many projects. This is one that I do in my spare time for fun.
 
-## How to boot a USB (Flashed Mac Video Card Required)
+## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.
 2. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
 3. Release the Option key when you see a gray boot screen showing your bootable volumes.

@@ -90,7 +90,7 @@ else
   csrutil disable
   
   echo '\r\nDisabling Authenticated Root'
-  csrutil disable authenticated-root
+  csrutil authenticated-root disable
   
   echo "\r\nQuit the Terminal and Select 'Install macOS Big Sur' in the Window. Do not reboot. The preinstaller script runs in memory.\r\n"
   

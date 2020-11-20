@@ -59,7 +59,7 @@ read -p "🍦 Would you like to create a USB Installer, excluding thumb drives [
 while [ ! -d "/Applications/Install macOS Big Sur.app" ] && [[ "$create" == *"y"* ]]
 
 do
-    if [ ! -d "/Applications/Install macOS Big Sur.app" && [[ "$create" == *"y"* ]]
+    if [ ! -d "/Applications/Install macOS Big Sur.app" ] && [[ "$create" == *"y"* ]]
         then
             read -p "🤯 Please place the Install macOS Big Sur.app in your 🍎 Applications 📂 Folder and press Return: " install
     fi

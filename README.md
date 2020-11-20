@@ -2,6 +2,8 @@
 ## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
+## Support is not included with bigmac. I work on many projects. This is on that I do in my spare time for fun.
+
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## BigMac's Workflow in a Nut Shell 🥜

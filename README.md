@@ -2,7 +2,7 @@
 ## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
-#### Support is not included with bigmac. I work on many projects. This is one that I do in my spare time for fun.'
+#### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time for fun.
 
 #### Issues are to be used for reporting bugs in the software or sumbitting feature requests.
 

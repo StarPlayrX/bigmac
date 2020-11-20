@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 #### Support is not included with bigmac. I work on many projects. This is one that I do in my spare time for fun.
 
-##### If you cannot boot a USB Installer, this tool may not be for you. This are ways to do this without a boot screeN. However I do not have the time or energy for supporting custom configurations. Getting your PC Card flashed is not expensive nor is keeping a spare Mac Video Card around for installations.
+##### If you cannot boot a USB Installer, this tool may not be for you. This are ways to do this without a boot screeN. However I do not have the time or energy for supporting custom configurations. There are many resources on getting a flashed Mac Video Card or buying a Nvidia GeForce GTX 680 2GB and flashing it yourself.
 
 ## How to boot a USB (Flashed Mac Video Card Required)
 1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.

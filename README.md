@@ -2,8 +2,7 @@
 ## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
-#### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time for fun.
-
+#### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
 #### Issues are to be used for reporting bugs or feature requests.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)

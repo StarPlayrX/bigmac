@@ -101,4 +101,4 @@ Updated on November 17, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010
 
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-🍟 Special thanks to the Unsupported Macs Team!
+## 🍟 Special thanks to the Unsupported Macs Team!

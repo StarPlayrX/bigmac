@@ -135,15 +135,27 @@ if [[ "$create" == *"y"* ]]
         done
 fi
 
-echo "\r\nWith your flashed Mac video card that supports Metal [Boot Screen] -> Reboot and hold down the option key and select the Big Sur USB Installer Disk!"
 
-echo "\r\nPreinstall workflow (MacPro 3,1 4,1 5,1 users): with the USB installer booted. Open the terminal, type cd /Volumes/bigmac; ./preinstall.sh\r\nQuit the terminal, run the installer"
-
-echo "\r\Postinstall workflow (mostly MacPro 3,1 users): with the USB installer booted. Open the terminal, type cd /Volumes/bigmac; ./postinstall.sh\r\nQuit the terminal, select the startup disk and reboot"
-
-echo "\r\nIf you don't have a boot screen. I cannot offer support. However you can try diconnecting all drives, connect the USB installer and another USB drive to install to that is erased so your system doesn't boot up from it. From there you should be able to figure out your own workflow. My advice is to get a flashed video card that supports metal. It saves a time and headache!"
-
-echo "\r\n💰 If this software helped you in any way, please send a Tip via PayPal here: https://tinyurl.com/y2dsjtq3\r\n"
-
-
-
+echo
+echo "Reboot -> hold down OPTION key -> macOS Big Sur Installer"
+echo
+echo "Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh"
+echo
+echo "Boot the USB installer, from its Terminal type:"
+echo
+echo "cd /Volumes/bigmac"
+echo "./preinstall.sh"
+echo
+echo "open Big Sur Installer"
+echo
+echo "after install is completed (hint: it takes 3 stages to complete.)"
+echo
+echo "Boot the USB installer, from its Terminal type:"
+echo
+echo "cd /Volumes/bigmac"
+echo "./postinstall.sh"
+echo
+echo "Wait, no Boot Screen? I'll leave that adventure up to you."
+echo
+echo "Your mileage may vary. Support is not included with this software."
+echo

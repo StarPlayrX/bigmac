@@ -5,70 +5,29 @@ Big Sur macOS 11 Mac Pro patcher
 Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## Basic Workflow in a Nut Shell 🥜
-1. Open the Terminal. cd (drag bigmac.master folder here) press Return.
-2. Create USB with `sudo ./bigmac.sh` follow the wizard.
-3. Reboot to USB Installer using the option key. (This requires you to have a flashed video card).
-4. For not flashed video card users only, it is possible to run the USB installer without flashed card but you must disconnect all internal drives and boot up with one erased disk. Mac Pro Early 2008 3,1 users: use another external USB hard disk to install and you can clone it later using asr. For Mac Pro 2009 - 2012 4,1 5,1 users, you can leave one erased intaller disk in your system. You can also do all these steps on anothe mac that had a boot screen and transfer the drive or take advantage of Target Disk Mode and clone the install to it over FireWire.
-5. `cd Volumes/bigmac`
-6. always run `preinstall.sh` before you run you the Big Sur installer this is true not matter if you are running the USB installer or from a system. A USB installer is highly recommend and `bigmac.sh` takes care of this for you.
-7. The Big Sur macOS 11 install takes 3 stages to recomplete.
-8. boot back into the USB installer
-9. `cd Volumes/bigmac`
-10. run `postinstall.sh` 
-11. If you find an error or a bug, you can report the issue. Please refrain from using it for support. There are other resources for this. Thank you!
-
-### How to create your USB boot disk with bigmac preinstall and postinsall scripts on its own volume + a bootable USB installer!
-2.  `cd ~/Downloads/bigmac.master`
-3. `sudo ./bigmac.sh`
-4. Features an automated macOS 11 downloader directly from Apple's CDN.
-5. If you already have the Install Big Sur app in your /Applications folder, don't worry, the downloader is optional. 
-6. Plus a fully automated USB installer maker with the bigmac patcher on one partion and BigMac11USB on the other.
-7. Please do not use thumb drives with the Big Sur External USB disk maker. Only use External SSDs or Hard Drives. Thank you!
-8. bigmac.sh also puts -v and -no_compat_check in the boot.plist file for you.
-9. Reboot holding the the option key (assuming you have a boot screen)
-10. No boot screen? Follow tips at the end of bigmac.sh for 3,1 and 4,1 5,1 respectively.
-11. If you don't have a boot screen, bigmac.sh has additional tips at the end.
-12. Once booted, open terminal
-13. If on a 4k display type cmd + to increase the font size.
-14. cd /Volumes/bigmac
-15. follow the preinstall.sh track (boot the USB installer first)
-16. do the install
-17. follow the postinstall.sh track (reboot the USB installer first)
-
-### When running the preinstall.sh from an Install macOS Big Sur USB Disk / BigMac11USB (Ideal)
-APFS clean and dirty installs are supported. You can even upgrade older versions of Big Sur!
-
-### When running from an macOS Mojave, Catalina or Big Sur (This method is not ideal)
-Only clean installs are supported to an erased Mac OS Extended (Journaled) disk aka JHFS+.
+1. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
+1. `cd ~/Downloads/bigmac.master`
+2. `./bigmac.sh`
+1. Reboot -> hold down OPTION key -> macOS Big Sur Installer
+2. Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh
+3. Boot the USB installer, from its Terminal type:
+4. `cd /Volumes/bigmac`
+5. `./preinstall.sh`
+6. Wait for the install is fully completed (hint: it takes 3 stages to complete.)
+7. Boot the USB installer, from its Terminal type:
+8. `cd /Volumes/bigmac`
+9. `./postinstall.sh`
 
 ### Requirements 
-1. Mac Pro 2008 - 2012
-2. If you don't have a boot screen there are some workarounds for this. I will try to create a separate section soon for this.
-3. APFS ROM patcher applied. Dosdude1's APFS ROM Patcher is included in the 😎 folder. You only need to flash your Mac's firmware once using his tool. You must put your mac into programming mode. Instructions are included with the tool. This requires time and patience. Don't attempt if you are tired. Do not interrupt.
-Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @ 60 Hz on Big Sur with 4k boot screen! Flashed Nvidia cards with metal will have 4k @ 30 Hz only. If you know how to get 4k@60Hz on NVidia on Big Sur please let us know. If you have 4k on Flashed Nvidia use a 30 Hz port to get a boot screen.
-4. 1 - 2 external USB SSDs or hard drives for BigMac11USB or Mac Pro 3,1 no boot screen install.
-5. A SSD or Hard drive with 60GB or more. 256GB Recommended.
-
-### How to boot your BigMac11USB (boot screenr will call it Install macOS Big Sur)
-1. Reboot boot using `option key` 
-2. At boot screen select the external USB `Install macOS Big Sur` disk. (It will be yellow if it is on an external drive)
-3. Wait for the external media to boot up. You may see black screen for a minute or two before any verbose logs kick in.
-4. From there open the Terminal. It's under the Utilities menu.
-5. `ls -a` to see where stuff is (great invention)
-6. `cd /Volumes/bigmac/`
-7. Omiting `sudo` follow the `Pre Install track in this guide`
-8. Quit the Terminal app
-9. Within the window of the booted up install media: select the `Big Sur install icon` and click the `continue` button. Select your disk and agree to the license.
-10. After the install is complete, boot from the external USB `Install mac OS Big Sir` disk again.
-11. Open Terminal 
-12. `cd /Volumes/bigmac/`
-13. Omiting `sudo` follow the `Post Install track in this guide`
-14. You will need to type in /Volumes/macOSName when it asks, This will be fixed.
-15. Select the start up disk
-16. If you don't have a boot screen, there are some tips after running the bigmac.sh, which you should have run previously tool.
+1. Mac Pro 2008 - 2012 
+2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
+3. Native APFS Boot support. Dosdude1's APFS ROM Patcher is included in the 😎 folder.
+4. Your GPU Must Support Metal. I highly recommended this GPU: Radeon RX 580 8 GB
+5. 1 - 2 external USB SSDs or hard drives. One for Install macOS Big Sur USB Disk and one for Mac Pro 3,1 for no boot screen install. (disconnect all other system drives if your don't have a boot screen).
+6. A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
-1. Boot up the BigMac11USB (don't have it? run `sudo ./bigmac.sh`)
+1. Boot up the Install macOS Big Sur USB Disk (don't have it? run `sudo ./bigmac.sh`)
 2. `cd /Volumes/bigmac'
 7. `./preinstall.sh`
 8. set boot-args to `-no_compat_check -v`
@@ -76,7 +35,7 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 10. Big Sur installs in three stages
 
 ### Post Install Track, Required for Mac Pro 3,1
-1. Boot up the BigMac11USB (don't have it? run `sudo ./bigmac.sh`)
+1. Boot up the Install macOS Big Sur USB Disk (don't have it? run `sudo ./bigmac.sh)
 2. `cd /Volumes/bigmac'
 7. `./postinstall.sh`
 8. type in the volume name of the install you just did `/Volumes/macosnamehere` (This will be improved in a future version), You may have to use `ls -a` in volumes to get the name before hand.
@@ -108,33 +67,11 @@ Your GPU must support Metal. Flashed AMD Cards like the RX 580 8 GB support 4k @
 1. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur installer app/task, you will need to run the Preinstall script again. 
 2. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
-
-### How to use createinstallmedia (bigmac.sh now does this for you and more!)
-1. Drag `Install macOS Big Sur.app` to the Desktop
-2. Open Terminal
-3. `cd ~/Desktop/Install\ macOS\ Big\ Sur.app/Contents/Resources`
-4. `sudo ./createinstallmedia -v /Volumes/externalUSB`
-5. type password
-6. Ready to Start.
-7. If you wish to continue type (Y) then press return: `y`
-8. Erasing disk: 0%... 10%... 20%... 30%... 100%
-9. Copying to disk: 0%... 10%... 20%... 30%... 40%... 50%... 60%... 70%... 80%... 90%... 100%
-10. For convience copy the `bigmac.master` folder to a separate thumb drive
-
-### How to turn off System Integrity Protection (this is now automated)
+### How to turn off System Integrity Protection (this is now built into preinstall.sh)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia)
 2. `csrutil disable`
 3. `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks)
 4. Use Start up disk (top left to select your installation)
-
-### bigmac install scripts can run BigMac11USB
-1. No need for a thumb drive.
-2. Omit the word `sudo`
-3. `cd /Volume/bigmac`
-4. `ls -a`
-5. `./preinstall.sh` then quit terminal and open up the installer.
-6. after the install reboot. run `./postinstall.sh` and type in your macOS path `/Volumes/macOSnamehere` I plan to make it easier soon.
-7. For more details follow Pre-Install or Post-Install track.
 
 ### Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov

@@ -1,7 +1,7 @@
-
 ## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
+Looks like legacy usb has been fixed for Big Sur. I will be add testing that put this weekend. It may improve USB1 devices. Patching the base system may happen. I have mixed feels on it as I'd like the USB installer to be stock if possible.
 #### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
 #### Issues are to be used for reporting bugs or features.
 

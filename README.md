@@ -1,5 +1,4 @@
-## 🍔 bigmac
-Big Sur macOS 11 Mac Pro patcher 
+## 🍔 bigmac Big Sur macOS 11 Mac Pro patcher 
 
 If this software is useful in any way, please donate to https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 

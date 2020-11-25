@@ -9,7 +9,7 @@ Big Sur macOS 11 Mac Pro patcher
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
-Legacy USB for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a proble with Big Sur which Apple introduced on their own. I was expecting this to get fixed as most keyboard, mice and trackpads are USB1 or USB2. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may alos work (as suggested by articles when Catalina had similar issues).
+Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
 
 #### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
 #### Issues are to be used for reporting bugs or features, not I can't get this to work.

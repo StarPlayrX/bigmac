@@ -3,6 +3,8 @@ Big Sur macOS 11 Mac Pro patcher
 
 If this software is useful in any way, please donate to https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
+New version will be released Q1 2021
+
 ### Requirements 
 1. Mac Pro 2008 - 2012 
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.

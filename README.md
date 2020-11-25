@@ -1,9 +1,17 @@
 ## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
+### Requirements 
+1. Mac Pro 2008 - 2012 
+2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
+3. Native APFS Boot support. For a limited time, Dosdude1's APFS ROM Patcher is included in the 😎 folder (this will be removed from the repo soon, and will be included as a download option instead.)
+4. Your GPU Must Support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
+5. 1 external USB SSD or hard drive. Thumb drives are not supported.
+6. For the actual installation, A SSD or Hard drive with 60GB or more. 256GB Recommended.
+
 Looks like legacy usb has been fixed for Big Sur. I will be add testing that put this weekend. It may improve USB1 devices. Patching the base system may happen. I have mixed feeling on it as I'd like the USB installer to be stock if possible.
 #### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
-#### Issues are to be used for reporting bugs or features.
+#### Issues are to be used for reporting bugs or features, not I can't get this to work.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.
@@ -31,14 +39,6 @@ Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF8
 11. Boot the USB installer, from its Terminal type:
 12. `cd /Volumes/bigmac`
 13. `./postinstall.sh`
-
-### Requirements 
-1. Mac Pro 2008 - 2012 
-2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
-3. Native APFS Boot support. Dosdude1's APFS ROM Patcher is included in the 😎 folder.
-4. Your GPU Must Support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
-5. 1 external USB SSD or hard drive. Thumb drives are not supported.
-6. For the actual installation, A SSD or Hard drive with 60GB or more. 256GB Recommended.
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
 1. Boot up the Install macOS Big Sur USB Disk (don't have it? run `sudo ./bigmac.sh`)

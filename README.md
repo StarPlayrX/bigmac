@@ -18,14 +18,17 @@ New version will be released Q1 2021
 #### Issues are to be used for reporting bugs or features, not I can't get this to work.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
-1. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.
-2. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
-3. Release the Option key when you see a gray boot screen showing your bootable volumes.
-4. Select the volume containing the bootable installer. Then click the up arrow or press Return. 
-5. Choose your language, if prompted.
-6. Open the Terminal
-7. `cd /Volumes/bigmac; .preinstall.sh`
-6. Select Install macOS (or Install OS X) from the Utilities window, then click Continue and follow the onscreen instructions.
+1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
+2. Be sure to disable System Integrity Protection as soon as possible.
+3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
+4. Plug the bootable installer into a Mac that is connected to the internet and compatible with the version of macOS you're installing.
+5. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
+6. Release the Option key when you see a gray boot screen showing your bootable volumes.
+7. Select the volume containing the bootable installer. Then click the up arrow or press Return. 
+8. Choose your language, if prompted.
+9. Open the Terminal
+10. `cd /Volumes/bigmac; .preinstall.sh`
+11. Select Install macOS (or Install OS X) from the Utilities window, then click Continue and follow the onscreen instructions.
 
 Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
 

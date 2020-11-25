@@ -11,6 +11,8 @@ Big Sur macOS 11 Mac Pro patcher
 
 Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
 
+Note: Option boot using a boot screen requires a keyboard in directly. Bluebooth keyboards do not catch up in time. There used to be a fixed in NVRAM for this but I haven't found it. If I do, will update.
+
 #### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
 #### Issues are to be used for reporting bugs or features, not I can't get this to work.
 

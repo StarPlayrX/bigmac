@@ -1,6 +1,8 @@
 ## 🍔 bigmac
 Big Sur macOS 11 Mac Pro patcher 
 
+Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
+
 ### Requirements 
 1. Mac Pro 2008 - 2012 
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
@@ -8,10 +10,6 @@ Big Sur macOS 11 Mac Pro patcher
 4. Your GPU Must Support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, A SSD or Hard drive with 60GB or more. 256GB Recommended.
-
-Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
-
-Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, will update.
 
 #### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
 #### Issues are to be used for reporting bugs or features, not I can't get this to work.
@@ -26,7 +24,11 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 7. `cd /Volumes/bigmac; .preinstall.sh`
 6. Select Install macOS (or Install OS X) from the Utilities window, then click Continue and follow the onscreen instructions.
 
-Now accepting donations https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
+Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
+
+Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, will update.
+
+
 
 ## BigMac's Workflow in a Nut Shell 🥜
 1. Workflow -> Download Big Sur -> Create USB Installer

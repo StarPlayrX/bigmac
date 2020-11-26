@@ -67,7 +67,7 @@ if [[ "$create" == *"y"* ]]
                 if [[ "$media" != *"$volumes"* ]] || [[ "$disk" != *"disk"* ]]
               then
                 read -p "🍪 Please drag your external USB disk here. The entire 💾 USB disk will be erased -> " media
-                disk=$(diskutil info "$media" | grep 'Part of Whole:' | sed 's/^.\{30\}//')
+                disk=$(diskutil info "$media" | grep 'Part of Whole:' | awk '{print $4}')
                 
                 echo
                 printf '\e[K'
@@ -119,7 +119,7 @@ if [[ "$create" == *"y"* ]]
                 bootplist="com.apple.Boot.plist"
                 boot="/💾/"
                 echo "Boot.plist -v -no_compat_check to USB Installer"
-                systemconfig="/Volumes/BigMac11USB/Library/Preferences/SystemConfiguration/"
+                systemconfig="/Volumes/Install macOS Big Sur/Library/Preferences/SystemConfiguration/"
                 bootdisk=$(pwd)$boot
                 base="base/"
                 rm -Rf "$systemconfig$bootplist"

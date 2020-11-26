@@ -124,7 +124,7 @@ if [[ "$create" == *"y"* ]]
                 base="base/"
                 rm -Rf "$systemconfig$bootplist"
                 ditto -v "$bootdisk$base$bootplist" "$systemconfig$bootplist"
-                chown -R 0:0 "$systemconfig$bootplist"
+                sudo chown -R 0:0 "$systemconfig$bootplist"
                 chmod -R 755 "$systemconfig$bootplist"
                 echo
                 printf '\e[K'

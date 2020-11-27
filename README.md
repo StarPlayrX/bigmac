@@ -6,8 +6,6 @@ Big Sur macOS 11 Mac Pro patcher
 ## Workarounds & What Not
 
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
-
-<b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for testing purposes. https://starplayrx.com/downloads/bigmac/BMO1.dmg Format a disk using MacOS Extended Journal. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` 
   
 <b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time.
 
@@ -18,7 +16,9 @@ Big Sur macOS 11 Mac Pro patcher
 <b>Firewire and Handoff</b> is currently not working but I am looking into both of these issues.
 
 <b>A Legacy WiFi Patch</b> will be added to Big Mac in the next release.
-  
+
+<b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for testing purposes. https://starplayrx.com/downloads/bigmac/BMO1.dmg Format a disk using MacOS Extended Journal. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` 
+
 <b>Old AMD Cards</b> Users with older AMD cards are having trouble getting any type of USB or macOS Installer to work. If you have an old AMD Card, you can try BMO1 for testing purposes.
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. Please donate. Thank you! https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ

@@ -6,7 +6,7 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 
 New version will be released Q1 2021
 
-<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros were USB 2.0 keyboards, mice and trackpads, do not reconnect if disconnected. A solution? Try using a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time.
+<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros were USB 2.0 keyboards, mice and trackpads, do not reconnect if disconnected. A solution? Try using a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time. I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
 
 ### Requirements 
 1. Mac Pro 2008 - 2012 

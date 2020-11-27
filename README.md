@@ -2,8 +2,6 @@
 
 Big Sur macOS 11 Mac Pro patcher 
 
-If this software is useful in any way, please donate to https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
-
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
 
 ## Known issues
@@ -130,8 +128,8 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 3. Workaround, if you are using MAME on your Mac, revert back to Mojave or Catalina. Mojave is recommended for SDL MAME users.
 5. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
 
-Updated on November 17, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss, See Credits file
+Updated on November 17, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
-If this software is useful in any way, please donate to https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
+A Big Mac is better than a New Mac. Please donate to https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
 ## 🍟 Special thanks to the Unsupported Macs Team!

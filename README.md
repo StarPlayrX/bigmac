@@ -13,8 +13,10 @@ Big Sur macOS 11 Mac Pro patcher
 
 <b>System.kext</b> and all of it Extensions currently do not load. Catalina's do not load either.
 
-<b>Firewire and Handoff</b> is not currently working but I am looking into both of these issues.
+<b>Firewire and Handoff</b> is currently not working but I am looking into both of these issues.
 
+<b>A Legacy WiFi Patch<b> will be added to Big Mac in the next release.
+  
 <b>Old AMD Cards</b> Users with older AMD cards are having trouble getting any type of USB or macOS Installer to work. If you have an old AMD Card, you can use BigMac on a supported Mac, run through the same steps and you would normally to an External USB. After the instnall ignore permissions on the volume, then clone it back to your system using Carbon Copy Cloner or ASR. The post patcher will install mousSSE.
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. Please donate. Thank you! https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ

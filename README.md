@@ -3,7 +3,7 @@
 Big Sur macOS 11 Mac Pro patcher 
 
 
-## Workarounds & What's Up
+## Workarounds & What Not
 
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
 

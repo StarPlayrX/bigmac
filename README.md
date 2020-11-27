@@ -13,9 +13,9 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 
 <b>System.kext</b> and all of it Extensions currently do not load.
 
-<b>Firewire and Handoff<b> is not currently working but I am looking into both of these issues.
+<b>Firewire and Handoff</b> is not currently working but I am looking into both of these issues.
 
-It seems that Users with older AMD cards are having trouble getting any type of USB or MacoS Installer to work. I will be adding mousSSE to Base System. I don't now AMD Metal drivers are loading, but there is definately an issue. Strangely I have an AMD Saphire Pulse RX 580 8GB Radeon card on a Mac Pro 3,1 and it runs fine on Catalina and Big Sur full OS installs without any SSE4.2 Emulation.
+<Old AMD Cards?</p> It seems that Users with older AMD cards are having trouble getting any type of USB or MacoS Installer to work. I will be adding mousSSE to Base System. I don't now AMD Metal drivers are loading, but there is definately an issue. Strangely I have an AMD Saphire Pulse RX 580 8GB Radeon card on a Mac Pro 3,1 and it runs fine on Catalina and Big Sur full OS installs without any SSE4.2 Emulation.
 
 ### Requirements 
 1. Mac Pro 2008 - 2012 

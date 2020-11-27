@@ -4,9 +4,18 @@ Big Sur macOS 11 Mac Pro patcher
 
 If this software is useful in any way, please donate to https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ NiceMac LLC
 
-New version will be released Q1 2021
+## Known issues
+<b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
 
-<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros were USB 2.0 keyboards, mice and trackpads, do not reconnect if disconnected. A solution? Try using a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time. I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
+<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros were USB 2.0 keyboards, mice and trackpads, do not reconnect if disconnected. A solution? Try using a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time.
+
+<b>Legacy USB Injector or IOKit USB Map</b>, I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
+
+<b>System.kext</b> and all of it Extensions currently do not load.
+
+<b>Firewire and Handoff<b> is not currently working but I am looking into both of these issues.
+
+It seems that Users with older AMD cards are having trouble getting any type of USB or MacoS Installer to work. I will be adding mousSSE to Base System. I don't now AMD Metal drivers are loading, but there is definately an issue. Strangely I have an AMD Saphire Pulse RX 580 8GB Radeon card on a Mac Pro 3,1 and it runs fine on Catalina and Big Sur full OS installs without any SSE4.2 Emulation.
 
 ### Requirements 
 1. Mac Pro 2008 - 2012 

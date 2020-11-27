@@ -17,7 +17,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 <b>A Legacy WiFi Patch</b> will be added to Big Mac in the next release.
 
-<b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for testing purposes. https://starplayrx.com/downloads/bigmac/BMO1.dmg Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` 
+<b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for testing purposes. https://starplayrx.com/downloads/bigmac/BMO1.dmg Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` Tip: Do not mount or double click BMO1.dmg while cloning.
 
 <b>Old AMD Cards</b> Users with older AMD cards are having trouble getting any type of USB or macOS Installer to work. If you have an old AMD Card, you can try BMO1 for testing purposes.
 

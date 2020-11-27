@@ -18,6 +18,8 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 
 <b>Old AMD Cards</b> Users with older AMD cards are having trouble getting any type of USB or macOS Installer to work. If you have an old AMD Card, you can use BigMac on a supported Mac, run through the same steps and you would normally to an External USB. After the instnall ignore permissions on the volume, then clone it back to your system using Carbon Copy Cloner or ASR. The post patcher will install mousSSE.
 
+<b>Support</b> is not included with BigMac. This open source project is donationware. If it worked for you, and your life better, please send small donation. https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ Improvements are under way.
+
 ### Requirements 
 1. Mac Pro 2008 - 2012 
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
@@ -25,9 +27,6 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 4. Your GPU Must Support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, A SSD or Hard drive with 60GB or more. 256GB Recommended.
-
-#### Support does not come with bigmac. I work on many projects. This is one that I do in my spare time.
-#### Issues are to be used for reporting bugs or features, not I can't get this to work.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.

@@ -5,7 +5,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Workarounds & What Not
 
-<b>If you cannot disable SIP</b> Download El Capitan here -> https://support.apple.com/en-us/HT211683
+<b>If you cannot disable SIP</b> Download El Capitan here -> https://support.apple.com/en-us/HT211683 And use its recovery disk.
 
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
   

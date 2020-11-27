@@ -5,7 +5,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Workarounds & What Not
 
-<b>If you cannot disable SIP</b> Download El Capitan here -> https://support.apple.com/en-us/HT211683 And use its recovery disk.
+<b>If you cannot disable SIP</b> Download El Capitan here -> https://support.apple.com/en-us/HT211683 And use its recovery disk. After installing, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
 
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
   

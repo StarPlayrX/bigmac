@@ -5,6 +5,8 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Workarounds & What Not
 
+<b>If you cannot disable SIP</b> Download El Capitan here -> https://support.apple.com/en-us/HT211683
+
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
   
 <b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time.

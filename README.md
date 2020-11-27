@@ -12,7 +12,7 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 
 <b>Legacy USB Injector or IOKit USB Map</b>, I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
 
-<b>System.kext</b> and all of it Extensions currently do not load.
+<b>System.kext</b> and all of it Extensions currently do not load. I tried ones for Catalina and it's a no go.
 
 <b>Firewire and Handoff</b> is not currently working but I am looking into both of these issues.
 

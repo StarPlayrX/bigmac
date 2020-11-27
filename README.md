@@ -20,7 +20,7 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 
 <b>Support</b> is not included with BigMac. If you need support there are other resources for this. Issues requesting support will be closed within 2-3 days. If you find a bug or havea feature request that is not already mentioned here in this read me please report it.
 
-<b>Donations</b>As a reminder, this is an donationware project. If it worked for you and your is life better, please send a tip! Any amount is greatly appreciated https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ Improvements are under way.
+<b>One More Thing</b> A Big Mac is better than a New Mac. Please donate. Thank you! https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ
 
 ### Requirements 
 1. Mac Pro 2008 - 2012 

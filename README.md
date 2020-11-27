@@ -11,7 +11,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 <b>Legacy USB Injector or IOKit USB Map</b>, I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
 
-<b>System.kext</b> and all of it Extensions currently do not load. Catalina's do not load either.
+<b>System.kext</b> and all of its Extensions currently do not load. Catalina's do not load either.
 
 <b>Firewire and Handoff</b> is currently not working but I am looking into both of these issues.
 

@@ -6,7 +6,7 @@ If this software is useful in any way, please donate to https://www.paypal.com/d
 
 New version will be released Q1 2021
 
-<b>USB 2.0 Workaround for Input Devices</b>: If you are having problems connecting and reconnecting USB 2.0 devices such a USB Mouse, Keyboard or Trackpad, one solution is to connect a USB 2.0 Hub to a USB 2.0 Port on your Mac Pro and I have confirmed that those devices can connect, disconnect and reconnect. These devices should also be available at boot time. Apple fixed this bug in Catalina but currently at least the Mac Pro's seem to be plagued with this glitch. USB 3.0 and USBC 3.1 PCIe will also work but not at boot time. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet If you don't think you have USB Hub, more than likely your display does which ususally have one going port with special USB cable and two ports for your mouse or trackpad and keyboard.
+<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros were USB 2.0 keyboards, mice and trackpads, do not reconnect if disconnected. A solution? Try using a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet USB 3.0 and USBC 3.1 PCIe cards will also work, but not at boot time.
 
 ### Requirements 
 1. Mac Pro 2008 - 2012 

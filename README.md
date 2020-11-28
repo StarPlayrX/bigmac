@@ -5,11 +5,11 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Workarounds & What Not
 
-<b>If you cannot disable SIP</b> Download El Capitan here -> https://support.apple.com/en-us/HT211683 And use its recovery disk. After installing, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
+<b>If you cannot disable SIP</b> [Download El Capitan here](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg) and use its recovery disk. After installing, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
 
 <b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
   
-<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. I have confirmed that this works. (https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
+<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. [I have confirmed that this works.](https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
 
 <b>Legacy USB Injector or IOKit USB Map</b>, I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
 
@@ -38,7 +38,7 @@ Big Sur macOS 11 Mac Pro patcher
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).
 3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
-4. Plug the bootable installer into a Mac Pro that is connected to the Internet and compatible with the version of macOS you're installing.
+4. Plug the bootable installer into a Mac Pro that is connected to the Internet.
 5. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
 6. Release the Option key when you see a gray boot screen showing your bootable volumes.
 7. Select the volume containing the bootable installer. Then click the up arrow or press Return. 

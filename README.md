@@ -16,7 +16,7 @@ Big Sur macOS 11 Mac Pro patcher
 <b>System.kext</b> and all of its Extensions currently do not load. Catalina's do not load either.
 
 <b>Firewire and Handoff</b> is currently not working but I am looking into both of these issues.n 
-Update, In the next version, I'v been able to get FireWire Storage devices to work another with a Sony Fireire Camcorder. I do not have the classic Firewire iSight Camera working yet. I have been able to get video to work with it in the past but not the mic. Do not have Firewire networking working yet. The remaining things  are a low priority. If you have third party Firewire Audio device, you will need to get updated drivers for Big Sur. I may start collecting these drivers and install them as options.
+<b>Update:</b> In the next version, I've been able to get FireWire Storage devices to work another with a Sony Fireire Camcorder. I do not have the classic Firewire iSight Camera working yet. I have been able to get video to work with it in the past but not the mic. Do not have Firewire networking working yet. The remaining things  are a low priority. If you have third party Firewire Audio device, you will need to get updated drivers for Big Sur. I may start collecting these drivers and install them as options.
 
 <b>A Legacy WiFi Patch</b> will be added to Big Mac in the next release.
 

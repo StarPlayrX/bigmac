@@ -110,7 +110,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ### How to turn off System Integrity Protection (this is now built into preinstall.sh)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia).
-2. Execute `csrutil disable`.
+2. Execute `csrutil disable`
 3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 4. Use Start up disk (top left to select your installation).
 

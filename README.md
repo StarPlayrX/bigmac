@@ -137,7 +137,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 3. Workaround, if you are using MAME on your Mac, revert back to Mojave or Catalina. Mojave is recommended for SDL MAME users.
 4. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
 
-## 🍟 Special thanks to the Unsupported Macs Team!
+# 🍟 Special thanks to the Unsupported Macs Team!
 
 Updated on November 28, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 

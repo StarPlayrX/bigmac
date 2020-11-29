@@ -5,7 +5,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Workarounds & What Not
 
-<b>News</b> If you have the original Bluetooth2 card, you will need to remove it to get Big Sur to boot. This includes the installer and the installation process it self. This problem has been identified by our users and I am working on a solution for this. The setup is the following: an orignal Mac Pro 3,1 with a Bluetooth 2.0 card and an original AirPort Extreme (802.11g/n) card. I have since upgraded both of my machines to a 802.11ac/BT4 combo card. I'll need locate and reinstall my original BT2 and WiFi cards to troubleshoot this issue further.
+<b>News</b> If you have the original Bluetooth2 card, you will need to remove it to get Big Sur to boot. This includes the installer and the installation process it self. This problem has been identified by our users and I am working on a solution for this. The setup is the following: an original Mac Pro 3,1 with a Bluetooth 2.0 card and an original AirPort Extreme (802.11g/n) card. A fix is being worked on.
 
 <b>If you cannot disable SIP</b> [Download El Capitan here](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg) and use its recovery disk. After installing its .pkg file, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
 

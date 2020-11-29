@@ -140,7 +140,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 ### 🍟 Special thanks to Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek
 ### And to Ritchie333, seyoon20087
 
-#### See Credits file for entire list of contributors
+#### See Credits file for list of contributors
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best
 

@@ -139,6 +139,8 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ### 🍟 Special thanks to Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek
 
+## The Unsupported Macs Team, you are the Best
+
 Updated on November 28, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
 A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)

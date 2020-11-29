@@ -9,11 +9,11 @@ Big Sur macOS 11 Mac Pro patcher
 
 <b>If you cannot disable SIP</b> [Download El Capitan here](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg) and use its recovery disk. After installing its .pkg file, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
 
-<b>New version will be released Q1 2021</b> (It will be a big departure for Big Mac)
+<b>bigmac2 will be released Q1 2021</b> (It will be a big departure for Big Mac)
   
 <b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. [I have confirmed that this works.](https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
 
-<b>Legacy USB Injector or IOKit USB Map</b>, I have not gotten a Legacy USB Injector to work reliably on Big Sur yet. If you have this working on a Mac Pro 3,1 please let me know.
+<b>USB 1.1 Support</b>, will be in bigmac2 thanks to ParrotGeek, Syncretic, Jacklukem. If you have a MacPro 4,1 or a MacPro 5,1 file an issue so we can collaborate on getting your USB ports mapped.
 
 <b>System.kext</b> and all of its Extensions currently do not load. Catalina's do not load either.
 
@@ -52,8 +52,6 @@ Big Sur macOS 11 Mac Pro patcher
 Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
 
 Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, will update.
-
-
 
 ## BigMac's Workflow in a Nut Shell 🥜
 1. Workflow -> Download Big Sur -> Create USB Installer

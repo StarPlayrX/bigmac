@@ -8,8 +8,6 @@ Big Sur macOS 11 Mac Pro patcher
 <b>News</b> If you have the original Bluetooth2 card, you will need to remove it to get Big Sur to boot. This includes the installer and the installation process itself and the full OS. This problem has been identified by our users. The setup is the following: an original Mac Pro 3,1 with a Bluetooth 2.0 card and an original AirPort Extreme (802.11g/n) card. An immediate solution is being worked on to patch the OS.
 
 <b>If you cannot disable SIP</b> [Download El Capitan here](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg) and use its recovery disk. After installing its .pkg file, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
-
-<b>bigmac2 will be released Q1 2021</b> (It will be a big departure for Big Mac)
   
 <b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. [I have confirmed that this works.](https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
 

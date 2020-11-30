@@ -123,16 +123,12 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 * Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
 
 ### Known issues with USB 2.0
-1. Input devices that get disconnected do not reconnect. Workaround, get a USB 3.0 PCIe card and for everyday device connect them there. For option-key boot screen boot connect back to USB 2.0
-2. USB drive connected to USB 2.0 can connect and reconnect.
-3. If using certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
-4. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
+1. Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
+2. USB storage devices are hotswapped with issue.
+3. Certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
 
 ### Known issues with MAME input devices
-1. Most of these devices have very old controller boards and use USB 1.0
-2. These devices will power on in Big Sur but the system will not use them
-3. Workaround, if you are using MAME on your Mac, revert back to Mojave or Catalina. Mojave is recommended for SDL MAME users.
-4. These issues seem to all be with Big Sur and are beyond's bigmac's currently ability to rectify.
+1. USB 1.1 will be support in bigmac2
 
 ### 🍟 Special thanks to Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek
 ### And to Ritchie333, seyoon20087

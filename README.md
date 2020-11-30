@@ -15,7 +15,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 <b>Coming soon: BigMac2</b>
   1. bigmac2 will have many improvements
-  2. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I will tell you what will work.
+  2. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
   3. USB 1.1 Support.
   4. FireWire 400 and 800 Hard Drive and SSD Support.
   5. Legacy WiFi 802.11n Patch (do not know if Handoff will work yet)

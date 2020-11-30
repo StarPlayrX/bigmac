@@ -18,7 +18,7 @@ Big Sur macOS 11 Mac Pro patcher
   4. FireWire 400 and 800 Hard Drive and SSD Support.
   5. Legacy WiFi 802.11n Patch (do not know if Handoff will work yet)
   6. Legacy Bluetooth2 Patch (in progress)
-  7. BMO2.dmg a full patched clean system disk.
+  7. BMO2.dmg a fully patched clean system disk.
 
 <b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for R&D and testing purposes. BMO One is an experiemental cloud based clean install. [Download BMO1](https://starplayrx.com/downloads/bigmac/BMO1.dmg). Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` Tip: Do not mount or double click BMO1.dmg while cloning. When finished, put the BMO1 disk image in the Trash. BMO One is available for a limited time only. It will be discontinued on January 1, 2021.
 

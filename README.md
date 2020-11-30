@@ -13,7 +13,7 @@ Big Sur macOS 11 Mac Pro patcher
   
 <b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. [I have confirmed that this works.](https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
 
-## Coming soon: BigMac2
+## 🍔 Coming soon: BigMac2
   1. bigmac2 will have many improvements
   2. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
   3. USB 1.1 Support, special thanks to JackLukem for the tip!

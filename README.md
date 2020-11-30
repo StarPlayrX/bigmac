@@ -13,15 +13,14 @@ Big Sur macOS 11 Mac Pro patcher
   
 <b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. [I have confirmed that this works.](https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
 
-<b>USB 1.1 Support</b> is working bigmac2 thanks to ParrotGeek, Syncretic, Jacklukem. If you have a MacPro 4,1 or a MacPro 5,1 file an issue so we can collaborate on getting your system's built-in USB 2.0 ports mapped.
-
-<b>System.kext</b> and all of its Extensions currently do not load. Catalina's do not load either.
-
-<b>Firewire and Handoff</b> is currently not working but I am looking into both of these issues.
-
-<b>Firewire Update:</b> In the next version, I've been able to get ancient FireWire 400 Storage devices to work as well as a Sony Firewire 400 Camcorder. I do not have the Classic iSight Firewire Camera working yet. I have been able to get video to work on the FW iSight Cam in the past but not the mic. Do not have Firewire networking working yet. These things are a low priority. If you have third party Firewire Audio device, you will need to get updated drivers for Big Sur.
-
-<b>A Legacy WiFi Patch</b> will be added to Big Mac in the next release.
+<b>Coming soon: BigMac2</b>
+  1. bigmac2 will have many improvements
+  2. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I will tell you what will work.
+  3. USB 1.1 Support.
+  4. FireWire 400 and 800 Hard Drive and SSD Support.
+  5. Legacy WiFi 802.11n Patch (do not know if Handoff will work yet)
+  6. Legacy Bluetooth2 Patch (in progress)
+  7. BMO2.dmg a full patched clean system disk.
 
 <b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for R&D and testing purposes. BMO One is an experiemental cloud based clean install. [Download BMO1](https://starplayrx.com/downloads/bigmac/BMO1.dmg). Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` Tip: Do not mount or double click BMO1.dmg while cloning. When finished, put the BMO1 disk image in the Trash. BMO One is available for a limited time only. It will be discontinued on January 1, 2021.
 

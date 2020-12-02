@@ -26,9 +26,9 @@ Big Sur macOS 11 Mac Pro patcher
 
 ### Requirements 
 1. Mac Pro 2008 - 2012
-1. SIP or System Integrity Protection must be disabled. If it is on booting the installer will Panic.
+1. SIP, a.k.a. System Integrity Protection, must be disabled. If it's on booting the installer might panic.
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
-3. Native APFS Boot support. For a limited time, Dosdude1's APFS ROM Patcher is included in the 😎 folder (this will be removed from the repo soon, and will be included as a download option instead). You can donate to Dosdude1 for this ROM patch [here](https://www.paypal.com/donate?token=09J0A0Ry8_2hv_jV5WzK9MUx9JUzMgdvN-PS2ibJkYnPS6-OpKhKcSz35mxCtm7EGv-f9ZbP2aFDyAFc).
+3. Native APFS Boot support. For a limited time, Dosdude1's APFS ROM Patcher is included in the 😎 folder (this will be removed from the repo soon, and will be included as a [download](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) option instead).
 4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
@@ -37,7 +37,7 @@ Big Sur macOS 11 Mac Pro patcher
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).
 3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
-4. Plug the bootable installer into a Mac Pro that is connected to the Internet.
+4. Plug the bootable installer into your Mac Pro.
 5. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
 6. Release the Option key when you see a gray boot screen showing your bootable volumes.
 7. Select the volume containing the bootable installer. Then click the up arrow or press Return. 
@@ -66,17 +66,17 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 13. Execute`./postinstall.sh`
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
-1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Execute `sudo ./bigmac.sh`)
-2. Execute `cd /Volumes/bigmac`
-7. Execute `./preinstall.sh`
-8. set boot-args to `-no_compat_check -v`
+1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Execute `sudo ./bigmac.sh`).
+2. Execute `cd /Volumes/bigmac`.
+7. Execute `./preinstall.sh`.
+8. set boot-args to `-no_compat_check -v`.
 9. Quit the Terminal. Open the big Sur installer app.
-10. Big Sur installs in three stages
+10. Big Sur installs in three stages.
 
 ### Post Install Track, Required for Mac Pro 3,1
-1. Boot up the Install macOS Big Sur USB Disk (don't have it? run `sudo ./bigmac.sh`)
-2. Execute `cd /Volumes/bigmac`
-4. Type `./postinstall.sh` and type in the volume name of the install you just did (e.g., `/Volumes/Macintosh\ HD` (This will be improved in a future version), You may have to use `ls -a` in volumes to get the name before hand. (e.g., `./postinstall.sh /Volumes/Macintosh\ HD`)
+1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Run `sudo ./bigmac.sh`)
+2. Execute `cd /Volumes/bigmac`.
+4. Type `./postinstall.sh` and type in the volume name of the install you just did (e.g., `/Volumes/Macintosh\ HD` (This will be improved in a future version); You may have to use `ls -al` in volumes to get the name before hand. (e.g., `./postinstall.sh /Volumes/Macintosh\ HD`)
 5. Quit the Terminal and select your startup disk.
 
 ### Notes about Big Sur Installs
@@ -87,13 +87,13 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 5. After about 45 - 60 minutes, the installer should be complete.
 
 ### Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
-1. Big Sur's video drivers are not compatible with the Penryn style CPU
-2. The Post Install script using MousSEE to emulate a couple instructions
-3. This allows AMD Radeon cards that support Metal to be used on a MP3,1
+1. Big Sur's video drivers are not compatible with the Penryn style CPU.
+2. The Post Install script using MousSEE to emulate a couple instructions.
+3. This allows AMD Radeon cards that support Metal to be used on a MP3,1.
 
 ### Telemetry and Mac Pro Early 2008
-1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU
-2. The post install script installs one that is compatible
+1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU.
+2. The post install script installs one that is compatible.
 
 ### Mac Pro Early 2008 Installation Notes
 1. In between installer tasks, Big Sur's install runs through 3 complete reboot cycles.
@@ -107,7 +107,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ### How to turn off System Integrity Protection (this is now built into preinstall.sh)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia).
-2. Execute `csrutil disable`
+2. Execute `csrutil disable`.
 3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 4. Use Start up disk (top left to select your installation).
 
@@ -118,7 +118,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
 ### How to clone your system
-* Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`
+* Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`.
 
 ### Known issues with USB 2.0
 1. Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
@@ -126,15 +126,16 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 3. Certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
 
 ### Known issues with MAME input devices
-1. USB 1.1 will be support in bigmac2
+* USB 1.1 will be supported in bigmac2.
 
-### 🍟 Special thanks to Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek
-### And to Ritchie333, seyoon20087
+## 🍟 Special thanks to the following contributors:
 
-#### See Credits file for our list of contributors
+Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek, Ritchie333, seyoon20087
+
+See Credits file for our list of contributors
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best
 
-Updated on November 28, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
+Updated on December 2, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
 A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)

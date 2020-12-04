@@ -11,6 +11,10 @@ Firewire 400 and 800 hard drives and SSDs are not bootable under Big Sur 11.0.1.
 ## Bug Mac Hackathon Challenge #3 - Bluetooth 2 support
 On a Mac Pro 3,1 it is not possible to boot with Bluetooth 2 enabled. Your mission should you choose to accept, is to stop the stock Bluetooth 2 card in an Early 2008 Mac Pro from crashing without having to disable the card. The second part of this mission is to get the card fully functional like it does in Mojave, Catalina and older macOS'. This task may have multiple winners for compleiting the first and/or second parts of this mission. The winners will receive a personalized FREE Big Mac T-shirt, A Flash USB Drive with bigmac2 on it that includes your work (and credit), plus bragging rights for winning the challenge. You have permission to use the v2 branch's postinstall.sh for this mission.
 
+p.s.
+
+I have bluetooth 2 partitially working now. But I will leave this challenge up until a winner is determined.
+
 ## Workarounds & What Not
 
 <b>News for BT2 Users:</b> If you have the original Bluetooth2 card, you will need to remove it to get Big Sur to boot. This includes the installer and the installation process itself and the full OS. This problem has been identified by our users. The setup is the following: an original Mac Pro 3,1 with a Bluetooth 2.0 card and an original AirPort Extreme (802.11g/n) card. An immediate solution is being worked on to patch the OS.

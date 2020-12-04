@@ -142,7 +142,9 @@ Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek, Ritchie333, seyoon20087
 
 See Credits file for our list of contributors
 
-Sending a warm welcome to the Unsupported Macs Team, you are the Best
+Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 
+
+If anyone wantss to collaborate together with future versions of Big Mac. I don't mind if you are on a different unsupport mac team including Open Core. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue and would love to work with you. 
 
 Updated on December 2, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 

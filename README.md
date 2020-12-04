@@ -2,6 +2,11 @@
 
 Big Sur macOS 11 Mac Pro patcher 
 
+## Bug Mac Coding Challenge #1 - Hot Swap USB Bug
+The USB 2.0 Ports on a Mac Pro are not hot swappable for USB 2.0 input device under Big Sur 11.0.1. Same with USB 1.1 with a patch applied. The current workaround for these ports is to use a Hub. You mission should you choose to accept it, is to figure out how to get the 5 builtin USB 2.0 ports on Mac Pro 3,1 to be hot swappable for USB 2.0 keyboards, mice, and trackpads without having to use a Hub or PCIe USB 3.0 Card. The winner for this challenge gets a FREE personalized T-shirt. A Flash USB Drive with bigmac2 on it, plus bragging rights for winning the challenge. You have permission to use the v2 branch's postinstall.sh for this mission.
+
+## Bug Mac Coding Challenge #2 - Firewire 400/800 Boot Bug
+Firewire 400 and 800 hard drives and SSDs are not bootable under Big Sur 11.0.1. Then booting, it has a hard time seeing the drives and without -verbose boot, it gets a prohibited sign even with -no-compat-check set. Your missing should you choose to accept it, is to make a patch that allows FW400 and 800 drives to boot Big Sur correctly. You can start with boot disk media or a full system. It doesn't matter. This task may have multiple winners for booting a Base System / Installer or a Full Big Sur installation. The winners will receive a personalized FREE Big Mac T-shirt, A Flash USB Drive with bigmac2 on it that includes your work, plus braggring rights for winning the challenge. You have permission to use the v2 branch's postinstall.sh for this mission.
 
 ## Workarounds & What Not
 

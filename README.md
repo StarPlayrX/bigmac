@@ -14,7 +14,7 @@ On a Mac Pro 3,1 it is not possible to boot with Bluetooth 2 enabled. Your missi
 p.s.
 
 I have bluetooth 2 partitially working now. But I will leave this challenge up until a winner is determined. If you are working on this challenge, there is a clue:
-CSRHIDTransitionDriver.kext causes a kernel panic. This may be an IOKit issue and the IOKit personalities may be imported into USB Merged Properties or USB Merged Nub.
+CSRHIDTransitionDriver.kext causes a kernel panic. This may be an IOKit issue and the IOKit personalities may be imported into USB Merged Properties or USB Merged Nub. If you remove CSRHIDTransitionDriver.kext the system partially works with bluetooth devices showing up as Composite on the USB Hub.
 
 ## Workarounds & What Not
 

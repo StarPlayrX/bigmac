@@ -13,7 +13,7 @@ On a Mac Pro 3,1 it is not possible to boot with Bluetooth 2 enabled. Your missi
 
 p.s.
 
-I was able to disable Bluetooth 2 without affecting Bluetooth 4. I am not sure if BT2 will ever work correctly under Big Sur. It is either expecting BT4LE which is used for Handoff, and/or it Big Sur is expecting a Hub for BT2 which it does not have and the BT4/WiFi combo card does have a Hub before the Controller. The way it is disabled does not delay boot time. :)
+In the v2 branch, was able to disable Bluetooth 2 without affecting Bluetooth 4. I am not sure if BT2 will ever work correctly under Big Sur. It is either expecting BT4LE which is used for Handoff, and/or it Big Sur is expecting a Hub for BT2 which it does not have and the BT4/WiFi combo card does have a Hub before the Controller. The way it is disabled does not delay boot time. :)
 
 ## Workarounds & What Not
 

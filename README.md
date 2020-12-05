@@ -13,8 +13,7 @@ On a Mac Pro 3,1 it is not possible to boot with Bluetooth 2 enabled. Your missi
 
 p.s.
 
-I have bluetooth 2 partitially working now. I will leave this challenge up until a winner is determined. If you are working on this challenge, here is a clue:
-CSRHIDTransitionDriver.kext causes a kernel panic. If you remove CSRHIDTransitionDriver.kext the system, BT2 partially works. A bluetooth mouse or trackpad untethered will show up as a generic Composite with multitouch turned off. I'm gonna start using the El Cap drivers. Those drivers do not have BT4 support (as far as I can tell) and may work.
+I was able to disable Bluetooth 2 without affecting Bluetooth 4. I am not sure if BT2 will ever work correctly under Big Sur. It is either expecting BT4LE which is used for Handoff, and/or it Big Sur is expecting a Hub for BT2 which it does not have and the BT4/WiFi combo card does have a Hub before the Controller. The way it is disabled does not delay boot time. :)
 
 ## Workarounds & What Not
 

@@ -13,17 +13,16 @@ Big Sur macOS 11 Mac Pro patcher
 ## BMO Two
 1. Is for users who cannot get the current installer to work
 2. For R&D and testing purposes
-3. Is an experimental cloud based clean install
+3. Is an experimental cloud based patched clean install
 4. It is highly recommeneded that you use a USB Hub for your input devices (keyboard, mouse or trackpad).
-5. Bluetooth 2 is turned off on Big Sur.
+5. Bluetooth 2 is turned off on Big Sur via software. It causes a Kernel Panic.
 6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
 7. [Download BMO2_802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) For stock MacPro 3,1 802.11n cards.
-8. or
-9. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
-10. Format a disk using MacOS Extended Journaled.
-11. Execute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t dragDiskHere`
-12. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
-13. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
+8. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
+9. Format a disk using MacOS Extended Journaled.
+10. Execute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t dragDiskHere`
+11. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
+12. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
 

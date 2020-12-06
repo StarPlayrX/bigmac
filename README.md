@@ -11,7 +11,7 @@ Big Sur macOS 11 Mac Pro patcher
   6. Legacy Bluetooth2 Disabled Patch to avoid a Kernel Panic. (Unless someone else has a fix, it's the end of the road for BT2 on MacPro 3,1)
   7. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
-<b>BMO One</b> For users who cannot get the current installer to work, there's BMO1 for R&D and testing purposes. BMO One is an experiemental cloud based clean install. [Download BMO1](https://starplayrx.com/downloads/bigmac/BMO1.dmg). Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. Run bigmac's post install patch `cd bigmac.master; sudo ./postinstall.sh` Tip: Do not mount or double click BMO1.dmg while cloning. When finished, put the BMO1 disk image in the Trash. BMO One is available for a limited time only. It will be discontinued on January 1, 2021.
+<b>BMO Two</b> For users who cannot get the current installer to work, there's BMO Two for R&D and testing purposes. BMO Two is an experimental cloud based clean install. [Download BMO2_legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2.dmg). Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO1.dmg -er -nov -t /Volumes/changeMe` When finished cloning. In System Preferences, select BMO2 as your startup disk. bigmac2's pre-release patches have already been applied. When finished, put the BMO2 disk image in the Trash. 
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
 
@@ -20,7 +20,7 @@ Big Sur macOS 11 Mac Pro patcher
 1. SIP, a.k.a. System Integrity Protection, must be disabled. If it's on booting the installer might panic.
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
 3. Native APFS Boot support. For a limited time, Dosdude1's APFS ROM Patcher is included in the 😎 folder (this will be removed from the repo soon, and will be included as a [download](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) option instead).
-4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
+4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 r

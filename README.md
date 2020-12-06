@@ -13,7 +13,7 @@ On a Mac Pro 3,1 it is not possible to boot with Bluetooth 2 enabled. Your missi
 
 p.s.
 
-In the v2 branch, was able to disable Bluetooth 2 without affecting Bluetooth 4. I am not sure if BT2 will ever work correctly under Big Sur. It is either expecting BT4LE which is used for Handoff, and/or ig Sur is expecting a Hub for BT2 which it does not have. The BT4/WiFi802.11ac combo card does have a Hub before the Controller. The are disabling the port of the Bluetooth 2 connection. This patch prevents Mac Pro 3,1 from receiving a Kernel Panic at boot time.
+In the v2 branch, was able to disable Bluetooth 2 without affecting Bluetooth 4. I am not sure if BT2 will ever work correctly under Big Sur. It is either expecting BT4LE which is used for Handoff, and/or Big Sur is expecting a Hub for BT2 which it does not have. The BT4/WiFi802.11ac combo card does have a Hub before the Controller. We a simply disabling the port of the Bluetooth 2 connection. This patch prevents Mac Pro 3,1 from receiving a Kernel Panic at boot time.
 
 ## Workarounds & What Not
 

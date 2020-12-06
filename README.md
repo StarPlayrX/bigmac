@@ -30,7 +30,7 @@ Big Sur macOS 11 Mac Pro patcher
 1. Mac Pro 2008 - 2012
 1. SIP, a.k.a. System Integrity Protection, must be disabled. If it's on booting the installer might panic.
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
-3. Native APFS Boot support. For a limited time, Dosdude1's APFS ROM Patcher is included in the 😎 folder (this will be removed from the repo soon, and will be included as a [download](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) option instead).
+3. Native APFS Boot support [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) hint: apfs
 4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.

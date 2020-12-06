@@ -16,7 +16,7 @@ Big Sur macOS 11 Mac Pro patcher
 2. BMO2 for R&D and testing purposes
 3. BMO2 is an experimental cloud based clean install.
 4. Two versions of BMO2 are available. If you don't know which one pick the legacywifi edition.
-4. [Download BMO2_legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) For stock MacPro 3,1 802.11n cards.
+4. [Download BMO2_802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) For stock MacPro 3,1 802.11n cards.
 5. or
 5. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 6. Format a disk using MacOS Extended Journaled.

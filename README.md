@@ -11,7 +11,18 @@ Big Sur macOS 11 Mac Pro patcher
   6. Legacy Bluetooth2 Disabled Patch to avoid a Kernel Panic. (Unless someone else has a fix, it's the end of the road for BT2 on MacPro 3,1)
   7. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
-<b>BMO Two</b> For users who cannot get the current installer to work, there's BMO2 for R&D and testing purposes. BMO2 is an experimental cloud based clean install. [Download BMO2_legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg). [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) Format a disk using MacOS Extended Journaled. Run this in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t /Volumes/nameOfYourDisk` When finished cloning. In System Preferences, select BMO2 as your startup disk and reboot. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
+## BMO Two
+1. is for users who cannot get the current installer to work
+2. BMO2 for R&D and testing purposes
+3. BMO2 is an experimental cloud based clean install.
+4. Two versions of BMO2 are available. If you don't know which one pick the legacywifi edition.
+4. [Download BMO2_legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) For stock MacPro 3,1 802.11n cards.
+5. or
+5. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
+6. Format a disk using MacOS Extended Journaled.
+7. Excute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t /Volumes/nameOfYourDisk
+8. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
+9. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
 

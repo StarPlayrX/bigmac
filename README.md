@@ -17,7 +17,7 @@ Big Sur macOS 11 Mac Pro patcher
 4. It is highly recommeneded that you use a USB Hub for your input devices (keyboard, mouse or trackpad).
 5. Bluetooth 2 is turned off on Big Sur via software. It causes a Kernel Panic.
 6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
-7. [Download BMO2_802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) For stock MacPro 3,1 802.11n cards.
+7. [Download BMO2_802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
 8. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 9. Format a disk using MacOS Extended Journaled.
 10. Execute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t dragDiskHere`

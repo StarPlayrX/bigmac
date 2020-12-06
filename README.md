@@ -2,27 +2,6 @@
 
 Big Sur macOS 11 Mac Pro patcher 
 
-## Bug Mac Hackathon Challenge #1 - Hot Swap USB Bug
-The USB 2.0 Ports on a Mac Pro are not hot swappable for USB 2.0 input device under Big Sur 11.0.1. Same with USB 1.1 with a patch applied. The current workaround for these ports is to use a Hub. Your mission should you choose to accept, is to figure out how to get the 5 builtin USB 2.0 ports on Mac Pro 3,1 to be hot swappable for USB 2.0 keyboards, mice, and trackpads without having to use a Hub or PCIe USB 3.0 Card. The winner for this challenge gets a FREE personalized T-shirt. A Flash USB Drive with bigmac2 on it that includes your work (and credit), plus bragging rights for winning the challenge. You have permission to use the v2 branch's postinstall.sh for this mission.
-
-## Bug Mac Hackathon Challenge #2 - Firewire 400/800 Boot Bug
-Firewire 400 and 800 hard drives and SSDs are not bootable under Big Sur 11.0.1. When booting, it has a hard time seeing the drives and without -verbose boot, it gets a prohibited sign even with -no-compat-check set. Your mission should you choose to accept, is to make a patch that allows FW400 and 800 drives to boot Big Sur correctly. You can start with boot disk media or a full system. It doesn't matter. This task may have multiple winners for booting a Base System / Installer or a Full Big Sur installation. The winners will receive a personalized FREE Big Mac T-shirt, A Flash USB Drive with bigmac2 on it that includes your work (and credit), plus bragging rights for winning the challenge. You have permission to use the v2 branch's postinstall.sh for this mission.
-
-## Bug Mac Hackathon Challenge #3 - Bluetooth 2 support
-On a Mac Pro 3,1 it is not possible to boot with Bluetooth 2 enabled. Your mission should you choose to accept, is to stop the stock Bluetooth 2 card in an Early 2008 Mac Pro from crashing without having to disable the card. The second part of this mission is to get the card fully functional like it does in Mojave, Catalina and older macOS'. This task may have multiple winners for compleiting the first and/or second parts of this mission. The winners will receive a personalized FREE Big Mac T-shirt, A Flash USB Drive with bigmac2 on it that includes your work (and credit), plus bragging rights for winning the challenge. You have permission to use the v2 branch's postinstall.sh for this mission.
-
-p.s.
-
-In the v2 branch, was able to disable Bluetooth 2 without affecting Bluetooth 4. I am not sure if BT2 will ever work correctly under Big Sur. It is either expecting BT4LE which is used for Handoff, and/or Big Sur is expecting a Hub for BT2 which it does not have. The BT4/WiFi802.11ac combo card does have a Hub before the Controller. We a simply disabling the port of the Bluetooth 2 connection. In bigmac2 (coming soon) and BMO2.dmg's. This patch will prevent Mac Pro 3,1 from receiving a Kernel Panic at boot time.
-
-## Workarounds & What Not
-
-<b>News for BT2 Users:</b> If you have the original Bluetooth2 card, you will need to remove it to get Big Sur to boot. This includes the installer and the installation process itself and the full OS. This problem has been identified by our users. The setup is the following: an original Mac Pro 3,1 with a Bluetooth 2.0 card and an original AirPort Extreme (802.11g/n) card. An immediate solution is being worked on to patch the OS.
-
-<b>If you cannot disable SIP</b> [Download El Capitan here](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg) and use its recovery disk. After installing its .pkg file, run this command: Format a disk using MacOS Extended (Journaled) aka JHFS+. Run this in terminal `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app --volume /Volumes/Untitled` Option boot-key boot El Cap. Open Terminal and run `csrutil disable`
-  
-<b>USB 2.0 Workaround for Input Devices</b>: There is a flaw in Big Sur and Mac Pros with USB 2.0 keyboards, mice and trackpads. These input devices do not reconnect if disconnected. A solution is to use a USB 2.0 Hub connected to a USB 2.0 port. [I have confirmed that this works.](https://appleinsider.com/articles/20/07/17/apple-has-fixed-the-usb-20-connection-bug-in-catalina-but-not-in-big-sur-yet) USB 3.0 PCIe cards will also work, but not at boot time.
-
 ## 🍔 Coming soon: bigmac2
   1. bigmac2 will have many improvements
   2. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
@@ -44,7 +23,7 @@ In the v2 branch, was able to disable Bluetooth 2 without affecting Bluetooth 4.
 4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB on eBay for $299
 5. 1 external USB SSD or hard drive. Thumb drives are not supported.
 6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
-
+r
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).

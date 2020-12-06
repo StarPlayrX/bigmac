@@ -3,13 +3,12 @@
 Big Sur macOS 11 Mac Pro patcher 
 
 ## 🍔 Coming soon: bigmac2 
-  1. bigmac2 will have many improvements
-  2. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
-  3. USB 1.1 Support, special thanks to JackLukem for the tip!
-  4. FireWire 400 and 800 Hard Drive and SSD Support (booting is not possible with Big Sur yet)
-  5. Legacy WiFi 802.11n Patch
-  6. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
-  7. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
+1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
+2. USB 1.1 Support, special thanks to JackLukem for the tip!
+3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
+4. Legacy WiFi 802.11n Patch
+5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
+6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
 ## BMO Two
 1. is for users who cannot get the current installer to work

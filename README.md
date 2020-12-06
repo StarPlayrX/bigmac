@@ -34,7 +34,7 @@ Big Sur macOS 11 Mac Pro patcher
 4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
 5. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
 6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
-r
+
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).

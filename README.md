@@ -22,7 +22,7 @@ Big Sur macOS 11 Mac Pro patcher
 8. or
 9. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 10. Format a disk using MacOS Extended Journaled.
-11. Excute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t dragDiskHere`
+11. Execute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t dragDiskHere`
 12. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
 13. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
 
@@ -66,8 +66,8 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 9. Execute `./preinstall.sh`
 10. Wait for the install is fully completed (hint: it takes 3 stages to complete.)
 11. Boot the USB installer, from its Terminal type:
-12. Execute`cd /Volumes/bigmac`
-13. Execute`./postinstall.sh`
+12. Execute `cd /Volumes/bigmac`
+13. Execute `./postinstall.sh`
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
 1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Execute `sudo ./bigmac.sh`).

@@ -22,7 +22,7 @@ Big Sur macOS 11 Mac Pro patcher
 8. or
 9. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 10. Format a disk using MacOS Extended Journaled.
-11. Excute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t /Volumes/nameOfYourDisk
+11. Excute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t /Volumes/nameOfYourDisk`
 12. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
 13. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
 

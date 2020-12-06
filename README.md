@@ -8,7 +8,7 @@ Big Sur macOS 11 Mac Pro patcher
   3. USB 1.1 Support, special thanks to JackLukem for the tip!
   4. FireWire 400 and 800 Hard Drive and SSD Support (booting is not possible with Big Sur yet)
   5. Legacy WiFi 802.11n Patch
-  6. Legacy Bluetooth2 Disabled Patch to avoid a Kernel Panic. (Unless someone else has a fix, it's the end of the road for BT2 on MacPro 3,1)
+  6. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
   7. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
 ## BMO Two

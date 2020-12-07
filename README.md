@@ -13,7 +13,8 @@ Big Sur macOS 11 Mac Pro patcher
 ## BMO Two
 1. Is for users who cannot get the current installer to work
 2. It is for R&D and testing purposes only, not to be redistributed.
-3. Is an experimental cloud based patched clean install
+3. BMO2 is an experimental cloud based clean install.
+4. The disk image is already updated with latest patches from the pre-release bigmac2 work.
 4. It is highly recommeneded that you use a USB Hub for your input devices (keyboard, mouse or trackpad).
 5. Bluetooth 2 is turned off on Big Sur via software. It causes a Kernel Panic.
 6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.

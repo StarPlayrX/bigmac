@@ -3,6 +3,7 @@
 Big Sur macOS 11 Mac Pro patcher 
 
 ## 🍔 Coming soon: bigmac2 
+![image](https://user-images.githubusercontent.com/24852454/101307225-4c333a00-388a-11eb-99ee-28d6ea3b047f.png)
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
@@ -18,20 +19,20 @@ Big Sur macOS 11 Mac Pro patcher
 4. A USB Hub for your keyboard, mouse or trackpad is highly recommended.
 5. Bluetooth 2 is turned off on Big Sur via software. It causes a Kernel Panic.
 6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
-7. [Download BMO2_802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
-8. [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
+   * [Download BMO2_802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
+   * [Download BMO2_802.11ac_wifi_edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 9. Format a disk using MacOS Extended Journaled.
 10. Execute in Terminal `sudo asr -s ~/Downloads/BMO2* -er -t dragDiskHere`
 11. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
-12. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash. 
+12. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash and delete permanently. 
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
 
-### Requirements 
+## Requirements 
 1. Mac Pro 2008 - 2012
 1. SIP, a.k.a. System Integrity Protection, must be disabled. If it's on booting the installer might panic.
 2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
-3. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip)  enter: `apfs` Follow the instructions.
+3. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip).  Then enter password: `apfs` and follow the instructions.
 4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
 5. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
 6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
@@ -41,7 +42,7 @@ Big Sur macOS 11 Mac Pro patcher
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).
 3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
 4. Plug the bootable installer into your Mac Pro.
-5. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac.
+5. Press and hold the Option (Alt) ⌥ key immediately after turning on or restarting your Mac Pro.
 6. Release the Option key when you see a gray boot screen showing your bootable volumes.
 7. Select the volume containing the bootable installer. Then click the up arrow or press Return. 
 8. Choose your language, if prompted.
@@ -114,21 +115,21 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 4. Use Start up disk (top left to select your installation).
 
-### Videos
+## Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov
 2. https://starplayrx.com/downloads/postinstall_bigmac.mov
 3. https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
-### How to clone your system
+## How to clone your system
 * Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`.
 
-### Known issues with USB 2.0
+## Known issues with USB 2.0
 1. Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
 2. USB storage devices are hotswapped with issue.
 3. Certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
 
-### Known issues with MAME input devices
+## Known issues with MAME input devices
 * USB 1.1 will be supported in bigmac2.
 
 ## 🍟 Special thanks to the following contributors:
@@ -141,6 +142,6 @@ Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sendi
 
 If anyone wantss to collaborate together with future versions of Big Mac. I don't mind if you are on a different unsupport mac team including Open Core. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue and would love to work with you. 
 
-Updated on December 2, 2020 for macOS 11.0.1 (20B29), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
+Updated on December 7, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
 A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)

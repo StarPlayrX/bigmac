@@ -12,7 +12,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## BMO Two
 1. Is for users who cannot get the current installer to work
-2. It is for R&D and testing purposes only and is not to be redistributed.
+2. It is for R&D and testing purposes only, not to be redistributed.
 3. Is an experimental cloud based patched clean install
 4. It is highly recommeneded that you use a USB Hub for your input devices (keyboard, mouse or trackpad).
 5. Bluetooth 2 is turned off on Big Sur via software. It causes a Kernel Panic.

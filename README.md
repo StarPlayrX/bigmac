@@ -10,7 +10,7 @@ Big Sur macOS 11 Mac Pro patcher
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
-## BMO Two 💾
+## 💾 BMO Two 
 1. Is for users who cannot get the current installer to work
 2. It is for R&D and testing purposes only, not to be redistributed.
 3. BMO2 is an experimental cloud based clean install.

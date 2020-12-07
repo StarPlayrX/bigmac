@@ -12,7 +12,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## 💾 BMO2 
 1. Is for users who cannot get the current installer to work
-2. It is for R&D and testing purposes only, not to be redistributed.
+2. It is for R&D and testing purposes only, not to be redistributed, not for production purposes.
 3. BMO2 is an experimental cloud based clean install.
 4. The disk image is already updated with latest patches from the pre-release bigmac2 work.
 4. It is highly recommeneded that you use a USB Hub for your input devices (keyboard, mouse or trackpad).

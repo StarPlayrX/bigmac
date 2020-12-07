@@ -7,7 +7,7 @@ Big Sur macOS 11 Mac Pro patcher
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
-4. Legacy WiFi 802.11n Patch
+4. Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 

@@ -91,9 +91,10 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 5. After about 45 - 60 minutes, the installer should be complete.
 
 ### Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
-1. Big Sur's video drivers are not compatible with the Penryn style CPU.
+1. Big Sur's AMD video drivers are not compatible with the Penryn style CPU. 
 2. The Post Install script using MousSEE to emulate a couple instructions.
 3. This allows AMD Radeon cards that support Metal to be used on a MP3,1.
+4. Ironically, my AMD Radeon RX 580 Card works completely fine without a 4.2 emulator running in both Big Sur and Catalina. It even supports 4K@60Hz and a 4K boot screen with it being flashed. Simply awesome.
 
 ### Telemetry and Mac Pro Early 2008
 1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU.

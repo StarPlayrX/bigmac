@@ -139,7 +139,7 @@ ASentientBot, JackLukeM, Ritchie333, seyoon20087
 
 See Credits file for our list of contributors
 
-## Unsupported Mac Influencers
+## Big Unsupported Mac Influencers
 
 Dosdude1, BarryKN, Netkas, MacVidCards, Parrotgeek 
 

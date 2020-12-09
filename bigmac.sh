@@ -4,7 +4,10 @@
 #  BigMac MacPro pre-install tool v0.0.12
 #  Created by StarPlayrX on 10.17.2020
 
-#AutoSwitch to current directory
+# For this script, root permissions are vital.
+[ $UID = 0 ] || exec sudo "$0" "$@"
+
+# AutoSwitch to current directory
 dir=$(dirname "$0")
 cd "$dir"
 
@@ -23,7 +26,7 @@ printf '\e[K'
 printf "\r\n[38;5;112m"
 printf '\e[K'
 
-read -p "📦 Would you like to download Big Sur macOS 11.0.1 (20B29)? [y]: " install
+read -p "📦 Would you like to download macOS Big Sur 11.0.1 (20B50)? [y]: " install
 
 
 if [[ "$install" == *"y"* ]]
@@ -31,12 +34,12 @@ if [[ "$install" == *"y"* ]]
         printf '\e[K'
         echo
         printf '\e[K'
-        rm -Rf ~/Downloads/InstallAssistant.pkg
-        curl http://swcdn.apple.com/content/downloads/50/49/001-79699-A_93OMDU5KFG/dkjnjkq9eax1n2wpf8rik5agns2z43ikqu/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
+        rm -rf ~/Downloads/InstallAssistant.pkg
+        curl http://swcdn.apple.com/content/downloads/19/41/001-83532-A_LN5NT1FB2Z/o4zodwe2nhyl7dh6cbuokn9deyfgsiqysn/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
         echo
         printf '\e[K'
         echo 'Installing the Install macOS Big Sur.app via InstallAssistant.pkg'
-        sudo installer -pkg ~/Downloads/InstallAssistant.pkg -target /
+        installer -pkg ~/Downloads/InstallAssistant.pkg -target /
 fi
 
     echo
@@ -131,31 +134,30 @@ if [[ "$create" == *"y"* ]]
                 ##echo "☠️  Renaming Install macOS Big Sur volume to BigMac11USB"
                 ##diskutil rename "Install macOS Big Sur" "BigMac11USB"
                 ##printf '\e[K'
+                echo
+                echo "Reboot -> hold down OPTION key -> macOS Big Sur Installer"
+                echo
+                echo "Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh"
+                echo
+                echo "Boot the USB installer, from its Terminal type:"
+                echo
+                echo "cd /Volumes/bigmac"
+                echo "./preinstall.sh"
+                echo
+                echo "open Big Sur Installer"
+                echo
+                echo "after install is completed (hint: it takes 3 stages to complete.)"
+                echo
+                echo "Boot the USB installer, from its Terminal type:"
+                echo
+                echo "cd /Volumes/bigmac"
+                echo "./postinstall.sh"
+                echo
+                echo "Wait, no Boot Screen? I'll leave that adventure up to you."
+                echo
+                echo "Your mileage may vary. Support is not included with this software."
+                echo
+                exit 0
             fi
         done
 fi
-
-
-echo
-echo "Reboot -> hold down OPTION key -> macOS Big Sur Installer"
-echo
-echo "Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh"
-echo
-echo "Boot the USB installer, from its Terminal type:"
-echo
-echo "cd /Volumes/bigmac"
-echo "./preinstall.sh"
-echo
-echo "open Big Sur Installer"
-echo
-echo "after install is completed (hint: it takes 3 stages to complete.)"
-echo
-echo "Boot the USB installer, from its Terminal type:"
-echo
-echo "cd /Volumes/bigmac"
-echo "./postinstall.sh"
-echo
-echo "Wait, no Boot Screen? I'll leave that adventure up to you."
-echo
-echo "Your mileage may vary. Support is not included with this software."
-echo

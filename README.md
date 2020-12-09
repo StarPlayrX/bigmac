@@ -133,7 +133,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 ## Known issues with MAME input devices
 * USB 1.1 will be supported in bigmac2.
 
-## 🍟 Special thanks to the following contributors:
+## 🍟 Big Mac Contributors
 
 ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
 

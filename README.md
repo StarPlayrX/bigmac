@@ -151,3 +151,5 @@ If anyone wants to collaborate together with future versions of Big Mac. I don't
 Updated on December 7, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
 A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
+
+macOS is only to be run on Apple Branded hardware. Back in the day of my hackintosh years, we used to put the Apple Sticker on our PCs.

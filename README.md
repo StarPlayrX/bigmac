@@ -135,13 +135,14 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ## 🍟 Special thanks to the following contributors:
 
-Dosdude1, ASentientBot, BarryKN, JackLukeM, Ritchie333, seyoon20087,
+ASentientBot, JackLukeM, Ritchie333, seyoon20087
+
+See Credits file for our list of contributors
 
 ## Unsupported Mac Influencers
 
-Parrotgeek, Netkas, MacVidCards
+Dosdude1, BarryKN, Netkas, MacVidCards, Parrotgeek 
 
-See Credits file for our list of contributors
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 
 

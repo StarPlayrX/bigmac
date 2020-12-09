@@ -135,7 +135,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ## 🍟 Special thanks to the following contributors:
 
-Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek, Ritchie333, seyoon20087
+Dosdude1, ASentientBot, BarryKN, JackLukeM, Parrotgeek, Ritchie333, seyoon20087, Netkas, MacVidCards
 
 See Credits file for our list of contributors
 

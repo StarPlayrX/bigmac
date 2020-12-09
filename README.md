@@ -12,7 +12,7 @@ Big Sur macOS 11 Mac Pro patcher
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
 ## 💾 BMO2
-1. Is for users who cannot get the current installer to work, it is based on pre-release patches from bigmac2.
+1. Bee-Mo-Two for users who cannot get the current installer to work, it is based on pre-release patches from bigmac2.
 2. It is for R&D and testing purposes only, not to be redistributed, not for production purposes.
 3. BMO2 is an experimental cloud based clean install.
 4. The disk image is already updated with latest patches from the pre-release bigmac2 work.

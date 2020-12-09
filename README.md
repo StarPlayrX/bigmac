@@ -17,7 +17,7 @@ Big Sur macOS 11 Mac Pro patcher
 3. BMO2 is an experimental cloud based clean install.
 4. The disk image is already updated with latest patches from the pre-release bigmac2 work.
 4. A USB Hub for your keyboard, mouse or trackpad is highly recommended.
-5. Bluetooth 2 is turned off on Big Sur via software. It causes a Kernel Panic.
+5. For Mac Pro 3,1 Bluetooth 2.0 is turned off on Big Sur via software. It causes a Kernel Panic.
 6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
    * [Download BMO2 802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
    * [Download BMO2 802.11ac wifi edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.

@@ -2,6 +2,11 @@
 
 Big Sur macOS 11 Mac Pro patcher 
 
+## Update 
+1. Added an original Startup Disk tool to the repo. Created by StarPlayrX
+2. I am testing it now with Big Sur Volumes. See if it works with older OS'.
+3. Your mileage may vary. This hasn't been fully tested yet.
+
 ## 🍔 Coming soon: bigmac2 
 ![image](https://user-images.githubusercontent.com/24852454/101307225-4c333a00-388a-11eb-99ee-28d6ea3b047f.png)
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.

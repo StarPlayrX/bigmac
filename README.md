@@ -11,23 +11,6 @@ Big Sur macOS 11 Mac Pro patcher
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 
-## 💾 BMO2
-1. Bee-Mo-Two for users who cannot get the current installer to work, it is based on pre-release patches from bigmac2.
-2. It is for R&D and testing purposes only, not to be redistributed, not for production purposes.
-3. BMO2 is an experimental cloud based clean install.
-4. The disk image is already updated with latest patches from the pre-release bigmac2 work.
-4. A USB Hub for your keyboard, mouse or trackpad is highly recommended.
-5. For Mac Pro 3,1 Bluetooth 2.0 is turned off on Big Sur via software. It causes a Kernel Panic.
-6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
-   * [Download BMO2 802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
-   * [Download BMO2 802.11ac wifi edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
-9. Format a disk using MacOS Extended Journaled with title BigMac.
-10. Execute in Terminal `sudo asr -er -nov -s ~/Downloads/BMO*.dmg -t /Volumes/BigMac`
-11. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
-12. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash and delete permanently. 
-
-<b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
-
 ## Requirements 
 1. Mac Pro 2008 - 2012
 2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will not function 100%.
@@ -44,6 +27,24 @@ Big Sur macOS 11 Mac Pro patcher
 5. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
 6. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
 7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
+
+## 💾 BMO2
+0. READ theRequirements section to disable System Integrity Protection (SIP), it is the root if most issues.
+1. Bee-Mo-Two for users who cannot get the current installer to work, it is based on pre-release patches from bigmac2.
+2. It is for R&D and testing purposes only, not to be redistributed, not for production purposes.
+3. BMO2 is an experimental cloud based clean install.
+4. The disk image is already updated with latest patches from the pre-release bigmac2 work.
+4. A USB Hub for your keyboard, mouse or trackpad is highly recommended.
+5. For Mac Pro 3,1 Bluetooth 2.0 is turned off on Big Sur via software. It causes a Kernel Panic.
+6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
+   * [Download BMO2 802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
+   * [Download BMO2 802.11ac wifi edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
+9. Format a disk using MacOS Extended Journaled with title BigMac.
+10. Execute in Terminal `sudo asr -er -nov -s ~/Downloads/BMO*.dmg -t /Volumes/BigMac`
+11. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
+12. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash and delete permanently. 
+
+<b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.

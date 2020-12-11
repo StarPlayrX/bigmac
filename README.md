@@ -150,7 +150,7 @@ See Credits file for our list of contributors
 
 ## 🍺 Big Unsupported Mac Influencers
 
-, Steve Jobs, Steve Wozniak, Dosdude1, Netkas, MacVidCards, Parrotgeek 
+, Steve Jobs, Steve Wozniak, Dosdude1, Netkas
 
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 

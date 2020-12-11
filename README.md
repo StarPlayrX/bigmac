@@ -29,14 +29,14 @@ Big Sur macOS 11 Mac Pro patcher
 7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
 ## 💾 BMO2
-0. READ theRequirements section to disable System Integrity Protection (SIP), it is the root if most issues.
-1. Bee-Mo-Two for users who cannot get the current installer to work, it is based on pre-release patches from bigmac2.
-2. It is for R&D and testing purposes only, not to be redistributed, not for production purposes.
-3. BMO2 is an experimental cloud based clean install.
-4. The disk image is already updated with latest patches from the pre-release bigmac2 work.
-4. A USB Hub for your keyboard, mouse or trackpad is highly recommended.
-5. For Mac Pro 3,1 Bluetooth 2.0 is turned off on Big Sur via software. It causes a Kernel Panic.
-6. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
+1. Go back and read the section to disable System Integrity Protection (SIP), it is the root if most issues.
+2. Bee-Mo-Two for users who cannot get the current installer to work, it is based on pre-release patches from bigmac2.
+3. It is for R&D and testing purposes only, not to be redistributed, not for production purposes.
+4. BMO2 is an experimental cloud based clean install.
+5. The disk image is already updated with latest patches from the pre-release bigmac2 work.
+6. A USB Hub for your keyboard, mouse or trackpad is highly recommended.
+7. For Mac Pro 3,1 Bluetooth 2.0 is turned off on Big Sur via software. It causes a Kernel Panic.
+8. Two versions of BMO2 are available. If you don't know which one, pick the legacywifi edition it is universal.
    * [Download BMO2 802.11n legacywifi edition](https://starplayrx.com/downloads/bigmac/BMO2n_legacywifi.dmg) for stock 802.11n cards (MacPro 3,1)
    * [Download BMO2 802.11ac wifi edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 9. Format a disk using MacOS Extended Journaled with title BigMac.

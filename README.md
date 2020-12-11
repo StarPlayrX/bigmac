@@ -15,6 +15,7 @@ Big Sur macOS 11 Mac Pro patcher
 4. Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
+7. Working on ease of use.
 
 ## Requirements 
 1. Mac Pro 2008 - 2012

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Scripts/main.scpt</key>
 		<data>
-		/4txYl64v2TT0Wjg3+fkOHfG+Lk=
+		15JMJUXzsbKpqTZjjdAe4jgdiOU=
 		</data>
 		<key>Resources/applet.icns</key>
 		<data>
@@ -15,6 +15,10 @@
 		<key>Resources/applet.rsrc</key>
 		<data>
 		b7US0d5KCrYoYDvPWDTrStbJAYo=
+		</data>
+		<key>Resources/bless</key>
+		<data>
+		T0vzjIbkUrAP3rhNQ4hKTwzFfE8=
 		</data>
 		<key>Resources/description.rtfd/TXT.rtf</key>
 		<data>
@@ -27,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/4txYl64v2TT0Wjg3+fkOHfG+Lk=
+			15JMJUXzsbKpqTZjjdAe4jgdiOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DPbo4tx3ZoUnpVsP5Gawf45J34u4mIfCLzJgQ5+gWSc=
+			Yd1bhjBaz5or7kJumH5dN9eZuBItKT7gSuTTrlIAP4Q=
 			</data>
 		</dict>
 		<key>Resources/applet.icns</key>
@@ -54,6 +58,17 @@
 			<key>hash2</key>
 			<data>
 			DMQGAm7weJTxwDTS4o5jqkFg5qjXkiCeaAKT/+g14aQ=
+			</data>
+		</dict>
+		<key>Resources/bless</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T0vzjIbkUrAP3rhNQ4hKTwzFfE8=
+			</data>
+			<key>hash2</key>
+			<data>
+			LcmI95o72QsaNZyNC9DFGVLuV8/AhrymIBazSenS2L0=
 			</data>
 		</dict>
 		<key>Resources/description.rtfd/TXT.rtf</key>

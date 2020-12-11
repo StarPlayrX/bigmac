@@ -30,12 +30,20 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
-1. SIP, a.k.a. System Integrity Protection, must be disabled. If it's on booting the installer might panic.
-2. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you.
-3. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip).  Then enter password: `apfs` and follow the instructions.
-4. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
-5. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
-6. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
+2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will not function 100%.
+  a. To disable SIP, [OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg)..
+  b. Open the DMG and run the package.
+  c.  Create a usb or firewire installer from El Capitan `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
+  d. Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, wait for the instalelr to boot up.
+  e. open Terminal. Execute `csrutil disable`
+  f.  While you are there set some boot args `nvram boot-args="-no_compat_check"`
+  g.  add -v if you want verbose boot like so  `nvram boot-args="-v -no_compat_check"`
+  h.  These steps will be automated in bigmac2e
+3. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
+4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip).  Then enter password: `apfs` and follow the instructions.
+5. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
+6. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
+7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.

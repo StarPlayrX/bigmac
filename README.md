@@ -4,11 +4,11 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Update 
 1. Added an original Startup Disk tool to the repo. Created by StarPlayrX
-2. I am testing it now with Big Sur Volumes. See if it works with older OS'.
-3. Your mileage may vary. This hasn't been fully tested yet.
+2. I am testing it now with Big Sur Volumes. See if it works with older operating systems.
+3. Your mileage might vary. This hasn't been fully tested yet.
 
 ## 🍔 Coming soon: bigmac2 
-![image](https://user-images.githubusercontent.com/24852454/101307225-4c333a00-388a-11eb-99ee-28d6ea3b047f.png)
+![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
@@ -19,17 +19,17 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
-2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will not function 100%.
-  * To disable SIP, [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
-  * Open the DMG and run the package.
-  * Create a usb or firewire installer from El Capitan `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
-  * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, wait for the instalelr to boot up.
-  * open Terminal. Execute `csrutil disable`
-  * While you are there set some boot args `nvram boot-args="-no_compat_check"`
-  * add -v if you want verbose boot like so  `nvram boot-args="-v -no_compat_check"`
-  * These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
+2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function.
+   * To disable SIP, [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
+   * Open the DMG and run the package.
+   * Create a usb or firewire installer from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
+   * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, and wait for the installer to boot up.)
+   * Open Terminal. Execute `csrutil disable`.
+   * While you are there set some boot args: `nvram boot-args="-no_compat_check"`.
+   * add -v if you want verbose boot like so: `nvram boot-args="-v -no_compat_check"`.
+   * These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
 3. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
-4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip).  Then enter password: `apfs` and follow the instructions.
+4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
 5. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
 6. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
 7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
@@ -48,7 +48,7 @@ Big Sur macOS 11 Mac Pro patcher
 9. Format a disk using MacOS Extended Journaled with title BigMac.
 10. Execute in Terminal `sudo asr -er -nov -s ~/Downloads/BMO*.dmg -t /Volumes/BigMac`
 11. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
-12. bigmac2's pre-release patches have already been applied. When finished, move the BMO2 disk image in the Trash and delete permanently. 
+12. bigmac2's pre-release patches have already been applied. When finished, remove the BMO2 disk image, e.g: `rm -rf ~/Downloads/BMO2.dmg`. 
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!
 
@@ -156,15 +156,16 @@ See Credits file for our list of contributors
 
 ## 🍺 Big Unsupported Mac Influencers
 
-, Steve Jobs, Steve Wozniak, Dosdude1, Netkas
+Dosdude1, Netkas
 
+## 
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 
 
-If anyone wants to collaborate together with future versions of Big Mac. I don't mind if you are on a different unsupport mac team including Open Core. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue and would love to work with you. 
+If anyone wants to collaborate together with future versions of BigMac, I don't mind if you are on a different unsupport mac team including OpenCore. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue or pull request and would love to work with you. 
 
-Updated on December 7, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
+Updated on December 11, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
 A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
-macOS is only to be run on Apple branded hardware. Back in the day of my hackintosh years, we used to put the infamous white Apple Sticker on our PCs.
+macOS is only to be run on Apple branded hardware. Back in the day of my Hackintosh years, we used to put the infamous white Apple Sticker on our PCs.

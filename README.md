@@ -14,14 +14,14 @@ Big Sur macOS 11 Mac Pro patcher
 ## Requirements 
 1. Mac Pro 2008 - 2012
 2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will not function 100%.
-  * To disable SIP, [OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg)..
+  * To disable SIP, [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
   * Open the DMG and run the package.
   * Create a usb or firewire installer from El Capitan `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
   * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, wait for the instalelr to boot up.
   * open Terminal. Execute `csrutil disable`
   * While you are there set some boot args `nvram boot-args="-no_compat_check"`
   * add -v if you want verbose boot like so  `nvram boot-args="-v -no_compat_check"`
-  * These steps will be automated in bigmac2
+  * These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
 3. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
 4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip).  Then enter password: `apfs` and follow the instructions.
 5. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299

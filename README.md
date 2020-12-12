@@ -17,8 +17,9 @@ Big Sur macOS 11 Mac Pro patcher
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 7. Working on ease of use improvements.
 8. Software update supporting full installs and optional Apple Developer Seed Support
-9. Wicked fast Installer system.
-10. No boot Screen PC Video card support!
+9. Wicked Fast Installer System.
+11. Ultra Fast Boot.
+10. No Boot Screen Support!
 
 ## Requirements 
 1. Mac Pro 2008 - 2012

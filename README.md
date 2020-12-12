@@ -14,9 +14,9 @@ Big Sur macOS 11 Mac Pro patcher
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
 4. Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
-6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
+6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi. (Available Now)
 7. Working on ease of use improvements.
-8. Software update supporting full installs and optional Apple Developer Seed Support
+8. Software update supporting full installs and optional Apple Developer Seed Support Downloads.
 9. Wicked Fast Installer Sub System.
 11. Ultra Fast Boot.
 10. No Boot Screen Support! No more adventures!

@@ -16,9 +16,9 @@ Big Sur macOS 11 Mac Pro patcher
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi. (Available Now)
 7. Working on ease of use improvements.
-8. Software Update Downloads for Full Installs
+8. Software Update Downloads for Full Installs (VMM Spoofing)
 9. Optional Apple Developer Seed Support Downloads
-10. Wicked Installer Boot System
+10. Wicked Installer Boot System / Light Speed Emergency Disk
 11. Ultra Fast Boot
 12. No Boot Screen Support! No more adventures.
 

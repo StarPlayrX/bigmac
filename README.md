@@ -16,13 +16,18 @@ Big Sur macOS 11 Mac Pro patcher
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi.
 7. Working on ease of use improvements.
+8. Software Update Downloads for Full Installs
+9. Optional Apple Developer Seed Support Downloads
+10. Wicked Installer Boot System
+11. Ultra Fast Boot
+12. No Boot Screen Support! No more adventures.
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
 2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function.
    * To disable SIP, [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
    * Open the DMG and run the package.
-   * Create a usb or firewire installer from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
+   * Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
    * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, and wait for the installer to boot up.)
    * Open Terminal. Execute `csrutil disable`.
    * While you are there set some boot args: `nvram boot-args="-no_compat_check"`.
@@ -30,8 +35,8 @@ Big Sur macOS 11 Mac Pro patcher
    * These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
 3. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
 4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
-5. Your GPU must support Metal. I highly recommended this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
-6. 1 external USB SSD or hard drive. Fast flash drives may work. Slow thumb drivers are not supported.
+5. Your GPU must support Metal. I highly recommend this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
+6. 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
 7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
 ## 💾 BMO2
@@ -47,7 +52,7 @@ Big Sur macOS 11 Mac Pro patcher
    * [Download BMO2 802.11ac wifi edition](https://starplayrx.com/downloads/bigmac/BMO2ac_wifi.dmg) is for 802.11ac cards only.
 9. Format a disk using MacOS Extended Journaled with title BigMac.
 10. Execute in Terminal `sudo asr -er -nov -s ~/Downloads/BMO*.dmg -t /Volumes/BigMac`
-11. When asr is 100% complete, open System Preferences, select BMO2 as your startup disk and reboot.
+11. When `asr` is fully complete, open System Preferences, select BMO2 as your startup disk and reboot.
 12. bigmac2's pre-release patches have already been applied. When finished, remove the BMO2 disk image, e.g: `rm -rf ~/Downloads/BMO2.dmg`. 
 
 <b>One More Thing</b> A Big Mac is better than a New Mac. [Please donate.](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ) Thank you!

@@ -14,7 +14,7 @@ Big Sur macOS 11 Mac Pro patcher
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
 4. Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
 5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
-6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi. (Available Now)
+6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi
 7. Working on ease of use improvements.
 8. Software Update Downloads for Full Installs (VMM Spoofing)
 9. Optional Apple Developer Seed Support Downloads
@@ -144,8 +144,6 @@ See Credits file for our list of contributors
 ## 🍺 Big Unsupported Mac Influencers
 
 Dosdude1, Netkas
-
-## 
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 
 

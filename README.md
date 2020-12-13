@@ -20,7 +20,7 @@ Big Sur macOS 11 Mac Pro patcher
 9. Optional Apple Developer Seed Support Downloads
 10. Wicked Installer Boot System / Light Speed Emergency Disk
 11. Ultra Fast Boot
-12. No Boot Screen Support! No more adventures.
+12. Better Boot Screen Support
 
 ## Requirements 
 1. Mac Pro 2008 - 2012

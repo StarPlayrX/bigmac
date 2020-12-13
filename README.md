@@ -3,9 +3,7 @@
 Big Sur macOS 11 Mac Pro patcher 
 
 ## Update 
-1. Added an original Startup Disk tool to the repo. Created by StarPlayrX
-2. I am testing it now with Big Sur Volumes. See if it works with older operating systems.
-3. Your mileage might vary. This hasn't been fully tested yet.
+Added an original Startup Disk tool to the repo. Created by StarPlayrX
 
 ## 🍔 Coming soon: bigmac2 
 ![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)

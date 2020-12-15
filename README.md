@@ -5,9 +5,11 @@
 ## Update
 * Added an original Startup Disk tool to the repo. Created by StarPlayrX.
 
-## Released today bigmac | SERIES 1.1
+
+## bigmac | SERIES 1.1 now released
 ![image](https://user-images.githubusercontent.com/24852454/102173731-09eba780-3edf-11eb-9af9-bf7410049832.png)
-* Includes all the new patches that are going into v2, but in the classic v1.0 installer format.
+* Includes all latest patches like USB1.1 device support, Airdrop and more!
+* Packaged in our classic v1.0 installer format
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 ## 🍔 Coming soon: bigmac | SERIES 2 

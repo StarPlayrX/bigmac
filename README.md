@@ -7,8 +7,7 @@
 
 ## Released today bigmac1.1
 * Includes all the new patches that are going into v2, but in the classic v1.0 installer format.
-
-### A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
+* A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 ## 🍔 Coming soon: bigmac2 
 ![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)
@@ -152,8 +151,8 @@ Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sendi
 
 If anyone wants to collaborate together with future versions of BigMac, I don't mind if you are on a different unsupport mac team including OpenCore. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue or pull request and would love to work with you. 
 
-Updated on December 11, 2020 for macOS 11.0.1 (20B50), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
+Updated on December 14, 2020 for macOS 11.1 (20C69), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright 2020 by Todd Bruss | NiceMac LLC
 
-### A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
+* A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 macOS is only to be run on Apple branded hardware. Back in the day of my Hackintosh years, we used to put the infamous white Apple Sticker on our PCs.

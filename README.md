@@ -1,16 +1,18 @@
 # 🍔 bigmac
 
-* Big Sur macOS 11 Mac Pro patcher 
+Big Sur macOS 11 Mac Pro patcher.
 
-## Update 
-* Added an original Startup Disk tool to the repo. Created by StarPlayrX
+## Update
+* Added an original Startup Disk tool to the repo. Created by StarPlayrX.
 
-## Released today bigmac1.1
+
+## bigmac | SERIES 1.1 now released
+![image](https://user-images.githubusercontent.com/24852454/102173731-09eba780-3edf-11eb-9af9-bf7410049832.png)
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Packaged in our classic v1.0 installer format
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
-## 🍔 Coming soon: bigmac2 
+## 🍔 Coming soon: bigmac | SERIES 2 
 ![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
@@ -27,8 +29,8 @@
 
 ## Requirements 
 1. Mac Pro 2008 - 2012
-2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function.
-   * To disable SIP, [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
+2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function. To do so:
+   * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
    * Open the DMG and run the package.
    * Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
    * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, and wait for the installer to boot up.)
@@ -130,33 +132,39 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 ## How to clone your system
 * Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`.
 
-## Known issues with USB 2.0
-1. Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
-2. USB storage devices are hotswapped with issue.
-3. Certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
+## Known issues
 
-## Known issues with MAME input devices
+### USB 2.0
+* Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
+* USB storage devices are hotswapped with issue.
+* Certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
+
+### MAME input devices
 * USB 1.1 will be supported in bigmac2.
 
 ## 🍟 Big Mac Contributors
 
-ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
+* ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
 
 * See Credits file for our list of contributors
 
 ## 🍺 Big Unsupported Mac Influencers
 
-Dosdude1, Netkas, MacVidCards
+* Dosdude1, Netkas, MacVidCards
+
+## Special Thank Notes to Contributors
 
 Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 
 
 If anyone wants to collaborate together with future versions of BigMac, I don't mind if you are on a different unsupport mac team including OpenCore. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue or pull request and would love to work with you. 
 
-##  One More Thing
+## One More Thing
+
 * Updated on December 14, 2020 for macOS 11.1 (20C69)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
-If you ever read the EULA, macOS is to be run on Apple branded hardware.
+
+If you ever read the [Software License Agreement](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), macOS is to be run on Apple branded hardware.

@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>Kernel Flags</key>
-	<string>-no_compat_check</string>
+	<string>-no_compat_check -amfi_get_out_of_my_way=1</string>
 </dict>
 </plist>

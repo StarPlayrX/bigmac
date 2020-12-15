@@ -5,7 +5,7 @@ Big Sur macOS 11 Mac Pro patcher
 ## Update 
 Added an original Startup Disk tool to the repo. Created by StarPlayrX
 
-## Coming much sooner: bigmac1.1
+## Released today bigmac1.1
 1. Includes all the new patches in v2 pre-release but in the v1 installer format.
 2. We have much more planned for v2, so we may have some incremental updates to keep things on pace with Apple.
 

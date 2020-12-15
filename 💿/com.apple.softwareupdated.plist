@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.softwareupdated</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated</string>
+	</array>
+	<key>UserName</key>
+	<string>_softwareupdate</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.softwareupdated</key>
+		<true/>
+	</dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>ManualBackgroundTrigger</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.SoftwareUpdate.TriggerBackgroundCheck</string>
+			</dict>
+			<key>CheckForCatalogChange</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.SoftwareUpdate.CheckForCatalogChange</string>
+			</dict>
+		</dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.SoftwareUpdate.Activity</key>
+			<dict>
+				<key>Repeating</key>
+				<true/>
+				<key>Interval</key>
+				<integer>21600</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>PowerNap</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<!--Uncomment these keys to enable malloc debugging-->
+		<!--<key>MallocScribble</key>-->
+		<!--<string>1</string>-->
+		<!--<key>MallocStackLogging</key>-->
+		<!--<string>1</string>-->
+		<!--<key>MallocErrorAbort</key>-->
+		<!--<string>1</string>-->
+		<!--<key>MallocCheckHeapEach</key>-->
+		<!--<string>500</string>-->
+		<!--<key>MALLOC_LOG_FILE</key>-->
+		<!--<string>/var/log/softwareupdated_malloc.log</string>-->
+		<!--<key>DYLD_INSERT_LIBRARIES</key>-->
+		<!--<string>/usr/lib/libgmalloc.dylib</string>-->
+		<!--<key>NSZombieEnabled</key>-->
+		<!--<string>YES</string>-->
+		<key>DYLD_INSERT_LIBRARIES</key>
+		<string>/usr/local/lib/SUVMMFaker.dylib</string>
+	</dict>
+</dict>
+</plist>

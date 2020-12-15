@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher
 
 ## Update 
 * Added an original Startup Disk tool to the repo. Created by StarPlayrX.
-* **IMPROTANT NOTE**: Today, we noticed that Apple released the new OS version, which is 11.1 (206C9). We have not tested this yet; but if you need to, please feel free to submit your [issue](https://github.com/StarPlayrX/bigmac/issues) or [pull request](https://github.com/StarPlayrX/bigmac/pulls).
+* **IMPROTANT NOTE**: Today, we noticed that Apple released the new OS version, which is 11.1 (20C69). We have not tested this yet; but if you need to, please feel free to submit your [issue](https://github.com/StarPlayrX/bigmac/issues) or [pull request](https://github.com/StarPlayrX/bigmac/pulls).
 
 ## 🍔 Coming soon: bigmac2 
 ![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)

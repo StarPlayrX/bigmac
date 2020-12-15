@@ -17,24 +17,6 @@ Director's Cut:
 📸 Snapshot removal tool by StarPlayrX [post install]
 -----------------------------------------------------------------------------------
 
-Recently Added:
------------------------------------------------------------------------------------
-csrutil commands when run from a BaseSystem or createinstallmedia
------------------------------------------------------------------------------------
-
-Known issues with macOS 11 Big Sur
------------------------------------------------------------------------------------
-USB 2.0 mouse, trackpad and keyboard devices will not reconnect if detached and reconnected
-USB 1.0 mouse, trackpad and keyboard devices will power on but will not interact with the OS (mainly MAME/Arcade input devices have this issue)
-
-Workaround for USB2.0 devices:
------------------------------------------------------------------------------------
-Use a USB 3.0 PCIe card and connect your USB 2.0 devices to it.
-
-There is no workaround for USB 1.0 MAME / Arcade devices.
-My advice for SDL MAME users: macOS 10.14.6 Mojave
------------------------------------------------------------------------------------
-
 -----------------------------------------------------------------------------------
 Credit does not imply endorsement, copyright, usage or warranty.
 -----------------------------------------------------------------------------------

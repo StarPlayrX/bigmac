@@ -1,6 +1,6 @@
 # 🍔 bigmac
 
-* Big Sur macOS 11 Mac Pro patcher 
+Big Sur macOS 11 Mac Pro patcher.
 
 ## Update
 * Added an original Startup Disk tool to the repo. Created by StarPlayrX.

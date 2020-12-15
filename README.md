@@ -153,7 +153,8 @@ If anyone wants to collaborate together with future versions of BigMac, I don't 
 
 ## Footer
 * Updated on December 14, 2020 for macOS 11.1 (20C69)
-* Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1)
+* Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equvilant Xserves
+* Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 

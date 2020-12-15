@@ -23,7 +23,7 @@ printf '\e[K'
 printf "\r\n[38;5;112m"
 printf '\e[K'
 
-read -p "📦 Would you like to download Big Sur macOS 11.0.1 (20B50)? [y]: " install
+read -p "📦 Would you like to download Big Sur macOS 11.1 (20C69)? [y]: " install
 
 
 if [[ "$install" == *"y"* ]]
@@ -32,7 +32,7 @@ if [[ "$install" == *"y"* ]]
         echo
         printf '\e[K'
         rm -Rf ~/Downloads/InstallAssistant.pkg
-        curl http://swcdn.apple.com/content/downloads/19/41/001-83532-A_LN5NT1FB2Z/o4zodwe2nhyl7dh6cbuokn9deyfgsiqysn/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
+        curl http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
         echo
         printf '\e[K'
         echo 'Installing the Install macOS Big Sur.app via InstallAssistant.pkg'

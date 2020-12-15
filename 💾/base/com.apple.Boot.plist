@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>Kernel Flags</key>
-	<string>-v -no_compat_check root-dmg=file:///BaseSystem/BaseSystem.dmg</string>
+	<string>-v -no_compat_check legacy_hda_tools_support=1 -amfi_get_out_of_my_way=1 chunklist-security-epoch=0 root-dmg=file:///BaseSystem/BaseSystem.dmg</string>
 </dict>
 </plist>

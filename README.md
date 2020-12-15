@@ -1,12 +1,16 @@
 # 🍔 bigmac
 
-Big Sur macOS 11 Mac Pro patcher 
+* Big Sur macOS 11 Mac Pro patcher 
 
-## Update 
+## Update
 * Added an original Startup Disk tool to the repo. Created by StarPlayrX.
-* **IMPROTANT NOTE**: Today, we noticed that Apple released the new OS version, which is 11.1 (20C69). We have not tested this yet; but if you need to, please feel free to submit your [issue](https://github.com/StarPlayrX/bigmac/issues) or [pull request](https://github.com/StarPlayrX/bigmac/pulls).
 
-## 🍔 Coming soon: bigmac2 
+## Released today bigmac | SERIES 1.1
+![image](https://user-images.githubusercontent.com/24852454/102173731-09eba780-3edf-11eb-9af9-bf7410049832.png)
+* Includes all the new patches that are going into v2, but in the classic v1.0 installer format.
+* A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
+
+## 🍔 Coming soon: bigmac | SERIES 2 
 ![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
@@ -140,7 +144,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 * ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
 
-See Credits file for our list of contributors
+* See Credits file for our list of contributors
 
 ## 🍺 Big Unsupported Mac Influencers
 
@@ -152,10 +156,13 @@ Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sendi
 
 If anyone wants to collaborate together with future versions of BigMac, I don't mind if you are on a different unsupport mac team including OpenCore. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue or pull request and would love to work with you. 
 
-## Credits
+## One More Thing
 
-Updated on December 15, 2020 for macOS 11.1 (20C69), Mac Pros 2008, 2009, 2010, 2012, bigmac Copyright © 2020 by Todd Bruss | NiceMac LLC
+* Updated on December 14, 2020 for macOS 11.1 (20C69)
+* Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
+* Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
+* bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC
+* A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
-A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
-macOS is only to be run on Apple branded hardware. Back in the day of my Hackintosh years, we used to put the infamous white Apple Sticker on our PCs.
+If you ever read the [Software License Agreement](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), macOS is to be run on Apple branded hardware.

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>19A603003</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>IOHIDLib</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.iokit.IOHIDLib</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>IOKit HID User Client Plugin</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2.0.0</string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>13AA9C44-6F1B-11D4-907C-0005028F18D5</key>
+		<string>IOHIDLibFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>0B842ADD-C395-4352-95F6-6585EB515623</key>
+		<array>
+			<string>13AA9C44-6F1B-11D4-907C-0005028F18D5</string>
+		</array>
+		<key>40A57A4E-26A0-11D8-9295-000A958A2C78</key>
+		<array>
+			<string>13AA9C44-6F1B-11D4-907C-0005028F18D5</string>
+		</array>
+		<key>7DDEECA8-A7B4-11DA-8A0E-0014519758EF</key>
+		<array>
+			<string>13AA9C44-6F1B-11D4-907C-0005028F18D5</string>
+		</array>
+		<key>FA12FA38-6F1A-11D4-BA0C-0005028F18D5</key>
+		<array>
+			<string>13AA9C44-6F1B-11D4-907C-0005028F18D5</string>
+		</array>
+	</dict>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>12A8179f</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>11.0.1</string>
+	<key>DTSDKBuild</key>
+	<string>20B21</string>
+	<key>DTSDKName</key>
+	<string>macosx11.0internal</string>
+	<key>DTXcode</key>
+	<string>1200</string>
+	<key>DTXcodeBuild</key>
+	<string>12A8179f</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>11.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>"Copyright © 2000-2018 Apple Inc. All rights reserved. [IOHIDFamily_frameworks-1633.40.25]"</string>
+</dict>
+</plist>

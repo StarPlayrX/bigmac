@@ -60,7 +60,7 @@ if [[ "$install" == *"y"* ]]
            # if [ "1" == "1" ]
                 #then
                     rm -Rf ~/Downloads/InstallAssistant.pkg
-                    curl http://swcdn.apple.com/content/downloads/50/49/001-79699-A_93OMDU5KFG/dkjnjkq9eax1n2wpf8rik5agns2z43ikqu/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
+                    curl http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
                     printf '\e[K'
                     echo
                     printf '\e[K'
@@ -220,7 +220,7 @@ printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./postinstall.s
 printf '\e[K'
 printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
 printf '\e[K'
-printf "\e[38;5;112m"
+printf "[38;5;112m"
 printf '\e[K'
 echo
 printf '\e[K'

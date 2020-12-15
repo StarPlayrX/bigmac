@@ -52,12 +52,13 @@ if [[ "$install" == *"y"* ]]
         echo
         printf '\e[K'
         
-            mark="12886109321"
-            printf 'Evalulating Base System checksum...'
-            checksum=$(stat ~/Downloads/InstallAssistant.pkg | awk '{printf $2}')
-            
-            if [ $checksum != $mark ]
-                then
+            #mark="12886109321"
+            #printf 'Evalulating Base System checksum...'
+            #checksum=$(stat ~/Downloads/InstallAssistant.pkg | awk '{printf $2}')
+                        #if [ $checksum != $mark ]
+
+           # if [ "1" == "1" ]
+                #then
                     rm -Rf ~/Downloads/InstallAssistant.pkg
                     curl http://swcdn.apple.com/content/downloads/50/49/001-79699-A_93OMDU5KFG/dkjnjkq9eax1n2wpf8rik5agns2z43ikqu/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
                     printf '\e[K'
@@ -65,10 +66,10 @@ if [[ "$install" == *"y"* ]]
                     printf '\e[K'
                     echo 'Installing the Install macOS Big Sur.app via InstallAssistant.pkg'
                     installer -pkg ~/Downloads/InstallAssistant.pkg -target /
-                else
-                    printf " Download Complete.\n"
+                #else
+                    printf "\nDownload Complete.\n"
                     
-            fi
+            #fi
             
     
 fi
@@ -201,25 +202,25 @@ if [[ "$create" == *"y"* ]]
 fi
 
 printf '\e[K'
-printf "[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
 printf '\e[K'
-printf "[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
+printf "\e[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
 printf '\e[K'
-printf "[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./preinstall.sh'\n"
+printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./preinstall.sh'\n"
 printf '\e[K'
-printf "[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
 printf '\e[K'
-printf "[38;5;112m Quit Terminal. Open the Installer App from the Window. Wait for 3 reboots.\n"
+printf "\e[38;5;112m Quit Terminal. Open the Installer App from the Window. Wait for 3 reboots.\n"
 printf '\e[K'
-printf "[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
 printf '\e[K'
-printf "[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
+printf "\e[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
 printf '\e[K'
-printf "[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./postinstall.sh'\n"
+printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./postinstall.sh'\n"
 printf '\e[K'
-printf "[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
 printf '\e[K'
-printf "[38;5;112m"
+printf "\e[38;5;112m"
 printf '\e[K'
 echo
 printf '\e[K'

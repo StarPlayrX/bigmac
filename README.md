@@ -152,7 +152,9 @@ Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sendi
 If anyone wants to collaborate together with future versions of BigMac, I don't mind if you are on a different unsupport mac team including OpenCore. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue or pull request and would love to work with you. 
 
 Updated on December 14, 2020 for macOS 11.1 (20C69)
+
 For Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1)
+
 bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC
 
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)

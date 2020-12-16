@@ -11,7 +11,7 @@ Please read the Requirements section. Thank you!
 4. ...did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
 5. ...did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
 
-# bigmac1.1
+# 🍔 bigmac1.1
 
 <img src="https://swift4me.com/images/splash/bigmac1d.png" width="66.7%">
 

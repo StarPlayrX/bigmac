@@ -2,9 +2,9 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-Please read the Requirments section. It will save you and I lots of time. We are working hard to make bigmac better, but please do your part. If you can't find your information here, take a look at the existing issues first. You will most likely find your answer. 
+Please read the Requirements section. Thank you!
 
-Here are the 5 most common user errors.
+### The 5 Most Common Issues
 1. User did not disable SIP using El Capitan macOS 10.11 with `csrutil disable`
 2. ...did not set boot arguments to at least `nvram boot-args"-no_compat_check"`
 3. (Mac Pro / Xserve Early 2008 only) has an imcompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card.

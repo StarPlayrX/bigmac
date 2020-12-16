@@ -2,18 +2,15 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-## Update
-* Added an original Startup Disk tool to the repo. Created by StarPlayrX.
-
-
-## bigmac1.1
+# bigmac1.1
 <img src="https://swift4me.com/images/splash/bigmac1.png" width="66.7%">
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
+* Added a new Startup Disk tool to the repo. Created by StarPlayrX.
 * Packaged in our classic v1.0 installer format
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 
-## 🍔 Coming soon: bigmac2
+# 🍔 Coming soon: bigmac2
 <img src="https://swift4me.com/images/splash/bigmac2.png" width="66.7%">
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
@@ -29,7 +26,7 @@ Big Sur macOS 11 Mac Pro patcher.
 12. Better Boot Screen Support
 
 ## Requirements 
-1. Mac Pro 2008 - 2012
+1. Mac Pro 2008 - 2012 or Xserve 2008 and later
 2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function. To do so:
    * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
    * Open the DMG and run the package.

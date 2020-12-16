@@ -21,7 +21,7 @@ Please read the Requirements section. Thank you!
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 
-# 🍔 bigmac2 the works 🍦🍟🥤
+# 🍔 bigmac2 🍦🍟🥤 the works 
 
 <img src="https://swift4me.com/images/splash/bigmac2c.png" width="66.7%">
 

@@ -3,7 +3,9 @@
 Big Sur macOS 11 Mac Pro patcher.
 
 # bigmac1.1
+
 <img src="https://swift4me.com/images/splash/bigmac1.png" width="66.7%">
+
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Added a new Startup Disk tool to the repo. Created by StarPlayrX.
 * Packaged in our classic v1.0 installer format
@@ -11,7 +13,9 @@ Big Sur macOS 11 Mac Pro patcher.
 
 
 # 🍔 Coming soon: bigmac2
+
 <img src="https://swift4me.com/images/splash/bigmac2.png" width="66.7%">
+
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)

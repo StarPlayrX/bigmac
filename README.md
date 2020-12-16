@@ -13,7 +13,7 @@ Please read the Requirements section. Thank you!
 
 # 🍔 bigmac1.1
 
-<img src="https://swift4me.com/images/splash/bigmac1d.png" width="66.7%">
+<img src="https://swift4me.com/images/splash/bigmac1f.png" width="66.7%">
 
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Added a new Startup Disk tool to the repo. Created by StarPlayrX.
@@ -23,7 +23,7 @@ Please read the Requirements section. Thank you!
 
 # 🍔 bigmac2 🍦coming soon 
 
-<img src="https://swift4me.com/images/splash/bigmac2c.png" width="66.7%">
+<img src="https://swift4me.com/images/splash/bigmac2f.png" width="66.7%">
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * USB 1.1 Support, special thanks to JackLukem for the tip!*

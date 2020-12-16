@@ -7,7 +7,7 @@ Big Sur macOS 11 Mac Pro patcher.
 
 
 ## bigmac1.1
-![image](https://swift4me.com/images/splash/bigmac1.png = 250x250)
+![image](https://swift4me.com/images/splash/bigmac1.png | width=100)
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Packaged in our classic v1.0 installer format
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)

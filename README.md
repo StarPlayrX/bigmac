@@ -6,14 +6,14 @@ Big Sur macOS 11 Mac Pro patcher.
 * Added an original Startup Disk tool to the repo. Created by StarPlayrX.
 
 
-## bigmac | SERIES 1.1 now released
-![image](https://user-images.githubusercontent.com/24852454/102173731-09eba780-3edf-11eb-9af9-bf7410049832.png)
+## bigmac1.1
+![image](https://starplayrx.com/images/splash/bigmac1.png)
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Packaged in our classic v1.0 installer format
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
-## 🍔 Coming soon: bigmac | SERIES 2 
-![image](https://user-images.githubusercontent.com/24852454/101908961-31e9bb00-3c00-11eb-95ef-9aa96dbf4415.png)
+## 🍔 Coming soon: bigmac2
+![image](https://starplayrx.com/images/splash/bigmac2.png)
 1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
 2. USB 1.1 Support, special thanks to JackLukem for the tip!
 3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)

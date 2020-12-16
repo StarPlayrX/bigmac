@@ -2,6 +2,15 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
+Before you start, please read the [Requirements](#requirements) section. Thank you!
+
+## The 5 Most Common Issues
+* User did not disable SIP using El Capitan macOS 10.11.6 or newer Recovery OS to execute this simple command `csrutil disable`
+* User did not set boot arguments to at least `nvram boot-args"-no_compat_check"`
+* Mac Pro / Xserve Early 2008 (**only**) has an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cheap, plus you'll get AirDrop and Handoff support.
+* User did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
+* User did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
+
 ## bigmac Series 1.1
 
 <img src="https://user-images.githubusercontent.com/24852454/102304262-64007180-3fa0-11eb-8343-cc671d3d0935.png" width="45%">
@@ -17,33 +26,33 @@ Big Sur macOS 11 Mac Pro patcher.
 <img src="https://user-images.githubusercontent.com/24852454/102303916-95c50880-3f9f-11eb-9203-6d3da5396e8c.png" width="45%">
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
-* USB 1.1 Support, special thanks to JackLukem for the tip!*
+* USB 1.1 Support, special thanks to JackLukem for the tip!
 * FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
 * Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
 * Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 * Easier to use
-* Download Full Installers from the AppStore
-* Optional Apple Developer Seed Support Downloads
+* Download Full Installers from the App Store
+* (Optional) Apple Developer Seed Support Downloads
 * Wicked Installer Boot System / Light Speed Emergency Disk
 * Ultra Fast Boot of a Full OS
 * Improved Boot Screen Support
 
 ## Requirements 
-1. Mac Pro 2008 - 2012 or Xserve 2008 and later
-2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function. To do so:
-   * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
-   * Open the DMG and run the package.
-   * Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
-   * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, and wait for the installer to boot up.)
-   * Open Terminal. Execute `csrutil disable`.
-   * While you are there set some boot args: `nvram boot-args="-no_compat_check"`.
-   * add -v if you want verbose boot like so: `nvram boot-args="-v -no_compat_check"`.
-   * These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
-3. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
-4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
-5. Your GPU must support Metal. I highly recommend this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
-6. 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
-7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
+* Mac Pro 2008 - 2012 or Xserve 2008 and later
+* SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will never fully function. To do so:
+   1) [Download OS X El Capitan 10.11.6](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
+   2) Open the DMG and run the package.
+   3) Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
+   4) Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, and wait for the installer to boot up.)
+   5) Open Terminal. Execute `csrutil disable`.
+   6) While you are there set some boot args: `nvram boot-args="-no_compat_check"`.
+   7) add -v if you want verbose boot like so: `nvram boot-args="-v -no_compat_check"`.
+   8) These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
+* Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
+* [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
+* Your GPU must support Metal. I highly recommend this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
+* 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drives are not supported.
+* For the actual installation, an SSD or hard drive with 60GB or greater. 256GB or greater recommended.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
@@ -60,7 +69,7 @@ Big Sur macOS 11 Mac Pro patcher.
 
 Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
 
-Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, will update.
+Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, we will update.
 
 ## BigMac's Workflow in a Nut Shell 🥜
 1. Workflow -> Download Big Sur -> Create USB Installer
@@ -155,7 +164,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ## One More Thing
 
-* Updated on December 14, 2020 for macOS 11.1 (20C69)
+* Updated on December 15, 2020 for macOS Big Sur, version 11.1 (20C69)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright © 2020 by Todd Bruss | NiceMac LLC - All Rights Reserved

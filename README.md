@@ -16,18 +16,17 @@ Big Sur macOS 11 Mac Pro patcher.
 
 <img src="https://swift4me.com/images/splash/bigmac2.png" width="66.7%">
 
-1. Native Airdrop and Handoff support! This may depend on your WiFi/BT card. I can update which hardware will work.
-2. USB 1.1 Support, special thanks to JackLukem for the tip!
-3. FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
-4. Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
-5. Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
-6. BMO2.dmg a fully patched clean system disks with LegacyWiFi or 802.11ac WiFi
-7. Working on ease of use improvements.
-8. Software Update Downloads for Full Installs (VMM Spoofing)
-9. Optional Apple Developer Seed Support Downloads
-10. Wicked Installer Boot System / Light Speed Emergency Disk
-11. Ultra Fast Boot
-12. Better Boot Screen Support
+* Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
+* USB 1.1 Support, special thanks to JackLukem for the tip!*
+* FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
+* Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
+* Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
+* Easier to use
+* Download Full Installers from the AppStore
+* Optional Apple Developer Seed Support Downloads
+* Wicked Installer Boot System / Light Speed Emergency Disk
+* Ultra Fast Boot of a Full OS
+* Improved Boot Screen Support
 
 ## Requirements 
 1. Mac Pro 2008 - 2012 or Xserve 2008 and later
@@ -152,7 +151,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ## 🍺 Big Unsupported Mac Influencers
 
-* Dosdude1, Netkas, MacVidCards
+* Dosdude1, Netkas
 
 ## One More Thing
 

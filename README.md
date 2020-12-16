@@ -2,9 +2,9 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-# bigmac1.1
+## bigmac Series 1.1
 
-<img src="https://swift4me.com/images/splash/bigmac1d.png" width="66.7%">
+<img src="https://user-images.githubusercontent.com/24852454/102304262-64007180-3fa0-11eb-8343-cc671d3d0935.png" width="45%">
 
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Added a new Startup Disk tool to the repo. Created by StarPlayrX.
@@ -12,9 +12,9 @@ Big Sur macOS 11 Mac Pro patcher.
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 
-# 🍔 Coming soon: bigmac2
+## 🍔 Coming soon: bigmac Series 2
 
-<img src="https://swift4me.com/images/splash/bigmac2c.png" width="66.7%">
+<img src="https://user-images.githubusercontent.com/24852454/102303916-95c50880-3f9f-11eb-9203-6d3da5396e8c.png" width="45%">
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * USB 1.1 Support, special thanks to JackLukem for the tip!*
@@ -158,7 +158,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 * Updated on December 14, 2020 for macOS 11.1 (20C69)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
-* bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC
+* bigmac1.1 Copyright © 2020 by Todd Bruss | NiceMac LLC - All Rights Reserved
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 

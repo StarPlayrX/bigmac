@@ -150,12 +150,6 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 * Dosdude1, Netkas, MacVidCards
 
-## Special Thank Notes to Contributors
-
-Sending a warm welcome to the Unsupported Macs Team, you are the Best. And Sending back kudos to the Open Core Legacy Macs Team for mentioning bigmac and all our bloggers and video bloggers who have made how to's using bigmac. The bigmac community is growing every day. And this is the main reason I am doing a follow up version called bigmac2. 
-
-If anyone wants to collaborate together with future versions of BigMac, I don't mind if you are on a different unsupport mac team including OpenCore. I am at a point where working together on something will do more for the greater good than I can do by myself. If you are interested at all and I don't mind if you have years to decades of experience or just have an interest in computers in general, please post an issue or pull request and would love to work with you. 
-
 ## One More Thing
 
 * Updated on December 14, 2020 for macOS 11.1 (20C69)

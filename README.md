@@ -5,9 +5,9 @@ Big Sur macOS 11 Mac Pro patcher.
 Please read the Requirements section. Thank you!
 
 ### The 5 Most Common Issues
-1. User did not disable SIP using El Capitan macOS 10.11 with `csrutil disable`
+1. User did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to Execut this simple command `csrutil disable`
 2. ...did not set boot arguments to at least `nvram boot-args"-no_compat_check"`
-3. (Mac Pro / Xserve Early 2008 only) has an imcompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card.
+3. (Mac Pro / Xserve Early 2008 only) has an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cheap, plus you'll get AirDrop and Handoff support.
 4. ...did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
 5. ...did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
 

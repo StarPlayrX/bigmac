@@ -14,7 +14,7 @@ Big Sur macOS 11 Mac Pro patcher.
 
 # 🍔 Coming soon: bigmac2
 
-<img src="https://swift4me.com/images/splash/bigmac2b.png" width="66.7%">
+<img src="https://swift4me.com/images/splash/bigmac2c.png" width="66.7%">
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * USB 1.1 Support, special thanks to JackLukem for the tip!*

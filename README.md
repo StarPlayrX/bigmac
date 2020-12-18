@@ -4,9 +4,10 @@ Big Sur macOS 11 Mac Pro patcher.
 
 Please read the Requirements section. Thank you!
 
-### Non Boot Screen Support Coming to bigmac 1.2
+### 💿 Non Boot Screen Support Coming to bigmac 1.2
 1. C key magic boot disks
 2. For users who cannot use Option boot
+3. Supports Internal and External boot disks
 
 ### The 5 Most Common Issues
 1. User did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to Execut this simple command `csrutil disable`

@@ -4,6 +4,9 @@ Big Sur macOS 11 Mac Pro patcher.
 
 Please read the Requirements section. Thank you!
 
+### Non Boot Screen Support
+1. Starting in BigMac 1.2
+
 ### The 5 Most Common Issues
 1. User did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to Execut this simple command `csrutil disable`
 2. ...did not set boot arguments to at least `nvram boot-args"-no_compat_check"`

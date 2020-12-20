@@ -741,14 +741,19 @@ if [[ $version != *"11."* ]]
                 sbin="/usr/sbin/"
                 "$destVolume$sbin$kcditto"
         fi
-       
-      
 fi
 
+
 #Snapshot deletion code by StarPlayrX 2020
-snapshots=$(diskutil apfs listsnapshots "$destVolume" | grep +-- | sed 's/^.\{4\}//') #to do replace with AWK
+snapshots=$(diskutil apfs listsnapshots "$destVolume" | grep +-- | awk '{print $2}')
+
 
 n
+
+#Credit goes to ASentientBot and JackLuke -- Testing this out to see if there are improvements
+#"$destVolume"/System/Library/Filesystems/apfs.fs/Contents/Resources/apfs_systemsnapshot -v . -r "" # I really don't know if this has any barring
+#
+
 printf 'Checking snapshots.'
 n
 for uuid in $snapshots
@@ -781,15 +786,16 @@ label=${label%"$four"}
 label=${label%"$space"}
 label=${label#"$prefix"}
 
+n
 
 if [ "$destVolume" == "/" ]
     then
         n
         #sudo bless --folder /System/Library/CoreServices --mount /
         #systemsetup -setstartupdisk "$destVolume"/ #Right now this is too unpredictable 
-        bless --folder /System/Library/CoreServices --bootefi --label "$label" --mount / --setBoot
+        bless --folder /System/Library/CoreServices --bootefi --label "$label" --mount / --setBoot # To do add bless tool from 11.1
     else
-        bless --folder "$destVolume"/System/Library/CoreServices --bootefi --label "$label" --mount "$destVolume" --setBoot
+        bless --folder "$destVolume"/System/Library/CoreServices --bootefi --label "$label" --mount "$destVolume" --setBoot  # To do add bless tool from 11.1
         #sudo bless --folder "$destVolume"/System/Library/CoreServices --mount "$destVolume" --label "$label" #Try to label the disk properly
         #systemsetup -setstartupdisk "$destVolume"/ #Right now this is too unpredictable 
 fi

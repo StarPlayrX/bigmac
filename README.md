@@ -16,9 +16,9 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 4. ... did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
 5. ... did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
 
-## 🍔 bigmac1.1
+# 🍔 bigmac1.1
 
-<img src="https://swift4me.com/images/splash/bigmac1f.png" width="80%">
+<img src="https://swift4me.com/images/splash/bigmac1f.png" width="100%">
 
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Added a new Startup Disk tool to the repo. Created by StarPlayrX.
@@ -26,9 +26,9 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 
-## 🍔 bigmac2.0 is coming soon
+# 🍔🍟🥤e🍦bigmac2.0 is coming soon
 
-<img src="https://swift4me.com/images/splash/bigmac2f.png" width="80%">
+<img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%">
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * USB 1.1 Support, special thanks to JackLukem for the tip!*
@@ -152,7 +152,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 ### MAME input devices
 * USB 1.1 will be supported in bigmac2.
 
-## 🍟 Big Mac Contributors
+## 🖥 Big Mac Contributors
 
 * ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
 

@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher.
 
 Before you start please read the [Requirements](#requirements) section. Thank you!
 
-### 💿 Non Boot Screen Support Coming to bigmac 1.2
+### 💿 Non Boot Screen Support Coming to bigmac 2.0
 1. C key magic boot disks
 2. For users who cannot use Option boot
 3. Supports Internal and External boot disks

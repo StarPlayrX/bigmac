@@ -42,7 +42,7 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 * Ultra Fast Boot of a Full OS
 * Improved Boot Screen Support
 
-## Requirements 
+## ⚒️ Requirements 
 * Mac Pro 2008 - 2012 or Xserve 2008 or later (It is not recommended to try it out on a supported Mac.)
 * SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will **never** fully function. To do so:
    * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
@@ -59,7 +59,7 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 * 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
 * For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
-## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
+## 📀 How to boot a USB (Requires a Video Card with a Mac Boot ROM For Now)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an [APFS ROM Patch](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).
 3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
@@ -76,7 +76,7 @@ Legacy USB 2.0 for keyboard and mouse devices is never working. If you leave the
 
 Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, I will update.
 
-## BigMac's Workflow in a Nut Shell 🥜
+## 🥜 BigMac's Workflow in a Nut Shell 
 1. Workflow -> [Download Big Sur](http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg) -> Create USB Installer (`sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`)
 2. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
 3. Execute `~/Downloads/bigmac.master/bigmac.sh`
@@ -88,58 +88,59 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 9. Boot the USB installer, from its Terminal type:
 10. Execute `/Volumes/bigmac/postinstall.sh`
 
-### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
+### 🔨 Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
 1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Execute `sudo ./bigmac.sh`).
 2. Execute `/Volumes/bigmac/preinstall.sh`.
 8. set boot-args to `-no_compat_check -v`.
 9. Quit the Terminal. Open the big Sur installer app.
 10. Big Sur installs in three stages.
 
-### Post Install Track, Required for Mac Pro 3,1
+### 🛠 Post Install Track, Required for Mac Pro 3,1
 1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Run `sudo ./bigmac.sh`)
 2. Execute `cd /Volumes/bigmac`.
 4. Type `./postinstall.sh` and type in the volume name of the install you just did (e.g., `/Volumes/Macintosh\ HD` (This will be improved in a future version); You may have to use `ls -al` in volumes to get the name before hand. (e.g., `./postinstall.sh /Volumes/Macintosh\ HD`)
 5. Quit the Terminal and select your startup disk.
 
-### Notes about Big Sur Installs
+### 📝 Notes about Big Sur Installs
 1. The install process is done in three stages each varying in time.
 2. Allow all three stages to fully complete!
 3. Mac Pro 3,1 Early 2008 owners will need to stop an infinite loop after the 4th or 5th reboot. Wait until you see a pattern before killing it). Hold option-key to see if you can get to a boot screen between the kernel panics. If all else fails, hold the power button down and then hold down the option-key.
 4. the `-v` boot-arg helps monitor the progress.
 5. After about 45 - 60 minutes, the installer should be complete.
 
-### Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
+### 🎸 Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
 1. Big Sur's AMD video drivers are not compatible with the Penryn style CPU. 
 2. The Post Install script using MousSEE to emulate a couple instructions.
 3. This allows AMD Radeon cards that support Metal to be used on a MacPro3,1.
 4. Ironically, my AMD Radeon RX 580 Card works completely fine without a 4.2 emulator running in both Big Sur and Catalina. It even supports 4K@60Hz and a 4K boot screen with it being flashed. Simply awesome.
 
-### Telemetry and Mac Pro Early 2008
+### 📺 Telemetry and Mac Pro Early 2008
 1. The telemetry plugin on Big Sur is not compatible with the Penryn style CPU.
 2. The post install script installs one that is compatible.
 
-### Mac Pro Early 2008 Installation Notes
+### 📓 Mac Pro Early 2008 Installation Notes
 1. In between installer tasks, Big Sur's install runs through 3 complete reboot cycles.
 2. If you see kernel panics, or fast reboots after the 5th reboot, you will need to kill the cycle by holding the power button down, or if possible hold down the Option-key see if you can get back to your boot screen.
 3. Then you can run the post install script from which method you ran the pre install script.
 4. The post install script patches your system and allows it to boot up.
 
-### Pre Install Notes
+### 📕 Pre Install Notes
 1. The Preinstall script runs in memory. It does not physically touch the installer. If you reboot before running the Big Sur installer app/task, you will need to run the Preinstall script again. 
 2. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
-### How to turn off System Integrity Protection (this is now built into preinstall.sh)
+### 🚨 How to turn off System Integrity Protection (this is now built into preinstall.sh)
 1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with `createinstallmedia`).
-2. Execute `csrutil disable; csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
+2. Execute `csrutil disable` (Can be done on macOS 10.11 and later on Recovery, Installer Disks).
+3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 3. Use Start up disk (top left to select your installation).
 
-## Videos
+## 📹 Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov
 2. https://starplayrx.com/downloads/postinstall_bigmac.mov
 3. https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
-## How to clone your system
+## 👽 How to clone your system
 * Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`.
 
 ## Known issues
@@ -149,7 +150,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 * USB storage devices are hotswapped with issue.
 * Certain thumb drives via USB 3.0 PCIe card, some will disconnect on idle. USB Thumb drives tend to not work on USB 2.0 unless seen at boot time.
 
-### MAME input devices
+### 🕹 MAME input devices
 * USB 1.1 will be supported in bigmac2.
 
 ## 🖥 Big Mac Contributors
@@ -162,7 +163,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 * Dosdude1, Netkas
 
-## One More Thing
+## ☝️ One More Thing
 
 * Updated on December 17, 2020 for macOS 11.1 (20C69)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves

@@ -8,7 +8,7 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 * For users who cannot use Option boot
 * Will support Internal and External boot disks
 
-### The 6 Most Common Issues
+### 🔥 The 6 Most Common Issues
 1. User did not install Dosdude1's APFS ROM Firmware patch or take the time to do it correctly.
 2. ... did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to execute this simple command: `csrutil disable`
 3. ... did not set boot arguments to at least: `nvram boot-args"-no_compat_check"`

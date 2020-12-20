@@ -11,9 +11,9 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 
 ### The 6 Most Common Issues
 1. User did not install Dosdude1's APFS ROM Firmware patch or take the time to do it correctly.
-2. User did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to execute this simple command: `csrutil disable`
+2. ... did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to execute this simple command: `csrutil disable`
 3. ... did not set boot arguments to at least: `nvram boot-args"-no_compat_check"`
-4. (Early 2008 Mac Pro / Early 2008 Xserve only) These machines has an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cheap, plus you'll get AirDrop and Handoff support.
+4. (Early 2008 Mac Pro / Early 2008 Xserve only) These machines have an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cost effective, plus you'll get AirDrop and Handoff support.
 5. ... did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
 6. ... did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
 

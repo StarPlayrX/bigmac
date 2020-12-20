@@ -2,7 +2,7 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-Please read the Requirements section. Thank you!
+Before you start please read the [Requirements](#requirements) section. Thank you!
 
 ### 💿 Non Boot Screen Support Coming to bigmac 1.2
 1. C key magic boot disks
@@ -10,15 +10,15 @@ Please read the Requirements section. Thank you!
 3. Supports Internal and External boot disks
 
 ### The 5 Most Common Issues
-1. User did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to Execut this simple command `csrutil disable`
-2. ...did not set boot arguments to at least `nvram boot-args"-no_compat_check"`
-3. (Mac Pro / Xserve Early 2008 only) has an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cheap, plus you'll get AirDrop and Handoff support.
-4. ...did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
-5. ...did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
+1. User did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to execute this simple command: `csrutil disable`
+2. ... did not set boot arguments to at least: `nvram boot-args"-no_compat_check"`
+3. (Early 2008 Mac Pro / Early 2008 Xserve only) These machines has an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cheap, plus you'll get AirDrop and Handoff support.
+4. ... did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
+5. ... did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
 
-# 🍔 bigmac1.1
+## 🍔 bigmac1.1
 
-<img src="https://swift4me.com/images/splash/bigmac1f.png" width="100%">
+<img src="https://swift4me.com/images/splash/bigmac1f.png" width="80%">
 
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Added a new Startup Disk tool to the repo. Created by StarPlayrX.
@@ -26,9 +26,9 @@ Please read the Requirements section. Thank you!
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 
-# 🍔🍦 bigmac2.0 
+## 🍔 bigmac2.0 is coming soon
 
-<img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%">
+<img src="https://swift4me.com/images/splash/bigmac2f.png" width="80%">
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * USB 1.1 Support, special thanks to JackLukem for the tip!*
@@ -43,8 +43,8 @@ Please read the Requirements section. Thank you!
 * Improved Boot Screen Support
 
 ## Requirements 
-1. Mac Pro 2008 - 2012 or Xserve 2008 and later
-2. SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches might not fully function. To do so:
+* Mac Pro 2008 - 2012 or Xserve 2008 or later (It is not recommended to try it out on a supported Mac.)
+* SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will **never** fully function. To do so:
    * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
    * Open the DMG and run the package.
    * Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
@@ -53,14 +53,14 @@ Please read the Requirements section. Thank you!
    * While you are there set some boot args: `nvram boot-args="-no_compat_check"`.
    * add -v if you want verbose boot like so: `nvram boot-args="-v -no_compat_check"`.
    * These steps will be automated in bigmac2, but it is good to have a supported disk for emergencies.
-3. Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
-4. [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
-5. Your GPU must support Metal. I highly recommend this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
-6. 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
-7. For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
+* Boot screen. If you don't have a boot screen, support will not be provided. I'll leave that adventure up to you. Hint: Use two USB drives and remove all internal drives. Then either install the USB drive is possible or clone it to the internal drive using Apple Software Restore. I my shoot a video on this.
+* [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
+* Your GPU must support Metal. I highly recommend this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
+* 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
+* For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
 ## How to boot a USB (Requires a Video Card with a Mac Boot ROM)
-1. Be sure your Mac Pro can boot APFS volumes directly. There is an APFS ROM Patch for Mac Pro 3,1s.
+1. Be sure your Mac Pro can boot APFS volumes directly. There is an [APFS ROM Patch](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).
 3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
 4. Plug the bootable installer into your Mac Pro.
@@ -69,32 +69,28 @@ Please read the Requirements section. Thank you!
 7. Select the volume containing the bootable installer. Then click the up arrow or press Return. 
 8. Choose your language, if prompted.
 9. Open the Terminal.
-10. Execute `cd /Volumes/bigmac; .preinstall.sh`, and quit Terminal.
+10. Execute `/Volumes/bigmac/preinstall.sh`, and quit Terminal.
 11. Select Install macOS Big Sur from the Utilities window, then click Continue and follow the onscreen instructions.
 
-Legacy USB 2.0 for keyboard and mouse devices is not working 100%. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
+Legacy USB 2.0 for keyboard and mouse devices is never working. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
 
-Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, will update.
+Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, I will update.
 
 ## BigMac's Workflow in a Nut Shell 🥜
-1. Workflow -> Download Big Sur -> Create USB Installer
+1. Workflow -> [Download Big Sur](http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg) -> Create USB Installer (`sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`)
 2. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
-3. Execute `cd ~/Downloads/bigmac.master`
-4. Execute `./bigmac.sh`
-5. Reboot -> hold down OPTION key -> macOS Big Sur Installer
-6. Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh
-7. Boot the USB installer, from its Terminal type:
-8. Execute `cd /Volumes/bigmac`
-9. Execute `./preinstall.sh`
-10. Wait for the install is fully completed (hint: it takes 3 stages to complete.)
-11. Boot the USB installer, from its Terminal type:
-12. Execute `cd /Volumes/bigmac`
-13. Execute `./postinstall.sh`
+3. Execute `~/Downloads/bigmac.master/bigmac.sh`
+4. Reboot -> hold down OPTION key -> macOS Big Sur Installer
+5. Workflow -> Boot USB -> Preinstall.sh -> Install -> Postinstall.sh
+6. Boot the USB installer, from its Terminal type:
+7. Execute `/Volumes/bigmac/preinstall.sh`
+8. Wait for the install is fully completed (hint: it takes 3 stages to complete.)
+9. Boot the USB installer, from its Terminal type:
+10. Execute `/Volumes/bigmac/postinstall.sh`
 
 ### Pre Install Track, Before you open the Big Sur Installer (Works with All Macs)
 1. Boot up the Install macOS Big Sur USB Disk (Don't have it? Execute `sudo ./bigmac.sh`).
-2. Execute `cd /Volumes/bigmac`.
-7. Execute `./preinstall.sh`.
+2. Execute `/Volumes/bigmac/preinstall.sh`.
 8. set boot-args to `-no_compat_check -v`.
 9. Quit the Terminal. Open the big Sur installer app.
 10. Big Sur installs in three stages.
@@ -115,7 +111,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 ### Special Notes with Mac Pro Early 2008 and Metal AMD Cards 
 1. Big Sur's AMD video drivers are not compatible with the Penryn style CPU. 
 2. The Post Install script using MousSEE to emulate a couple instructions.
-3. This allows AMD Radeon cards that support Metal to be used on a MP3,1.
+3. This allows AMD Radeon cards that support Metal to be used on a MacPro3,1.
 4. Ironically, my AMD Radeon RX 580 Card works completely fine without a 4.2 emulator running in both Big Sur and Catalina. It even supports 4K@60Hz and a 4K boot screen with it being flashed. Simply awesome.
 
 ### Telemetry and Mac Pro Early 2008
@@ -133,10 +129,9 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 2. Because the preinstall script runs in memory, do not attempt run the preinstall twice in the same boot session. This will cause major delays when opening the Big Sur install app/task.
 
 ### How to turn off System Integrity Protection (this is now built into preinstall.sh)
-1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with createinstallmedia).
-2. Execute `csrutil disable`.
-3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
-4. Use Start up disk (top left to select your installation).
+1. Open Terminal in the booted recovery disk (and possibly external USB Big Sur USB installer disks made with `createinstallmedia`).
+2. Execute `csrutil disable; csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
+3. Use Start up disk (top left to select your installation).
 
 ## Videos
 1. https://starplayrx.com/downloads/preinstall_bigmac.mov
@@ -169,7 +164,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ## One More Thing
 
-* Updated on December 14, 2020 for macOS 11.1 (20C69)
+* Updated on December 17, 2020 for macOS 11.1 (20C69)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC

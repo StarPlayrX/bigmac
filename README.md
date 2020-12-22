@@ -141,7 +141,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
 ## 👽 How to clone your system
-* Execute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`.
+* Execute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`
 
 ## Known issues
 

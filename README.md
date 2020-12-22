@@ -59,7 +59,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 * 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
 * For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
-## 📀 How to boot a USB (Requires a Video Card with a Mac Boot ROM For Now)
+## 📀 How to boot a USB (Recommend a Video Card with a Mac Boot ROM for now)
 1. Be sure your Mac Pro can boot APFS volumes directly. There is an [APFS ROM Patch](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip) for Mac Pro 3,1s.
 2. Be sure to disable System Integrity Protection as soon as possible (`csrutil disable ; csrutil authenticated-root disable`).
 3. Plug a USB 2.0 keyboard and pointing device directly into your Mac Pro's USB 2.0 ports.
@@ -141,7 +141,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
 
 ## 👽 How to clone your system
-* Execute `sudo asr -s /drag/source/here -t /drag/target/here -er -nov`.
+* Execute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`.
 
 ## Known issues
 

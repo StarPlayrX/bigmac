@@ -2,7 +2,7 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-Before you start please read the [Requirements](#requirements) section. Thank you!
+Before you start please read the [Requirements](#%EF%B8%8F-requirements) section. Thank you!
 
 ### 💿 Non Boot Screen Support Coming to bigmac 2.0
 * For users who cannot use Option boot
@@ -36,7 +36,7 @@ Before you start please read the [Requirements](#requirements) section. Thank yo
 * Automatic Legacy WiFi 802.11n Patch (will also have a custom override using ./postinstall -L)
 * Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 * Easier to use
-* Download Full Installers from the AppStore
+* Download Full Installers from the App Store
 * Optional Apple Developer Seed Support Downloads
 * Wicked Installer Boot System / Light Speed Emergency Disk
 * Ultra Fast Boot of a Full OS
@@ -165,7 +165,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 
 ## ☝️ One More Thing
 
-* Updated on December 17, 2020 for macOS 11.1 (20C69)
+* Updated on December 21, 2020 for macOS 11.1 (20C69)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC

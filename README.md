@@ -56,7 +56,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 * Boot screen. If you don't have a boot screen, I'll leave that adventure up to you. Note: bigmac2 will have a non-boot screen option.
 * [Download APFS ROM patcher by dosdude1](http://dosdude1.com/apps/APFS%20ROM%20Patcher.zip). Then enter password: `apfs` and follow the instructions.
 * Your GPU must support Metal. I highly recommend this GPU: Radeon RX 580 8 GB Mac Edition on eBay for $299
-* 1 external USB SSD or hard drive. Fast flash drives might work. Slow thumb drivers are not supported.
+* 1 external USB SSD or hard drive. Fast brand name flash drives like the Samsung Fit will work. Ultra slow generic thumb drives are not supported.
 * For the actual installation, an SSD or hard drive with 60GB or greater. 256GB recommended.
 
 ## 📀 How to boot a USB (Recommend a Video Card with a Mac Boot ROM for now)

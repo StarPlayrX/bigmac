@@ -153,12 +153,11 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 ## 🖥 Big Mac Contributors
 
 * ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
-
 * See Credits file for our list of contributors
 
 ## 🍺 Big Unsupported Mac Influencers
 
-* Dosdude1, Netkas
+* Dosdude1, Netkas, MacVidCards
 
 ## ☝️ One More Thing
 

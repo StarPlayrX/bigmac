@@ -18,13 +18,13 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 
 # 🍔 bigmac1.1
 
-<style>
+
+
+<img class="cheeseburger" src="https://swift4me.com/images/splash/bigmac1f.png" width="100%" > <style>
   .cheeseburger {
   max-width: 600px !important;
  }
-</style>
-
-<img class="cheeseburger" src="https://swift4me.com/images/splash/bigmac1f.png" width="100%" >
+</style> </>
 
 * Includes all latest patches like USB1.1 device support, Airdrop and more!
 * Added a new Startup Disk tool to the repo. Created by StarPlayrX.

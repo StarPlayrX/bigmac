@@ -44,7 +44,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 
 ## ⚒️ Requirements 
 * Mac Pro 2008 - 2012. Xserves will be officially supported soon.
-* SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches will **never** fully function. To do so:
+* SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches may not fully function. To do so:
    * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
    * Open the DMG and run the package.
    * Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
@@ -71,10 +71,6 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 9. Open the Terminal.
 10. Execute `/Volumes/bigmac/preinstall.sh`, and quit Terminal.
 11. Select Install macOS Big Sur from the Utilities window, then click Continue and follow the onscreen instructions.
-
-Legacy USB 2.0 for keyboard and mouse devices is never working. If you leave them plugged into a USB 2.0 port, they will work. If you disconnect them, they won't reconnect. This is a problem with Big Sur which Apple introduced on their own. A workaround is use a USB3.0 PCIe card but this only works when the system is booted, not from a cold start. USB 3.0 hubs plugged into a USB 2.0 port may also work. A patch may be implemented to take care of this issue.
-
-Note: Option boot using a boot screen requires a keyboard in directly into the machine and not a PCIe card. Bluebooth keyboards do not catch up in time and PCIe cards don't work without an OS. There used to be a a Bluetooth fix in NVRAM for this. If I locate the fix, I will update.
 
 ## 🥜 BigMac's Workflow in a Nut Shell 
 1. Workflow -> [Download Big Sur](http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg) -> Create USB Installer (`sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`)
@@ -144,6 +140,7 @@ Note: Option boot using a boot screen requires a keyboard in directly into the m
 * Execute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`
 
 ## Known issues
+* Only true USB 2.0 keyboards, mice and trackpads are supported by the installer. This limitation will be fixed in bigmac2 but not for 1.x. Many keyboards and mice say they are 2.0 but you can find out for show in about this mac under USB and see what it is really using. Note USB 2.0 ports will support 1.1 usually but on Big Sur Apple removed the drivers. The OS post install shell script supports USB 1.1 but currently the installer does not. We will be correcting this limitation in bigmac2.
 
 ### USB 2.0
 * Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.

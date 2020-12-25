@@ -1,7 +1,6 @@
 # 🍔 bigmac
 
-### 🛑 Do not disturb
-* Read this entire README directly from Github's page. Do not email the author. He is busy working on this and other projects.
+### 🛑 Do not disturb. Read this entire README directly from Github's page. Do not email the author. He is busy working on this and other projects.
 
 Big Sur macOS 11 Mac Pro patcher.
 

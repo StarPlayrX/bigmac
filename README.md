@@ -1,6 +1,6 @@
 # 🍔 bigmac
 
-##### Please refrain from emailing the author of this software. Expecially on Christmas Day.
+### Read this entire read me file. Do not email the author. He is busy developing the GUI version of bigmac.
 
 Big Sur macOS 11 Mac Pro patcher.
 

@@ -1,6 +1,6 @@
 # 🍔 bigmac
 
-# 🛑 Do not disturb
+### 🛑 Do not disturb
 * Read this entire read me file directly from Github's formatted page. Do not email the author. He is busy developing the GUI version of bigmac.
 
 Big Sur macOS 11 Mac Pro patcher.

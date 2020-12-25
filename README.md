@@ -1,5 +1,7 @@
 # 🍔 bigmac
 
+##### Please refrain from emailing the author of this software. Expecially on Christmas Day.
+
 Big Sur macOS 11 Mac Pro patcher.
 
 Before you start please read the [Requirements](#%EF%B8%8F-requirements) section. Thank you!

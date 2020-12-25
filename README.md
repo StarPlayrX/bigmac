@@ -1,6 +1,6 @@
 # 🍔 bigmac
 
-### 🛑 Do not disturb and email the author.
+### 🛑  Do not disturb and please do not email the author.
 
 Big Sur macOS 11 Mac Pro patcher.
 

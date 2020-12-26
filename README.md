@@ -4,7 +4,7 @@ Big Sur macOS 11 Mac Pro patcher.
 
 Before you start please read the [Requirements](#%EF%B8%8F-requirements) section. Thank you!
 
-###### 🚫 Please do not disturb 🚧 Work is being done 🛑 Interuptions stop progress
+####### 🚫 Please do not disturb 🚧 Work is being done 🛑 Interuptions stop progress 🙏 Thank you for your cooperation!
 
 ### 💿 Non Boot Screen Support Coming to bigmac 2.0
 * For users who cannot use Option boot

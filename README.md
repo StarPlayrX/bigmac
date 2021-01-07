@@ -19,7 +19,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 # 🍦bigmac2.0 this Spring
 
 ### Big Mac 2.0 Release Cycle
-* 🍟 01.21.21 Private Alpha
+* 🍟 01.21.21 Early Alpha
 * 🍔 02.14.21 Public Beta
 * 🍺 03.17.21 Release Candidate 1
 

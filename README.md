@@ -36,6 +36,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 * Wicked Installer Boot System / Light Speed Emergency Disk
 * Ultra Fast Boot of a Full OS
 * Improved Boot Screen Support
+* Full GUI
 
 ## ⚒️ Requirements 
 * Mac Pro 2008 - 2012. Xserves will be officially supported soon.

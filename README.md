@@ -28,6 +28,11 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 
 # 🍦bigmac2.0 secret lab
 
+### Update Big Mac 2.0 Release Schedule
+* 🍟 01.21.21 Private Alpha
+* 🍔 02.14.21 Public Beta
+* 🍺 03.17.21 Release Candidate 1
+
 <img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%" >
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac

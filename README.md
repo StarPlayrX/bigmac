@@ -16,17 +16,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 5. ... did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
 6. ... did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
 
-# 🍔 bigmac1.1
-
-<img src="https://swift4me.com/images/splash/bigmac1f.png" width="100%" >
-
-* Includes all latest patches like USB1.1 device support, Airdrop and more!
-* Added a new Startup Disk tool to the repo. Created by StarPlayrX.
-* Packaged in our classic v1.0 installer format
-* A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
-
-
-# 🍦bigmac2.0 secret lab
+# 🍦bigmac2.0 this Spring
 
 ### Update Big Mac 2.0 Release Schedule
 * 🍟 01.21.21 Private Alpha

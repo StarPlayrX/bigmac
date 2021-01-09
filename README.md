@@ -2,20 +2,6 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-Before you start please read the [Requirements](#%EF%B8%8F-requirements) section. Thank you!
-
-### 💿 Non Boot Screen Support Coming to bigmac 2.0
-* For users who cannot use Option boot
-* Will support Internal and External boot disks
-
-### 🔥 The 6 Most Common Issues
-1. User did not install Dosdude1's APFS ROM Firmware patch or take the time to do it correctly.
-2. ... did not disable SIP using El Capitan macOS 10.11 or newer Recovery OS to execute this simple command: `csrutil disable`
-3. ... did not set boot arguments to at least: `nvram boot-args"-no_compat_check"`
-4. (Early 2008 Mac Pro / Early 2008 Xserve only) These machines have an incompatible Bluetooth 2.0 (BT2.0+EDR Card) that causes a kernal panic. Future versions will disable the card via sofware and only for Big Sur. 802.11ac / BT4 Combo cards and adapters are cost effective, plus you'll get AirDrop and Handoff support.
-5. ... did not read this entire readme file. I try to cover every possible angle and I update this page when new issues are discovered. 
-6. ... did not read existing open issues before posting a new issue. I keep a good portion open that are the most common issues found and solved. Issues have a way of repeating themselves. If it's a repeat, more than likely you'll find the correct answer there.
-
 # 🍦bigmac2.0 this Spring
 
 ### Big Mac 2.0 Release Cycle
@@ -38,7 +24,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 * Improved Boot Screen Support
 * Full GUI
 
-## ⚒️ Requirements 
+## ⚒️ bigmac1.1 Requirements 
 * Mac Pro 2008 - 2012. Xserves will be officially supported soon.
 * SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches may not fully function. To do so:
    * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
@@ -126,17 +112,7 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 3. Use Start up disk (top left to select your installation).
 
-## 📹 Videos
-1. https://starplayrx.com/downloads/preinstall_bigmac.mov
-2. https://starplayrx.com/downloads/postinstall_bigmac.mov
-3. https://starplayrx.com/downloads/recovery_external_usb_bigsur_only.mov
-4. https://starplayrx.com/downloads/disable_sip_and_authenticated_root_bigsur.mov
-
-## 👽 How to clone your system
-* Execute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`
-
-## Known issues
-* Only true USB 2.0 keyboards, mice and trackpads are supported by the installer. This limitation will be fixed in bigmac2 but not for 1.x. Many keyboards and mice say they are 2.0 but you can find out for show in about this mac under USB and see what it is really using. Note USB 2.0 ports will support 1.1 usually but on Big Sur Apple removed the drivers. The OS post install shell script supports USB 1.1 but currently the installer does not. We will be correcting this limitation in bigmac2.
+cute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`
 
 ### USB 2.0
 * Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
@@ -145,15 +121,6 @@ Before you start please read the [Requirements](#%EF%B8%8F-requirements) section
 
 ### 🕹 MAME input devices
 * USB 1.1 will be supported in bigmac2.
-
-## 🖥 Big Mac Contributors
-
-* ASentientBot, BarryKN, JackLukeM, Syncretic, Exvision, Ritchie333, seyoon20087
-* See Credits file for our list of contributors
-
-## 🍺 Big Unsupported Mac Influencers
-
-* Dosdude1, Netkas, MacVidCards
 
 ## ☝️ One More Thing
 

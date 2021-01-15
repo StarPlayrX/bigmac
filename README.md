@@ -112,8 +112,6 @@ Big Sur macOS 11 Mac Pro patcher.
 3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 3. Use Start up disk (top left to select your installation).
 
-cute `sudo asr -er -nov -s /Volumes/'yourSourceName' -t /Volumes/'yourTargetName'`
-
 ### USB 2.0
 * Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
 * USB storage devices are hotswapped with issue.

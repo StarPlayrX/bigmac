@@ -2,7 +2,7 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-# 🍦bigmac2.0 this Spring
+# 🍦bigmac2.0 Full GUI this Spring
 
 ### Big Mac 2.0 Release Cycle
 * 🍟 01.24.21 Early Alpha

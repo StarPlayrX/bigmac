@@ -4,8 +4,9 @@ Big Sur macOS 11 Mac Pro patcher.
 
  # [🍟 click here for bigmac2 alpha1 GUI app download](http://starplayrx.com/bigmac2/bigmac2.pkg)
 
-### Big Mac 2.0 Release Cycle
-* 🍟 01.31.21 Early Alpha
+### Release Schedule
+* 🍟 01.31.21 10:00PM PST Early Alpha 1 (11.1)
+* 🍟 02.02.21 Early Alpha 2 (11.2)
 * 🍔 02.28.21 Public Beta
 * 🍺 03.28.21 Release Candidate 1
 

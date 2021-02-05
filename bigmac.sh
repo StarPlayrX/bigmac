@@ -13,9 +13,10 @@ cd "$dir"
 if [ "$EUID" -ne 0 ]
   then
     echo
-    echo "Please run with sudo!"
+    echo "Root permissions are vital."
+    echo "Please re-run this script with sudo."
     echo
-    exit 0
+    exit 1
 fi
 
 bigmac=$(pwd)
@@ -24,9 +25,30 @@ macpro=$(sysctl hw.model)
 if [[ "$macpro" != *"MacPro"* ]]
   then
     echo
-    echo "Please run Big Mac on a Mac Pro."
+    echo "Please run BigMac on a Mac Pro; otherwise please use"
+    echo "Barrykn's Big-Sur-Micropatcher:"
+    echo "    https://github.com/barrykn/big-sur-micropatcher"
     echo
-    exit 0
+    exit 1
+  else
+    if [[ "$macpro" = "MacPro6,1" ]]
+    then
+        echo "This hardware is eligible for using macOS Big Sur and is not required to run BigMac."
+        echo "If you wish to download, please run the following commands on your terminal:"
+        echo "    curl http://swcdn.apple.com/content/downloads/04/34/071-00838-A_16DMRFYPPS/g072hb2wh066rj040ekzry97wx2hggfuse/InstallAssistant.pkg -L -o ~/Downloads/InstallAssistant.pkg"
+        echo "    pkgutil --expand ~/Downloads/InstallAssistant.pkg ~/Downloads/InstallAssistant"
+        echo "    tar -xf ~/Downloads/InstallAssistant/Payload -C /Applications"
+        exit 1
+    fi
+    if [[ "$macpro" = "MacPro7,1" ]]
+    then
+        echo "This hardware is eligible for using macOS Big Sur and is not required to run BigMac."
+        echo "If you wish to download, please run the following commands on your terminal:"
+        echo "    curl http://swcdn.apple.com/content/downloads/04/34/071-00838-A_16DMRFYPPS/g072hb2wh066rj040ekzry97wx2hggfuse/InstallAssistant.pkg -L -o ~/Downloads/InstallAssistant.pkg"
+        echo "    pkgutil --expand ~/Downloads/InstallAssistant.pkg ~/Downloads/InstallAssistant"
+        echo "    tar -xf ~/Downloads/InstallAssistant/Payload -C /Applications"
+        exit 1
+    fi
 fi
 
 printf '\e[48;5;0m\e[K'
@@ -43,7 +65,8 @@ printf "\e[38;5;112m"
 printf '\e[K'
 printf '\n\e[K'
 printf '\e[K'
-read -p "📦 Would you like to download Big Sur macOS 11.1 (20C69)? [y]: " install
+# Update to macOS 11.2 (20D64)
+read -p "📦 Would you like to download macOS Big Sur 11.2 (20D64)? [y]: " install
 printf '\e[K'
 
 if [[ "$install" == *"y"* ]]
@@ -59,20 +82,30 @@ if [[ "$install" == *"y"* ]]
 
            # if [ "1" == "1" ]
                 #then
-                    rm -Rf ~/Downloads/InstallAssistant.pkg
-                    curl http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg -o ~/Downloads/InstallAssistant.pkg
+                    if [ -d ~/Downloads/InstallAssistant* ]
+                    then
+                        rm -rf ~/Downloads/InstallAssistant*
+                    fi
+                    echo "Starting download..."
+                    # Updated download link to macOS 11.2, thanks to SUS Inspector.
+                    # SUS Inspector is available at https://github.com/hjuutilainen/sus-inspector/releases/latest
+                    curl http://swcdn.apple.com/content/downloads/04/34/071-00838-A_16DMRFYPPS/g072hb2wh066rj040ekzry97wx2hggfuse/InstallAssistant.pkg -L -s -o ~/Downloads/InstallAssistant.pkg
                     printf '\e[K'
                     echo
                     printf '\e[K'
-                    echo 'Installing the Install macOS Big Sur.app via InstallAssistant.pkg'
-                    installer -pkg ~/Downloads/InstallAssistant.pkg -target /
+                    # This code below is speifically from github/rmc-team.
+                    echo "Preparing installer..."
+                    pkgutil --expand ~/Downloads/InstallAssistant.pkg ~/Downloads/InstallAssistant
+                    tar -xf ~/Downloads/InstallAssistant/Payload -C /Applications
+                    rm -rf ~/Downloads/InstallAssistant*
                 #else
                     printf "\nDownload Complete.\n"
                     
             #fi
-            
-    
+    else
+        exit 0
 fi
+
     printf '\e[K'
     echo
     printf '\e[K'
@@ -88,9 +121,10 @@ do
     if [ ! -d "/Applications/Install macOS Big Sur.app" ] && [[ "$create" == *"y"* ]]
         then
             printf '\e[K'
-            read -p "🤯 Please place the Install macOS Big Sur.app in your 🍎 Applications 📂 Folder and press Return: " install
+            read -p "🤯 Please place the Install macOS Big Sur.app in your 🍎 Applications 📂 Folder and press Return: " installapp
             printf '\e[K'
-
+        else
+        exit 0
     fi
 done
 
@@ -141,8 +175,8 @@ if [[ "$create" == *"y"* ]]
                     then
                         ditto -v $bigmac /Volumes/bigmac_"$disk$number"
                     else
-                    echo "We can't find the destination or source disk for bigmac. Exiting"
-                    exit 0
+                        echo "We can't find the destination or source disk for bigmac. Exiting"
+                        exit 1
                 fi
                 
                 echo
@@ -158,17 +192,21 @@ if [[ "$create" == *"y"* ]]
                 
                 printf '\e[K'
                 echo
-                /Applications/'Install macOS Big Sur.app'/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/installer_"$disk$number"
+                $installapp/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/installer_"$disk$number"
 
-                bootplist="com.apple.Boot.plist"
-                boot="/💾/"
-                printf '\e[K'
-                echo "Boot.plist -v -no_compat_check to USB Installer"
-                printf '\e[K'
-                systemconfig="/Volumes/Install macOS Big Sur/Library/Preferences/SystemConfiguration/"
-                bootdisk=$(pwd)$boot
-                base="base/"
-                
+                # This code is specifically from BarryKn
+                for installvolume in "Install macOS Big Sur" "Install macOS Big Sur Beta" "Install macOS Beta"
+                do
+                    bootplist="com.apple.Boot.plist"
+                    boot="/💾/"
+                    printf '\e[K'
+                    echo "Boot.plist -v -no_compat_check to USB Installer"
+                    printf '\e[K'
+                    systemconfig="/Volumes/$installvolume/Library/Preferences/SystemConfiguration/"
+                    bootdisk=$(pwd)$boot
+                    base="base/"
+                done
+
                 if [ -d "$bootdisk$base" ] && [ -d "$systemconfig" ]
                     then
                         printf '\e[K'
@@ -186,7 +224,7 @@ if [[ "$create" == *"y"* ]]
                         printf '\e[K'
                     echo "We are not able to write to the Boot.plist file on Installer macOS Big Sur because it's missing."
                     printf '\e[K'
-                    exit 0
+                    exit 1
                 fi
                 
                 chown -R 0:0 "$systemconfig$bootplist"
@@ -199,29 +237,29 @@ if [[ "$create" == *"y"* ]]
                 ##printf '\e[K'
             fi
         done
+    printf '\e[K'
+    printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+    printf '\e[K'
+    printf "\e[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
+    printf '\e[K'
+    printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./preinstall.sh'\n"
+    printf '\e[K'
+    printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+    printf '\e[K'
+    printf "\e[38;5;112m Quit Terminal. Open the Installer App from the Window. Wait for 3 reboots.\n"
+    printf '\e[K'
+    printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+    printf '\e[K'
+    printf "\e[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
+    printf '\e[K'
+    printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./postinstall.sh'\n"
+    printf '\e[K'
+    printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
+    printf '\e[K'
+    printf "[38;5;112m"
+    printf '\e[K'
 fi
 
-printf '\e[K'
-printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
-printf '\e[K'
-printf "\e[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
-printf '\e[K'
-printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./preinstall.sh'\n"
-printf '\e[K'
-printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
-printf '\e[K'
-printf "\e[38;5;112m Quit Terminal. Open the Installer App from the Window. Wait for 3 reboots.\n"
-printf '\e[K'
-printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
-printf '\e[K'
-printf "\e[38;5;112m Reboot -> HOLD Down OPTION Key -> Select macOS Big Sur Installer\n"
-printf '\e[K'
-printf "\e[38;5;112m Open Terminal and Type 'cd /Volumes/bigmac; ./postinstall.sh'\n"
-printf '\e[K'
-printf "\e[38;5;172m———————————————————————————————–———————————————————————————————————————————\n"
-printf '\e[K'
-printf "[38;5;112m"
-printf '\e[K'
 echo
 printf '\e[K'
 echo "🍟 FreeSpace Partition has FREE SPACE on it! (Thank you Capt. Obvious.)"
@@ -232,3 +270,4 @@ printf '\e[K'; echo "💰 Tips via PayPal are accepted here: https://tinyurl.com
 printf '\e[K'
 echo
 printf '\e[K'
+exit 0

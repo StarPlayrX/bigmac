@@ -33,7 +33,7 @@ Big Sur macOS 11 Mac Pro patcher.
 * Mac Pro 2008 - 2012. Xserves will be officially supported soon.
 * SIP, a.k.a. System Integrity Protection, must be disabled otherwise the patches may not fully function. To do so:
    * [Download OS X El Capitan 10.11](http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg).
-   * Open the DMG and run the package. Note, if you cannot run the installer pkg using GUI then you can try these commands: `pkgutil --expand /path/to/InstallMacOSX.pkg ~/Downloads/InstallMacOSX; tar -xf ~/Downloads/InstallMacOSX/Payload -C /Applications`
+   * Open the DMG and run the package.
    * Create a installation medium from El Capitan: `sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app`
    * Reboot and hold down the option key. (No boot screen? Remove all drives and reboot, and wait for the installer to boot up.)
    * Open Terminal. Execute `csrutil disable`.

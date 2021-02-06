@@ -10,7 +10,7 @@
 dir=$(dirname "$0")
 cd "$dir"
 
-if [ "$EUID" -ne 0 ]
+if [ "$(whoami) !="root" ]
   then
     echo
     echo "Root permissions are vital."
@@ -97,6 +97,11 @@ if [[ "$install" == *"y"* ]]
                     echo "Preparing installer..."
                     pkgutil --expand ~/Downloads/InstallAssistant.pkg ~/Downloads/InstallAssistant
                     tar -xf ~/Downloads/InstallAssistant/Payload -C /Applications
+                    if [ ! -d '/Applications/Install macOS Big Sur.app/Contents/SharedSupport/SharedSupport.dmg' ]
+                    then
+                        mkdir '/Applications/Install macOS Big Sur.app/Contents/SharedSupport'
+                        cp -rf '~/Downloads/InstallAssistant.pkg' '/Applications/Install macOS Big Sur.app/Contents/SharedSupport/SharedSupport.dmg'
+                    fi
                     rm -rf ~/Downloads/InstallAssistant*
                 #else
                     printf "\nDownload Complete.\n"

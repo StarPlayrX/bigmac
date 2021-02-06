@@ -8,7 +8,7 @@
 dir=$(dirname "$0")
 cd "$dir"
 
-if [ "$EUID" -ne 0 ]
+if [ "$(whoami) !="root" ]
   then
     echo
     echo "Root permissions are vital."

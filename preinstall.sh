@@ -11,9 +11,10 @@ cd "$dir"
 if [ "$EUID" -ne 0 ]
   then
     echo
-    echo "Please run with sudo!"
+    echo "Root permissions are vital."
+    echo "Please re-run this script with sudo."
     echo
-    exit 0
+    exit 1
 fi
 
 #Black background

@@ -51,10 +51,11 @@ g () {
 
 if [ "$EUID" -ne 0 ]
   then
-    n
-    printf "Please run with sudo!"
-    n;n;
-    exit 0
+    echo
+    echo "Root permissions are vital."
+    echo "Please re-run this script with sudo."
+    echo
+    exit 1
 fi
 
 

@@ -102,8 +102,6 @@ if [[ "$install" == *"y"* ]]
                     printf "\nDownload Complete.\n"
                     
             #fi
-    else
-        exit 0
 fi
 
     printf '\e[K'

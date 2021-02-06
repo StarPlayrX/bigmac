@@ -25,9 +25,7 @@ macpro=$(sysctl hw.model)
 if [[ "$macpro" != *"MacPro"* ]]
   then
     echo
-    echo "Please run BigMac on a Mac Pro; otherwise please use"
-    echo "Barrykn's Big-Sur-Micropatcher:"
-    echo "    https://github.com/barrykn/big-sur-micropatcher"
+    echo "Please run BigMac on a Mac Pro."
     echo
     exit 1
   else

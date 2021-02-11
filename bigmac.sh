@@ -91,7 +91,7 @@ if [[ "$install" == *"y"* ]]
                     printf '\e[K'
                     echo
                     printf '\e[K'
-                    # This code below is speifically from github/rmc-team.
+                    # This code below is speifically from @rmc-team.
                     echo "Preparing installer..."
                     pkgutil --expand ~/Downloads/InstallAssistant.pkg ~/Downloads/InstallAssistant
                     tar -xf ~/Downloads/InstallAssistant/Payload -C /Applications

@@ -8,12 +8,13 @@
 dir=$(dirname "$0")
 cd "$dir"
 
-if [ "$EUID" -ne 0 ]
+if [ $UID = 0 ]
   then
     echo
-    echo "Please run with sudo!"
+    echo "Root permissions are vital."
+    echo "Please re-run this script with sudo."
     echo
-    exit 0
+    exit 1
 fi
 
 #Black background
@@ -233,3 +234,12 @@ printf "————————————————————————
 g
 n
 n
+printf "\033[0m"
+INSTALLASSISTANT='/Volumes/Image Volume/Install macOS Big Sur.app/Contents/MacOS/InstallAssistant'
+if [ -d $INSTALLASSISTANT ]
+then
+    $INSTALLASSISTANT &> /dev/null
+else
+    INSTALLASSISTANT='/Install macOS Big Sur.app/Contents/MacOS/InstallAssistant'
+    $INSTALLASSISTANT &> /dev/null
+fi

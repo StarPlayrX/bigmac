@@ -49,12 +49,13 @@ g () {
     k
 }
 
-if [ "$EUID" -ne 0 ]
+if [ $UID = 0 ]
   then
-    n
-    printf "Please run with sudo!"
-    n;n;
-    exit 0
+    echo
+    echo "Root permissions are vital."
+    echo "Please re-run this script with sudo."
+    echo
+    exit 1
 fi
 
 
@@ -300,7 +301,7 @@ if [ ! -d "$destVolume" ]
     fi
 
     n;n;
-    exit 0
+    exit 1
 fi
 
 mount -uw "$destVolume"
@@ -346,7 +347,7 @@ if [[ $proceed == "e"* ]] ||  [[ $proceed == "E"* ]] || [[ $proceed == "q"* ]] |
             say "$wish" --voice "$voice" --rate $rate &
     fi
 
-    exit 0
+    exit 1
 fi
 
 kext="/System/Library/Extensions/"
@@ -415,7 +416,7 @@ if [ ! -d "$prebootlocation$prebootid" ]
     then
         echo "Could not find Preboot Volume exiting... If this persists, reboot."
         diskutil umount force $preboot
-        exit 0
+        exit 1
 fi
 
 sleep 1
@@ -814,9 +815,10 @@ n
 read -p "Press RETURN to Reboot [ options : q for quick ]: " rebootArgs
 
 n
+printf "\033[0m"
 if [ "$rebootArgs" != "" ]
 then
-    reboot "-$rebootArgs"
+    reboot "-$rebootArgs" &> /dev/null
 else
-    reboot
+    reboot &> /dev/null
 fi

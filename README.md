@@ -2,8 +2,10 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
- # [🍟 click here for bigmac2 alpha1 GUI](http://starplayrx.com/bigmac2/bigmac2-a1.pkg)
- # [🍟 click here for bigmac2 alpha2 GUI](http://starplayrx.com/bigmac2/bigmac2-a2.pkg)
+
+## bigmac2 alpha GUI is here
+ - [🍟 click here for bigmac2 alpha1 GUI](http://starplayrx.com/bigmac2/bigmac2-a1.pkg)
+ - [🍟 click here for bigmac2 alpha2 GUI](http://starplayrx.com/bigmac2/bigmac2-a2.pkg)
 
 
 ### Release Schedule
@@ -58,7 +60,7 @@ Big Sur macOS 11 Mac Pro patcher.
 11. Select Install macOS Big Sur from the Utilities window, then click Continue and follow the onscreen instructions.
 
 ## 🥜 BigMac's Workflow in a Nut Shell 
-1. Workflow -> [Download Big Sur](http://swcdn.apple.com/content/downloads/00/55/001-86606-A_9SF1TL01U7/5duug9lar1gypwunjfl96dza0upa854qgg/InstallAssistant.pkg) -> Create USB Installer (`sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`)
+1. Workflow -> [Download Big Sur](http://swcdn.apple.com/content/downloads/04/34/071-00838-A_16DMRFYPPS/g072hb2wh066rj040ekzry97wx2hggfuse/InstallAssistant.pkg) -> Create USB Installer (`sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`)
 2. Create your unpatched USB installer disk with bigmac on another partiton with `./bigmac.sh`
 3. Execute `~/Downloads/bigmac.master/bigmac.sh`
 4. Reboot -> hold down OPTION key -> macOS Big Sur Installer
@@ -115,6 +117,8 @@ Big Sur macOS 11 Mac Pro patcher.
 3. Execute `csrutil authenticated-root disable` (can only be done from Big Sur Recovery disks).
 3. Use Start up disk (top left to select your installation).
 
+## Known Issues
+
 ### USB 2.0
 * Input devices that get disconnected do not reconnect. Workaround, use a USB 2.0/3.0 hub. Plug that into a Mac USB port and plug your input devices into the hub. This has been tested. USB 3.0 PCIe cards will also work but not at boot time.
 * USB storage devices are hotswapped with issue.
@@ -125,7 +129,7 @@ Big Sur macOS 11 Mac Pro patcher.
 
 ## ☝️ One More Thing
 
-* Updated on December 21, 2020 for macOS 11.1 (20C69)
+* Updated on December 21, 2020 for macOS 11.2 (20D64)
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC

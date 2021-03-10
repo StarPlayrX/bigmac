@@ -49,24 +49,8 @@ g () {
     k
 }
 
-diskutil list
-read -p "Please enter the volume your patching: [/Volumes/YourVolumeName]: " targetvolume
-username="`echo '$targetvolume/usr/bin/whoami'`"
-
-if [ "$(whoami)" != "root" ]
-then
-    if [ ! -d "/usr/bin/whoami" ]
-    then
-        if [ "username" != "root" ]
-        then
-            echo
-            echo "Root permissions are vital."
-            echo "Please re-run this script with sudo."
-            echo
-            exit 1
-        fi
-    fi
-    
+if [ $UID = 0 ]
+  then
     echo
     echo "Root permissions are vital."
     echo "Please re-run this script with sudo."
@@ -831,9 +815,10 @@ n
 read -p "Press RETURN to Reboot [ options : q for quick ]: " rebootArgs
 
 n
+printf "\033[0m"
 if [ "$rebootArgs" != "" ]
 then
-    reboot "-$rebootArgs"
+    reboot "-$rebootArgs" &> /dev/null
 else
-    reboot
+    reboot &> /dev/null
 fi

@@ -118,7 +118,7 @@ do
     fi
 done
 
-installapp = "/Applications/Install macOS Big Sur.app"
+installapp="/Applications/Install macOS Big Sur.app"
 disk=""
 media=""
 volumes="/Volumes/"

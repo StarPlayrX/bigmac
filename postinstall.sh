@@ -49,7 +49,7 @@ g () {
     k
 }
 
-if [ $UID = 0 ]
+if [ $UID != 0 ]
   then
     echo
     echo "Root permissions are vital."

@@ -6,7 +6,7 @@
 voice="Samantha"
 rate=25
 
-#Auto Switch to the current directory
+#Auto Switch to the bigmac directory located on external USB drive
 dir="/Volumes/bigmac"
 if [ ! -d "$dir" ]
     then

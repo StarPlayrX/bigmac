@@ -7,7 +7,21 @@ voice="Samantha"
 rate=25
 
 #Auto Switch to the current directory
-dir=$(dirname "$0")
+dir="/Volumes/bigmac"
+if [ ! -d "$dir" ]
+    then
+    n;o;
+    exiting="Can't find the bigmac directory. Please pay attention! Exiting..."
+    printf "$exiting"
+    
+    if [ $speak == true ]
+        then
+            say "$exiting" --voice "$voice" --rate $rate &
+    fi
+
+    n;n;
+    exit 1
+fi
 cd "$dir"
 
 IsNotRecovery=$(csrutil disable 2>&1)

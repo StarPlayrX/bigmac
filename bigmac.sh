@@ -10,7 +10,7 @@
 dir=$(dirname "$0")
 cd "$dir"
 
-if [ $UID = 0 ]
+if [ $UID != 0 ]
   then
     echo
     echo "Root permissions are vital."
@@ -110,7 +110,7 @@ do
     if [ ! -d "/Applications/Install macOS Big Sur.app" ] && [[ "$create" == *"y"* ]]
         then
             printf '\e[K'
-            read -p "🤯 Please place the Install macOS Big Sur.app in your 🍎 Applications 📂 Folder and press Return: " installapp
+            read -p "🤯 Please place the Install macOS Big Sur.app in your 🍎 Applications 📂 Folder and press Return: "
             printf '\e[K'
         else
         printf "\033[0m"
@@ -118,6 +118,7 @@ do
     fi
 done
 
+installapp="/Applications/Install macOS Big Sur.app"
 disk=""
 media=""
 volumes="/Volumes/"
@@ -183,10 +184,10 @@ if [[ "$create" == *"y"* ]]
                 
                 printf '\e[K'
                 echo
-                $installapp/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/installer_"$disk$number" &> /dev/null
+                "$installapp"/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/installer_"$disk$number"
 
                 # This code is specifically from BarryKn
-                for installvolume in "Install macOS Big Sur" "Install macOS Big Sur Beta" "Install macOS Beta"
+                for installvolume in "Install macOS Big Sur"
                 do
                     bootplist="com.apple.Boot.plist"
                     boot="/💾/"

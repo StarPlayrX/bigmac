@@ -6,8 +6,22 @@
 voice="Samantha"
 rate=25
 
-#Auto Switch to the current directory
-dir=$(dirname "$0")
+#Auto Switch to the bigmac directory located on external USB drive
+dir="/Volumes/bigmac"
+if [ ! -d "$dir" ]
+    then
+    n;o;
+    exiting="Can't find the bigmac directory. Please pay attention! Exiting..."
+    printf "$exiting"
+    
+    if [ $speak == true ]
+        then
+            say "$exiting" --voice "$voice" --rate $rate &
+    fi
+
+    n;n;
+    exit 1
+fi
 cd "$dir"
 
 IsNotRecovery=$(csrutil disable 2>&1)
@@ -49,7 +63,7 @@ g () {
     k
 }
 
-if [ $UID = 0 ]
+if [ $UID != 0 ]
   then
     echo
     echo "Root permissions are vital."

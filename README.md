@@ -11,8 +11,7 @@ Big Sur macOS 11 Mac Pro patcher.
 ### Release Schedule
 * 🍟 01.31.21 10:00PM PST Alpha 1 (11.1) [Released]
 * 🍟 02.01.21 06:00PM EST Alpha 2 (11.2) [Released]
-* 🍔 Public Beta
-* 🍺 Release Candidate 1
+* 🍔 Public Beta (on hold until further notice)
 
 <img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%" >
 

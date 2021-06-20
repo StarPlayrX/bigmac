@@ -10,8 +10,4 @@
 * FireWire 400 and 800 Hard Drive and SSD Support (booting from FW is unsupported, use USB 2.0)
 * Automatic Legacy WiFi 802.11n Patch 
 * Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
-* Easier to use
-* APFS Native Installer Boot System
-* Ultra Fast Boot of a Full OS
-* Improved Boot Screen Support
 * Full GUI

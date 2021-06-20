@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391011</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>AppleIntelPIIXATA</string>
+	<key>CFBundleGetInfoString</key>
+	<string>2.5.1, Copyright Apple Inc. 2000-2009</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.driver.AppleIntelPIIXATA</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Apple Intel ICHx/PIIX ATA Driver</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.5.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2.5.1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11L325i</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15</string>
+	<key>DTSDKBuild</key>
+	<string>19A487k</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1100</string>
+	<key>DTXcodeBuild</key>
+	<string>11L325i</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>ESB2 ATA/100</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ESB2 ATA/100</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x269e8086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>ESB2 Serial ATA</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ESB2 SATA</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x26808086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Serial ATA</key>
+			<true/>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>ICH7 ATA/100</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ICH7 ATA/100</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x27df8086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>ICH7 Serial ATA</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ICH7 SATA</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x27c08086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Serial ATA</key>
+			<true/>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>ICH7-M Serial ATA</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ICH7-M SATA</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x27c48086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Serial ATA</key>
+			<true/>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>ICH8 ATA/100</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ICH8 ATA/100</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x28508086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>ICH8 Serial ATA</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>Controller Name</key>
+			<string>ICH8 SATA</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXATARoot</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x28288086</string>
+			<key>IOProbeScore</key>
+			<integer>2000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>PCS Port Map</key>
+			<data>
+			kgGTAZICkwKSBJMEkgiTCA==
+			</data>
+			<key>Serial ATA</key>
+			<true/>
+			<key>Supported Transfer Modes</key>
+			<string>0x3f061d</string>
+		</dict>
+		<key>Parallel ATA Channel Driver</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>IOClass</key>
+			<string>AppleIntelPIIXPATA</string>
+			<key>IOProbeScore</key>
+			<integer>800</integer>
+			<key>IOProviderClass</key>
+			<string>AppleIntelPIIXATAChannel</string>
+			<key>Serial ATA</key>
+			<false/>
+		</dict>
+		<key>Serial ATA Channel Driver</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleIntelPIIXATA</string>
+			<key>IOClass</key>
+			<string>AppleIntelICHxSATA</string>
+			<key>IOProbeScore</key>
+			<integer>1000</integer>
+			<key>IOProviderClass</key>
+			<string>AppleIntelPIIXATAChannel</string>
+			<key>Serial ATA</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOATAFamily</key>
+		<string>1.5.0d1</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.1.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>9.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+</dict>
+</plist>

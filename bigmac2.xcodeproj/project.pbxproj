@@ -43,6 +43,7 @@
 		2DFBD81E25A418B40098024C /* InstallerDiskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBD81D25A418B40098024C /* InstallerDiskController.swift */; };
 		2DFE54FB25A2D7D500BE3AA0 /* bm2 in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE54FA25A2D7D500BE3AA0 /* bm2 */; };
 		2DFE54FE25A2D7DE00BE3AA0 /* lax in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE54FD25A2D7DE00BE3AA0 /* lax */; };
+		6F61AC02267ECF9500674C11 /* bigdata.dmg in Resources */ = {isa = PBXBuildFile; fileRef = 6F61ABFF267ECF7700674C11 /* bigdata.dmg */; };
 		6F6AA8CD25BB98C6002FF64F /* kmu in Resources */ = {isa = PBXBuildFile; fileRef = 6F6AA8CC25BB98C6002FF64F /* kmu */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		2DFBD81D25A418B40098024C /* InstallerDiskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerDiskController.swift; sourceTree = "<group>"; };
 		2DFE54FA25A2D7D500BE3AA0 /* bm2 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bm2; sourceTree = "<group>"; };
 		2DFE54FD25A2D7DE00BE3AA0 /* lax */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = lax; sourceTree = "<group>"; };
+		6F61ABFF267ECF7700674C11 /* bigdata.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigdata.dmg; sourceTree = "<group>"; };
 		6F6AA8CC25BB98C6002FF64F /* kmu */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kmu; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 		2D538EFD259008730066D908 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6F61ABFF267ECF7700674C11 /* bigdata.dmg */,
 				2DCEAF7225A80B900064A9B6 /* Menlo.ttc */,
 				2D522BA925A2E20000E25780 /* bm2tmp0.dmg */,
 				6F6AA8CC25BB98C6002FF64F /* kmu */,
@@ -327,6 +330,7 @@
 				2DCEAF7325A80B9F0064A9B6 /* Menlo.ttc in Resources */,
 				2DFE54FB25A2D7D500BE3AA0 /* bm2 in Resources */,
 				2D1A32A7258D959E009DCDFD /* Assets.xcassets in Resources */,
+				6F61AC02267ECF9500674C11 /* bigdata.dmg in Resources */,
 				2D1A32AA258D959E009DCDFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,7 +474,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 469UCUB275;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = bigmac2/Info.plist;
@@ -478,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "2.0 alpha";
+				MARKETING_VERSION = "2.0.1 beta";
 				OTHER_LDFLAGS = "-mmacosx-version-min=10.13";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starplayrx.bigmac2026;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,7 +503,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 469UCUB275;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = bigmac2/Info.plist;
@@ -507,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "2.0 alpha";
+				MARKETING_VERSION = "2.0.1 beta";
 				OTHER_LDFLAGS = "-mmacosx-version-min=10.13";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starplayrx.bigmac2026;
 				PRODUCT_NAME = "$(TARGET_NAME)";

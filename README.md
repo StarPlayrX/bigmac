@@ -10,9 +10,7 @@ bigmac2 version 2.0.1 beta 1
 * Automatic Legacy WiFi 802.11n Patch 
 * Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 * Easier to use
-* Download Full Installers from the App Store
-* Optional Apple Developer Seed Support Downloads
-* Wicked Installer Boot System / Light Speed Emergency Disk
+* APFS Native Installer Boot System
 * Ultra Fast Boot of a Full OS
 * Improved Boot Screen Support
 * Full GUI

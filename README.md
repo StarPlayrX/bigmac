@@ -6,7 +6,7 @@ bigmac2 version 2.0.1 beta 1
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * USB 1.1 Support, special thanks to JackLukem for the tip!
-* FireWire 400 and 800 Hard Drive and SSD Support (booting from FW currently fails)
+* FireWire 400 and 800 Hard Drive and SSD Support (booting from FW is unsupported, use USB 2.0)
 * Automatic Legacy WiFi 802.11n Patch 
 * Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 * Easier to use

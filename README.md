@@ -1,4 +1,5 @@
-Please compile from source until a new release is made.
+Please compile from source until a new release is made public.
+Builds are compatible with macOS 10.13 and later
 
 bigmac2 version 2.0.1 beta 1
 

@@ -49,9 +49,7 @@ extension ViewController {
                 print("Cannot find the selected system disk.")
                 return
             }
-            
-
-            
+        
             guard systemVolume.displayName != "bigmac2"
             
             else {
@@ -70,9 +68,12 @@ extension ViewController {
                 apfsUtil = apfs
             }
             
+            var dataVolumeUUID = runCommandReturnStr(binary: apfsUtil, arguments: ["-k", dataSlice]) ?? ""
             
-            let dataVolumeUUID = runCommandReturnStr(binary: apfsUtil, arguments: ["-k", dataSlice]) ?? ""
-            
+            // Remove hard breaks in string
+            dataVolumeUUID = dataVolumeUUID.replacingOccurrences(of: "\n", with: "")
+            dataVolumeUUID = dataVolumeUUID.replacingOccurrences(of: "\r", with: "")
+
             var dest = systemVolume.path
             
             if systemVolume.root {
@@ -176,7 +177,6 @@ extension ViewController {
                 do {
                     
                     if let plistData: Data = plist.data(using: .utf8) {
-                        print(plistData)
                         
                         let decoder = PropertyListDecoder()
                         let snapshots = try decoder.decode(Snapshots.self, from: plistData).snapshots
@@ -198,7 +198,6 @@ extension ViewController {
             }
             
             if blessSystem {
-                
                 // if let app = appFolder  {
                 var bless = systemVolume.path + "/usr/sbin/bless"
                 var path = systemVolume.path + "/"
@@ -207,7 +206,7 @@ extension ViewController {
                     bless = systemVolume.path + "/usr/sbin/bless"
                     path = systemVolume.path
                 }
-
+                
                 indicatorBump(taskMsg: "Blessing \(systemVolume.displayName)...", detailMsg: "", updateProgBar: true)
                 _ = runCommandReturnStr(binary: bless, arguments: ["--folder", "\(path)System/Library/CoreServices" , "--bootefi", "--label", systemVolume.displayName, "--setBoot"]) ?? ""
 

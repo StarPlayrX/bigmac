@@ -103,7 +103,7 @@ extension ViewController {
             if !isBaseSystem {
                 txt2file(text: bootPlistTxt, file:  "\(system.path)/\(libPreSyC)/\(bootPlist)")
             }
-            
+                        
             txt2file(text: bootPlistTxt, file:  "\(system.path)/\(sysLibTmD)/\(libPreSyC)/\(bootPlist)")
             txt2file(text: bootPlistTxt, file:  "\(prebootPath)/\(dataVolumeUUID)/\(libPreSyC)/\(bootPlist)")
             

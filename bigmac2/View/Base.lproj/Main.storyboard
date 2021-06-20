@@ -1202,10 +1202,10 @@ DQ
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="9" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-W7-PG5">
-                                                    <rect key="frame" x="255" y="179" width="220" height="141"/>
+                                                    <rect key="frame" x="255" y="154" width="220" height="166"/>
                                                     <subviews>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-hA-tNG">
-                                                            <rect key="frame" x="-2" y="124" width="154" height="18"/>
+                                                            <rect key="frame" x="-2" y="149" width="154" height="18"/>
                                                             <buttonCell key="cell" type="check" title="CD / DVD SuperDrive" bezelStyle="regularSquare" imagePosition="left" inset="2" id="zWK-sP-Xli">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -1215,7 +1215,7 @@ DQ
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FId-UD-oKk">
-                                                            <rect key="frame" x="-2" y="99" width="222" height="18"/>
+                                                            <rect key="frame" x="-2" y="124" width="222" height="18"/>
                                                             <buttonCell key="cell" type="check" title="Apple HDA (Audio and Webcam)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="aSS-TC-Zkq">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -1225,13 +1225,23 @@ DQ
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zIZ-bF-5RK">
-                                                            <rect key="frame" x="-2" y="74" width="141" height="18"/>
+                                                            <rect key="frame" x="-2" y="99" width="141" height="18"/>
                                                             <buttonCell key="cell" type="check" title="NVidia HDMI Audio" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Zbv-kw-H56">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
                                                             <connections>
                                                                 <action selector="hdmiAudio_act:" target="XfG-lQ-9wD" id="x6T-6J-vbd"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JFS-1h-7p0">
+                                                            <rect key="frame" x="-2" y="74" width="201" height="18"/>
+                                                            <buttonCell key="cell" type="check" title="AppStore macOS Downloads" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="HgB-AY-A1l">
+                                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                <font key="font" metaFont="system"/>
+                                                            </buttonCell>
+                                                            <connections>
+                                                                <action selector="appStoreMacOsDownloads_act:" target="XfG-lQ-9wD" id="S8W-QT-ceP"/>
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-XV-YeT">
@@ -1256,7 +1266,7 @@ DQ
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hG2-oA-ihQ">
                                                             <rect key="frame" x="-2" y="-1" width="205" height="18"/>
-                                                            <buttonCell key="cell" type="check" title="Update Boot and System KCs" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Rzc-4a-LEb">
+                                                            <buttonCell key="cell" type="check" title="Update Boot and System KCs" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Rzc-4a-LEb">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
@@ -1272,8 +1282,10 @@ DQ
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
+                                                        <integer value="1000"/>
                                                     </visibilityPriorities>
                                                     <customSpacing>
+                                                        <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
@@ -1455,6 +1467,7 @@ DQ
                         <outlet property="amdMouSSE_btn" destination="W3i-15-mCO" id="dpk-8K-l4h"/>
                         <outlet property="amfiGlobalBootArgs" destination="Bgw-qI-tPD" id="GIY-B9-9On"/>
                         <outlet property="apfsRomPatcher" destination="6Od-GF-iHL" id="Vbc-rb-tC0"/>
+                        <outlet property="appStoreMacOS_btn" destination="JFS-1h-7p0" id="rmc-15-LyP"/>
                         <outlet property="appleHDA_btn" destination="FId-UD-oKk" id="AN7-MW-st1"/>
                         <outlet property="availablePatchDisks" destination="yHl-mb-wuL" id="GjX-e0-Sya"/>
                         <outlet property="buildLabel" destination="DFd-ov-bag" id="7C2-Lu-I2R"/>

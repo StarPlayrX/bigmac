@@ -1,5 +1,7 @@
 Please compile from source until a new release is made.
 
+bigmac2 version 2.0.1 beta 1
+
 <img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%" >
 
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac

@@ -89,11 +89,6 @@ class PostInstallViewController : NSViewController {
         nameD.addAttributes(green, range: NSRange(location: 0, length: name4.count + 1))
         creditsTextView.textStorage?.append(nameD)
         
-        let name4a = "\n🍇 JackLuke     - USB 1.1\n"
-        let nameH = NSMutableAttributedString(string: name4a)
-        nameH.addAttributes(green, range: NSRange(location: 0, length: name4a.count + 1))
-        creditsTextView.textStorage?.append(nameH)
-        
         let name4b = "\n🥥 CorpNewt     - USB Map\n"
         let nameI = NSMutableAttributedString(string: name4b)
         nameI.addAttributes(green, range: NSRange(location: 0, length: name4b.count + 1))
@@ -113,11 +108,6 @@ class PostInstallViewController : NSViewController {
         let nameF = NSMutableAttributedString(string: name6)
         nameF.addAttributes(green, range: NSRange(location: 0, length: name6.count + 1))
         creditsTextView.textStorage?.append(nameF)
-        
-        let name7 = "\n🥭 Syncretic    - Teletrap\n"
-        let nameG = NSMutableAttributedString(string: name7)
-        nameG.addAttributes(green, range: NSRange(location: 0, length: name7.count + 1))
-        creditsTextView.textStorage?.append(nameG)
         
         let name9 = "\n🍍 Exvision     - HDMI Audio\n"
         let nameL = NSMutableAttributedString(string: name9)

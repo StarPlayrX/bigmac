@@ -113,8 +113,8 @@ extension ViewController {
             }
             
             if teleTrap {
-                let kext = "telemetrap.kext"
-                _ = installKext(dest: dest, kext: kext, fold: lext, ttle: teleTraptl)
+                //let kext = "telemetrap.kext"
+                //_ = installKext(dest: dest, kext: kext, fold: lext, ttle: teleTraptl)
                 
                 let plug = "com.apple.telemetry.plugin"
                 _ = installKext(dest: dest, kext: plug, fold: uepi, ttle: teleTraptl)

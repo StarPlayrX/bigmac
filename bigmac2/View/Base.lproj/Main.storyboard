@@ -1340,7 +1340,7 @@ DQ
                                                     </connections>
                                                 </popUpButton>
                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="9" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-Aa-BUh">
-                                                    <rect key="frame" x="37" y="154" width="186" height="166"/>
+                                                    <rect key="frame" x="37" y="154" width="185" height="166"/>
                                                     <subviews>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hwc-jj-Waw">
                                                             <rect key="frame" x="-2" y="149" width="163" height="18"/>
@@ -1383,8 +1383,8 @@ DQ
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mAO-Pd-4vQ">
-                                                            <rect key="frame" x="-2" y="49" width="188" height="18"/>
-                                                            <buttonCell key="cell" type="check" title="Teletrap / Telemetry Plugin" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Q2g-5h-nJd">
+                                                            <rect key="frame" x="-2" y="49" width="167" height="18"/>
+                                                            <buttonCell key="cell" type="check" title="MP3,1 Telemetry Plugin" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Q2g-5h-nJd">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>

@@ -34,17 +34,9 @@ extension ViewController {
         let bootPlist = "com.apple.Boot.plist"
         let platformPlist = "PlatformSupport.plist"
         let buildManifestPlist = "BuildManifest.plist"
-        
-        var verbose = "-v "
-        var singleUser = "-s "
-        
-        if !isVerbose {
-            verbose = ""
-        }
-        
-        if !isSingleUser {
-            singleUser = ""
-        }
+                
+        let verbose = isVerbose ? "-v " : ""
+        let singleUser = isSingleUser ? "-s " : ""
         
         //Write our pList file
         let bootPlistTxt =

@@ -1,4 +1,5 @@
 * Please compile from source until a new release is made public.
+* Looking for Big Mac Monte? See the 'Monte' branch.
 * Builds are compatible with macOS 10.13 and later
 * Made with Swift 5
 * bigmac2 version 2.0.1 beta 1

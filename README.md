@@ -135,4 +135,4 @@ Big Sur macOS 11 Mac Pro patcher.
 * A Big Mac is better than a New Mac. Please donate to [NiceMac LLC](https://www.paypal.com/donate?hosted_button_id=M3U48FLF87SXQ)
 
 
-If you ever read the [Software License Agreement](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), macOS Big Sur is to be run on Apple branded hardware.
+If you ever read the [Software License Agreement](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), macOS Big Sur and Monterey must be run on Apple branded hardware.

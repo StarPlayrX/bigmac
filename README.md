@@ -1,4 +1,5 @@
 * Please compile from source until a new release is made public.
+* Made by the creators at Nice Mac
 * Looking for Big Mac Monte? See the 'Monte' branch.
 * Builds are compatible with macOS 10.13 and later
 * Made with Swift 5

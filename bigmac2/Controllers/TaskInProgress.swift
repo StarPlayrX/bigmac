@@ -22,7 +22,6 @@ class TaskInProgController : NSViewController {
         }
    
         taskBar.stopAnimation(self)
-
     }
     
     @IBAction func continueTask(_ sender: Any) {

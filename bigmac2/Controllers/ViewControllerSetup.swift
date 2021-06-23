@@ -16,16 +16,11 @@ extension ViewController {
                   
         progressBarDownload.doubleValue = 0 //set progressBar to 0 at star
         
-        if NSUserName() == "root" {
-            rootMode = true
-        } else {
-            rootMode = false
-        }
+        rootMode = NSUserName() == "root" ? true : false
         
         installerFuelGauge.doubleValue = 0
         
         let defaults = UserDefaults.standard
-        
         var counter = 0
         
         isBaseVerbose    = defaults.bool(forKey: "isBaseVerbose")
@@ -69,16 +64,16 @@ extension ViewController {
             
         //MARK: Maybe create a struct for the check selection and add on other things like last tab used
         
-        //MARK: To Do Generate an AI that knows what should be checked for the User, Defaulting to Mac Pro 3,1 Generic Specs
+        //MARK: To do Generate an AI that knows what should be checked for the User, Defaulting to Mac Pro 3,1 Generic Specs
         if counter == 0 {
-            enableUSB = true
-            enableUSB_btn.state = .on
+            enableUSB = false
+            enableUSB_btn.state = .off
             
             disableBT2 = true
             disableBT2_btn.state = .on
             
-            amdMouSSE = true
-            amdMouSSE_btn.state = .on
+            amdMouSSE = false
+            amdMouSSE_btn.state = .off
             
             teleTrap = true
             teleTrap_btn.state = .on
@@ -89,8 +84,8 @@ extension ViewController {
             superDrive = true
             superDrive_btn.state = .on
             
-            appStoreMacOS = true
-            appStoreMacOS_btn.state = .on
+            appStoreMacOS = false
+            appStoreMacOS_btn.state = .off
             
             appleHDA = true
             appleHDA_btn.state = .on

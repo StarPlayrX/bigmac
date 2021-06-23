@@ -14,10 +14,8 @@ class ErrorMsgController : NSViewController {
     @IBAction func okButton(_ sender: Any) {
         dismiss(self)
     }
-    
-    
+
     override func viewDidLoad() {
-        errMsgLabel.stringValue = globalError
-        
+        errMsgLabel.stringValue = globalError        
     }
 }

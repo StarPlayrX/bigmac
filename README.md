@@ -7,6 +7,7 @@
 
 <img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%" >
 
+* Runs macOS Monterey on bare metal Mac Pros 3,1 4,1 5,1
 * Native Airdrop and Handoff support! Requires BT4LE and 802.11ac
 * Post install patches include USB 1.1 Support
 * FireWire 400 and 800 Hard Drive and SSD Support (booting from FW is unsupported, use USB 2.0)

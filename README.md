@@ -2,6 +2,7 @@
 * For macOS 11.4 you may have the periodically remove internal PCIe cards to get install to finish
 * macOS 12.0 Beta does not have this PCIe racing issue within the macOS installer
 * Observations are made from a Mac Pro 2008, 3,1
+* This software is built on macOS Big Sur 11.4 Intel
 * Please compile from source until a new release is made public.
 * Made by the creators at Nice Mac
 * Builds are compatible with macOS 10.13 and later

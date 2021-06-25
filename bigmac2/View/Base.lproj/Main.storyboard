@@ -1019,7 +1019,7 @@ DQ
                                                     </customSpacing>
                                                 </stackView>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DlF-Zt-WAP">
-                                                    <rect key="frame" x="373" y="4" width="122" height="32"/>
+                                                    <rect key="frame" x="332" y="4" width="163" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Please Donate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bJj-Oq-N0v">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1032,6 +1032,40 @@ DQ
                                                         <action selector="donateAction:" target="XfG-lQ-9wD" id="fqd-Nj-qVd"/>
                                                     </connections>
                                                 </button>
+                                                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-W6-kuF">
+                                                    <rect key="frame" x="352" y="117" width="136" height="46"/>
+                                                    <subviews>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xlt-As-jyd">
+                                                            <rect key="frame" x="-2" y="30" width="88" height="16"/>
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Install macOS" id="f1g-le-B9S">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l8x-Np-DQj">
+                                                            <rect key="frame" x="-3" y="-4" width="143" height="25"/>
+                                                            <popUpButtonCell key="cell" type="push" title="macOS 11.4" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Lh3-dG-HsL" id="1Im-3W-cZV">
+                                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                                <font key="font" metaFont="menu"/>
+                                                                <menu key="menu" id="4mo-df-tFM">
+                                                                    <items>
+                                                                        <menuItem title="macOS 11.4" state="on" id="Lh3-dG-HsL"/>
+                                                                        <menuItem title="macOS 12.0 Beta" id="2MH-tw-icm"/>
+                                                                    </items>
+                                                                </menu>
+                                                            </popUpButtonCell>
+                                                        </popUpButton>
+                                                    </subviews>
+                                                    <visibilityPriorities>
+                                                        <integer value="1000"/>
+                                                        <integer value="1000"/>
+                                                    </visibilityPriorities>
+                                                    <customSpacing>
+                                                        <real value="3.4028234663852886e+38"/>
+                                                        <real value="3.4028234663852886e+38"/>
+                                                    </customSpacing>
+                                                </stackView>
                                             </subviews>
                                         </view>
                                     </tabViewItem>
@@ -1480,6 +1514,7 @@ DQ
                         <outlet property="gbLabel" destination="eLx-fH-b51" id="egU-jl-cn7"/>
                         <outlet property="hdmiAudio_btn" destination="zIZ-bF-5RK" id="Uly-zA-djN"/>
                         <outlet property="installerFuelGauge" destination="Qi3-pO-eUD" id="z1u-q0-D43"/>
+                        <outlet property="installerVersion" destination="l8x-Np-DQj" id="wyO-Xl-nTg"/>
                         <outlet property="legacyWiFi_btn" destination="Rsm-39-Um6" id="HBR-wi-mhG"/>
                         <outlet property="mediaLabel" destination="syK-06-F8B" id="Tm3-Pq-vCa"/>
                         <outlet property="nccGlobalBootArgs" destination="mzv-NB-MeI" id="DD0-Cy-JWU"/>

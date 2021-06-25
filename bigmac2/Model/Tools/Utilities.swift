@@ -154,8 +154,11 @@ extension ViewController {
         return nil
     }
     
+
     func checkForBaseOS() -> Bool {
-        if fm.fileExists(atPath: baseOS) {
+        if fm.fileExists(atPath: installAsstBaseOS11) && installVersionIsLegacy {
+            return true
+        } else if fm.fileExists(atPath: installAsstBaseOS12) && !installVersionIsLegacy  {
             return true
         } else {
             return false

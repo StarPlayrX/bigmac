@@ -10,28 +10,34 @@ import Cocoa
 extension ViewController {
     
     @IBAction func baseVerboseAction(_ sender: Any) {
-        verboseUserCheckbox.state == .on ? (isBaseVerbose = true) : (isBaseVerbose = false)
+        isBaseVerbose = verboseUserCheckbox.state == .on
     }
 
 
     @IBAction func baseSingleUserAction(_ sender: Any) {
-        singleUserCheckbox.state == .on ? (isBaseSingleUser = true) : (isBaseSingleUser = false)
+        isBaseSingleUser = singleUserCheckbox.state == .on
     }
  
     
     @IBAction func downloadMacOSAction(_ sender: Any) {
         if cancelTask() { return }
+    
+        installVersionIsLegacy = installerVersion.title.lowercased().contains(installLegacyVersion.lowercased()) ? true : false
         
         //MARK: To Do - connect this a backend where we can possibly choose the download OR always download the latest
         //useDmgInstaller
-        let macOS = globalDownloadMacOSpkg
-      
-        downloadMacOSTask(label: "Downloading macOS", urlString: macOS)
+        let macOS = installVersionIsLegacy ? globalDownloadMacOSpkg11 : globalDownloadMacOSpkg12
+        let version = installVersionIsLegacy ? macOS11 : macOS12
+        
+        downloadMacOSTask(label: "Downloading \(version)", urlString: macOS)
     }
 
     //MARK: Phase 1.0
     @IBAction func createInstallDisk(_ sender: Any) {
         globalInstall = install.bootIso
+        
+        installVersionIsLegacy = installerVersion.title.lowercased().contains(installLegacyVersion.lowercased()) ? true : false
+
         if cancelTask() { return }
         //Erase a Disk first
         self.performSegue(withIdentifier: "eraseDisk", sender: self)

@@ -15,8 +15,10 @@ extension ViewController {
         
         var vet = (result: "Updating the disk failed!", installed: false)
         
+        let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
+
         let InstallAsst = "/Users/Shared/InstallAssistant.pkg"
-        let InstallApp = "/Applications/\(installBigSur)"
+        let InstallApp = "/Applications/\(installOSapp)"
 
         if checkIfFileExists(path: InstallAsst) && !checkIfFileExists(path: InstallApp) {
             incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: true, title: "Updating Installer Package...")
@@ -83,7 +85,7 @@ extension ViewController {
             
             createDiskEnded(completed: pass)
             
-            globalError = "This operation cannot continue without \(checkForInstallApp). Please either place the \(installBigSurApp) inside your \(applications) folder or download a new macOS Big Sur Installer disk."
+            globalError = "This operation cannot continue without \(checkForInstallApp). Please either place the \(installBigSurApp) inside your \(applications) folder or download a new macOS Installer disk."
     
             DispatchQueue.main.async { [self] in
                 performSegue(withIdentifier: "displayErrMsg", sender: self)
@@ -111,8 +113,10 @@ extension ViewController {
         //MARK: make temp dir SharedSupport
         _ = mkDir(arg: "/\(tmp)/\(sharedsupport)")
         
+        let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
+
         //MARK: mount disk image inside temp SharedSupport
-        _ = mountDiskImage(arg: ["mount", "-mountPoint", "/\(tmp)/\(sharedsupport)", "/\(applications)/\(installBigSur)/Contents/\(sharedsupport)/\(sharedsupport).dmg", "-noverify", "-noautoopen", "-noautofsck", "-nobrowse"])
+        _ = mountDiskImage(arg: ["mount", "-mountPoint", "/\(tmp)/\(sharedsupport)", "/\(applications)/\(installOSapp)/Contents/\(sharedsupport)/\(sharedsupport).dmg", "-noverify", "-noautoopen", "-noautofsck", "-nobrowse"])
         
         //MARK: Zip Extraction (retain base system disk image from DMG)
         _ = extractDMGfromZip(arg: ["-o", "/\(tmp)/\(sharedsupport)/\(macSoftwareUpdate)/\(wildZip)", "\(restoreBaseSystem)", "-d", "/\(tmp)"])
@@ -180,18 +184,15 @@ extension ViewController {
    
     
     //MARK: Task #7
-    func bigSurInstallerAppXfer(isBeta: Bool, BootVolume: myVolumeInfo) {
+    func bigSurInstallerAppXfer(BootVolume: myVolumeInfo) {
         incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: false, title: "Installing the macOS 11 App...")
+        
+        let appName = installVersionIsLegacy ? installOS11 : installOS12
 
-        var appName = "Install macOS Big Sur.app"
         let contents = "Contents"
         let rootVol = BootVolume.path
         let sharedSup = "SharedSupport"
         let apps = "Applications"
-        
-        if isBeta {
-            appName = "Install macOS Big Sur Beta.app"
-        }
         
         let root = "\(rootVol)/\(appName)/"
         let fm = FileManager.default

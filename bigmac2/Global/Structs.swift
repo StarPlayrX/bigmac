@@ -13,7 +13,6 @@ struct myVolumeInfo {
     var capacity: Int
 }
 
-
 // MARK: - Snapshots
 struct Snapshots: Codable {
     let snapshots: [Snapshot]

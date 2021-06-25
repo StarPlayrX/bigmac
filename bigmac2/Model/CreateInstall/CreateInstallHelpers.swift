@@ -47,16 +47,20 @@ extension ViewController {
     //MARK: To do - Setup a variable
     func downloadPkg(pkgString: String) {
         //Remove pre-existing file
+        
+        let installOS = installVersionIsLegacy ? installShortOS11 : installShortOS12
+        
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Applications/Install macOS Big Sur.app"])
+        runCommand(binary: "/bin/rm", arguments: ["-Rf", installOS])
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"])
         DispatchQueue.main.async { [self] in
-            downloadLabel.stringValue = macOSVersion
-        }
-
-        DispatchQueue.global(qos: .background).async {
-            self.download(urlString: pkgString)
+            
+        downloadLabel.stringValue = installVersionIsLegacy ? macOS11 : macOS12
+     
+            DispatchQueue.global(qos: .background).async {
+                self.download(urlString: pkgString)
+            }
         }
     }
     
@@ -77,8 +81,11 @@ extension ViewController {
     
     //MARK: Install Shared Support DMG
     internal func installSharedSupportDMG2() {
+        
+        let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
+        
         DispatchQueue.global(qos: .background).async { [self] in
-           copyFile(atPath: "/Applications/Install macOS Big Sur.app/Contents/SharedSupport/SharedSupport.dmg", toPath: "/Volumes/macOS Base System/SharedSupport.dmg")
+           copyFile(atPath: "/Applications/\(installOSapp)/Contents/SharedSupport/SharedSupport.dmg", toPath: "/Volumes/macOS Base System/SharedSupport.dmg")
         }
     }
     

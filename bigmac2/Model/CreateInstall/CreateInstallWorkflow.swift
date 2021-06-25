@@ -19,11 +19,13 @@ extension ViewController {
             let baseSys = "macOS Base System"
             let bm2 = bigmac2
             let dmg = bigmacDMG
-        
-            _ = updateInstallerPkg(installBigSurApp: installBigSur)
             
-            //MARK: Check the Big Sur app is ready
-            guard let pass = installBigSurCheckPoint(installBigSurApp: installBigSur), pass == true else {
+            let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
+            
+            _ = updateInstallerPkg(installBigSurApp: installOSapp)
+            
+            //MARK: Check if the installer app is ready
+            guard let pass = installBigSurCheckPoint(installBigSurApp: installOSapp), pass == true else {
                 return
             }
        
@@ -38,7 +40,7 @@ extension ViewController {
             baseBootPlister(diskInfo: diskInfo, isVerbose: isBaseVerbose, isSingleUser: isSingleUser, prebootVolume: prebootDiskSlice, isBaseSystem: true)
                  
             installEmojiFont(diskInfo: diskInfo)
-            bigSurInstallerAppXfer(isBeta: false, BootVolume: diskInfo)
+            bigSurInstallerAppXfer(BootVolume: diskInfo)
             createDiskEnded(completed: true)
   
         }

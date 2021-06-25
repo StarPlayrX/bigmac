@@ -10,8 +10,10 @@ import Cocoa
 class ViewController: NSViewController, URLSessionDelegate {
     
     var downloadProgress = Float(-1.0)
+    var downloadDataProgress = Float(-1.0)
 
     //MARK: Downloads Tab
+    @IBOutlet weak var installerVersion: NSPopUpButton!
     @IBOutlet weak var mediaLabel: NSTextField!
     @IBOutlet weak var progressBarDownload: NSProgressIndicator!
     @IBOutlet weak var buildLabel: NSTextField!

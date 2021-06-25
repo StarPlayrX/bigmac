@@ -20,7 +20,7 @@ extension ViewController : URLSessionDownloadDelegate {
         
         if ( a / b ).isNaN || ( a / b ).isInfinite { return }
 
-        let a2 = round (Float(totalBytesWritten) / 1000  / 100 ) / 10 //Megabytes In
+        var a2 = round (Float(totalBytesWritten) / 1000  / 100 ) / 10 //Megabytes In
         if !a2.isFinite || a2.isNaN { return }
 
         let b2 = round (Float(totalBytesExpectedToWrite) / 1000 / 100 ) / 10 //Megabytes Max
@@ -34,10 +34,13 @@ extension ViewController : URLSessionDownloadDelegate {
         
         func updateScreen() {
             DispatchQueue.main.async { [self] in
+                
                 if b > 0.99 {
-                    gbLabel.stringValue = "\(a) GB / \(b) GB"
+                    let padding = String(a).count < 4 ? "0" : ""
+                    gbLabel.stringValue = "\(a)\(padding) GB / \(b) GB"
                 } else {
-                    gbLabel.stringValue = "\(a2) MB / \(b2) MB"
+                    let padding = String(a2).count < 4 ? "0" : ""
+                    gbLabel.stringValue = "\(a2)\(padding)2 MB / \(b2) MB"
                 }
                 
                 progressBarDownload.doubleValue = percentageDouble
@@ -47,9 +50,12 @@ extension ViewController : URLSessionDownloadDelegate {
         
         if Float(percentageInt) != downloadProgress {
             updateScreen()
-            downloadProgress =  Float(percentageInt)
+            downloadProgress = Float(percentageInt)
         } else if ( a2 == b2 || a == b ) && (a > 0 || a2 > 0) {
             updateScreen()
+        } else if downloadDataProgress != a {
+            updateScreen()
+            downloadDataProgress = a
         }
        
         if globalWorkItem == nil || globalDispatch == nil {

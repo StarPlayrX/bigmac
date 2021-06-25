@@ -90,8 +90,8 @@ extension ViewController {
             }
             
             
-            let installAsstBaseOS = "/Install macOS Big Sur.app/Contents/MacOS/InstallAssistant"
-            let installAsstFullOS = "/Applications/Install macOS Big Sur.app/Contents/MacOS/InstallAssistant"
+            let installAsstBaseOS = installVersionIsLegacy ? installAsstBaseOS11 : installAsstBaseOS12
+            let installAsstFullOS = installVersionIsLegacy ? installAsstFullOS11 : installAsstFullOS12
             
             let fm = FileManager.default
             if fm.fileExists(atPath: installAsstBaseOS) {
@@ -105,7 +105,7 @@ extension ViewController {
                 
                 macOS(installer: installAsstFullOS)
             } else {
-                globalError = "It does not appear that you have downloaded macOS 11.x Big Sur yet. Please go to the Downloads tab and download Big Sur or obtain a fresh install of Big Sur from Apple."
+                globalError = "It does not appear that you have downloaded a macOS installer yet. Please go to the Downloads tab and download macOS or obtain a fresh installer from Apple."
                 
                 performSegue(withIdentifier: "displayErrMsg", sender: self)
                 preInstaLaunchBtn.isEnabled = true

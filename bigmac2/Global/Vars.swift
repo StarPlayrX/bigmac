@@ -5,14 +5,23 @@
 //  Created by starplayrx on 1/6/21.SE
 import Foundation
 
+var installVersionIsLegacy = false
+var installLegacyVersion = "macOS 11"
+
 //MARK: TO DO -> Clean up
 var globalVolumeInfo = myVolumeInfo(diskSlice: "", disk: "", displayName: "", volumeName: "", path: "", uuid: "", external: false, root: false, capacity: 0)
 var globalWorkItem : DispatchWorkItem?
 var globalDispatch : DispatchQueue?
 var globalError    = "Unknown Error"
-var globalDownloadMacOSpkg = "http://swcdn.apple.com/content/downloads/55/59/071-00696-A_4T69TQR1VO/9psvjmwyjlucyg708cqjeaiylrvb0xph94/InstallAssistant.pkg"
 
-var macOSVersion = "macOS 11.4"
+//MacOS 11.4
+var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/55/59/071-00696-A_4T69TQR1VO/9psvjmwyjlucyg708cqjeaiylrvb0xph94/InstallAssistant.pkg"
+
+//Monterey Beta
+var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/38/12/071-51840-A_R2JDKNM0LX/wqollynqs6j5006166tvw4rliu9htf7swu/InstallAssistant.pkg"
+
+let macOS11 = "macOS Big Sur"
+let macOS12 = "macOS 12 Beta"
 
 var globalInstall = install.bootIso
 
@@ -96,7 +105,22 @@ var tmpFolder = "/tmp/"
 var bigDataDMG = "bigdata.dmg"
 var bigDataStr = "bigdata"
 let setResX = "/Applications/RDM.app/Contents/MacOS/SetResX"
-let baseOS = "/Install macOS Big Sur.app/Contents/MacOS/InstallAssistant"
+
+let installAsstBaseOS11 = "/Install \(macOS11).app/Contents/MacOS/InstallAssistant"
+let installAsstBaseOS12 = "/Install \(macOS12)/Contents/MacOS/InstallAssistant"
+
+let installAsstFullOS11 = "/Applications/Install \(macOS11).app/Contents/MacOS/InstallAssistant"
+let installAsstFullOS12 = "/Applications/Install \(macOS12).app/Contents/MacOS/InstallAssistant"
+
+let installShortOS11 = "/Applications/Install \(macOS11).app"
+let installShortOS12 = "/Applications/Install \(macOS12).app"
+
+let sharedSupportOS11 = "/Applications/Install \(macOS11).app/Contents/SharedSupport/SharedSupport.dmg"
+let sharedSupportOS12 = "/Applications/Install \(macOS12).app/Contents/SharedSupport/SharedSupport.dmg"
+
+var installOS11 = "Install \(macOS11).app"
+var installOS12 = "Install \(macOS12).app"
+
 let tempFolder = "/tmp"
 let tmp = "tmp"
 let sharedsupport = "SharedSupport"
@@ -108,7 +132,7 @@ let basesystem = "BaseSystem"
 let haxDylib = "HaxDoNotSealNoAPFSROMCheck.dylib"
 var bigdata = "bigdata"
 let macSoftwareUpdate = "com_apple_MobileAsset_MacSoftwareUpdate"
-var installBigSur = "Install macOS Big Sur.app"
+
 let wildZip = "*.zip"
 let restoreBaseSystem = "AssetData/Restore/BaseSystem.dmg"
 var installerVolume = "/Volumes/bigmac2"

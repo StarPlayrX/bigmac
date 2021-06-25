@@ -2,16 +2,7 @@
 
 Big Sur macOS 11 Mac Pro patcher.
 
-
-## bigmac2 alpha GUI is here
- - [🍟 click here for bigmac2 alpha1 GUI](http://starplayrx.com/bigmac2/bigmac2-a1.pkg)
- - [🍟 click here for bigmac2 alpha2 GUI](http://starplayrx.com/bigmac2/bigmac2-a2.pkg)
-
-
-### Release Schedule
-* 🍟 01.31.21 10:00PM PST Alpha 1 (11.1) [Released]
-* 🍟 02.01.21 06:00PM EST Alpha 2 (11.2) [Released]
-* 🍔 GUI version of source code is available in Alpha branch.
+* 🍔 GUI version of source code is available in master.
 
 <img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%" >
 

@@ -482,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "2.0.2 gumby";
+				MARKETING_VERSION = "2.0.2 beta";
 				OTHER_LDFLAGS = "-mmacosx-version-min=10.13";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starplayrx.bigmac2026;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = "2.0.2 gumby";
+				MARKETING_VERSION = "2.0.2 beta";
 				OTHER_LDFLAGS = "-mmacosx-version-min=10.13";
 				PRODUCT_BUNDLE_IDENTIFIER = com.starplayrx.bigmac2026;
 				PRODUCT_NAME = "$(TARGET_NAME)";

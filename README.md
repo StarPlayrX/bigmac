@@ -5,7 +5,7 @@
 * This software is built on macOS Big Sur 11.4 Intel
 * Please compile from source until a new release is made public.
 * Made by the creators at Nice Mac
-* Builds are compatible with macOS 10.13 and later
+* Builds are compatible with macOS 10.13 and later (10.15 or later recommended)
 * Made with Swift 5
 * bigmac2 version 2.0.1 beta 1
 

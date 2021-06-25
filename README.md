@@ -1,6 +1,9 @@
+* New Source code contains Support for macOS Big Sur 11.4 and macOS 12.0 Beta Monterey
+* For macOS 11.4 you may have the periodically remove internal PCIe cards to get install to finish
+* macOS 12.0 Beta does not have this PCIe racing issue within the macOS installer
+* Observations are made from a Mac Pro 2008, 3,1
 * Please compile from source until a new release is made public.
 * Made by the creators at Nice Mac
-* Looking for Big Mac Monte? See the 'Monte' branch.
 * Builds are compatible with macOS 10.13 and later
 * Made with Swift 5
 * bigmac2 version 2.0.1 beta 1
@@ -14,3 +17,4 @@
 * Automatic Legacy WiFi 802.11n Patch 
 * Legacy Bluetooth2 disabler, Bluetooth4 enabler (with card or BT4LE dongle)
 * Full GUI
+

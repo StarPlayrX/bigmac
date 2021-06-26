@@ -64,7 +64,6 @@ func unmountBigData() {
     }
 }
 
-
 //MARK: Move to Utilities
 func checkIfFileExists(path: String) -> Bool {
     let fm = FileManager.default
@@ -209,5 +208,4 @@ extension ViewController {
         }
         return nil
     }
-    
 }

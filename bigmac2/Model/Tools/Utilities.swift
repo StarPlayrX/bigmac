@@ -183,9 +183,12 @@ extension ViewController {
                     let majorMinorVersion = systemInfo.productUserVisibleVersion.components(separatedBy: ".")
                    // print ( majorMinorVersion, i.displayName, i.root )
                     
-                    if majorMinorVersion.first == "11" {
+                    let baseOS: Int = 11
+                    
+                    if let str = majorMinorVersion.first, Int(str) ?? baseOS >= baseOS {
                         availablePatchDisks.addItem(withTitle: drive)
                     }
+                   
                 }
             }
         }

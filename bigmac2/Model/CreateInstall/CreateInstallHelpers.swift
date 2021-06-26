@@ -50,6 +50,10 @@ extension ViewController {
         
         let installOS = installVersionIsLegacy ? installShortOS11 : installShortOS12
         
+        //clean house
+        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/bigmac2.dmg"]) //Future check if it's complete and has right checksum
+        runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/bigmac2.dmg"]) //Future check if it's complete and has right checksum
+        
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
         runCommand(binary: "/bin/rm", arguments: ["-Rf", installOS])
@@ -69,7 +73,7 @@ extension ViewController {
         //Remove pre-existing file
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/bigmac2.dmg"]) //Future check if it's complete and has right checksum
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/bigmac2.dmg"]) //Future check if it's complete and has right checksum
-        
+                
         DispatchQueue.main.async { [self] in
             downloadLabel.stringValue = globalDispatch?.label ?? "Downloading disk"
         }

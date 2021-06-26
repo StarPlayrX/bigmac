@@ -763,7 +763,7 @@ Gw
                 </viewController>
                 <customObject id="6oY-v3-UUa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-498" y="974"/>
+            <point key="canvasLocation" x="-449" y="985"/>
         </scene>
         <!--Error Msg Controller-->
         <scene sceneID="xbv-Rb-8De">

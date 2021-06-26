@@ -112,7 +112,7 @@ var bigDataStr = "bigdata"
 let setResX = "/Applications/RDM.app/Contents/MacOS/SetResX"
 
 let installAsstBaseOS11 = "/Install \(macOS11).app/Contents/MacOS/InstallAssistant"
-let installAsstBaseOS12 = "/Install \(macOS12)/Contents/MacOS/InstallAssistant"
+let installAsstBaseOS12 = "/Install \(macOS12).app/Contents/MacOS/InstallAssistant"
 
 let installAsstFullOS11 = "/Applications/Install \(macOS11).app/Contents/MacOS/InstallAssistant"
 let installAsstFullOS12 = "/Applications/Install \(macOS12).app/Contents/MacOS/InstallAssistant"

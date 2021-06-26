@@ -179,6 +179,7 @@ extension ViewController {
                     
                     let baseOS: Int = 11
                     
+                    //This support macOS 11 and later including macOS 12
                     if let str = majorMinorVersion.first, Int(str) ?? baseOS >= baseOS {
                         availablePatchDisks.addItem(withTitle: drive)
                     }

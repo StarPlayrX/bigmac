@@ -23,6 +23,9 @@ var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/38/12/0
 let macOS11 = "macOS Big Sur"
 let macOS12 = "macOS 12 Beta"
 
+let OS11 = "macOS11"
+let OS12 = "macOS12"
+
 var globalInstall = install.bootIso
 
 enum install {

@@ -253,10 +253,10 @@ extension ViewController {
         let rdm = "/Volumes/\(burgerKing)/Applications/RDM.app"
         
         removePath(atPath: util)
-        //removePath(atPath: bk)
-        //removePath(atPath: rdm)
+            
+        let macOS = installVersionIsLegacy ? OS11 : OS12
         
-        copyPath(atPath: "\(rscFolder)/Utilities.plist", toPath: util)
+        copyPath(atPath: "\(rscFolder)/\(macOS)/Utilities.plist", toPath: util)
         copyPath(atPath: "\(bigFolder)", toPath: bk)
         copyPath(atPath: "\(rscFolder)/RDM.app", toPath: rdm)
     }

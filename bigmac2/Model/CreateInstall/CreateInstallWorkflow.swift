@@ -14,7 +14,7 @@ extension ViewController {
         
         DispatchQueue.global(qos: .background).async { [self] in
             spinnerAnimation(start: true, hide: false)
-            incrementInstallGauge(resetGauge: true, incremment: true, setToFull: false, cylon: true, title: "Firing up the install disk process...")
+            incrementInstallGauge(resetGauge: true, incremment: true, setToFull: false, cylon: true, title: "Firing up the installer disk process...")
           
             let baseSys = "macOS Base System"
             let bm2 = bigmac2
@@ -25,9 +25,8 @@ extension ViewController {
             _ = updateInstallerPkg(installBigSurApp: installOSapp)
             
             //MARK: Check if the installer app is ready
-            guard let pass = installBigSurCheckPoint(installBigSurApp: installOSapp), pass == true else {
-                return
-            }
+            guard let pass = installBigSurCheckPoint(installBigSurApp: installOSapp),
+                      pass else { return }
        
             installDMGviaASR(diskInfo: diskInfo, baseSys: baseSys, bm2: bm2, dmg: dmg)
             

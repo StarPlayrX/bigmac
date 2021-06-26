@@ -62,6 +62,7 @@ var kmMonitor = false
 var volumeInfo = myVolumeInfo(diskSlice: "", disk: "", displayName: "", volumeName: "", path: "", uuid: "", external: false, root: false, capacity: 0)
 
 var http = "http"
+var https = "https"
 var rootMode = false
 var root = "root"
 var isBaseSingleUser = false

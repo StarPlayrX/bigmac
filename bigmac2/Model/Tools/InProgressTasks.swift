@@ -81,8 +81,8 @@ extension ViewController {
             
             if cancelTask() { return }
 
-            let function: () = downloadBigMac2(dmg:"\(http)://\(domain)/\(bigmac2)/\(bigmacDMG)")
-            que(label: "DMG Boot disk", function: function)
+            let function: () = downloadBigMac2(dmg:"\(https)://\(domain)/\(bigmac2)/\(bigmacDMG)")
+            que(label: bigmacDMG, function: function)
             
         } else {
             isoBootMedia()

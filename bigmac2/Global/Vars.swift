@@ -5,8 +5,9 @@
 //  Created by starplayrx on 1/6/21.SE
 import Foundation
 
-var installVersionIsLegacy = false
-var installLegacyVersion = "macOS 11"
+var installVersionIsLegacy = true
+var installLegacyVersion = "macOS 11.4"
+var installmacOS12Version = "macOS 12.0 Beta"
 
 //MARK: TO DO -> Clean up
 var globalVolumeInfo = myVolumeInfo(diskSlice: "", disk: "", displayName: "", volumeName: "", path: "", uuid: "", external: false, root: false, capacity: 0)

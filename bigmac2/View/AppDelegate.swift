@@ -10,6 +10,10 @@ import AppKit
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        let defaults = UserDefaults.standard
+        installVersionIsLegacy = defaults.bool(forKey: "installVersionIsLegacy")
+    }
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
         if flag == false {
 
@@ -50,6 +54,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             defaults.set(deleteSnaphots, forKey: "deleteSnaphots")
             defaults.set(singleUser, forKey: "singleUser")
             defaults.set(amdMouSSE, forKey: "amdMouSSE")
+            defaults.set(installVersionIsLegacy, forKey: "installVersionIsLegacy")
         }
         
         save()

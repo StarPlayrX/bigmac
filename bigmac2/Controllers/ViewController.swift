@@ -13,6 +13,12 @@ class ViewController: NSViewController, URLSessionDelegate {
     var downloadDataProgress = Float(-1.0)
 
     //MARK: Downloads Tab
+    @IBAction func installerVersionAction(_ sender: Any) {
+        installVersionIsLegacy = installerVersion.title.lowercased().contains(installLegacyVersion.lowercased()) ? true : false
+        let defaults = UserDefaults.standard
+        defaults.set(installVersionIsLegacy, forKey: "installVersionIsLegacy")
+    }
+    
     @IBOutlet weak var installerVersion: NSPopUpButton!
     @IBOutlet weak var mediaLabel: NSTextField!
     @IBOutlet weak var progressBarDownload: NSProgressIndicator!
@@ -87,10 +93,23 @@ class ViewController: NSViewController, URLSessionDelegate {
     
     let fm = FileManager.default
     var timer: Timer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaults = UserDefaults.standard
+        installVersionIsLegacy = defaults.bool(forKey: "installVersionIsLegacy")
 
+        installerVersion.removeAllItems()
+        installerVersion.addItem(withTitle: installLegacyVersion)
+        installerVersion.addItem(withTitle: installmacOS12Version)
+
+        if installVersionIsLegacy {
+            installerVersion.setTitle(installLegacyVersion)
+        } else {
+            installerVersion.setTitle(installmacOS12Version)
+        }
+        
         bootedToBaseOS = checkForBaseOS()
         refreshPatchDisks()
         bigMacDataPatchDMG()

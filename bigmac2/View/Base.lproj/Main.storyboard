@@ -1055,6 +1055,9 @@ DQ
                                                                     </items>
                                                                 </menu>
                                                             </popUpButtonCell>
+                                                            <connections>
+                                                                <action selector="installerVersionAction:" target="XfG-lQ-9wD" id="C6q-mW-rhd"/>
+                                                            </connections>
                                                         </popUpButton>
                                                     </subviews>
                                                     <visibilityPriorities>

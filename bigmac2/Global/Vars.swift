@@ -6,27 +6,29 @@
 import Foundation
 
 var installVersionIsLegacy = true
+
+//Menu items
 var installLegacyVersion = "macOS 11.4"
 var installmacOS12Version = "macOS 12.0 Beta"
 
-//MARK: TO DO -> Clean up
+//MacOS 11.4 Download
+var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/55/59/071-00696-A_4T69TQR1VO/9psvjmwyjlucyg708cqjeaiylrvb0xph94/InstallAssistant.pkg"
+
+//Monterey 12.0 Beta Download
+var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/38/12/071-51840-A_R2JDKNM0LX/wqollynqs6j5006166tvw4rliu9htf7swu/InstallAssistant.pkg"
+
+//Application names
+let macOS11 = "macOS Big Sur"
+let macOS12 = "macOS 12 Beta"
+
+//short OS names
+let OS11 = "macOS11"
+let OS12 = "macOS12"
+
 var globalVolumeInfo = myVolumeInfo(diskSlice: "", disk: "", displayName: "", volumeName: "", path: "", uuid: "", external: false, root: false, capacity: 0)
 var globalWorkItem : DispatchWorkItem?
 var globalDispatch : DispatchQueue?
 var globalError    = "Unknown Error"
-
-//MacOS 11.4
-var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/55/59/071-00696-A_4T69TQR1VO/9psvjmwyjlucyg708cqjeaiylrvb0xph94/InstallAssistant.pkg"
-
-//Monterey Beta
-var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/38/12/071-51840-A_R2JDKNM0LX/wqollynqs6j5006166tvw4rliu9htf7swu/InstallAssistant.pkg"
-
-let macOS11 = "macOS Big Sur"
-let macOS12 = "macOS 12 Beta"
-
-let OS11 = "macOS11"
-let OS12 = "macOS12"
-
 var globalInstall = install.bootIso
 
 enum install {
@@ -43,7 +45,6 @@ func globalCompletedTask() {
         globalWorkItem = nil
     }
     
-  
     if let _ = globalDispatch {
         globalDispatch = nil
     }
@@ -111,20 +112,20 @@ var bigDataDMG = "bigdata.dmg"
 var bigDataStr = "bigdata"
 let setResX = "/Applications/RDM.app/Contents/MacOS/SetResX"
 
-let installAsstBaseOS11 = "/Install \(macOS11).app/Contents/MacOS/InstallAssistant"
-let installAsstBaseOS12 = "/Install \(macOS12).app/Contents/MacOS/InstallAssistant"
-
-let installAsstFullOS11 = "/Applications/Install \(macOS11).app/Contents/MacOS/InstallAssistant"
-let installAsstFullOS12 = "/Applications/Install \(macOS12).app/Contents/MacOS/InstallAssistant"
-
-let installShortOS11 = "/Applications/Install \(macOS11).app"
-let installShortOS12 = "/Applications/Install \(macOS12).app"
-
-let sharedSupportOS11 = "/Applications/Install \(macOS11).app/Contents/SharedSupport/SharedSupport.dmg"
-let sharedSupportOS12 = "/Applications/Install \(macOS12).app/Contents/SharedSupport/SharedSupport.dmg"
-
 var installOS11 = "Install \(macOS11).app"
 var installOS12 = "Install \(macOS12).app"
+
+let installAsstBaseOS11 = "\(installOS11)/Contents/MacOS/InstallAssistant"
+let installAsstBaseOS12 = "\(installOS12)/Contents/MacOS/InstallAssistant"
+
+let installAsstFullOS11 = "/Applications/\(installAsstBaseOS11)"
+let installAsstFullOS12 = "/Applications/\(installAsstBaseOS12)"
+
+let installShortOS11 = "/Applications/\(installOS11)"
+let installShortOS12 = "/Applications/\(installOS12)"
+
+let sharedSupportOS11 = "\(installShortOS11)/Contents/SharedSupport/SharedSupport.dmg"
+let sharedSupportOS12 = "\(installShortOS12)/Contents/SharedSupport/SharedSupport.dmg"
 
 let tempFolder = "/tmp"
 let tmp = "tmp"

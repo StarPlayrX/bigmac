@@ -171,17 +171,11 @@ extension ViewController {
             availablePatchDisks.removeAllItems()
             
             for i in getDisks {
-                var drive = ""
-                if i.root {
-                    drive = i.displayName
-                } else {
-                    drive = i.volumeName
-                }
-                
+                let drive = i.root ? i.displayName : i.volumeName
+        
                 //MARK: bigmac2 is omitted, we don't want users trying to patch bigmac2
                 if let systemInfo = getSystemInfo(drive: drive), i.displayName != bigmac2Str {
                     let majorMinorVersion = systemInfo.productUserVisibleVersion.components(separatedBy: ".")
-                   // print ( majorMinorVersion, i.displayName, i.root )
                     
                     let baseOS: Int = 11
                     

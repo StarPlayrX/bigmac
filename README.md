@@ -1,4 +1,4 @@
-#Introducing Big Mac 2.0
+##Introducing Big Mac 2.0
 
 Now Supporting macOS 11.4 Big Sur and macOS 12.0 Beta Monterey!
 

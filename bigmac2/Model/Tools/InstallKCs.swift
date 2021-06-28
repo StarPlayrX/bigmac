@@ -9,7 +9,7 @@ import Foundation
 
 extension ViewController {
     
-     /* Update System Caches on macOS 11.1 */
+     /* Update System Caches on macOS 11.1 and later */
      func updateMac11onMac11SystemCache(destVolume: String) {
         
         if !kmMonitor {

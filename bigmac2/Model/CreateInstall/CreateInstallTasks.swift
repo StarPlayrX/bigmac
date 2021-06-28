@@ -185,7 +185,7 @@ extension ViewController {
     
     //MARK: Task #7
     func bigSurInstallerAppXfer(BootVolume: myVolumeInfo) {
-        incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: false, title: "Installing the macOS 11 App...")
+        incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: false, title: "Installing the macOS App...")
         
         let appName = installVersionIsLegacy ? installOS11 : installOS12
 

@@ -21,4 +21,5 @@ Summer Release
 <img width="664" alt="Screen Shot 2021-06-28 at 7 14 25 PM" src="https://user-images.githubusercontent.com/52664524/123714830-12854900-d845-11eb-8340-cb4135854d38.png">
 <img width="664" alt="image" src="https://user-images.githubusercontent.com/52664524/123714867-2761dc80-d845-11eb-901e-9ff625f288fd.png">
 <img width="637" alt="Screen Shot 2021-06-28 at 7 04 20 PM" src="https://user-images.githubusercontent.com/52664524/123715347-1c5b7c00-d846-11eb-935a-d3ebcce67c32.png">
-<img src="https://swift4me.com/images/splash/bigmac2f.png" width="100%">
+<img width="512" alt="macpro2008" src="https://user-images.githubusercontent.com/52664524/123715926-5b3e0180-d847-11eb-8eeb-bcda2b83f837.png">
+

@@ -1,6 +1,7 @@
 # 🍔 bigmac
 
 Big Sur macOS 11 Mac Pro patcher.
+This Command Line version is deprecated. It is here for historical purposes.
 
 * 🍔 GUI version of source code is available in master.
 
@@ -119,7 +120,6 @@ Big Sur macOS 11 Mac Pro patcher.
 
 ## ☝️ One More Thing
 
-* Updated on December 21, 2020 for macOS 11.4
 * Proudly Supporting Mac Pros 2008, 2009, 2010, 2012 (3,1 4,1 5,1) and equivalent Xserves
 * Do you have an old Mac Pro or Xserve and would like to Donate it? Please let us know, thank you!
 * bigmac1.1 Copyright 2020 by Todd Bruss | NiceMac LLC

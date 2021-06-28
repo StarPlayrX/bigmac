@@ -4,13 +4,16 @@ Summer Release
 
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta12.dmg
 
-## Now Supporting:
+## What's New:
 * macOS 11.4 Big Sur
 * macOS 12.0 Beta Monterey
+* * Includes CloneToolX exclusive disk cloning software by Todd Bruss
+* Please beware of kernel related PCIe racing issue that Apple introduced around 11.3.x
+
+## Mac Pro 3,1 (Early 2008 Users)
 * Bluetooth 2 EDR is not compatible with macOS 11 or later.
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher
-* Includes CloneToolX exclusive disk cloning software by Todd Bruss
-* Please beware of kernel related PCIe racing issue that Apple introduced around 11.3
+
 
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">
 <img width="664" alt="Screen Shot 2021-06-28 at 7 03 19 PM" src="https://user-images.githubusercontent.com/52664524/123714802-039e9680-d845-11eb-8b76-4e47c9420b4e.png">

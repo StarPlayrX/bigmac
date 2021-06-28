@@ -15,6 +15,7 @@ Summer Release
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher
 
 ## Recommendations
+* Previous unsupported Mac use is very helpful
 * Get your system up to Catalina 10.15.7 using Dosdude1's patcher
 
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">

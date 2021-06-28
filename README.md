@@ -16,7 +16,7 @@ Summer Release
 
 ## Recommendations
 * Previous unsupported Mac use is very helpful
-* Get your system up to Catalina 10.15.7 using Dosdude1's patcher
+* Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">
 <img width="664" alt="Screen Shot 2021-06-28 at 7 03 19 PM" src="https://user-images.githubusercontent.com/52664524/123714802-039e9680-d845-11eb-8b76-4e47c9420b4e.png">

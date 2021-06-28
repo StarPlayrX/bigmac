@@ -1,6 +1,6 @@
 # Say Hello to Big Mac 2.0.2 Beta 12
 
-# 🍔 Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta12.dmg
+## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta12.dmg
 
 ## Now Supporting:
 * macOS 11.4 Big Sur

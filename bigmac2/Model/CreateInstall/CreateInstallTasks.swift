@@ -250,7 +250,7 @@ extension ViewController {
         let util = "/Volumes/\(burgerKing)/System/Installation/CDIS/Recovery Springboard.app/Contents/Resources/Utilities.plist"
         
         let bk = "/Volumes/\(burgerKing)/Applications/bigmac2.app"
-        let rdm = "/Volumes/\(burgerKing)/Applications/RDM.app"
+        let ctx = "/Volumes/\(burgerKing)/Applications/CloneToolX.app"
         
         removePath(atPath: util)
             
@@ -258,9 +258,8 @@ extension ViewController {
         
         copyPath(atPath: "\(rscFolder)/\(macOS)/Utilities.plist", toPath: util)
         copyPath(atPath: "\(bigFolder)", toPath: bk)
-        copyPath(atPath: "\(rscFolder)/RDM.app", toPath: rdm)
+        copyPath(atPath: "\(rscFolder)/CloneToolX.app", toPath: ctx)
     }
-    
     
     //MARK: Task #8
     func cleanup(bigmac2: String) {
@@ -280,4 +279,3 @@ extension ViewController {
         incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false)
     }
 }
-

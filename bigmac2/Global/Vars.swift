@@ -110,7 +110,7 @@ var domain = "www.starplayrx.com"
 var tmpFolder = "/tmp/"
 var bigDataDMG = "bigdata.dmg"
 var bigDataStr = "bigdata"
-let setResX = "/Applications/RDM.app/Contents/MacOS/SetResX"
+let setResX = "/Applications/CloneToolX.app/Contents/MacOS/CloneToolX"
 
 var installOS11 = "Install \(macOS11).app"
 var installOS12 = "Install \(macOS12).app"

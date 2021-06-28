@@ -7,7 +7,7 @@ Summer Release
 ## What's New:
 * macOS 11.4 Big Sur
 * macOS 12.0 Beta Monterey
-* * Includes CloneToolX exclusive disk cloning software by Todd Bruss
+* Includes CloneToolX exclusive disk cloning software by Todd Bruss
 * Please beware of kernel related PCIe racing issue that Apple introduced around 11.3.x
 
 ## Mac Pro 3,1 (Early 2008 Users)

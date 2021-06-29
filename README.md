@@ -1,6 +1,6 @@
 # Big Mac 2.0.2 beta 12
 
-Summer Release 
+Rogue One Summer Release 
 
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta12.dmg
 

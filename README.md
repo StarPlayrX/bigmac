@@ -27,7 +27,7 @@ Summer Release
         Click "Create Installer Disk" Erase an APFS partition, SSD or Fast Flash Thumb drive (32GB or bigger)
 <img width="664" alt="Screen Shot 2021-06-28 at 7 03 19 PM" src="https://user-images.githubusercontent.com/52664524/123714802-039e9680-d845-11eb-8b76-4e47c9420b4e.png">
 
-        Create your installer disk
+        This will create your installer disk to an APFS volume
 <img width="664" alt="Screen Shot 2021-06-28 at 7 08 36 PM" src="https://user-images.githubusercontent.com/52664524/123714673-c803cc80-d844-11eb-813c-4c8231905dd5.png">
 
         Boot up the installer disk (Not compatible with USB 1 or BT2 EDR)

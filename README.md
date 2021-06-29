@@ -12,8 +12,8 @@ Rogue One Summer Release
 
 ## Mac Pro 3,1 (Early 2008 Users)
 * Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.
-* iMac style 802.11ac/BT4LE cards are recommended for native air drop and hand off
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher
+* iMac style 802.11ac/BT4LE cards are recommended for native air drop and hand off
 
 ## Recommendations
 * Previous unsupported Mac use is very helpful

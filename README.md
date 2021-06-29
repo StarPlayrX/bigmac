@@ -40,5 +40,5 @@ Summer Release
 
 <img width="664" alt="image" src="https://user-images.githubusercontent.com/52664524/123714867-2761dc80-d845-11eb-901e-9ff625f288fd.png">
 
-        ClonetoolX included with Big Mac 2.0
+        ClonetoolX included with Big Mac 2.0 (See Big Mac 2.0's boot disk)
 <img width="637" alt="Screen Shot 2021-06-28 at 7 04 20 PM" src="https://user-images.githubusercontent.com/52664524/123715347-1c5b7c00-d846-11eb-935a-d3ebcce67c32.png">

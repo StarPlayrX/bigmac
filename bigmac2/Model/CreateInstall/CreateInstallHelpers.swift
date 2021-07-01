@@ -47,9 +47,7 @@ extension ViewController {
     //MARK: To do - Setup a variable
     func downloadPkg(pkgString: String) {
         //Remove pre-existing file
-        
-        let installOS = installVersionIsLegacy ? installShortOS11 : installShortOS12
-        
+                
         //clean house
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/bigmac2.dmg"]) //Future check if it's complete and has right checksum
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/bigmac2.dmg"]) //Future check if it's complete and has right checksum

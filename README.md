@@ -21,7 +21,7 @@ Rogue One Summer Release
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 
 ## Known Issues
-* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens as random. There is no known fix. It seems to freeze up at HID and boot UUID selections. Sometime single user boot helps but it's not a great workaround as it does not always work.
+* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patience and try to avoid unnecessary reboots.
 
 
 

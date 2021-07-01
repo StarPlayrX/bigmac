@@ -56,7 +56,9 @@ extension ViewController {
         
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf", installOS])
+        runCommand(binary: "/bin/rm", arguments: ["-Rf", installShortOS11])
+        runCommand(binary: "/bin/rm", arguments: ["-Rf", installShortOS12])
+
         runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"])
         DispatchQueue.main.async { [self] in
             

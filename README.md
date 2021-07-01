@@ -1,10 +1,11 @@
-# Big Mac 2.0.2 beta 12
+# Big Mac 2.0.2 beta 14
 
 Rogue One Summer Release 
 
-## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta12.dmg
+## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta14.dmg
 
 ## What's New:
+* fixed freeze issue when boot disk defaulted to wrong installer OS
 * macOS 11.4 Big Sur
 * macOS 12.0 Beta Monterey
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss
@@ -18,6 +19,9 @@ Rogue One Summer Release
 ## Recommendations
 * Previous unsupported Mac use is very helpful
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
+
+## Known Issues
+* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patient and try to avoid unnecessary reboots. This can also occur during software installs. More so with 11.4 than 12.0 beta, but both have exhibited the racing issue.
 
 
 

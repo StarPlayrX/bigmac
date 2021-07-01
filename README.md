@@ -20,6 +20,9 @@ Rogue One Summer Release
 * Previous unsupported Mac use is very helpful
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 
+## Known Issues
+* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens as random. There is no known fix. It seems to freeze up at HID and boot UUID selections. Sometime single user boot helps but it's not a great workaround as it does not always work.
+
 
 
         Select your macOS version (macOS 11.4 or macOS 12.0 Beta). Then to download it from Apple click "Download macOS"

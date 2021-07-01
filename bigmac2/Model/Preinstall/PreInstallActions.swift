@@ -9,6 +9,7 @@ import Cocoa
 extension ViewController {
     @IBAction func LaunchInstallerAction(_ sender: Any) {
         
+        
         preInstaLaunchBtn.isEnabled = false
         
         let libVal = DisableLibraryValidation.state == .on
@@ -89,20 +90,33 @@ extension ViewController {
                 runCommand(binary: "/usr/sbin/spctl" , arguments: ["--master-enable"])
             }
             
+            let fileManager = FileManager.default
             
-            let installAsstBaseOS = installVersionIsLegacy ? installAsstBaseOS11 : installAsstBaseOS12
-            let installAsstFullOS = installVersionIsLegacy ? installAsstFullOS11 : installAsstFullOS12
+            var installAsstBaseOS = installVersionIsLegacy ? installAsstBaseOS11 : installAsstBaseOS12
+            var installAsstFullOS = installVersionIsLegacy ? installAsstFullOS11 : installAsstFullOS12
             
             let fm = FileManager.default
             if fm.fileExists(atPath: installAsstBaseOS) {
                 
-                macOS(installer: installAsstBaseOS)
+                if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstBaseOS11)[FileAttributeKey.size] as? Double {
+                    print("legacyFileSize", legacyFileSize)
+                    installVersionIsLegacy = legacyFileSize > Double(10000) ? true : false
+                }
                 
+                installAsstBaseOS = installVersionIsLegacy ? installAsstBaseOS11 : installAsstBaseOS12
+
+                macOS(installer: installAsstBaseOS)
+           
             } else if fm.fileExists(atPath: installAsstFullOS) {
                 globalError = "Only clean installs from Mac OS Extended Journaled (JHFS+) volumes are supported from a full version of macOS. To install or upgrade directly to APFS disks, boot from the bigmac2 Installation Disk. If you have a boot screen, reboot using the option key. Note: installing to JHFS+ will be converted to APFS during the clean install."
                 
-                performSegue(withIdentifier: "displayErrMsg", sender: self)
+                if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstFullOS11)[FileAttributeKey.size] as? Double {
+                    print("legacyFileSize", legacyFileSize)
+                    installVersionIsLegacy = legacyFileSize > Double(10000) ? true : false
+                }
                 
+                installAsstFullOS = installVersionIsLegacy ? installAsstFullOS11 : installAsstFullOS12
+                performSegue(withIdentifier: "displayErrMsg", sender: self)
                 macOS(installer: installAsstFullOS)
             } else {
                 globalError = "It does not appear that you have downloaded a macOS installer yet. Please go to the Downloads tab and download macOS or obtain a fresh installer from Apple."

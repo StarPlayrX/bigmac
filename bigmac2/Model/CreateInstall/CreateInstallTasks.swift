@@ -188,7 +188,7 @@ extension ViewController {
         incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: false, title: "Installing the macOS App...")
         
         let appName = installVersionIsLegacy ? installOS11 : installOS12
-
+        
         let contents = "Contents"
         let rootVol = BootVolume.path
         let sharedSup = "SharedSupport"
@@ -235,6 +235,10 @@ extension ViewController {
         
         //MARK: Copy the big shared support dmg
         copyFile(atPath: "/\(apps)/\(appName)/\(contents)/\(sharedSup)/\(sharedSup).dmg", toPath: "\(sharedSupportPath)/\(sharedSup).dmg")
+        
+        // Clean Up
+        installVersionIsLegacy ? try? fm.removeItem(atPath: installOS12) : try? fm.removeItem(atPath: installOS12)
+
     }
 
     func installBigMacIIApp(bigmac2: myVolumeInfo) {

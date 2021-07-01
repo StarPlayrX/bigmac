@@ -5,6 +5,7 @@ Rogue One Summer Release
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta14.dmg
 
 ## What's New:
+* fixed freeze issue when boot disk defaulted to wrong OS
 * macOS 11.4 Big Sur
 * macOS 12.0 Beta Monterey
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss

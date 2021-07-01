@@ -21,7 +21,7 @@ Rogue One Summer Release
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 
 ## Known Issues
-* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patience and try to avoid unnecessary reboots.
+* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patient and try to avoid unnecessary reboots. This can also occur during software installs. More so with 11.4 than 12.0 beta, but both have exhibited the racing issue.
 
 
 

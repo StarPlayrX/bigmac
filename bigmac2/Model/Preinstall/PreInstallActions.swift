@@ -98,9 +98,10 @@ extension ViewController {
             let fm = FileManager.default
             if fm.fileExists(atPath: installAsstBaseOS) {
                 
+                // Verifies what installation we may be working with
                 if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstBaseOS11)[FileAttributeKey.size] as? Double {
                     print("legacyFileSize", legacyFileSize)
-                    installVersionIsLegacy = legacyFileSize > Double(10000) ? true : false
+                    installVersionIsLegacy = legacyFileSize > Double(80000) ? true : false
                 }
                 
                 installAsstBaseOS = installVersionIsLegacy ? installAsstBaseOS11 : installAsstBaseOS12
@@ -110,9 +111,10 @@ extension ViewController {
             } else if fm.fileExists(atPath: installAsstFullOS) {
                 globalError = "Only clean installs from Mac OS Extended Journaled (JHFS+) volumes are supported from a full version of macOS. To install or upgrade directly to APFS disks, boot from the bigmac2 Installation Disk. If you have a boot screen, reboot using the option key. Note: installing to JHFS+ will be converted to APFS during the clean install."
                 
+                // Verifies what installation we may be working with
                 if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstFullOS11)[FileAttributeKey.size] as? Double {
                     print("legacyFileSize", legacyFileSize)
-                    installVersionIsLegacy = legacyFileSize > Double(10000) ? true : false
+                    installVersionIsLegacy = legacyFileSize > Double(80000) ? true : false
                 }
                 
                 installAsstFullOS = installVersionIsLegacy ? installAsstFullOS11 : installAsstFullOS12

@@ -31,7 +31,7 @@ func getVolumeInfo(includeHiddenVolumes: Bool, includeRootVol: Bool = false, inc
                 
                 let dp = String(disk.path)
                 
-                if dp.contains(volumeString)   || includeHiddenVolumes || (includeRootVol && dp == "/") || (includePrebootVol && dp == "Preboot") {
+                if dp.contains(volumeString) || includeHiddenVolumes || (includeRootVol && dp == "/") || (includePrebootVol && dp == "Preboot") {
                     
                     var newVolume = myVolumeInfo(diskSlice: emptyString, disk: emptyString, displayName: emptyString, volumeName: emptyString, path: emptyString, uuid: emptyString, external: false, root: false, capacity: 0)
 

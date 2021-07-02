@@ -954,7 +954,7 @@ DQ
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RFY-t2-czT">
-                                                            <rect key="frame" x="152" y="49" width="72" height="14"/>
+                                                            <rect key="frame" x="148" y="49" width="72" height="14"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="by Dosdude1" id="wrQ-Wn-YKG">
                                                                 <font key="font" metaFont="smallSystem"/>

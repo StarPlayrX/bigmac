@@ -8,14 +8,14 @@ import Foundation
 var installVersionIsLegacy = true
 
 //Menu items
-var installLegacyVersion = "macOS 11.4"
-var installmacOS12Version = "macOS 12.0 Beta"
+var installLegacyVersion = "macOS 11.2.3"
+var installmacOS12Version = "macOS 12.0 Beta 2"
 
-//MacOS 11.4 Download
-var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/55/59/071-00696-A_4T69TQR1VO/9psvjmwyjlucyg708cqjeaiylrvb0xph94/InstallAssistant.pkg"
+//MacOS 11.2.3 Download
+var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/071-14766-A_Q2H6ELXGVG/zx8saim8tei7fezrmvu4vuab80m0e8a5ll/InstallAssistant.pkg"
 
-//Monterey 12.0 Beta Download
-var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/38/12/071-51840-A_R2JDKNM0LX/wqollynqs6j5006166tvw4rliu9htf7swu/InstallAssistant.pkg"
+//Monterey 12.0 Beta 2 Download
+var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/54/23/071-59953-A_U9D4NB05NR/nqzt71pnylsuux326a4vqexb33oz0auhas/InstallAssistant.pkg"
 
 //Application names
 let macOS11 = "macOS Big Sur"

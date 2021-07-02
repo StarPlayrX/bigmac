@@ -20,7 +20,7 @@ Rogue One Summer Release
 * Previous unsupported Mac use is very helpful
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 * Do not try to install unless you can create a disk from a supported Mac or you are familar with running unsupported MacOS'.
-* If you on a really old OS, you have an uphill battle as macOS 11.3 and later is very challenging for more new users.
+* If you on a really old OS, you have an uphill battle as macOS 11.3 and later is very challenging instal and boot up.
 
 ## Known Issues
 * macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patient and try to avoid unnecessary reboots. This can also occur during software installs. More so with 11.4 than 12.0 beta, but both have exhibited the racing issue.

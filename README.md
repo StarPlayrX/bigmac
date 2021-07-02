@@ -18,6 +18,7 @@ Rogue One Summer Release
 
 ## Recommendations
 * the BigMac 2.0 app itself runs on Intel and M1, so you can create a USB Installer from a supported Mac!
+* 70% of BigMac2's code was developed on an M1.
 * Previous unsupported Mac use is very helpful
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 * Do not try to install unless you can create a disk from a supported Mac or you are familar with running unsupported MacOS'.

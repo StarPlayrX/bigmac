@@ -11,8 +11,9 @@
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss
 * Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
 
-## Mac Pro 3,1 (Early 2008 Users)
+## Mac Pro
 * Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.
+* USB1.1 is not supported by the installer. If you have a flashed card, boot cmd-S. then at # prompt, type exit + return key
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher
 * iMac style 802.11ac/BT4LE cards are recommended for native air drop and hand off
 

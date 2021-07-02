@@ -1033,7 +1033,7 @@ DQ
                                                     </connections>
                                                 </button>
                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-W6-kuF">
-                                                    <rect key="frame" x="352" y="117" width="136" height="46"/>
+                                                    <rect key="frame" x="317" y="117" width="171" height="46"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xlt-As-jyd">
                                                             <rect key="frame" x="-2" y="30" width="88" height="16"/>
@@ -1044,14 +1044,14 @@ DQ
                                                             </textFieldCell>
                                                         </textField>
                                                         <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l8x-Np-DQj">
-                                                            <rect key="frame" x="-3" y="-4" width="143" height="25"/>
-                                                            <popUpButtonCell key="cell" type="push" title="macOS 11.4" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Lh3-dG-HsL" id="1Im-3W-cZV">
+                                                            <rect key="frame" x="-3" y="-4" width="178" height="25"/>
+                                                            <popUpButtonCell key="cell" type="push" title="macOS _____________" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Lh3-dG-HsL" id="1Im-3W-cZV">
                                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="menu"/>
                                                                 <menu key="menu" id="4mo-df-tFM">
                                                                     <items>
-                                                                        <menuItem title="macOS 11.4" state="on" id="Lh3-dG-HsL"/>
-                                                                        <menuItem title="macOS 12.0 Beta" id="2MH-tw-icm"/>
+                                                                        <menuItem title="macOS _____________" state="on" id="Lh3-dG-HsL"/>
+                                                                        <menuItem title="macOS _____________" id="2MH-tw-icm"/>
                                                                     </items>
                                                                 </menu>
                                                             </popUpButtonCell>

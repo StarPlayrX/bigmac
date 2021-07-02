@@ -9,7 +9,7 @@ var installVersionIsLegacy = true
 
 //Menu items
 var installLegacyVersion = "macOS 11.2.3"
-var installmacOS12Version = "macOS 12.0 Beta 2"
+var installmacOS12Version = "macOS Monterey beta"
 
 //MacOS 11.2.3 Download
 var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/071-14766-A_Q2H6ELXGVG/zx8saim8tei7fezrmvu4vuab80m0e8a5ll/InstallAssistant.pkg"
@@ -19,7 +19,7 @@ var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/54/23/0
 
 //Application names
 let macOS11 = "macOS Big Sur"
-let macOS12 = "macOS 12 Beta"
+let macOS12 = "macOS Monterey beta"
 
 //short OS names
 let OS11 = "macOS11"

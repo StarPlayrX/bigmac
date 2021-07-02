@@ -1,25 +1,22 @@
-# Big Mac 2.0.2 beta 17
+# Big Mac 2.0.2
 
-## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta17.dmg
 
 ## Race Condition
-* The race condition in macOS 11.4 is getting worse and worse. I will be reverting the BigSur side of bigmac to 11.2.3 soon.
+* More later
 
 ## What's New:
-* Removed close buttons from BigMac2 and CloneToolX1 that caused Springboard to freeze up due to bigmac2 running in the background. This happened when a user would close the window, click on the background and going to another app such as Recovery and this keeps the instance of bigmac2 running causing Springboard not to release. This should now be resolved. If not, this is the absolute best we can do at this time.
-* macOS 11.4 Big Sur
-* macOS 12.0 Beta Monterey
+* macOS 11.2.3 Big Sur
+* macOS 12.0 Beta 2 Monterey
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss
 * Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
 
-## Mac Pro 3,1 (Early 2008 Users)
+## Mac Pro
 * Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.
+* USB1.1 is not supported by the installer. If you have a flashed card, boot cmd-S. then at # prompt, type exit + return key
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher
 * iMac style 802.11ac/BT4LE cards are recommended for native air drop and hand off
 
 ## Recommendations
-* the BigMac 2.0 app itself runs on Intel and M1, so you can create a USB Installer from a supported Mac!
-* 70% of BigMac2's code was developed on an M1.
 * Previous unsupported Mac use is very helpful
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 * Do not try to install unless you can create a disk from a supported Mac or you are familar with running unsupported MacOS'.

@@ -1,6 +1,6 @@
-# Big Mac 2.0.2 beta 17
+# Big Mac 2.0.2 beta 19
 
-## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta17.dmg
+## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
 
 ## Race Condition
 * The race condition in macOS 11.4 is getting worse and worse. I will be reverting the BigSur side of bigmac to 11.2.3 soon.

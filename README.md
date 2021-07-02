@@ -1,7 +1,5 @@
 # Big Mac 2.0.2 beta 17
 
-Rogue One Summer Release 
-
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta17.dmg
 
 ## Race Condition

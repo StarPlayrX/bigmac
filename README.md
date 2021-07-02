@@ -5,7 +5,7 @@ Rogue One Summer Release
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta17.dmg
 
 ## Race Condition
-* The race condition in macOS 11.4 is getting worse and worse. I will be reverting the BigSur side of bigmac to 11.2.3 soon. It's becoming toon much of a pain.
+* The race condition in macOS 11.4 is getting worse and worse. I will be reverting the BigSur side of bigmac to 11.2.3 soon. It's becoming too much of a pain.
 
 ## What's New:
 * Removed close buttons from BigMac2 and CloneToolX1 that caused Springboard to freeze up due to bigmac2 running in the background. This happened when a user would close the window, click on the background and going to another app such as Recovery and this keeps the instance of bigmac2 running causing Springboard not to release. This should now be resolved. If not, this is the absolute best we can do at this time.
@@ -28,7 +28,7 @@ Rogue One Summer Release
 * If you on a really old OS, you have an uphill battle as macOS 11.3 and later is very challenging instal and boot up.
 
 ## Known Issues
-* macOS 11.4 and later has a PCIe racing issue at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patient and try to avoid unnecessary reboots. This can also occur during software installs. More so with 11.4 than 12.0 beta, but both have exhibited the racing issue.
+* macOS 11.3 and later has a PCIe race condition at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random. There is no known fix other than being super patient and try to avoid unnecessary reboots. This can also occur during software installs. More so with 11.4 than 12.0 beta, but both have exhibited the racing issue. Recommend not using 11.3 - 11.4 for the time being. 
 
 
 

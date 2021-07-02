@@ -3,7 +3,7 @@
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
 
 ## Race Condition
-* The race condition in macOS 11.4 is pretty bad. BigMac 2.0.2 has been reverted to download 11.2.3
+* The race condition in macOS 11.4 is pretty bad. BigMac 2.0.2 beta 19 has been reverted to download 11.2.3
 
 ## What's New:
 * Removed close buttons from BigMac2 and CloneToolX1 that caused Springboard to freeze up due to bigmac2 running in the background. This happened when a user would close the window, click on the background and going to another app such as Recovery and this keeps the instance of bigmac2 running causing Springboard not to release. This should now be resolved. If not, this is the absolute best we can do at this time.

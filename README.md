@@ -5,8 +5,7 @@ Rogue One Summer Release
 ## 🍔  Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta17.dmg
 
 ## What's New:
-* removed buttons from BigMac2 and CloneToolX1 that contributed to users not properly quitting the app causing the springboard UI to freeze.
-* fixed freeze issue when boot disk defaulted to wrong installer OS
+* Removed close buttons from BigMac2 and CloneToolX1 that caused Springboard to freeze up when user closes the window and fails to quit the app.
 * macOS 11.4 Big Sur
 * macOS 12.0 Beta Monterey
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss

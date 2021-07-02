@@ -114,6 +114,10 @@ class ViewController: NSViewController, URLSessionDelegate {
         refreshPatchDisks()
         bigMacDataPatchDMG()
     }
+    
+    override public func mouseDown(with event: NSEvent) {
+        self.view.window?.performDrag(with: event)
+    }
 }
 
 //No need for this yet (this can probably be removed when its decoupled from the main storyboard
@@ -121,4 +125,5 @@ class TabView : NSTabView {
     override func awakeFromNib() {
     }
 }
+
 

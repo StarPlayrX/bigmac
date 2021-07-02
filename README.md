@@ -10,7 +10,7 @@
 * macOS 11.4 Big Sur
 * macOS 12.0 Beta Monterey
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss
-* Please beware of kernel related PCIe racing issue that Apple introduced around 11.3.x (this will haunt your system)
+* Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
 
 ## Mac Pro 3,1 (Early 2008 Users)
 * Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.

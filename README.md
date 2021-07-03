@@ -18,6 +18,9 @@ This should stop the Kill -9 errors users have been getting
 BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
 
+## Recommended Flash Drive:
+I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can now install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.
+
         Select your macOS version. Then to download it from Apple click "Download macOS"
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">
 

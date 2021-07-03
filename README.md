@@ -1,6 +1,6 @@
 # Big Mac 2.0.2
 
-## New beta is on construction. Please hold
+## New beta is in construction. Please hold
 
 ## What's New:
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss

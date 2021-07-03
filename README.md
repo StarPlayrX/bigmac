@@ -21,6 +21,7 @@
 
 ## Known Issues
 * macOS 11.3 and later has a PCIe race condition at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random and gets worse over time. There is no known fix other than being super patient or reverting back to macOS 11.2.3
+* This may be Voodoo but switching back and force from Monterey Beta to 11.4 seems to help with reboots.
 
         Select your macOS version (macOS 11.4 or macOS 12.0 Beta). Then to download it from Apple click "Download macOS"
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">

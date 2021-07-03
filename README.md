@@ -20,7 +20,7 @@ BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP you
 
 
 ## Monterey Beta 2 is experimental and has an extreme Race Condition.
-* Apple is now the king of Race Conditions since Big Sur 11.3 and there doesn't seem to be an easy fix
+* Apple has become the king of Race Conditions since Big Sur 11.3 and there doesn't seem to be an easy fix
 * Things are loading out of sync causing a lock down of the system. It is apparent in Verbose mode.
 * because of this beta 2 is barely installable. After 2 attempts, I have not gotten to a boot screen
 * Anything around crypto and the disks are getting messed up

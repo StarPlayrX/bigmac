@@ -23,6 +23,7 @@ BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP you
 * Apple has become the king of Race Conditions since Big Sur 11.3. There is no easy fix.
 * Things are loading out of sync causing a lock down of the system. It is apparent in Verbose mode.
 * because of this beta 2 is barely installable. After 2 attempts, I have not gotten to the Welcome screen.
+* My next attempt will be to run bigmac2 from a supported mac and see if I get a Welcome screen then take the drive clone it using CloneToolX on bigmac2 boot disk.
 * Anything around crypto and the disks are getting messed up
 * Things are constantly loading out of order
 * Single user mode doesn't work

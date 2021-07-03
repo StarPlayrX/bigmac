@@ -1,31 +1,61 @@
-# Big Mac 2.0.2
+# Big Mac 2 beta
+
+### http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
+
+First Time User Guide
+* If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch +
+* If you have not installed dosdude1's APFS ROM Patcher, do that first.
+* Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
+* Boot it up and go to the termina and type:
+
+`csrutil`
+
+`csrutil disable`
+
+`csrutil authenticated-root disable`
+
+ * This should stop the Kill -9 errors users have been getting
+
+ * BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
 
-## Race Condition
-* More later
+## Monterey Beta 2 support is experimental
+* This is what we know so far:
+  * Race Condition in Apple's installer is extremely bad
+  * Nearly impossible to install from an unsupported Mac
+  * Install from a Supported Intel based Mac, Workaround for Monterey Beta 2:
+    * Boot into Recovery: Cmd-R at boot
+    * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
+      * `csrutil`
+      * `csrutil disable`
+      * `csrutil authenticated-root disable`
+    
+    * Next Steps
+      * Download BigMac2 beta
+      * Select install macOS Monterey beta 2
+      * Install bigmac2 on a USB 2.0 32Gb Partition
+      * Boot from bigmac2
+      * Launch bigmac2, from its pre install tab, Launch the installer. In five seconds, Monterey will show up
+      * Several reboots will happen
+      * Once Monterey is installed, reboot to bigmac2's boot disk
+     
+    * For Mac Pro 3,1 run the Telemtry post install by itself
+    * Then delete the APFS Snapshot by itself.
+    * That the USB drive and see if it boots on your unsupported Mac
+    
+    * What doesn't work on Monetery Beta 2
+      * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
+      * Beta 2 still has a Race Condition. How bad is not yet known.
+      
+      * From a Supported mac if Bigmac2 app does not run, download Xcode and compile it from source. From Xcode set the development team to none or personal and set the app signing to run locally. On certain systems, Apple has started flagging bigmac2 as Malware. This statement is false. Bigmac2 contains zero malware. Disk image and Installer package files are downloaded to /Users/shared. These files are harmless and can be deleted at any time.
 
-## What's New:
-* macOS 11.2.3 Big Sur
-* macOS 12.0 Beta 2 Monterey
-* Includes CloneToolX exclusive disk cloning software by Todd Bruss
-* Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
+<img width="1920" alt="Screen Shot 2021-07-03 at 3 41 35 PM" src="https://user-images.githubusercontent.com/52664524/124365543-c48e8d80-dc16-11eb-961b-0e6f83a94b86.png">
 
-## Mac Pro
-* Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.
-* USB1.1 is not supported by the installer. If you have a flashed card, boot cmd-S. then at # prompt, type exit + return key
-* Native APFS booting is required. See dosdude1's APFS ROM Patcher
-* iMac style 802.11ac/BT4LE cards are recommended for native air drop and hand off
+## Recommended Flash Drive or a USB 2.0 / 3.0 SSD:
+For Big Mac 2 installer disks, I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.
 
-## Recommendations
-* Previous unsupported Mac use is very helpful
-* Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
-* Do not try to install unless you can create a disk from a supported Mac or you are familar with running unsupported MacOS'.
-* If you on a really old OS, you have an uphill battle as macOS 11.3 and later is very challenging instal and boot up.
-
-## Known Issues
-* macOS 11.3 and later has a PCIe race condition at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random and gets worse over time. There is no known fix other than being super patient or reverting back to macOS 11.2.3
-
-        Select your macOS version (macOS 11.4 or macOS 12.0 Beta). Then to download it from Apple click "Download macOS"
+# Now you may proceed as planned.
+        Select your macOS version. Then to download it from Apple click "Download macOS"
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">
 
 

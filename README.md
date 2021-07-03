@@ -1,4 +1,6 @@
-BigMac2 
+# Big Mac 2 beta
+
+## Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg (7 MB)
 
 First Time User Guide
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.

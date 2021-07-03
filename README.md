@@ -1,5 +1,5 @@
-# Big Mac 2 is under construction.
-# Please come back later.
+### Big Mac 2 is under construction.
+### Please come back later.
 
         Select your macOS version (macOS 11.4 or macOS 12.0 Beta). Then to download it from Apple click "Download macOS"
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">

@@ -45,7 +45,8 @@ First Time User Guide
     * What doesn't work on Monetery Beta 2
       * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
       * Beta 2 still has a Race Condition. How bad is not yet known.
-      * From a Supported mac is Bigmac2 app does not run, download Xcode and compile it from source. From Xcode set the development team to none or personal and set the app signing to run locally. On certain systems, Apple has started flagging bigmac2 and Malware. This an extremely false statement. bigmac2 contains zero malware and any dmg and instlaler.pkg files show up in /Users/Shared/ any /tmp files get erased on reboot. No malicious software is installed.
+      
+      * From a Supported mac if Bigmac2 app does not run, download Xcode and compile it from source. From Xcode set the development team to none or personal and set the app signing to run locally. On certain systems, Apple has started flagging bigmac2 as Malware. This statement is false. Bigmac2 contains zero malware. Disk image and Installer package files are downloaded to /Users/shared. These files are harmless and can be deleted at any time.
 
 <img width="1920" alt="Screen Shot 2021-07-03 at 3 41 35 PM" src="https://user-images.githubusercontent.com/52664524/124365543-c48e8d80-dc16-11eb-961b-0e6f83a94b86.png">
 

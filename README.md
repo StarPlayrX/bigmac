@@ -20,8 +20,31 @@ First Time User Guide
 
 
 ## Monterey Beta 2 support is experimental
-* This is what we know so far
-  * This
+* This is what we know so far:
+  * Race Condition in Apple's installer is extremely bad
+  * Nearly impossible to install from an unsupported Mac
+  * Workround:
+    * From a Support Intel Mac:
+    * Boot into Recovery: Cmd-R at boot
+    * Open Terminal
+    * `csrutil`
+    * `csrutil disable`
+    * `csrutil authenticated-root disable`
+    
+    * Download BigMac2 beta
+    * Select install macOS Monterey beta 2
+    * Install bigmac2 on a USB 2.0 32Gb Partition
+    * Boot from bigmac2
+    * install Monterey on a USB 2.0 partition that is 80GB or more
+    * Several reboots will happen
+    * Once Monterey is installed, reboot to bigmac
+    * For Mac Pro 3,1 run the Telemtry post install by itself
+    * Then delete the APFS Snapshot by itself.
+    * That the USB drive and see if it boots on your unsupported Mac
+    
+    * What doesn't work on Monetery Beta 2
+      * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
+      * Beta 2 still has a Race Condition. How bad is not yet known.
 
 ## Recommended Flash Drive:
 I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can now install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.

@@ -1,6 +1,4 @@
-# Big Mac 2.0.2 Beta 19
-
-# <a id="raw-url" href="http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg">Download 2.0.2 beta 19</a>
+# <a id="raw-url" href="http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg">Big Mac 2.0.2 Beta 19</a>
 
 ### This software is provided as is without warranty. We are not responsible for any damage to your Macintosh. You are 100% responsible for your own data. Always backup your data and install to a new hard drive or SSD.
 

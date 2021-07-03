@@ -1,4 +1,18 @@
-### Big Mac 2 is under construction. Please come back later. Do to recent events, builds are currently offline. 
+BigMac2 
+
+First Time User Guide
+* Your Mac must support natively booting APFS. Please use dosdude1's APFS ROM Patcher (lower left button on Bigmac2 to download.
+* You need to disable SIP and authenticated-root. To do this, your first Big Mac 2 installer should be on an external USB HD or Fast Thumb drive. It needs to be about 32Gb. You cannot disable SIP if Big Mac2 is running from an internal SSD or HD. It must be on an external disk to the system.
+** After Bigmac2 is booted from an extenral disk:
+Go to the terminal and type:
+csrutil
+csrutil disable
+csrutil authenticated-root disable
+
+This should stop the Kill -9 errors users have been getting
+bigmac2 should now run properly on the disk. You can try runnin the pre-install first and see what happens. It's worth a shot
+
+
 
         Select your macOS version (macOS 11.4 or macOS 12.0 Beta). Then to download it from Apple click "Download macOS"
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">

@@ -6,7 +6,9 @@ First Time User Guide
 ** After Bigmac2 is booted from an extenral disk:
 * Go to the terminal and type:
 `csrutil
+
 csrutil disable
+
 csrutil authenticated-root disable`
 
 This should stop the Kill -9 errors users have been getting

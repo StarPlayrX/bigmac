@@ -19,14 +19,9 @@ This should stop the Kill -9 errors users have been getting
 BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
 
-## Monterey Beta 2 is experimental and has an extreme Race Condition.
-* Apple has become the king of Race Conditions since Big Sur 11.3. There is no easy fix.
-* Things are loading out of sync causing a lock down of the system. It is apparent in Verbose mode.
-* because of this beta 2 is barely installable. After 2 attempts, I have not gotten to the Welcome screen.
-* My next attempt will be to run bigmac2 from a supported mac and see if I get a Welcome screen then take the drive clone it using CloneToolX on bigmac2 boot disk.
-* Anything around crypto and the disks are getting messed up
-* Things are constantly loading out of order
-* Single user mode doesn't work
+## Monterey Beta 2 support is experimental
+* This is what we know so far
+* * This
 
 ## Recommended Flash Drive:
 I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can now install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.

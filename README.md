@@ -26,7 +26,7 @@ First Time User Guide
   * Workround:
     * From a Support Intel Mac:
     * Boot into Recovery: Cmd-R at boot
-    * Open Terminal
+    * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
     * `csrutil`
     * `csrutil disable`
     * `csrutil authenticated-root disable`
@@ -46,8 +46,10 @@ First Time User Guide
       * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
       * Beta 2 still has a Race Condition. How bad is not yet known.
 
-## Recommended Flash Drive:
-I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can now install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.
+<img width="1920" alt="Screen Shot 2021-07-03 at 3 41 35 PM" src="https://user-images.githubusercontent.com/52664524/124365543-c48e8d80-dc16-11eb-961b-0e6f83a94b86.png">
+
+## Recommended Flash Drive or a USB 2.0 / 3.0 SSD:
+For Big Mac 2 installer disks, I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.
 
 # Now you may proceed as planned.
         Select your macOS version. Then to download it from Apple click "Download macOS"

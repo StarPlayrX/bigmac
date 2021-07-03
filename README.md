@@ -21,7 +21,7 @@ BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP you
 
 ## Monterey Beta 2 support is experimental
 * This is what we know so far
-* * This
+  * This
 
 ## Recommended Flash Drive:
 I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can now install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.

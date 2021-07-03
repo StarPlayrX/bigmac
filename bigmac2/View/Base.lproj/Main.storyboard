@@ -1718,10 +1718,10 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pal-SC-Ut4">
-                                <rect key="frame" x="96" y="158" width="49" height="24"/>
+                                <rect key="frame" x="98" y="158" width="49" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="🍔🍟" id="Vtk-34-F58">
-                                    <font key="font" metaFont="system"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="🍔💾" id="Vtk-34-F58">
+                                    <font key="font" size="13" name=".AppleColorEmojiUI"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -1813,7 +1813,7 @@ Gw
                 </viewController>
                 <customObject id="f1U-dM-v9t" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="1379"/>
+            <point key="canvasLocation" x="517" y="1378.5"/>
         </scene>
         <!--Post Install View Controller-->
         <scene sceneID="J47-Aw-6O6">
@@ -2009,32 +2009,39 @@ DQ
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="15" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ8-Xl-cC3">
-                                <rect key="frame" x="34" y="63" width="307" height="140"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ8-Xl-cC3">
+                                <rect key="frame" x="34" y="59" width="320" height="146"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oQ0-jy-fj4">
-                                        <rect key="frame" x="-2" y="123" width="309" height="18"/>
+                                        <rect key="frame" x="-2" y="129" width="309" height="18"/>
                                         <buttonCell key="cell" type="check" title="Hold down ⌥ for Boot Screen (Mac ROM GPU)" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="JOO-mz-htf">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMH-Fh-DBd">
-                                        <rect key="frame" x="-2" y="92" width="164" height="18"/>
+                                        <rect key="frame" x="-2" y="103" width="164" height="18"/>
                                         <buttonCell key="cell" type="check" title="Blessable Installer disk" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="iaf-OX-qbv">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QpW-qO-2vb">
+                                        <rect key="frame" x="-2" y="77" width="322" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Mac Pro 3,1 C key boot with OWC SSD PCIe Card" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="RVJ-7o-s6K">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kLG-W6-QY5">
-                                        <rect key="frame" x="-2" y="61" width="245" height="18"/>
+                                        <rect key="frame" x="-2" y="51" width="245" height="18"/>
                                         <buttonCell key="cell" type="check" title="Supports SSD, HD, Fast Flash drives" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="6tt-m0-zxy">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y67-fo-AnD">
-                                        <rect key="frame" x="-2" y="30" width="177" height="18"/>
+                                        <rect key="frame" x="-2" y="25" width="177" height="18"/>
                                         <buttonCell key="cell" type="check" title="Internal or External Disks" bezelStyle="regularSquare" imagePosition="left" refusesFirstResponder="YES" state="on" inset="2" id="lLg-kt-FWU">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -2054,8 +2061,10 @@ DQ
                                     <integer value="1000"/>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>

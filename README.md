@@ -1,12 +1,8 @@
 # Big Mac 2.0.2
 
-
-## Race Condition
-* More later
+## New beta is on construction. Please hold
 
 ## What's New:
-* macOS 11.2.3 Big Sur
-* macOS 12.0 Beta 2 Monterey
 * Includes CloneToolX exclusive disk cloning software by Todd Bruss
 * Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
 

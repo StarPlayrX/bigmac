@@ -2,10 +2,10 @@
 
 ### This software is provided as is without warranty. We are not responsible for any damage to your Macintosh. You are 100% responsible for your own data. Always backup your data and install to a new hard drive or SSD.
 
-## New beta is in construction. Please hold
-
 ## What's New:
-* Includes CloneToolX exclusive disk cloning software by Todd Bruss
+* Includes CloneToolX exclusive disk cloning software not found in any other Patcher
+* macOS 11.2.3 (clean build with no race condition)
+* macOS Monterey Beta build #2
 * Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
 
 ## Mac Pro

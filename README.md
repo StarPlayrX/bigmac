@@ -14,9 +14,9 @@ First Time User Guide
 
 `csrutil authenticated-root disable`
 
-This should stop the Kill -9 errors users have been getting
+ * This should stop the Kill -9 errors users have been getting
 
-BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
+ * BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
 
 ## Monterey Beta 2 support is experimental

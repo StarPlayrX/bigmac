@@ -1,8 +1,9 @@
 # Big Mac 2 beta
 
-## Download: http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg (7 MB)
+### http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
 
 First Time User Guide
+* If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch +
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
 * Boot it up and go to the termina and type:
@@ -17,6 +18,10 @@ This should stop the Kill -9 errors users have been getting
 
 BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
+
+# Monterey Beta 2 is hightly experimental and has an extreme Race Condition.
+* Apple keeps making this worse since 11.3 and there doesn't seem to be an easy fix
+* because of this beta 2 is barely installable. After 2 attempts, I have not gotten to a boot screen
 
 ## Recommended Flash Drive:
 I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can now install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.

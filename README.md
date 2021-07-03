@@ -5,11 +5,11 @@ First Time User Guide
 * You need to disable SIP and authenticated-root. To do this, your first Big Mac 2 installer should be on an external USB HD or Fast Thumb drive. It needs to be about 32Gb. You cannot disable SIP if Big Mac2 is running from an internal SSD or HD. It must be on an external disk to the system.
 ** After Bigmac2 is booted from an extenral disk:
 * Go to the terminal and type:
-`csrutil
+`csrutil`
 
-csrutil disable
+`csrutil disable`
 
-csrutil authenticated-root disable`
+`csrutil authenticated-root disable`
 
 This should stop the Kill -9 errors users have been getting
 bigmac2 should now run properly on the disk. You can try runnin the pre-install first and see what happens. It's worth a shot

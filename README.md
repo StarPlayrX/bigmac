@@ -1,4 +1,6 @@
-# Big Mac 2.0.2
+# Big Mac 2.0.2 Beta 19
+
+# http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
 
 ## New beta is in construction. Please hold
 

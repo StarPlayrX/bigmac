@@ -23,21 +23,22 @@ First Time User Guide
 * This is what we know so far:
   * Race Condition in Apple's installer is extremely bad
   * Nearly impossible to install from an unsupported Mac
-  * Install from a Support Mac, workaround for Monterey Beta 2:
+  * Install from a Supported Intel based Mac, Workaround for Monterey Beta 2:
     * Boot into Recovery: Cmd-R at boot
     * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
       * `csrutil`
       * `csrutil disable`
       * `csrutil authenticated-root disable`
     
-    * Download BigMac2 beta
-    * Select install macOS Monterey beta 2
-    * Install bigmac2 on a USB 2.0 32Gb Partition
-    * Boot from bigmac2
-    * Launch bigmac2, from its pre install tab, Launch the installer. In five seconds, Monterey will show up
-    * Several reboots will happen
-    
-    * Once Monterey is installed, reboot to bigmac
+    * Next Steps
+      * Download BigMac2 beta
+      * Select install macOS Monterey beta 2
+      * Install bigmac2 on a USB 2.0 32Gb Partition
+      * Boot from bigmac2
+      * Launch bigmac2, from its pre install tab, Launch the installer. In five seconds, Monterey will show up
+      * Several reboots will happen
+      * Once Monterey is installed, reboot to bigmac2's boot disk
+     
     * For Mac Pro 3,1 run the Telemtry post install by itself
     * Then delete the APFS Snapshot by itself.
     * That the USB drive and see if it boots on your unsupported Mac

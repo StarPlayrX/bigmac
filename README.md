@@ -5,7 +5,7 @@
 ## What's New:
 * Includes CloneToolX exclusive disk cloning software not found in any other Patcher
 * macOS 11.2.3 (clean build with no race condition)
-* macOS Monterey Beta build #2
+* macOS Monterey Beta 2
 * Please beware of kernel related PCIe recondition issue that Apple introduced around 11.3.x (this will haunt your system)
 
 ## Mac Pro

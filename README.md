@@ -26,9 +26,9 @@ First Time User Guide
   * Install from a Support Mac, workaround for Monterey Beta 2:
     * Boot into Recovery: Cmd-R at boot
     * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
-    * `csrutil`
-    * `csrutil disable`
-    * `csrutil authenticated-root disable`
+      * `csrutil`
+      * `csrutil disable`
+      * `csrutil authenticated-root disable`
     
     * Download BigMac2 beta
     * Select install macOS Monterey beta 2

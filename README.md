@@ -7,7 +7,7 @@
 * macOS 11.2.3 (clean build with no race condition)
 * macOS Monterey Beta 2
 * Please beware of kernel related PCIe race condition issue that Apple introduced after 11.3
-## 🖥 Mac Pro
+## 🖥 Mac
 * Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.
 * USB1.1 is not supported by the installer. If you have a flashed card, boot cmd-S. then at # prompt, type exit + return key
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher

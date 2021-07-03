@@ -2,24 +2,24 @@
 
 ### This software is provided as is without warranty. We are not responsible for any damage to your Macintosh. You are 100% responsible for your own data. Always backup your data and install to a new hard drive or SSD.
 
-## What's New:
+## 🍔 What's New:
 * Includes CloneToolX exclusive disk cloning software not found in any other Patcher
 * macOS 11.2.3 (clean build with no race condition)
 * macOS Monterey Beta 2
 * Please beware of kernel related PCIe race condition issue that Apple introduced after 11.3
-## Mac Pro
+## 🖥 Mac Pro
 * Bluetooth 2 EDR is not compatible with macOS 11 or later. Pull the card during the installation.
 * USB1.1 is not supported by the installer. If you have a flashed card, boot cmd-S. then at # prompt, type exit + return key
 * Native APFS booting is required. See dosdude1's APFS ROM Patcher
 * iMac style 802.11ac/BT4LE cards are recommended for native air drop and hand off
 
-## Recommendations
+## 🍟 Recommendations
 * Previous unsupported Mac use is very helpful
 * Try to get your system up to Catalina 10.15.7 using Dosdude1's patcher
 * Do not try to install unless you can create a disk from a supported Mac or you are familar with running unsupported MacOS'.
 * If you on a really old OS, you have an uphill battle as macOS 11.3 and later is very challenging instal and boot up.
 
-## Known Issues
+## 🧪 Known Issues
 * macOS 11.3 and later has a PCIe race condition at the kernel level. This can make booting up macOS very challenging and can require several reboots or having to remove all PCIe non-video cards. This seemly happens at random and gets worse over time. There is no known fix other than being super patient or reverting back to macOS 11.2.3
 * This may be Voodoo but switching back and force from Monterey Beta to 11.4 seems to help with reboots.
 

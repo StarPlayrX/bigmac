@@ -38,6 +38,12 @@ extension ViewController : URLSessionDownloadDelegate {
             downloadProgress = Float(percentageInt)
         } else if a == b && a > 0 {
             updateScreen()
+            
+            // If it is an installer package, we will update Applications
+            if downloadLabel.stringValue.lowercased().starts(with: "mac") {
+                _ = updateInstallerPkg()
+            }
+            
         } else if downloadDataProgress != a {
             updateScreen()
             downloadDataProgress = a

@@ -1507,7 +1507,6 @@ DQ
                         <outlet property="appStoreMacOS_btn" destination="JFS-1h-7p0" id="rmc-15-LyP"/>
                         <outlet property="appleHDA_btn" destination="FId-UD-oKk" id="AN7-MW-st1"/>
                         <outlet property="availablePatchDisks" destination="yHl-mb-wuL" id="GjX-e0-Sya"/>
-                        <outlet property="buildLabel" destination="DFd-ov-bag" id="7C2-Lu-I2R"/>
                         <outlet property="createInstallSpinner" destination="nYg-kZ-fDy" id="8gV-FZ-sji"/>
                         <outlet property="deleteAPFSSnapshotsButton" destination="pqh-XV-YeT" id="lrc-8u-Pmx"/>
                         <outlet property="disableBT2_btn" destination="0MJ-Iv-ywg" id="aVi-mD-sbf"/>
@@ -1721,7 +1720,7 @@ DQ
                                 <rect key="frame" x="98" y="158" width="49" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="🍔💾" id="Vtk-34-F58">
-                                    <font key="font" size="13" name=".AppleColorEmojiUI"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

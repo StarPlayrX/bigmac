@@ -1,4 +1,4 @@
-# Big Mac 2 beta
+# 🍔 Big Mac 2
 
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/BigMac_2.0.3.dmg">BigMac_2.0.3.dmg (7 MB)</a>
 

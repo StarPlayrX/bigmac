@@ -21,7 +21,7 @@ First Time User Guide (from an unsupported Mac)
  * If you cannot disable SIP, do this from a Recovery Disk or Create install media disk.
 
 
-## Monterey Beta 2 support is experimental
+## Monterey Beta 2 is Experimental
 * This is what we know so far:
   * Legacy WiFi cards will not work. Upgraded ot 802.11ac/BT4LE Cards
   * Apple's own USB 2.0 Magic 2 devices need to be hooked up to a USB Switch or Hub. First time we had to do this.

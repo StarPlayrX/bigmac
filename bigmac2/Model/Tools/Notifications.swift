@@ -1,5 +1,5 @@
 //
-//  View.swift
+//  Notifications.swift
 //  bigmac2
 //
 //  Created by starplayrx on 12/28/20.
@@ -33,7 +33,6 @@ extension ViewController {
 
 }
 
-
 //MARK: Load Notifications - Add Observers
 extension ViewController {
         
@@ -49,5 +48,3 @@ extension ViewController {
         }
     }
 }
-
-

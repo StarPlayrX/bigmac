@@ -947,16 +947,7 @@ DQ
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8r8-CA-8z3">
                                                             <rect key="frame" x="-2" y="-1" width="246" height="42"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <textFieldCell key="cell" title="APFS native booting is required without a third party boot loader for non Mac Pro 5,1 machines." id="4Fv-gb-UHD">
-                                                                <font key="font" metaFont="smallSystem"/>
-                                                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                            </textFieldCell>
-                                                        </textField>
-                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RFY-t2-czT">
-                                                            <rect key="frame" x="148" y="49" width="72" height="14"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="by Dosdude1" id="wrQ-Wn-YKG">
+                                                            <textFieldCell key="cell" title="APFS native booting is required without a third party boot loader. by DosDude1" id="4Fv-gb-UHD">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1019,7 +1010,7 @@ DQ
                                                     </customSpacing>
                                                 </stackView>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DlF-Zt-WAP">
-                                                    <rect key="frame" x="332" y="4" width="163" height="32"/>
+                                                    <rect key="frame" x="330" y="9" width="163" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Please Donate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bJj-Oq-N0v">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>

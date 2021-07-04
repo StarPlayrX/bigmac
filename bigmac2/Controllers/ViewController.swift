@@ -118,6 +118,8 @@ class ViewController: NSViewController, URLSessionDelegate {
         bootedToBaseOS = checkForBaseOS()
         refreshPatchDisks()
         bigMacDataPatchDMG()
+        
+
     }
     
     override public func mouseDown(with event: NSEvent) {

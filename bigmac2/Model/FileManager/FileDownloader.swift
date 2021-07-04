@@ -37,13 +37,8 @@ extension ViewController : URLSessionDownloadDelegate {
             updateScreen()
             downloadProgress = Float(percentageInt)
         } else if a == b && a > 0 {
+            
             updateScreen()
-            
-            // If it is an installer package, we will update Applications
-            if downloadLabel.stringValue.lowercased().starts(with: "mac") {
-                _ = updateInstallerPkg()
-            }
-            
             DispatchQueue.main.async { [self] in
                 createInstallSpinner.isHidden = true
                 createInstallSpinner.stopAnimation(self)
@@ -86,21 +81,25 @@ extension ViewController : URLSessionDownloadDelegate {
                
                     if filename == bigmacDMG, let userURL = try? fm.url (for: .userDirectory, in: .localDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Shared/" + filename)  {
                         moveItem(at: location, to: userURL  )
+                        sleep(1)
                         globalCompletedTask()
-                        sleep(2)
                         NotificationCenter.default.post(name: .CreateDisk, object: nil)
                     }
                     
                     if filename == dosDude1DMG {
                         moveItem(at: location, to: savedURL)
-                        globalCompletedTask()
+                        sleep(1)
                         _ = mountDiskImage(arg: ["mount", "\(savedURL.path)", "-noverify", "-noautofsck", "-autoopen"])
+                        sleep(1)
+                        globalCompletedTask()
                     }
                    
                     if filename == bigDataDMG {
                         moveItem(at: location, to: savedURL)
-                        globalCompletedTask()
+                        sleep(1)
                         mountBigData()
+                        sleep(1)
+                        globalCompletedTask()
                     }
                 }
               
@@ -111,13 +110,13 @@ extension ViewController : URLSessionDownloadDelegate {
                 
                 if let savedURL = savedURL {
                     try? fm.moveItem(at: location, to: savedURL)
+                    sleep(1)
+                    _ = updateInstallerPkg()
+                    sleep(1)
                     globalCompletedTask()
-
                 }
                 
                 globalCompletedTask()
-
-                
             }
         }
     }

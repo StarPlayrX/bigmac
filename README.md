@@ -47,7 +47,7 @@ First Time User Guide (from an unsupported Mac)
      
     * For Mac Pro 3,1 run the Telemtery post install by itself
     * Then run delete the APFS Snapshot by itself.
-    * That the USB drive and see if it boots on your unsupported Mac
+    * Now see if the USB 2.0 install boots on your unsupported Mac (this will be slow)
     
     * What doesn't work on Monetery Beta 2
       * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!

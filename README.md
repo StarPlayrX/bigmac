@@ -2,7 +2,7 @@
 
 ### http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
 
-First Time User Guide
+First Time User Guide (from an unsupported Mac)
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch +
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)

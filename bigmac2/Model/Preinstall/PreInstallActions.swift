@@ -8,9 +8,7 @@ import Cocoa
 
 extension ViewController {
     @IBAction func LaunchInstallerAction(_ sender: Any) {
-        
-        _ = updateInstallerPkg()
-        
+    
         preInstaLaunchBtn.isEnabled = false
         
         let libVal = DisableLibraryValidation.state == .on

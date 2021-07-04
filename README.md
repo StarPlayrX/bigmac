@@ -3,7 +3,7 @@
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/BigMac_2.0.3.dmg">BigMac_2.0.3.dmg (7 MB)</a>
 
 First Time User Guide (from an unsupported Mac)
-* If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch +
+* If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
 * Next disable SIP. Boot BigMac 2 up from an extenral USB 2.0 on an unsupported Mac:
@@ -41,8 +41,8 @@ First Time User Guide (from an unsupported Mac)
       * Several reboots will happen
       * Once Monterey is installed, reboot to bigmac2's boot disk
      
-    * For Mac Pro 3,1 run the Telemtry post install by itself
-    * Then delete the APFS Snapshot by itself.
+    * For Mac Pro 3,1 run the Telemtery post install by itself
+    * Then run delete the APFS Snapshot by itself.
     * That the USB drive and see if it boots on your unsupported Mac
     
     * What doesn't work on Monetery Beta 2

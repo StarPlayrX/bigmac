@@ -44,6 +44,11 @@ extension ViewController : URLSessionDownloadDelegate {
                 _ = updateInstallerPkg()
             }
             
+            DispatchQueue.main.async { [self] in
+                createInstallSpinner.isHidden = true
+                createInstallSpinner.stopAnimation(self)
+            }
+            
         } else if downloadDataProgress != a {
             updateScreen()
             downloadDataProgress = a
@@ -124,7 +129,12 @@ extension ViewController : URLSessionDownloadDelegate {
         if let url = NSURL(string: urlString) {
             let task = session.downloadTask(with: url as URL)
             
-            task.resume()           
+            task.resume()
+            
+            DispatchQueue.main.async { [self] in
+                createInstallSpinner.isHidden = false
+                createInstallSpinner.startAnimation(self)
+            }
         }
     }
     

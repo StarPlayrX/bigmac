@@ -30,7 +30,6 @@ extension ViewController {
         return vet
     }
     
-    
     func createDiskEnded(completed: Bool) {
         //MARK: Step 7
         cleanup(bigmac2: bigmac2)
@@ -50,7 +49,6 @@ extension ViewController {
         currentWorkflowEnded()
     }
     
-    
     //MARK: Task #1.5
     func checkmacOSDmgPathCheckPoint(macOSName: String) -> Bool? {
         var pass = true
@@ -69,35 +67,30 @@ extension ViewController {
             }
             
         }
-     
         return pass
     }
 
-    
     //MARK: Task #1.5
-    func installBigSurCheckPoint(installBigSurApp: String) -> Bool? {
+    func installMacOsCheckPoint(installMacOsApp: String) -> Bool? {
         var pass = true
         
         let applications = "Applications"
-        let checkForInstallApp = "/\(applications)/\(installBigSurApp)"
+        let checkForInstallApp = "/\(applications)/\(installMacOsApp)"
         
         if !checkIfFileExists(path: checkForInstallApp) {
             pass = false
             
             createDiskEnded(completed: pass)
             
-            globalError = "This operation cannot continue without \(checkForInstallApp). Please either place the \(installBigSurApp) inside your \(applications) folder or download a new macOS Installer disk."
+            globalError = "This operation cannot continue without \(checkForInstallApp). Please either place the \(installMacOsApp) inside your \(applications) folder or download a new macOS Installer disk."
     
             DispatchQueue.main.async { [self] in
                 performSegue(withIdentifier: "displayErrMsg", sender: self)
             }
             
         }
-     
         return pass
     }
-
-    
     
     //MARK: Task #2
     func reformatSelectedApfsDisk(diskInfo: myVolumeInfo) {
@@ -106,8 +99,6 @@ extension ViewController {
         //MARK: Erase disk inplace using reformat
         _ = eraseDisk(diskSlice: diskInfo.diskSlice)
     }
-    
-    
     
     //MARK: Task #3
     func extractBaseSystem() {
@@ -126,11 +117,7 @@ extension ViewController {
         incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false)
         
         _ = mountDiskImage(arg: ["unmount", "/\(tmp)/\(sharedsupport)", "-force"])
-        
-        
     }
-    
-    
     
     //MARK: Task #4
    /* func createDirectory(diskInfo: myVolumeInfo, disk: String, rndStr: String) {
@@ -146,9 +133,7 @@ extension ViewController {
         sleep(2)
         let _ = renameDisk(input: disk, output: "\(disk)_\(rndStr)")
     }*/
-    
-    
-    
+
     //MARK: Task #5
     func installBaseSystem(diskInfo: myVolumeInfo, baseSys: String, bm2: String) {
         //MARK: Install Base System
@@ -179,13 +164,10 @@ extension ViewController {
         }
         
         _ = mountVolume(disk: diskInfo.disk)
-        
     }
-    
-   
-    
+
     //MARK: Task #7
-    func bigSurInstallerAppXfer(BootVolume: myVolumeInfo) {
+    func macOSInstallerAppXfer(BootVolume: myVolumeInfo) {
         incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: false, title: "Installing the macOS App...")
         
         let appName = installVersionIsLegacy ? installOS11 : installOS12
@@ -197,7 +179,6 @@ extension ViewController {
         
         let root = "\(rootVol)/\(appName)/"
         let fm = FileManager.default
-        
         
         do {
             let dir = try fm.contentsOfDirectory(atPath: "/\(apps)/\(appName)/\(contents)/")
@@ -239,7 +220,6 @@ extension ViewController {
         
         // Clean Up
         installVersionIsLegacy ? try? fm.removeItem(atPath: installOS12) : try? fm.removeItem(atPath: installOS12)
-
     }
 
     func installBigMacIIApp(bigmac2: myVolumeInfo) {
@@ -247,13 +227,10 @@ extension ViewController {
         
         //MARK: Make Preboot bootable and compatible with C-Key at boot time (currently works with PCIe SSDs)
         let rscFolder = "/\(tmp)/\(bigdata)"
-        
         let bigFolder = Bundle.main.bundlePath
-        
         let burgerKing = bigmac2.volumeName
-        
+
         let util = "/Volumes/\(burgerKing)/System/Installation/CDIS/Recovery Springboard.app/Contents/Resources/Utilities.plist"
-        
         let bk = "/Volumes/\(burgerKing)/Applications/bigmac2.app"
         let ctx = "/Volumes/\(burgerKing)/Applications/CloneToolX.app"
         

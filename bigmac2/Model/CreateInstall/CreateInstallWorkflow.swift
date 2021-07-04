@@ -25,7 +25,7 @@ extension ViewController {
             _ = updateInstallerPkg()
             
             //MARK: Check if the installer app is ready
-            guard let pass = installBigSurCheckPoint(installBigSurApp: installOSapp),
+            guard let pass = installMacOsCheckPoint(installMacOsApp: installOSapp),
                       pass else { return }
        
             installDMGviaASR(diskInfo: diskInfo, baseSys: baseSys, bm2: bm2, dmg: dmg)
@@ -39,7 +39,7 @@ extension ViewController {
             baseBootPlister(diskInfo: diskInfo, isVerbose: isBaseVerbose, isSingleUser: isSingleUser, prebootVolume: prebootDiskSlice, isBaseSystem: true)
                  
             installEmojiFont(diskInfo: diskInfo)
-            bigSurInstallerAppXfer(BootVolume: diskInfo)
+            macOSInstallerAppXfer(BootVolume: diskInfo)
             createDiskEnded(completed: true)
   
         }

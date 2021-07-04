@@ -17,7 +17,6 @@ extension ViewController {
     @IBAction func baseSingleUserAction(_ sender: Any) {
         isBaseSingleUser = singleUserCheckbox.state == .on
     }
- 
     
     @IBAction func downloadMacOSAction(_ sender: Any) {
         if cancelTask() { return }
@@ -51,5 +50,3 @@ extension ViewController {
         dosDude1inProgressTask(label: "Downloading APFS ROM Patcher", dmg: dosDude1DMG)
     }
 }
-
-

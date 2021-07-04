@@ -97,6 +97,11 @@ class ViewController: NSViewController, URLSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DispatchQueue.main.async { [self] in
+            createInstallSpinner.isHidden = true
+            createInstallSpinner.stopAnimation(self)
+        }
+        
         let defaults = UserDefaults.standard
         installVersionIsLegacy = defaults.bool(forKey: "installVersionIsLegacy")
 

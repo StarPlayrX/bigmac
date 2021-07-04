@@ -849,7 +849,7 @@ DQ
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLx-fH-b51">
-                                                            <rect key="frame" x="283" y="31" width="135" height="16"/>
+                                                            <rect key="frame" x="291" y="31" width="135" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" alignment="right" id="P9g-Ib-XHX">
                                                                 <font key="font" metaFont="system"/>
@@ -862,7 +862,7 @@ DQ
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </progressIndicator>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DFd-ov-bag">
-                                                            <rect key="frame" x="140" y="31" width="139" height="16"/>
+                                                            <rect key="frame" x="140" y="31" width="147" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" id="igo-GL-nK5">
                                                                 <font key="font" metaFont="system"/>

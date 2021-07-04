@@ -22,7 +22,7 @@ extension ViewController {
             
             let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
             
-            _ = updateInstallerPkg(installBigSurApp: installOSapp)
+            _ = updateInstallerPkg()
             
             //MARK: Check if the installer app is ready
             guard let pass = installBigSurCheckPoint(installBigSurApp: installOSapp),

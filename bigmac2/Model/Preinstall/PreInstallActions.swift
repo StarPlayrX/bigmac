@@ -9,6 +9,7 @@ import Cocoa
 extension ViewController {
     @IBAction func LaunchInstallerAction(_ sender: Any) {
         
+        _ = updateInstallerPkg()
         
         preInstaLaunchBtn.isEnabled = false
         
@@ -16,8 +17,7 @@ extension ViewController {
         let SIP = DisableSIP.state == .on
         let AR = DisableAuthRoot.state == .on
         let GK = DisableGateKeeper.state == .on
-        
-        
+    
         func macOS(installer: String) {
             if !ranHax3 {
                 ranHax3 = true
@@ -109,7 +109,7 @@ extension ViewController {
                 macOS(installer: installAsstBaseOS)
            
             } else if fm.fileExists(atPath: installAsstFullOS) {
-                globalError = "Only clean installs from Mac OS Extended Journaled (JHFS+) volumes are supported from a full version of macOS. To install or upgrade directly to APFS disks, boot from the bigmac2 Installation Disk. If you have a boot screen, reboot using the option key. Note: installing to JHFS+ will be converted to APFS during the clean install."
+                globalError = "Only clean installs from Mac OS Extended Journaled (JHFS+) volumes are supported from a full version of macOS. To install or upgrade directly to APFS disks, boot from the bigmac2 Installation Disk. If you have a boot screen, reboot using the option key."
                 
                 // Verifies what installation we may be working with
                 if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstFullOS11)[FileAttributeKey.size] as? Double {

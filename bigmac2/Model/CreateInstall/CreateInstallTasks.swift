@@ -11,7 +11,7 @@ import Foundation
 extension ViewController {
     
     //MARK: Task #1
-    func updateInstallerPkg(installBigSurApp: String) ->  (result: String, installed: Bool) {
+    func updateInstallerPkg() ->  (result: String, installed: Bool) {
         
         var vet = (result: "Updating the disk failed!", installed: false)
         
@@ -24,6 +24,7 @@ extension ViewController {
             incrementInstallGauge(resetGauge: false, incremment: true, setToFull: false, cylon: true, title: "Updating Installer Package...")
             vet.result = runCommandReturnStr(binary: "/usr/sbin/installer" , arguments: ["-allowUntrusted", "-pkg", InstallAsst, "-target", "/" ]) ?? ""
             vet.installed = true
+            sleep(2)
         }
         
         return vet

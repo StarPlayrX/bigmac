@@ -18,7 +18,7 @@ First Time User Guide (from an unsupported Mac)
 
  * BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
- * If you cannot disable SIP, the try it from a Recovery Disk or Create install media disk.
+ * If you cannot disable SIP, do this from a Recovery Disk or Create install media disk.
 
 
 ## Monterey Beta 2 support is experimental

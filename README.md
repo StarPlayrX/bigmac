@@ -1,12 +1,12 @@
-# Big Mac 2 beta
+# 🍔 Big Mac 2
 
-### http://starplayrx.com/bigmac2/Big_Mac_2.0.2_beta19.dmg
+### <a id="raw-url" href="https://starplayrx.com/bigmac2/BigMac_2.0.3.dmg">BigMac_2.0.3.dmg (7 MB)</a>
 
 First Time User Guide (from an unsupported Mac)
-* If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch +
+* If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
-* Next disable SIP. boot it up and go to the termina and type:
+* Next disable SIP. Boot BigMac 2 up from an extenral USB 2.0 on an unsupported Mac:
 
 `csrutil`
 
@@ -18,13 +18,17 @@ First Time User Guide (from an unsupported Mac)
 
  * BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
 
- * If you cannot disable SIP, the try it from a Recovery Disk or Create install media disk.
+ * If you cannot disable SIP, do this from a Recovery Disk or Create install media disk.
 
 
-## Monterey Beta 2 support is experimental
+## Monterey Beta 2 is Experimental
 * This is what we know so far:
-  * Race Condition in Apple's installer is extremely bad
-  * Nearly impossible to install from an unsupported Mac
+  * Legacy WiFi cards will not work. Upgraded ot 802.11ac/BT4LE Cards
+  * Apple's own USB 2.0 Magic 2 devices need to be hooked up to a USB Switch or Hub. First time we had to do this.
+  * With Race Condition, it seems to boot better when not in Verbose mode. This could just be voodoo.
+  * If the progress bar boots slowly and not far, that usually means that it will boot up.
+  * Race Condition in Apple's installer is horrible. Breaks native installs.
+  * Nearly impossible to install from an unsupported Mac. I failed twice then switched to running BigMac from a Supported Mac.
   * Install from a Supported Intel based Mac, Workaround for Monterey Beta 2:
     * Boot into Recovery: Cmd-R at boot
     * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
@@ -41,13 +45,13 @@ First Time User Guide (from an unsupported Mac)
       * Several reboots will happen
       * Once Monterey is installed, reboot to bigmac2's boot disk
      
-    * For Mac Pro 3,1 run the Telemtry post install by itself
-    * Then delete the APFS Snapshot by itself.
-    * That the USB drive and see if it boots on your unsupported Mac
+    * For Mac Pro 3,1 run the Telemtery post install by itself
+    * Then run delete the APFS Snapshot by itself.
+    * Now see if the USB 2.0 install boots on your unsupported Mac (this will be slow)
     
     * What doesn't work on Monetery Beta 2
       * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
-      * Beta 2 still has a Race Condition. How bad is not yet known.
+      * Beta 2 still has a Race Condition. It's bad. Apple is ignoring this issue. I have reason to believe it exists on support macs as well. Supported Macs may be covering it up by just rebooting 2-3 times when it occurs.
       
       * From a Supported mac if Bigmac2 app does not run, download Xcode and compile it from source. From Xcode set the development team to none or personal and set the app signing to run locally. On certain systems, Apple has started flagging bigmac2 as Malware. This statement is false. Bigmac2 contains zero malware. Disk image and Installer package files are downloaded to /Users/shared. These files are harmless and can be deleted at any time.
 

@@ -23,6 +23,8 @@ First Time User Guide (from an unsupported Mac)
 
 ## Monterey Beta 2 support is experimental
 * This is what we know so far:
+  * Legacy WiFi cards will not work. Upgraded ot 802.11ac/BT4LE Cards
+  * Apple's own USB 2.0 Magic 2 devices need to be hooked up to a USB Switch or Hub. First time we had to do this.
   * Race Condition in Apple's installer is extremely bad
   * Nearly impossible to install from an unsupported Mac
   * Install from a Supported Intel based Mac, Workaround for Monterey Beta 2:

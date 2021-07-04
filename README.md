@@ -6,7 +6,7 @@ First Time User Guide (from an unsupported Mac)
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch +
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
-* Boot it up and go to the termina and type:
+* Next disable SIP. boot it up and go to the termina and type:
 
 `csrutil`
 
@@ -17,6 +17,8 @@ First Time User Guide (from an unsupported Mac)
  * This should stop the Kill -9 errors users have been getting
 
  * BigMac2 should behave from the USB 2.0 disk and on Internal SSDs. If you ZAP your PRAM, repeat.
+
+ * If you cannot disable SIP, the try it from a Recovery Disk or Create install media disk.
 
 
 ## Monterey Beta 2 support is experimental

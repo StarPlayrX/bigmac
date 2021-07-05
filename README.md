@@ -1,6 +1,6 @@
 # 🍔 Big Mac 2
 
-#### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. Please beware of Race Conditions that Apple keeps introducing into Big Sur nad Monterey in the Kernel. These show up immediately on most unsupported Macs. 
+#### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. Please beware of Race Conditions that Apple keeps introducing into Big Sur and Monterey. These show up immediately on most unsupported Macs. Apple is largely ignoring these security issues that could be affecting geniune supported Macs.
 
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg (7 MB)</a>
 

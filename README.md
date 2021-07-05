@@ -59,10 +59,10 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
 
 <img width="1920" alt="Screen Shot 2021-07-03 at 3 41 35 PM" src="https://user-images.githubusercontent.com/52664524/124365543-c48e8d80-dc16-11eb-961b-0e6f83a94b86.png">
 
-## Recommended Flash Drive or a USB 2.0 / 3.0 SSD:
+## Recommended Flash Drive or a USB 2.0 / 3.0 SSD
 For Big Mac 2 installer disks, I use Samsung Flash Drive FIT Media 32GB. Once you have disabled SIP and authenticated-root, you can install BigMac 2 to an internal SSD or Harddrive on a 32GB APFS Partition. Remember if you ZAP your PRAM, you'll need to use your USB 2.0 Drive instead.
 
-## Here are some screenshots and notes:
+## Here are some screenshots and notes
         Select your macOS version. Then to download it from Apple click "Download macOS"
 <img width="664" alt="Screen Shot 2021-06-28 at 7 18 47 PM" src="https://user-images.githubusercontent.com/52664524/123715182-bcfd6c00-d845-11eb-8c76-79c24ba9daf4.png">
 

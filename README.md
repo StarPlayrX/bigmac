@@ -27,9 +27,8 @@ First Time User Guide (from an unsupported Mac)
   * Apple's own USB 2.0 Magic 2 devices need to be hooked up to a USB Switch or Hub. First time we had to do this.
   * With Race Condition, it seems to boot better when not in Verbose mode. This could just be voodoo.
   * If the progress bar boots slowly and not far, that usually means that it will boot up.
-  * Race Condition in Apple's installer is really bad. Very difficult to install a fresh OS on an unsupported Mac.
  
-  * Workaround, install from a geniune Supported Intel based Mac:
+  * Workaround for installer Race Condition, install from a geniune Supported Intel based Mac:
     * Boot into Recovery: Cmd-R at boot
     * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
       * `csrutil`

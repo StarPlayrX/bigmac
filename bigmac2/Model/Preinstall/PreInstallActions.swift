@@ -98,7 +98,6 @@ extension ViewController {
                 
                 // Verifies what installation we may be working with
                 if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstBaseOS11)[FileAttributeKey.size] as? Double {
-                    print("legacyFileSize", legacyFileSize)
                     installVersionIsLegacy = legacyFileSize > Double(80000) ? true : false
                 }
                 
@@ -111,7 +110,6 @@ extension ViewController {
                 
                 // Verifies what installation we may be working with
                 if let legacyFileSize = try? fileManager.attributesOfItem(atPath: installAsstFullOS11)[FileAttributeKey.size] as? Double {
-                    print("legacyFileSize", legacyFileSize)
                     installVersionIsLegacy = legacyFileSize > Double(80000) ? true : false
                 }
                 

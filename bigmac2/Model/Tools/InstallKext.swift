@@ -30,18 +30,12 @@ extension ViewController {
         if kext.contains("lib") {
             runCommand(binary: "/bin/mkdir", arguments: [mdir])
         }
-        
-        print(["-v", "\(source)/\(prfx)\(kext)", destiny])
-        
+                
         try? fm.removeItem(atPath: destiny)
         
         strg = runCommandReturnStr(binary: "/usr/bin/ditto", arguments: ["-v", "\(source)/\(prfx)\(kext)", destiny]) ?? fail
-        print(strg)
         let x = runCommandReturnStr(binary: "/usr/sbin/chown", arguments: ["-R", "0:0", destiny])
-        print(x as Any)
         let y = runCommandReturnStr(binary: "/bin/chmod", arguments: ["-R", "755", destiny])
-        print(y as Any)
-        //runCommand(binary: "/usr/bin/touch", arguments: [destiny])
         
         strg = strg.replacingOccurrences(of: "\n", with: "")
         strg = strg.replacingOccurrences(of: "\r", with: "")
@@ -50,9 +44,7 @@ extension ViewController {
         if strg.hasPrefix(copy) && strg.hasSuffix(kext)  {
             pass = !pass
         }
-        
-        print(pass)
-        
+                
         return pass
     }
 }

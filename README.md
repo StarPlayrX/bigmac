@@ -25,9 +25,9 @@ First Time User Guide (from an unsupported Mac)
 * This is what we know so far:
   * Legacy WiFi cards will not work. Upgrade to 802.11ac/BT4LE Cards
   * Apple's own USB 2.0 Magic 2 devices need to be hooked up to a USB Switch or Hub. First time we had to do this.
-  * With Race Condition, it seems to boot better when not in Verbose mode. This could just be voodoo.
   * If the progress bar boots slowly and not far, that usually means that it will boot up.
- 
+  * With Race Condition, a full system seems to boot better when not in Verbose mode. This could just be voodoo.
+
   * Workaround for installer Race Condition, install from a geniune Supported Intel based Mac:
     * Boot into Recovery: Cmd-R at boot
     * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:

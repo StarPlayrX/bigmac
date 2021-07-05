@@ -29,7 +29,7 @@ First Time User Guide (from an unsupported Mac)
   * If the progress bar boots slowly and not far, that usually means that it will boot up.
   * Race Condition in Apple's installer is really bad. Very difficult to install a fresh OS on an unsupported Mac.
  
-  * Workaround: Install from a geniune Supported Intel based Mac:
+  * Workaround, install from a geniune Supported Intel based Mac:
     * Boot into Recovery: Cmd-R at boot
     * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
       * `csrutil`

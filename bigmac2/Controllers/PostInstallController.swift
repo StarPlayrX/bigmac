@@ -104,11 +104,6 @@ class PostInstallViewController : NSViewController {
         nameE.addAttributes(green, range: NSRange(location: 0, length: name5.count + 1))
         creditsTextView.textStorage?.append(nameE)
         
-        let name6 = "\n🍋 Syncretic    - SSE4.2 MouSSE\n"
-        let nameF = NSMutableAttributedString(string: name6)
-        nameF.addAttributes(green, range: NSRange(location: 0, length: name6.count + 1))
-        creditsTextView.textStorage?.append(nameF)
-        
         let name9 = "\n🍍 Exvision     - HDMI Audio\n"
         let nameL = NSMutableAttributedString(string: name9)
         nameL.addAttributes(green, range: NSRange(location: 0, length: name9.count + 1))

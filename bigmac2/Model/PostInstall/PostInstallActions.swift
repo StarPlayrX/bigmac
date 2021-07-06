@@ -44,10 +44,6 @@ extension ViewController {
         legacyWiFi = legacyWiFi_btn.state == .on
     }
     
-    @IBAction func mouSSE_Action_act(_ sender: Any) {
-        amdMouSSE = amdMouSSE_btn.state == .on
-    }
-    
     @IBAction func teleTrap_Action_act(_ sender: Any) {
         teleTrap = teleTrap_btn.state == .on
     }

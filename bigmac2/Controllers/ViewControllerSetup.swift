@@ -30,7 +30,6 @@ extension ViewController {
         
         enableUSB       = defaults.bool(forKey: "enableUSB")
         disableBT2      = defaults.bool(forKey: "disableBT2")
-        amdMouSSE       = defaults.bool(forKey: "amdMouSSE")
         teleTrap        = defaults.bool(forKey: "teleTrap")
         VerboseBoot     = defaults.bool(forKey: "VerboseBoot")
         superDrive      = defaults.bool(forKey: "superDrive")
@@ -49,7 +48,6 @@ extension ViewController {
         
          _ =  enableUSB       ? (enableUSB_btn.state = .on,      counter += 1)         : (enableUSB_btn.state = .off, ())
          _ =  disableBT2      ? (disableBT2_btn.state = .on,     counter += 1)         : (disableBT2_btn.state = .off, ())
-         _ =  amdMouSSE       ? (amdMouSSE_btn.state = .on,      counter += 1)         : (amdMouSSE_btn.state = .off, ())
          _ =  teleTrap        ? (teleTrap_btn.state = .on,       counter += 1)         : (teleTrap_btn.state = .off, ())
          _ =  VerboseBoot     ? (VerboseBoot_btn.state = .on,    counter += 1)         : (VerboseBoot_btn.state = .off, ())
          _ =  superDrive      ? (superDrive_btn.state = .on,     counter += 1)         : (superDrive_btn.state = .off, ())
@@ -71,10 +69,7 @@ extension ViewController {
             
             disableBT2 = true
             disableBT2_btn.state = .on
-            
-            amdMouSSE = false
-            amdMouSSE_btn.state = .off
-            
+                        
             teleTrap = true
             teleTrap_btn.state = .on
             

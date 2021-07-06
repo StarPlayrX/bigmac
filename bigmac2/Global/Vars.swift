@@ -75,7 +75,6 @@ var ranHax3 = false
 var bootedToBaseOS = false
 var enableUSB = false
 var disableBT2 = false
-var amdMouSSE = false
 var teleTrap = true
 var VerboseBoot = false
 var superDrive = true
@@ -90,7 +89,6 @@ var deleteSnaphots = true
 
 var enableUSBtl = ""
 var disableBT2tl = ""
-var amdMouSSEtl = ""
 var teleTraptl = ""
 var VerboseBoottl = ""
 var superDrivetl = ""

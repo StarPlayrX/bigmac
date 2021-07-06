@@ -1368,10 +1368,10 @@ DQ
                                                     </connections>
                                                 </popUpButton>
                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="9" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-Aa-BUh">
-                                                    <rect key="frame" x="37" y="154" width="185" height="166"/>
+                                                    <rect key="frame" x="37" y="179" width="165" height="141"/>
                                                     <subviews>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hwc-jj-Waw">
-                                                            <rect key="frame" x="-2" y="149" width="163" height="18"/>
+                                                            <rect key="frame" x="-2" y="124" width="163" height="18"/>
                                                             <buttonCell key="cell" type="check" title="Enable Legacy USB 1.1" bezelStyle="regularSquare" imagePosition="left" inset="2" id="VZC-dN-ptH">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -1381,7 +1381,7 @@ DQ
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0MJ-Iv-ywg">
-                                                            <rect key="frame" x="-2" y="124" width="156" height="18"/>
+                                                            <rect key="frame" x="-2" y="99" width="156" height="18"/>
                                                             <buttonCell key="cell" type="check" title="Disable Bluetooth 2.0" bezelStyle="regularSquare" imagePosition="left" inset="2" id="JlU-84-cz9">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
@@ -1391,23 +1391,13 @@ DQ
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rsm-39-Um6">
-                                                            <rect key="frame" x="-2" y="99" width="150" height="18"/>
+                                                            <rect key="frame" x="-2" y="74" width="150" height="18"/>
                                                             <buttonCell key="cell" type="check" title="Legacy 802.11n WiFi" bezelStyle="regularSquare" imagePosition="left" inset="2" id="P3r-Jm-dSi">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
                                                             <connections>
                                                                 <action selector="legacyWiFi_Action_act:" target="XfG-lQ-9wD" id="RC1-mI-iVh"/>
-                                                            </connections>
-                                                        </button>
-                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W3i-15-mCO">
-                                                            <rect key="frame" x="-2" y="74" width="187" height="18"/>
-                                                            <buttonCell key="cell" type="check" title="AMD GPU SSE4.2 MouSSE" bezelStyle="regularSquare" imagePosition="left" inset="2" id="FpY-HT-NK3">
-                                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                                <font key="font" metaFont="system"/>
-                                                            </buttonCell>
-                                                            <connections>
-                                                                <action selector="mouSSE_Action_act:" target="XfG-lQ-9wD" id="uaw-6d-oUp"/>
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mAO-Pd-4vQ">
@@ -1448,10 +1438,8 @@ DQ
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
-                                                        <integer value="1000"/>
                                                     </visibilityPriorities>
                                                     <customSpacing>
-                                                        <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
@@ -1492,7 +1480,6 @@ DQ
                         <outlet property="DisableLibraryValidation" destination="DYc-Ys-UxX" id="US9-Ta-lWL"/>
                         <outlet property="DisableSIP" destination="M0Z-5v-afG" id="lSN-cb-V6u"/>
                         <outlet property="VerboseBoot_btn" destination="vt6-hs-Whx" id="JgZ-h7-sbw"/>
-                        <outlet property="amdMouSSE_btn" destination="W3i-15-mCO" id="dpk-8K-l4h"/>
                         <outlet property="amfiGlobalBootArgs" destination="Bgw-qI-tPD" id="GIY-B9-9On"/>
                         <outlet property="apfsRomPatcher" destination="6Od-GF-iHL" id="Vbc-rb-tC0"/>
                         <outlet property="appStoreMacOS_btn" destination="JFS-1h-7p0" id="rmc-15-LyP"/>

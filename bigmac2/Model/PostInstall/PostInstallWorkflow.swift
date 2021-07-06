@@ -119,12 +119,7 @@ extension ViewController {
                 let plug = "com.apple.telemetry.plugin"
                 _ = installKext(dest: dest, kext: plug, fold: uepi, ttle: teleTraptl)
             }
-            
-            if amdMouSSE {
-                let kext = "AAAMouSSE.kext"
-                _ = installKext(dest: dest, kext: kext, fold: lext, ttle: amdMouSSEtl)
-            }
-            
+        
             indicatorBump(updateProgBar: true)
             
             if hdmiAudio {

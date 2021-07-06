@@ -70,7 +70,6 @@ class ViewController: NSViewController, URLSessionDelegate {
     //MARK: Postinstall Tab
     @IBOutlet weak var enableUSB_btn: NSButton!
     @IBOutlet weak var disableBT2_btn: NSButton!
-    @IBOutlet weak var amdMouSSE_btn: NSButton!
     @IBOutlet weak var teleTrap_btn: NSButton!
     @IBOutlet weak var VerboseBoot_btn: NSButton!
     @IBOutlet weak var superDrive_btn: NSButton!

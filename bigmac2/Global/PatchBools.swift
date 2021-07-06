@@ -16,9 +16,6 @@ extension ViewController {
         
         disableBT2      = disableBT2_btn.state == .on
         disableBT2tl    = disableBT2_btn.title
-        
-        amdMouSSE       = amdMouSSE_btn.state == .on
-        amdMouSSEtl     = amdMouSSE_btn.title
 
         teleTrap        = teleTrap_btn.state == .on
         teleTraptl      = teleTrap_btn.title

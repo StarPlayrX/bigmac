@@ -53,7 +53,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             defaults.set(blessSystem, forKey: "blessSystem")
             defaults.set(deleteSnaphots, forKey: "deleteSnaphots")
             defaults.set(singleUser, forKey: "singleUser")
-            defaults.set(amdMouSSE, forKey: "amdMouSSE")
             defaults.set(installVersionIsLegacy, forKey: "installVersionIsLegacy")
         }
         

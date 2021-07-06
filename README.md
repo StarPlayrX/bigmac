@@ -54,7 +54,7 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
   * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
   * If the progress bar boots slowly and not far, that usually means that it will boot up.
   * With Race Condition, a full system seems to boot better when not in Verbose mode. This could just be voodoo.
-  *
+  * For AMD cards MouSSE is not needed. It's only needed on Mojave. I run an RX 580 8GB flashed and a Radeon Pro WX4100 non flashed. Neither need MouSSE. It will be removed from future versions of bigmac2.
  
 
 <img width="1920" alt="Screen Shot 2021-07-03 at 3 41 35 PM" src="https://user-images.githubusercontent.com/52664524/124365543-c48e8d80-dc16-11eb-961b-0e6f83a94b86.png">

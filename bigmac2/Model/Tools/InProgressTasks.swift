@@ -22,7 +22,6 @@ extension ViewController {
         
         return false
     }
-
     
     func que(label: String, function: () ) {
         
@@ -33,7 +32,6 @@ extension ViewController {
             d.async(execute: w)
         }
     }
-   
     
     func dosDude1inProgressTask(label: String, dmg: String) {
         if cancelTask() { return }
@@ -46,7 +44,6 @@ extension ViewController {
         }
     }
     
-    
     func bigMacDataPatchDMG(label: String = "BigData Patches", dmg: String = bigDataDMG) {
         if cancelTask() { return }
         
@@ -58,7 +55,6 @@ extension ViewController {
         }
     }
     
-
     func downloadMacOSTask(label: String = "Downloading macOS", urlString: String) {
         if cancelTask() { return }
         
@@ -66,50 +62,46 @@ extension ViewController {
         que(label: label, function: function)
     }
     
-  
-    
-     @objc func EraseDisk(_ notification:Notification) {
+    @objc func EraseDisk(_ notification:Notification) {
         volumeInfo = notification.object as? myVolumeInfo ?? myVolumeInfo(diskSlice: "", disk: "", displayName: "", volumeName: "", path: "", uuid: "", external: false, root: false, capacity: 0)
-      
+        
         DispatchQueue.main.async { [self] in
             spinnerAnimation(start: true, hide: false)
         }
         
         let path = "/Users/shared/\(bigmacDMG)"
-
+        
         if !checkIfFileExists(path: path) {
             
             if cancelTask() { return }
-
+            
             let function: () = downloadBigMac2(dmg:"\(https)://\(domain)/\(bigmac2)/\(bigmacDMG)")
             que(label: bigmacDMG, function: function)
             
         } else {
             isoBootMedia()
         }
-     }
-
- 
+    }
+    
     func isoBootMedia() {
         if cancelTask() { return }
-
+        
         DispatchQueue.main.async { [self] in
             isBaseSingleUser = singleUserCheckbox.state == .on
             isBaseVerbose = verboseUserCheckbox.state == .on
             spinnerAnimation(start: true, hide: false)
         }
-     
+        
         let function: () = installIsoBootDisk(diskInfo: volumeInfo, isVerbose: isBaseVerbose, isSingleUser: isBaseSingleUser).self
-
+        
         que(label: "Install Boot Media", function: function)
         
     }
     
-     @objc func CreateDisk(_ notification:Notification){
+    @objc func CreateDisk(_ notification:Notification){
         isoBootMedia()
-     }
-    
-    
+    }
+
     func currentWorkflowEnded() {
         if let _ = globalDispatch, let _ = globalWorkItem {
             globalDispatch = nil

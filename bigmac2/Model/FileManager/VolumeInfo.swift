@@ -6,7 +6,6 @@
 //
 import Foundation
 
-//
 func getVolumeInfo(includeHiddenVolumes: Bool, includeRootVol: Bool = false, includePrebootVol: Bool = false) -> [myVolumeInfo]? {
 
     let URLResourceKeys : [URLResourceKey] = [.volumeNameKey, .volumeIsRemovableKey, .volumeIsBrowsableKey, .volumeIsLocalKey, .volumeIsReadOnlyKey, .volumeIsInternalKey, .volumeIsAutomountedKey, .volumeIsEjectableKey, .volumeUUIDStringKey, .isWritableKey, .volumeIdentifierKey, .volumeLocalizedFormatDescriptionKey, .volumeLocalizedNameKey, .volumeTotalCapacityKey, .isHiddenKey, .volumeIsRootFileSystemKey]

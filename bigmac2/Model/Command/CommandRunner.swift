@@ -9,7 +9,6 @@
 
 import Foundation
 
-
 /// Run command and ignore the result.
 /// - Parameters:
 ///   - binary: path to bsd executable
@@ -24,7 +23,6 @@ func runCommand(binary: String, arguments: [String]) {
     process.launch()
     process.waitUntilExit()
 }
-
 
 /// Run command and return the result.
 /// - Parameters:
@@ -55,7 +53,6 @@ func runCommandReturnStr(binary: String, arguments: [String]) -> String? {
     return ""
 }
 
-
 //set volname to text 1 thru -2 of (path to startup disk as string)
 /// Performs an AppleScript and return String and error NSDictionary.
 /// - Parameter script: script to run as text
@@ -72,7 +69,6 @@ func performAppleScript (script: String) -> (text: String?, error: NSDictionary?
     
     return (text: text, error: error)
 }
-
 
 extension ViewController {
     
@@ -177,6 +173,3 @@ extension ViewController {
         process.waitUntilExit()
     }
 }
-
-
-

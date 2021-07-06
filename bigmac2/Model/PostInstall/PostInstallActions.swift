@@ -84,6 +84,3 @@ extension ViewController {
         installKCs = updateBootSysKCs.state == .on
     }
 }
-
-
-

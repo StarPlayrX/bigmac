@@ -9,7 +9,6 @@ import Cocoa
 
 class InstallViewController: NSViewController {
 
-  
     override func viewWillAppear() {
         super.viewDidAppear()
        

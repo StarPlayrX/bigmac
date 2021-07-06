@@ -43,7 +43,6 @@ class ViewController: NSViewController, URLSessionDelegate {
         donate2BigMac()
     }
     
-    
     //MARK: Preinstall Tab -- Outlets
     @IBOutlet weak var DisableLibraryValidation: NSButton!
     @IBOutlet weak var DisableSIP: NSButton!
@@ -131,5 +130,3 @@ class TabView : NSTabView {
     override func awakeFromNib() {
     }
 }
-
-

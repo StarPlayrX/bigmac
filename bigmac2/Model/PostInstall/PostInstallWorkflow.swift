@@ -34,7 +34,6 @@ extension ViewController {
         }
     }
     
-    
     func PostInstall() {
         
         DispatchQueue.global(qos: .background).async { [self] in
@@ -206,7 +205,6 @@ extension ViewController {
                 _ = runCommandReturnStr(binary: bless, arguments: ["--folder", "\(path)System/Library/CoreServices" , "--bootefi", "--label", systemVolume.displayName, "--setBoot"]) ?? ""
 
             }
-            
             
             DispatchQueue.main.async { [self] in
                 indicatorBump(taskMsg: "Completed the selected patches...", detailMsg: "")

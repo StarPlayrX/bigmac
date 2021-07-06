@@ -30,4 +30,3 @@ class WindowController : NSWindowController {
         }
     }
 }
-

@@ -8,7 +8,6 @@
 import Foundation
 import AppKit
 
-
 class EraseDiskViewController : NSViewController {
     
     @IBOutlet weak var volumePopup: NSPopUpButton!
@@ -67,5 +66,3 @@ class EraseDiskViewController : NSViewController {
         }
     }
 }
-
-

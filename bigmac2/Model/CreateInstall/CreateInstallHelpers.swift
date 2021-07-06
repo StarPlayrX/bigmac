@@ -27,7 +27,6 @@ extension ViewController {
         }
     }
     
-    
     //MARK: To do - Setup a variable
     func downloadDMG(diskImage: String, webSite: String) {
         //Remove pre-existing file
@@ -42,7 +41,6 @@ extension ViewController {
             download(urlString: "\(webSite)\(diskImage)")
         }
     }
-    
     
     //MARK: To do - Setup a variable
     func downloadPkg(pkgString: String) {
@@ -283,5 +281,3 @@ extension ViewController {
         }
     }
 }
-
-

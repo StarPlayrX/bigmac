@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 extension ViewController {
     
     //MARK: Task #1

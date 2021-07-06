@@ -5,7 +5,6 @@
 //  Created by starplayrx on 12/19/20.
 //
 
-
 import Cocoa
 
 extension ViewController : URLSessionDownloadDelegate {
@@ -68,8 +67,6 @@ extension ViewController : URLSessionDownloadDelegate {
                     print(error)
             }
         }
-        
-     
         
         if let filename = downloadTask.currentRequest?.url?.lastPathComponent {
             

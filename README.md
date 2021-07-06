@@ -4,7 +4,7 @@
 
 Both macOS Big Sur and Monterey have race condition(s) that is inside the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware.
 
-### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg (7 MB)</a>
+### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg 7 MB</a>
 
 ### First Time User Guide (from an unsupported Mac)
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch

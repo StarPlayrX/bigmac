@@ -2,7 +2,7 @@
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 
-Both macOS Big Sur and Monterey have race condition(s) that is inside the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware. We are hoping that these race conditions can be found in supported Mac hardware, so current and future versions of macOS can be fixed for everyone.
+Both macOS Big Sur and Monterey have race condition(s) that is inside the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware.
 
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg (7 MB)</a>
 

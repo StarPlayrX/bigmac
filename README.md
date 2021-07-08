@@ -7,6 +7,7 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg 7MB</a>
 
 ### First Time User Guide (from an unsupported Mac)
+* If Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
 * If you want native WiFi and BT4, do yourself a huge favor and get a 802.11ac/BT4LE Broadcom black iMac style combo card. This will also give you Airdrop and Handoff without and weird hacks.
@@ -33,8 +34,8 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
     * `csrutil authenticated-root disable`
 
    * Download BigMac2 beta
-   * Select install macOS Monterey beta 2
    * if Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`
+   * Select install macOS Monterey beta 2
    * Boot from bigmac2
    * From the Springboard, launch bigmac2
    * From bigmac2's pre install tab, Launch the installer. In five seconds, the macOS installer will be shown.

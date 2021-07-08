@@ -34,8 +34,7 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
 
    * Download BigMac2 beta
    * Select install macOS Monterey beta 2
-   * if Bigmac2 app does not run, download Xcode and compile it from source. From Xcode set the development team to none or personal and set the app signing to run locally. Always clean the build before building. bigdata.dmg gets downloaded each time. This is to save diskspace inside the repo.
-   * Install bigmac2 on a USB 2.0 32Gb Partition (if the USB2.0 drive is a min of 128GB, the rest of the disk can be used for the install)
+   * if Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/AppName.app`
    * Boot from bigmac2
    * From the Springboard, launch bigmac2
    * From bigmac2's pre install tab, Launch the installer. In five seconds, the macOS installer will be shown.

@@ -9,6 +9,7 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
 ### First Time User Guide (from an unsupported Mac)
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.
+* If you want native WiFi and BT4, do yourself a huge favor and get a 802.11ac/BT4LE Broadcom black iMac style combo card. This will also give you Airdrop and Handoff without and weird hacks.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
 * Next disable SIP. Boot BigMac 2 up from an extenral USB 2.0 on an unsupported Mac:
 

@@ -34,7 +34,7 @@ Both macOS Big Sur and Monterey have race condition(s) that is inside the boot p
 
    * Download BigMac2 beta
    * Select install macOS Monterey beta 2
-   * if Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/AppName.app`
+   * if Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`
    * Boot from bigmac2
    * From the Springboard, launch bigmac2
    * From bigmac2's pre install tab, Launch the installer. In five seconds, the macOS installer will be shown.

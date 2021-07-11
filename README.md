@@ -4,6 +4,10 @@
 
 Both macOS Big Sur and Monterey have race condition(s) that is inside the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware.
 
+* Many people think macOS Big Sur 11.2.3 and before does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and later. How can I tell if my mac is going through a race condition? If your mac has Firewire, you will see repeatly `firewire <ptr> is invalid.` When this happens, your best bet is to turn off your Mac and reboot. This firewire pointer error is usually displayed in anytime a Mac Pro enters a race condition. 
+* On macOS 11.3 and later, you will see things with Crypto that completely halt the boot process from continuing. In verbose mode, you will see a freeze. 
+* If your mac can make it to DMOS, you are usually home free and your Mac will boot up. On Big Sur, if you can get to Single user mode, and exit, you are usually home free as well and your Mac will boot. 
+* On Monterey this logic does not hold and its race condition can lock up before single user happens.
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg 7MB</a>
 
 ### First Time User Guide (from an unsupported Mac)

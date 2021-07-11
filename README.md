@@ -11,7 +11,7 @@
 * If your mac can make it to DMOS, you are usually home free and your Mac will boot up. On Big Sur, if you can get to Single user mode, and exit, you are usually home free.
 * I have considered removing Firewire extensions from Big Sur to see if that has any bearing. This is something most users can live without.
 * On Monterey things happen even more randomly and more unpreditable than Big Sur 11.3 and later. Even the single user boot does not hold true as it crashes as well.
-### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg 7MB</a>
+### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">bigmac2_v2.0.5.dmg 23.1MB</a>
 
 ### First Time User Guide (from an unsupported Mac)
 * If Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`

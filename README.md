@@ -10,7 +10,7 @@
 * On macOS 11.3 and later, you will see things with Crypto and USB HID that completely halt the boot process from continuing. In verbose mode, you will see a freeze. In not verbose mode, the process bar will go to about 25% and the you will see a forbiden sign with the slash.
 * If your mac can make it to DMOS, you are usually home free and your Mac will boot up. On Big Sur, if you can get to Single user mode, and exit, you are usually home free.
 * I have considered removing Firewire extensions from Big Sur to see if that has any bearing. This is something most users can live without.
-* On Monterey things happen even more randomly and more unpreditable than Big Sur 11.3 and later. Even the single user boot does not hold true.
+* On Monterey things happen even more randomly and more unpreditable than Big Sur 11.3 and later. Even the single user boot does not hold true as it crashes as well.
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.4.dmg">bigmac2_v2.0.4.dmg 7MB</a>
 
 ### First Time User Guide (from an unsupported Mac)
@@ -20,12 +20,9 @@
 * If you want native WiFi and BT4, do yourself a huge favor and get a 802.11ac/BT4LE Broadcom black iMac style combo card. This will also give you Airdrop and Handoff without and weird hacks.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
 * Next disable SIP. Boot BigMac 2 up from an extenral USB 2.0 on an unsupported Mac:
-
-`csrutil`
-
-`csrutil disable`
-
-`csrutil authenticated-root disable`
+* `csrutil`
+* `csrutil disable`
+* `csrutil authenticated-root disable`
 
  * This should stop the Kill -9 errors users have been getting
 

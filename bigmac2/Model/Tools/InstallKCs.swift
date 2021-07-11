@@ -20,12 +20,11 @@ extension ViewController {
         
         //MARK: Constants
         let bigMacApp = Bundle.main.bundlePath
-        let kmu = "kmu"
         
-        // Update Kernel Extensions
-        runCommand(binary: "\(bigMacApp)/Contents/Resources/\(kmu)" , arguments: [ destVolume ])
+        // MARK: Update Kernel Extensions 
+        runCommand(binary: "\(bigMacApp)/Contents/Resources/kmu" , arguments: [ destVolume ])
         
-        // Copy Kernel Extensions (Takes not arguments and will fail if arguments are added
+        // MARK: Copy Kernel Extensions - Takes no arguments and will fail if arguments are added
         runCommand(binary: "\(destVolume)/usr/sbin/kcditto" , arguments: [])
     }
 }

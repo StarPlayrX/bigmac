@@ -79,16 +79,11 @@ class PostInstallViewController : NSViewController {
         nameB.addAttributes(green, range: NSRange(location: 0, length: name2.count + 1))
         creditsTextView.textStorage?.append(nameB)
         
-        let name3 = "\n🍏 ASentientBot - Hax3 Installer\n"
+        let name3 = "\n🍓 ASentientBot - Hax.dylib\n"
         let nameC = NSMutableAttributedString(string: name3)
         nameC.addAttributes(green, range: NSRange(location: 0, length: name3.count + 1))
         creditsTextView.textStorage?.append(nameC)
-        
-        let name4 = "\n🍓 BarryKN      - Hax3 APFS Support\n"
-        let nameD = NSMutableAttributedString(string: name4)
-        nameD.addAttributes(green, range: NSRange(location: 0, length: name4.count + 1))
-        creditsTextView.textStorage?.append(nameD)
-        
+     
         let name4b = "\n🥥 CorpNewt     - USB Map\n"
         let nameI = NSMutableAttributedString(string: name4b)
         nameI.addAttributes(green, range: NSRange(location: 0, length: name4b.count + 1))
@@ -104,12 +99,12 @@ class PostInstallViewController : NSViewController {
         nameE.addAttributes(green, range: NSRange(location: 0, length: name5.count + 1))
         creditsTextView.textStorage?.append(nameE)
         
-        let name9 = "\n🍍 Exvision     - HDMI Audio\n"
+        let name9 = "\n🍉 Exvision     - HDMI Audio\n"
         let nameL = NSMutableAttributedString(string: name9)
         nameL.addAttributes(green, range: NSRange(location: 0, length: name9.count + 1))
         creditsTextView.textStorage?.append(nameL)
         
-        let name10 = "\n🍉 StarPlayrX   - Snapshot Delete\n"
+        let name10 = "\n🍏 StarPlayrX   - Snapshot Delete\n"
         let nameO = NSMutableAttributedString(string: name10)
         nameO.addAttributes(green, range: NSRange(location: 0, length: name10.count + 1))
         creditsTextView.textStorage?.append(nameO)

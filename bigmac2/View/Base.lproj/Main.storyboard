@@ -945,9 +945,9 @@ DQ
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8r8-CA-8z3">
-                                                            <rect key="frame" x="-2" y="-1" width="246" height="42"/>
+                                                            <rect key="frame" x="-2" y="10" width="205" height="28"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <textFieldCell key="cell" title="APFS native booting is required without a third party boot loader. by DosDude1" id="4Fv-gb-UHD">
+                                                            <textFieldCell key="cell" title="APFS native booting is required without a third party boot loader." id="4Fv-gb-UHD">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1119,15 +1119,6 @@ DQ
                                                     <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="These options are fully functional when booted from a bigmac2 install disk." id="Acb-2t-DSU">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    </textFieldCell>
-                                                </textField>
-                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjh-kh-ghY">
-                                                    <rect key="frame" x="15" y="17" width="476" height="16"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Features Hax3 for native APFS Installs created by ASentientBot | BarryKN" id="EGr-yV-yOc">
-                                                        <font key="font" metaFont="system"/>
-                                                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>

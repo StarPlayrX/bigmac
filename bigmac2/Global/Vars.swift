@@ -133,7 +133,7 @@ let macOS = "macOS"
 let tempDiskImage = "bm2tmp0"
 let applications = "Applications"
 let basesystem = "BaseSystem"
-let haxDylib = "HaxDoNotSealNoAPFSROMCheck.dylib"
+let haxDylib = "Hax.dylib"
 var bigdata = "bigdata"
 let macSoftwareUpdate = "com_apple_MobileAsset_MacSoftwareUpdate"
 

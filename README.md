@@ -4,8 +4,9 @@
 
 ### Both macOS Big Sur and Monterey have race conditions that are in the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware. 
 
-* Many people think macOS Big Sur 11.2.3 and lower does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and later. How can I tell if my mac is going through a race condition? If your mac has Firewire, you will see repeatly `firewire <ptr> is invalid.` When this happens, your best bet is to turn off your Mac and reboot. This firewire pointer error is usually displayed in anytime a Mac Pro enters a race condition. On occasion it will still boot up, but it's rare.
-* On macOS 11.2.3 and lower, you will see en0 spit out two rows of Airport channel numbers. It will be a long string. When this happens, you guessed it. It's a race condition and it will not boot up. Reboot your Mac.
+* Many people think macOS Big Sur 11.2.3 and lower does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and later. 
+* How can I tell if my mac is going through a race condition? If your mac has Firewire, you will see repeatly `firewire <ptr> is invalid.` When this happens, your best bet is to turn off your Mac and reboot. This firewire pointer error is usually displayed in anytime a Mac Pro enters a race condition. On occasion it will still boot up, but it's rare.
+* On macOS 11.2.3 and lower, you will see en0 spit out two rows of Airport channel numbers. It will be a long string. When this happens, you guessed it. It's a race condition and it will not boot up. Reboot your Mac. You'll see the firewire ptr error there after.
 * On macOS 11.3 and later, you will see things with Crypto and USB HID that completely halt the boot process from continuing. In verbose mode, you will see a freeze. In not verbose mode, the process bar will go to about 25% and the you will see a forbiden sign with the slash.
 * If your mac can make it to DMOS, you are usually home free and your Mac will boot up. On Big Sur, if you can get to Single user mode, and exit, you are usually home free.
 * I have considered removing Firewire extensions from Big Sur to see if that has any bearing. This is something most users can live without.

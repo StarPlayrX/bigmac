@@ -2,6 +2,8 @@
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 
+### <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
+
 ### Both macOS Big Sur and Monterey have race conditions that are in the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware. 
 
 * Many people think macOS Big Sur 11.2.3 and lower does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and higher. 

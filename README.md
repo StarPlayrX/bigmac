@@ -4,7 +4,7 @@
 
 ### Both macOS Big Sur and Monterey have race conditions that are in the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware. 
 
-* Many people think macOS Big Sur 11.2.3 and lower does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and later. 
+* Many people think macOS Big Sur 11.2.3 and lower does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and higher. 
 * How can I tell if my mac is going through a race condition? If your mac has Firewire, you will see repeatly `firewire <ptr> is invalid.` When this happens, your best bet is to turn off your Mac and reboot. This firewire pointer error is usually displayed anytime a Mac Pro enters a race condition. If this happens very late in the boot process, it will still boot up, but it's rare. Always let it repeat a few times before rebooting.
 * On macOS 11.2.3 and lower, you will see en0 spit out two rows of Airport channel numbers. It will be a long string. When this happens, you guessed it, it's a race condition and it will not boot up.  You'll start to see the firewire ptr error there after. Reboot your Mac.
 * On macOS 11.3 and later, you will see things with Crypto and USB HID that completely halt the boot process from continuing. In verbose mode, you will see a freeze. In not verbose mode, the process bar will go to about 25% and the you will see a forbiden sign with the slash.

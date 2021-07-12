@@ -14,6 +14,7 @@
 ### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">bigmac2_v2.0.5.dmg 23.1MB</a>
 
 ### First Time User Guide (from an unsupported Mac)
+* If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)
 * If Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
 * If you have not installed dosdude1's APFS ROM Patcher, do that first.

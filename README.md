@@ -4,6 +4,8 @@
 
 ### <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
 
+### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
+
 ### Both macOS Big Sur and Monterey have race conditions that are in the boot process. This makes it very challenging to install and boot macOS on unsupported Mac hardware. 
 
 * Many people think macOS Big Sur 11.2.3 and lower does not have a race condition in its boot process. This is not true. It just happens much less frequently than 11.3 and higher. 
@@ -13,7 +15,6 @@
 * If your mac can make it to DMOS, you are usually home free and your Mac will boot up. On Big Sur, if you can get to Single user mode, and exit, you are usually home free.
 * I have considered removing Firewire extensions from Big Sur to see if that has any bearing. This is something most users can live without.
 * On Monterey things happen even more randomly and more unpreditable than Big Sur 11.3 and later. Even the single user boot does not hold true as it crashes as well.
-### <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
 ### First Time User Guide (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)

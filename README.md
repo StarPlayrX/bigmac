@@ -2,6 +2,14 @@
 
 #### We are keeping a close watch on the latebloom.kext. We add support for it when it is out of beta.
 
+#### My view of a race condition
+* Four race cars enter a 4 way stop all at the same exact time.
+* To proceed each drive must let the person on the right go
+* If a car is to the drivers left, the drive cannot go
+* This creates race condition. No drivers can go.
+* To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
+* Other way of looking at this to have 1 driver back up so he is not to the left of another driver. Then at least on car can go. Repeat until all cars have left.
+
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>

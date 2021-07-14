@@ -1,5 +1,7 @@
 # 🍔 Big Mac 2
 
+#### Big Mac 2 will be joining the crusade against Race Conditions and will be adding support for LateBloom. Some intial testing looks very promising. Credit to Syncetric
+
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>

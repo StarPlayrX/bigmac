@@ -1,6 +1,6 @@
 # 🍔 Big Mac 2
 
-#### We are keeping a close watch on latebloom.kext. When we feel it's ready for prime time, it will be added to BigMac.
+#### We are keeping a close watch on latebloom.kext. We will add it when it's out of beta.
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

@@ -1,6 +1,6 @@
 # 🍔 Big Mac 2
 
-#### Big Mac 2 will be joining the crusade against Race Conditions and will be adding support for LateBloom. With Monterey beta 2, initial tests are very promising. Unforunately, 11.4 is not working well with LB. We will be keeping a close watch on future updates. BigMac will continue to support 11.2.3 as long as Apple has it available. When 11.2.3 is taken offline, BigMac will update to the next version that works with LB. Credit to Syncetric on releasing beta 17 of LateBloom.
+#### We are keeping a close watch on latebloom.kext. When we feel it's ready for prime time, it will be added to BigMac.
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

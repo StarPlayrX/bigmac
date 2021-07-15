@@ -1,6 +1,6 @@
 # 🍔 Big Mac 2
 
-#### We are keeping a close watch on the latebloom.kext. We add support for it when it is out of beta.
+#### We are keeping a close watch on the latebloom.kext. We add support for it for soon. Right now I'm doing some manual testing with Big Sur and Monterey.
 
 #### My view of a race condition
 * Four race cars enter a 4 way stop all at the same exact time.
@@ -8,8 +8,11 @@
 * If a car is to the to the drivers left, the driver cannot go
 * This creates race condition. No drivers can go. A complete dead lock.
 * To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
-* Other way of looking at this to have 1 driver back up so he is not to the left of another driver. Then a driver can go, and so can the next one.
-* This might be an over simplified race condition as the macOS boot process is pretty complex.
+* Other way of looking at this to have 1 driver back up so he is not to the left of another driver.
+* Then a driver can go, and so can the next one. 
+* And all four drivers have now cleared of the four way stop.
+* This might be an over simplification of a race condition as the macOS boot process from BigSur and beyong is pretty complex.
+* You'd think these conditions would not exist with Sealed disks, KCs, snapshots, but they do especially with Unsupported Macs.
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

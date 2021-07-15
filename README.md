@@ -1,6 +1,6 @@
 # 🍔 Big Mac 2
 
-#### We are keeping a close watch on the latebloom.kext. We add support for it for soon. Right now I'm doing some manual testing with Big Sur and Monterey.
+#### We are keeping a close watch on the latebloom.kext. We add support for it for soon. Right now I'm doing some manual testing with Big Sur and Monterey. Installations are a bug a boo. I am going to be testing some workarounds such as including older signed base systems.
 
 #### My view of a race condition
 * Four race cars enter a 4 way stop all at the same exact time.

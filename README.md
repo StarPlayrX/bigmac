@@ -2,6 +2,7 @@
 
 #### We are keeping a close watch on the latebloom.kext. We add support for it for soon. Right now I'm doing some manual testing with Big Sur and Monterey. Installations are a bug a boo. I am going to be testing some workarounds such as including older signed base systems.
 
+#### Reminder to download 11.2.3 and keep it in safe place. This can be done from bigmac and check your /Users/Shared folder. ;)
 #### My view of a race condition
 * Four race cars enter a 4 way stop all at the same exact time.
 * To proceed each driver must let the person on the right go.

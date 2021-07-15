@@ -8,7 +8,6 @@
 * If a car is to the to the driver's left, the driver cannot go.
 * This creates race condition. No drivers can go. A complete traffic jam also known as a deadlock.
 * To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
-* Other way of looking at this to have 1 driver back up so he is not to the left of another driver.
 * Then a driver can go, and so can the next one. 
 * And all four drivers have now cleared of the four way stop.
 * This might be an over simplification of a race condition as the macOS boot process from BigSur and beyong is pretty complex.

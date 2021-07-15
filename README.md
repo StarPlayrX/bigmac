@@ -4,11 +4,12 @@
 
 #### My view of a race condition
 * Four race cars enter a 4 way stop all at the same exact time.
-* To proceed each drive must let the person on the right go
-* If a car is to the drivers left, the drive cannot go
-* This creates race condition. No drivers can go.
+* To proceed each driver must let the person on the right go
+* If a car is to the to the drivers left, the driver cannot go
+* This creates race condition. No drivers can go. A complete dead lock.
 * To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
-* Other way of looking at this to have 1 driver back up so he is not to the left of another driver. Then at least on car can go. Repeat until all cars have left.
+* Other way of looking at this to have 1 driver back up so he is not to the left of another driver. Then a driver can go, and so can the next one.
+* This might be an over simplified race condition as the macOS boot process is pretty complex.
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

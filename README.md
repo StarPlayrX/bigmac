@@ -4,9 +4,9 @@
 
 #### My view of a race condition
 * Four race cars enter a 4 way stop all at the same exact time.
-* To proceed each driver must let the person on the right go
-* If a car is to the to the drivers left, the driver cannot go
-* This creates race condition. No drivers can go. A complete dead lock.
+* To proceed each driver must let the person on the right go.
+* If a car is to the to the driver's left, the driver cannot go.
+* This creates race condition. No drivers can go. A complete traffic jam also known as a deadlock.
 * To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
 * Other way of looking at this to have 1 driver back up so he is not to the left of another driver.
 * Then a driver can go, and so can the next one. 

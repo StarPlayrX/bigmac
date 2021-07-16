@@ -13,10 +13,8 @@ extension ViewController {
     func updateInstallerPkg() ->  (result: String, installed: Bool) {
         
         var vet = (result: "Updating the disk failed!", installed: false)
-        
         let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
-
-        let InstallAsst = oldInstallerPkg
+        let InstallAsst = usersSharedBigMac2 + installAssistantPkg
         let InstallApp = "/Applications/\(installOSapp)"
 
         if checkIfFileExists(path: InstallAsst) && !checkIfFileExists(path: InstallApp) {

@@ -27,7 +27,6 @@ extension ViewController {
         }
     }
     
-    //MARK: To do - Setup a variable
     func downloadDMG(diskImage: String, webSite: String) {
         //Remove pre-existing file
         runCommand(binary: "/bin/rm", arguments: ["-Rf","\(usersSharedBigMac2)\(diskImage)"])
@@ -41,24 +40,16 @@ extension ViewController {
         }
     }
     
-    //MARK: To do - Setup a variable
     func downloadPkg(pkgString: String) {
-        //Remove pre-existing file
-                        
-        runCommand(binary: "/bin/rm", arguments: ["-Rf",oldInstallerPkg])
         runCommand(binary: "/bin/rm", arguments: ["-Rf",usersSharedBigMac2 + installAssistantPkg])
-        
         DispatchQueue.main.async { [self] in
-            
         downloadLabel.stringValue = installVersionIsLegacy ? macOS11 : macOS12
-     
             DispatchQueue.global(qos: .background).async {
                 self.download(urlString: pkgString)
             }
         }
     }
     
-    //MARK: To do - Setup a variable
     func downloadBigMac2(dmg: String) {
         //Remove pre-existing file
         runCommand(binary: "/bin/rm", arguments: ["-Rf","\(usersSharedBigMac2)\(bigmacDmg)"]) //Future check if it's complete and has right checksum

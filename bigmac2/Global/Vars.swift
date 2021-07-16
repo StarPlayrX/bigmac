@@ -2,7 +2,8 @@
 //  Vars.swift
 //  bigmac2
 //
-//  Created by starplayrx on 1/6/21.SE
+//  Created by starplayrx on 1/6/21
+
 import Foundation
 
 var installVersionIsLegacy = true
@@ -11,11 +12,16 @@ var installVersionIsLegacy = true
 var installLegacyVersion = "macOS 11.2.3"
 var installmacOS12Version = "macOS Monterey beta"
 
+var oldInstallerPkg = "/Users/Shared/InstallAssistant.pkg"
+var usersSharedBigMac2 = "/Users/Shared/bigmac2/"
+var installAssistantPkg = "InstallAssistant.pkg"
+
+
 //MacOS 11.2.3 Download
 var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/071-14766-A_Q2H6ELXGVG/zx8saim8tei7fezrmvu4vuab80m0e8a5ll/InstallAssistant.pkg"
 
-//Monterey 12.0 Beta 2 Download
-var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/54/23/071-59953-A_U9D4NB05NR/nqzt71pnylsuux326a4vqexb33oz0auhas/InstallAssistant.pkg"
+//Monterey 12.0 Beta 3 Download
+var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/02/08/071-63739-A_G5RYVW5JHT/dfz5gp3s0jm9vl7m30oewq141zkpv8edr8/InstallAssistant.pkg"
 
 //Application names
 let macOS11 = "macOS Big Sur"
@@ -100,9 +106,9 @@ var legacyWiFitl = ""
 var installKCstl = ""
 var blessSystemtl = ""
 var deleteSnaphotstl = ""
-var bigmacDMG = "bigmac2.dmg"
-var bigdataDMG = "bigdata.dmg"
-var dosDude1DMG = "dosdude1.dmg"
+var bigmacDmg = "bigmac2.dmg"
+var bigdataDmg = "bigdata.dmg"
+var dosDude1Dmg = "dosdude1.dmg"
 var bigmac2Str = "bigmac2"
 var domain = "www.starplayrx.com"
 var tmpFolder = "/tmp/"
@@ -140,7 +146,7 @@ let macSoftwareUpdate = "com_apple_MobileAsset_MacSoftwareUpdate"
 let wildZip = "*.zip"
 let restoreBaseSystem = "AssetData/Restore/BaseSystem.dmg"
 var installerVolume = "/Volumes/bigmac2"
-let shared = "Shared/" //copy to shared directory
+let sharedBigmac2 = "Shared/bigmac2/" //copy to shared bigmac2 directory
 let apfs = "/System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util"
 var drivX = "/"
 let file = "file://"

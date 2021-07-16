@@ -13,7 +13,7 @@ extension ViewController {
     func BootSystem(system: myVolumeInfo, dataVolumeUUID: String, isVerbose: Bool, isSingleUser: Bool, prebootVolume : String, isBaseSystem: Bool = false) {
         
         //Get Preboot Ready
-        let prebootPath = "/tmp/\(prebootVolume)"
+        let prebootPath = "\(tmpFolder)\(prebootVolume)"
         
         func forceUnmounts() {
             let unmounts = [prebootVolume, "Recovery"]
@@ -98,10 +98,8 @@ extension ViewController {
                         
             txt2file(text: bootPlistTxt, file:  "\(system.path)/\(sysLibTmD)/\(libPreSyC)/\(bootPlist)")
             txt2file(text: bootPlistTxt, file:  "\(prebootPath)/\(dataVolumeUUID)/\(libPreSyC)/\(bootPlist)")
-            
         }
         
         forceUnmounts()
-        
     }
 }

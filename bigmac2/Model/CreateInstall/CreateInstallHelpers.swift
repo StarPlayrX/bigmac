@@ -30,8 +30,7 @@ extension ViewController {
     //MARK: To do - Setup a variable
     func downloadDMG(diskImage: String, webSite: String) {
         //Remove pre-existing file
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/\(diskImage)"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/\(diskImage)"]) //Future check if it's complete and has right checksum
+        runCommand(binary: "/bin/rm", arguments: ["-Rf","\(usersSharedBigMac2)\(diskImage)"])
         
         DispatchQueue.main.async { [self] in
             downloadLabel.stringValue = diskImage
@@ -45,17 +44,10 @@ extension ViewController {
     //MARK: To do - Setup a variable
     func downloadPkg(pkgString: String) {
         //Remove pre-existing file
-                
-        //clean house
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/bigmac2.dmg"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/bigmac2.dmg"]) //Future check if it's complete and has right checksum
+                        
+        runCommand(binary: "/bin/rm", arguments: ["-Rf",oldInstallerPkg])
+        runCommand(binary: "/bin/rm", arguments: ["-Rf",usersSharedBigMac2 + installAssistantPkg])
         
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/InstallAssistant.pkg"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf", installShortOS11])
-        runCommand(binary: "/bin/rm", arguments: ["-Rf", installShortOS12])
-
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/InstallAssistant.pkg"])
         DispatchQueue.main.async { [self] in
             
         downloadLabel.stringValue = installVersionIsLegacy ? macOS11 : macOS12
@@ -69,8 +61,7 @@ extension ViewController {
     //MARK: To do - Setup a variable
     func downloadBigMac2(dmg: String) {
         //Remove pre-existing file
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/Users/shared/bigmac2.dmg"]) //Future check if it's complete and has right checksum
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","/tmp/bigmac2.dmg"]) //Future check if it's complete and has right checksum
+        runCommand(binary: "/bin/rm", arguments: ["-Rf","\(usersSharedBigMac2)\(bigmacDmg)"]) //Future check if it's complete and has right checksum
                 
         DispatchQueue.main.async { [self] in
             downloadLabel.stringValue = globalDispatch?.label ?? "Downloading disk"

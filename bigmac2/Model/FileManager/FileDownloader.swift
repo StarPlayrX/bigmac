@@ -12,10 +12,10 @@ extension ViewController : URLSessionDownloadDelegate {
     public func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) -> Void {
         
         let a = round (Float(totalBytesWritten) / 1000 / 1000 / 10 ) / 100 //Gigabytes In
-        if !a.isFinite || a.isNaN { return }
+        if a.isInfinite || a.isNaN { return }
 
         let b = round (Float(totalBytesExpectedToWrite) / 1000 / 1000 / 10 ) / 100 //Gigabytes Max
-        if !b.isFinite || b.isNaN || b.isZero { return }
+        if b.isInfinite || b.isNaN || b.isZero { return }
         
         if ( a / b ).isNaN || ( a / b ).isInfinite { return }
 
@@ -75,15 +75,17 @@ extension ViewController : URLSessionDownloadDelegate {
                 let resourceURL = Bundle.main.resourceURL
             
                 if let savedURL = resourceURL?.appendingPathComponent ( filename) {
-               
-                    if filename == bigmacDMG, let userURL = try? fm.url (for: .userDirectory, in: .localDomainMask, appropriateFor: nil, create: false).appendingPathComponent("Shared/" + filename)  {
+                    
+                    _ = mkDir(arg:usersSharedBigMac2)
+
+                    if filename == bigmacDmg, let userURL = try? fm.url (for: .userDirectory, in: .localDomainMask, appropriateFor: nil, create: false).appendingPathComponent(sharedBigmac2 + filename)  {
                         moveItem(at: location, to: userURL  )
                         sleep(1)
                         globalCompletedTask()
                         NotificationCenter.default.post(name: .CreateDisk, object: nil)
                     }
                     
-                    if filename == dosDude1DMG {
+                    if filename == dosDude1Dmg {
                         moveItem(at: location, to: savedURL)
                         sleep(1)
                         _ = mountDiskImage(arg: ["mount", "\(savedURL.path)", "-noverify", "-noautofsck", "-autoopen"])
@@ -102,8 +104,10 @@ extension ViewController : URLSessionDownloadDelegate {
               
 
             } else {
+                _ = mkDir(arg:usersSharedBigMac2)
+
                 let documentsURL = try? fm.url(for: .userDirectory, in: .allDomainsMask, appropriateFor: nil, create: false)
-                let savedURL = documentsURL?.appendingPathComponent ( shared + filename)
+                let savedURL = documentsURL?.appendingPathComponent (sharedBigmac2 + filename)
                 
                 if let savedURL = savedURL {
                     try? fm.moveItem(at: location, to: savedURL)

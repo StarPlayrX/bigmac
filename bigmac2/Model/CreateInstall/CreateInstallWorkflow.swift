@@ -18,7 +18,7 @@ extension ViewController {
           
             let baseSys = "macOS Base System"
             let bm2 = bigmac2
-            let dmg = bigmacDMG
+            let dmg = bigmacDmg
             
             let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
             

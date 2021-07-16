@@ -69,14 +69,14 @@ extension ViewController {
             spinnerAnimation(start: true, hide: false)
         }
         
-        let path = "/Users/shared/\(bigmacDMG)"
+        let path = "\(usersSharedBigMac2)\(bigmacDmg)"
         
         if !checkIfFileExists(path: path) {
             
             if cancelTask() { return }
             
-            let function: () = downloadBigMac2(dmg:"\(https)://\(domain)/\(bigmac2)/\(bigmacDMG)")
-            que(label: bigmacDMG, function: function)
+            let function: () = downloadBigMac2(dmg:"\(https)://\(domain)/\(bigmac2)/\(bigmacDmg)")
+            que(label: bigmacDmg, function: function)
             
         } else {
             isoBootMedia()

@@ -47,6 +47,6 @@ extension ViewController {
     @IBAction func apfsRomDownload(_ sender: Any) {
         if cancelTask() { return }
 
-        dosDude1inProgressTask(label: "Downloading APFS ROM Patcher", dmg: dosDude1DMG)
+        dosDude1inProgressTask(label: "Downloading APFS ROM Patcher", dmg: dosDude1Dmg)
     }
 }

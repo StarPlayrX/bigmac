@@ -16,7 +16,7 @@ extension ViewController {
         
         let installOSapp = installVersionIsLegacy ? installOS11 : installOS12
 
-        let InstallAsst = "/Users/Shared/InstallAssistant.pkg"
+        let InstallAsst = oldInstallerPkg
         let InstallApp = "/Applications/\(installOSapp)"
 
         if checkIfFileExists(path: InstallAsst) && !checkIfFileExists(path: InstallApp) {
@@ -52,7 +52,7 @@ extension ViewController {
     func checkmacOSDmgPathCheckPoint(macOSName: String) -> Bool? {
         var pass = true
         
-        let checkForInstallApp = "/Users/shared/\(macOSName)"
+        let checkForInstallApp = "\(usersSharedBigMac2)\(macOSName)"
         
         if !checkIfFileExists(path: checkForInstallApp) {
             pass = false
@@ -148,7 +148,7 @@ extension ViewController {
     func installDMGviaASR(diskInfo: myVolumeInfo, baseSys: String, bm2: String, dmg: String) {
         //MARK: Install Base System
         
-        let path = "/Users/shared/\(dmg)"
+        let path = "\(usersSharedBigMac2)\(dmg)"
         let rootpath = "/\(dmg)"
 
         let ttle = "Installing \(dmg)..."
@@ -217,8 +217,7 @@ extension ViewController {
         //MARK: Copy the big shared support dmg
         copyFile(atPath: "/\(apps)/\(appName)/\(contents)/\(sharedSup)/\(sharedSup).dmg", toPath: "\(sharedSupportPath)/\(sharedSup).dmg")
         
-        // Clean Up
-        installVersionIsLegacy ? try? fm.removeItem(atPath: installOS12) : try? fm.removeItem(atPath: installOS12)
+        installVersionIsLegacy ? try? fm.removeItem(atPath: installOS11) : try? fm.removeItem(atPath: installOS12)
     }
 
     func installBigMacIIApp(bigmac2: myVolumeInfo) {

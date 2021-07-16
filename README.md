@@ -11,7 +11,7 @@
 * To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
 * Then a driver can go, and so can the next one. 
 * And all four drivers have now cleared of the four way stop.
-* This might be an over simplification of a race condition as the macOS boot process from BigSur and beyong is pretty complex.
+* This might be an over simplification of a race condition as the macOS boot process from BigSur and beyond is pretty complex.
 * You'd think these conditions would not exist with Sealed disks, KCs, snapshots, but they do especially with Unsupported Macs.
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 

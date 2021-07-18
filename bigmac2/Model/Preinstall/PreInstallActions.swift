@@ -44,27 +44,36 @@ extension ViewController {
             var bootArgs = ""
             
             if suGlobalBootArgs.state == .on {
-                bootArgs = bootArgs + "-s "
+                bootArgs += "-s "
             }
             
             if verboseGlobalBootArgs.state == .on {
-                bootArgs = bootArgs + "-v "
+                bootArgs += "-v "
             }
             
             if amfiGlobalBootArgs.state == .on {
-                bootArgs = bootArgs + "amfi_get_out_of_my_way=1 "
+                bootArgs += "amfi_get_out_of_my_way=1 amfi_hsp_disable=1 "
             }
             
             if amfiGlobalBootArgs.state == .on {
-                bootArgs = bootArgs + "-no_compat_check "
+                bootArgs += "-no_compat_check "
             }
             
             #if arch(x86_64)
             if !bootArgs.isEmpty {
-                bootArgs = bootArgs + "arch=x86_64"
+                bootArgs += "arch=x86_64 "
             }
             #endif
             
+            bootArgs += "-d debug=0x144 "
+            bootArgs += "chunklist-security-epoch=0 -chunklist-no-rev2-dev "
+            bootArgs += "smc=0x2 smbios=1 "
+            bootArgs += "dart=1 pmsx=1 mcksoft=1 "
+            bootArgs += "pcata=1 nvme=0x9 "
+            bootArgs += "rootless=0 kext-dev-mode=1 "
+            bootArgs += "watchdog=0 sandcastle=0 BootCacheOverride=0 "
+            bootArgs += "agc=3 legacy_hda_tools_support=1 srv=1 boot_delay=140 "
+
             runCommand(binary: "/usr/sbin/nvram" , arguments: ["boot-args=\(bootArgs)"])
             
             if libVal {

@@ -53,6 +53,9 @@ class ViewController: NSViewController, URLSessionDelegate {
     @IBOutlet weak var amfiGlobalBootArgs: NSButton!
     @IBOutlet weak var nccGlobalBootArgs: NSButton!
     @IBOutlet weak var suGlobalBootArgs: NSButton!
+    @IBOutlet weak var debugBootArgs: NSButton!
+    
+    
     
     //MARK: Tab Views
     @IBOutlet weak var downloadsTab: NSTabViewItem!

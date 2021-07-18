@@ -8,7 +8,6 @@ import Cocoa
 
 extension ViewController {
     @IBAction func LaunchInstallerAction(_ sender: Any) {
-    
         preInstaLaunchBtn.isEnabled = false
         
         let libVal = DisableLibraryValidation.state == .on
@@ -16,6 +15,8 @@ extension ViewController {
         let AR = DisableAuthRoot.state == .on
         let GK = DisableGateKeeper.state == .on
     
+        preInstallRunner(libVal: libVal, SIP: SIP, AR: AR)
+
         func macOS(installer: String) {
             if !ranHax3 {
                 ranHax3 = true
@@ -55,24 +56,21 @@ extension ViewController {
                 bootArgs += "amfi_get_out_of_my_way=1 amfi_hsp_disable=1 "
             }
             
-            if amfiGlobalBootArgs.state == .on {
+            if nccGlobalBootArgs.state == .on {
                 bootArgs += "-no_compat_check "
             }
             
-            #if arch(x86_64)
-            if !bootArgs.isEmpty {
-                bootArgs += "arch=x86_64 "
+            if nccGlobalBootArgs.state == .on {
+                bootArgs += "-d debug=0x144 diag"
+                bootArgs += "rootless=0 kext-dev-mode=1 "
+                bootArgs += "chunklist-security-epoch=0 -chunklist-no-rev2-dev "
+                bootArgs += "pmsx=1 nvme=0x9 "
+                bootArgs += "smc=0x2 smbios=1 "
+                bootArgs += "watchdog=0 sandcastle=0 "
             }
-            #endif
-            
-            bootArgs += "-d debug=0x144 diag"
-            bootArgs += "chunklist-security-epoch=0 -chunklist-no-rev2-dev "
-            bootArgs += "smc=0x2 smbios=1 "
             //bootArgs += "dart=1 mcksoft=1 "
-            //bootArgs += "dart=1 pmsx=1 mcksoft=1 "
-            bootArgs += "pcata=1 pmsx=1 nvme=0x9 "
-            bootArgs += "rootless=0 kext-dev-mode=1 "
-            //bootArgs += "watchdog=0 sandcastle=0 BootCacheOverride=0 "
+            //bootArgs += "pcata=1 "
+            //bootArgs += "BootCacheOverride=0 "
             //bootArgs += "agc=3 legacy_hda_tools_support=1 srv=1 boot_delay=140 "
 
             runCommand(binary: "/usr/sbin/nvram" , arguments: ["boot-args=\(bootArgs)"])
@@ -135,7 +133,6 @@ extension ViewController {
             
         }
         
-        preInstallRunner(libVal: libVal, SIP: SIP, AR: AR)
         
     }
 }

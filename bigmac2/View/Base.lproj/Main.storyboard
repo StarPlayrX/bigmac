@@ -1122,33 +1122,40 @@ DQ
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="19" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSm-dN-wwA">
-                                                    <rect key="frame" x="273" y="112" width="192" height="121"/>
+                                                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSm-dN-wwA">
+                                                    <rect key="frame" x="273" y="113" width="192" height="120"/>
                                                     <subviews>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OPE-nG-pnn">
-                                                            <rect key="frame" x="-2" y="104" width="96" height="18"/>
+                                                            <rect key="frame" x="-2" y="103" width="96" height="18"/>
                                                             <buttonCell key="cell" type="check" title="Single User" bezelStyle="regularSquare" imagePosition="left" inset="2" id="dTD-bY-bet">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-bw-4Dt">
-                                                            <rect key="frame" x="-2" y="69" width="76" height="18"/>
+                                                            <rect key="frame" x="-2" y="77" width="76" height="18"/>
                                                             <buttonCell key="cell" type="check" title="Verbose" bezelStyle="regularSquare" imagePosition="left" inset="2" id="hkS-qm-tFm">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-qI-tPD">
-                                                            <rect key="frame" x="-2" y="34" width="194" height="18"/>
+                                                            <rect key="frame" x="-2" y="51" width="194" height="18"/>
                                                             <buttonCell key="cell" type="check" title="amfi_get_out_of_my_way=1" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="fOp-yN-Wz6">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
                                                         </button>
                                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mzv-NB-MeI">
-                                                            <rect key="frame" x="-2" y="-1" width="143" height="18"/>
+                                                            <rect key="frame" x="-2" y="25" width="143" height="18"/>
                                                             <buttonCell key="cell" type="check" title="-no_compat_check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WOa-Yh-jpp">
+                                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                                <font key="font" metaFont="system"/>
+                                                            </buttonCell>
+                                                        </button>
+                                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qTh-nh-OX5">
+                                                            <rect key="frame" x="-2" y="-1" width="104" height="18"/>
+                                                            <buttonCell key="cell" type="check" title="Debug mode" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="TM0-oj-gC3">
                                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
@@ -1159,8 +1166,10 @@ DQ
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
                                                         <integer value="1000"/>
+                                                        <integer value="1000"/>
                                                     </visibilityPriorities>
                                                     <customSpacing>
+                                                        <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
                                                         <real value="3.4028234663852886e+38"/>
@@ -1477,6 +1486,7 @@ DQ
                         <outlet property="appleHDA_btn" destination="FId-UD-oKk" id="AN7-MW-st1"/>
                         <outlet property="availablePatchDisks" destination="yHl-mb-wuL" id="GjX-e0-Sya"/>
                         <outlet property="createInstallSpinner" destination="nYg-kZ-fDy" id="8gV-FZ-sji"/>
+                        <outlet property="debugBootArgs" destination="qTh-nh-OX5" id="7y7-Aq-9Fe"/>
                         <outlet property="deleteAPFSSnapshotsButton" destination="pqh-XV-YeT" id="lrc-8u-Pmx"/>
                         <outlet property="disableBT2_btn" destination="0MJ-Iv-ywg" id="aVi-mD-sbf"/>
                         <outlet property="downloadLabel" destination="DFd-ov-bag" id="f6N-3p-Ktd"/>

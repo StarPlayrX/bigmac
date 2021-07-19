@@ -62,6 +62,8 @@
 ### Monterey Beta 2 is Experimental
 * This is what we know so far:
   * Legacy WiFi cards will not work. Upgrade to 802.11ac/BT4LE Cards
+  * BlueTooth 4LE wth 20702 Cards are currently not working with Monterey Beta 3.
+  * Will be testing an ASUS Bluetooth 5LE Card soon.
   * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
   * If the progress bar boots slowly and not far, that usually means that it will boot up.
   * With Race Condition, a full system seems to boot better when not in Verbose mode. This could just be voodoo.

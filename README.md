@@ -1,16 +1,6 @@
 # 🍔 Big Mac 2
 
 #### Reminder to download 11.2.3 and keep it in safe place. This can be done from bigmac and check your /Users/Shared folder. ;)
-#### My view of a race condition
-* Four race cars enter a 4 way stop all at the same exact time.
-* To proceed each driver must let the person on the right go.
-* If a car is to the to the driver's left, the driver cannot go.
-* This creates race condition. No drivers can go. A complete traffic jam also known as a deadlock.
-* To get around this issue, we need slow down at least one of the drivers, so all 4 cars do not enter the 4 way stop at the same time.
-* Then a driver can go, and so can the next one. 
-* And all four drivers have now cleared of the four way stop.
-* This might be an over simplification of a race condition as the macOS boot process from BigSur and beyond is pretty complex.
-* You'd think these conditions would not exist with Sealed disks, KCs, snapshots, but they do especially with Unsupported Macs.
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

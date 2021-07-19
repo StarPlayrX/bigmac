@@ -1,12 +1,11 @@
 # 🍔 Big Mac 2
 
-#### Reminder to download 11.2.3 and keep it in safe place. This can be done from bigmac and check your /Users/Shared folder. ;)
 
 #### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
-
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
-
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
+
+#### Reminder to download 11.2.3 and keep it in safe place. This can be done from bigmac and check your /Users/Shared folder. ;)
 
 ### First Time User Guide (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)

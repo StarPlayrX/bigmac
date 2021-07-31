@@ -10,7 +10,7 @@ var installVersionIsLegacy = true
 
 //Menu items
 var installLegacyVersion = "macOS 11.2.3"
-var installmacOS12Version = "macOS Monterey beta"
+var installmacOS12Version = "macOS Monterey beta 4"
 
 var usersSharedBigMac2 = "/Users/Shared/bigmac2/"
 var installAssistantPkg = "InstallAssistant.pkg"
@@ -20,7 +20,12 @@ var installAssistantPkg = "InstallAssistant.pkg"
 var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/071-14766-A_Q2H6ELXGVG/zx8saim8tei7fezrmvu4vuab80m0e8a5ll/InstallAssistant.pkg"
 
 //Monterey 12.0 Beta 3 Download
-var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/02/08/071-63739-A_G5RYVW5JHT/dfz5gp3s0jm9vl7m30oewq141zkpv8edr8/InstallAssistant.pkg"
+//var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/02/08/071-63739-A_G5RYVW5JHT/dfz5gp3s0jm9vl7m30oewq141zkpv8edr8/InstallAssistant.pkg"
+
+//Monterey 12.0 Beta 4 Download
+var globalDownloadMacOSpkg12 = "// http://swcdn.apple.com/content/downloads/31/06/071-71557-A_F68IOP9JSU/bjx1ln0wuifn37408kguq3obcd05itznjk/InstallAssistant.pkg"
+
+
 
 //Application names
 let macOS11 = "macOS Big Sur"

@@ -12,7 +12,7 @@ BigMac 2 creates an easy to use installer disk that provide unsealed installs th
 
 OCLP provides a GUI bootloader for both flashed and unflashed video cards. It can also inject Kext's, such as latebloom, so the System Disk does not have to be patched directly.
 
-Together, **BM2 + OCLP** becomes a 1-2 punch for all our unsupported Mac users. 
+Together, **BM2 + OCLP** becomes a 1-2 punch for all our unsupported Mac users. Disclaimer: OCLP is a property of **Dortania**. BigMac2 is unaffiaated with OCLP, Dortania and its contributors.
 
 ### Get Started using OpenCore Legacy Patcher Today!
 https://dortania.github.io/OpenCore-Legacy-Patcher/

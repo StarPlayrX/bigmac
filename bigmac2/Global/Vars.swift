@@ -23,7 +23,7 @@ var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/0
 //var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/02/08/071-63739-A_G5RYVW5JHT/dfz5gp3s0jm9vl7m30oewq141zkpv8edr8/InstallAssistant.pkg"
 
 //Monterey 12.0 Beta 4 Download
-var globalDownloadMacOSpkg12 = "// http://swcdn.apple.com/content/downloads/31/06/071-71557-A_F68IOP9JSU/bjx1ln0wuifn37408kguq3obcd05itznjk/InstallAssistant.pkg"
+var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/31/06/071-71557-A_F68IOP9JSU/bjx1ln0wuifn37408kguq3obcd05itznjk/InstallAssistant.pkg"
 
 
 
@@ -39,7 +39,7 @@ var globalVolumeInfo = myVolumeInfo(diskSlice: "", disk: "", displayName: "", vo
 var globalWorkItem : DispatchWorkItem?
 var globalDispatch : DispatchQueue?
 var globalError    = "Unknown Error"
-var globalInstall = install.bootIso
+var globalInstall  = install.bootIso
 
 enum install {
     case bootIso

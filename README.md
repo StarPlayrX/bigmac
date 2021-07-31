@@ -1,11 +1,11 @@
 # 🍔 Big Mac 2
 
 
-#### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
+### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
-#### Special Announcement:
+### Special Announcement:
 BigMac will be adopting OCLP as a bootloader and kext injection. We will first included read me, videos and a Wiki showing how BM2 + OCLP can work together. Today, BigMac 2 creates easy to use installer disk that provide unsealed installs that can be backed up and restored using CloneToolX, BigMac's own backup disk utililty. OCLP provides a GUI bootloader for both Flashed and Unflashed video cards. It can also inject Kext's, such as latebloom, so the System Disk does not have to be patched directly. Together, BM2 + OCLP becomes a 1-2 punch for all unsupported Mac users. Plus the postInstall phase of BM2 with OCLP is largely no longer needed, make it so much easier getting started.
 
 ### Get Started using OpenCore Legacy Patcher

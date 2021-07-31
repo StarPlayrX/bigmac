@@ -14,7 +14,7 @@ OCLP provides a GUI bootloader for both flashed and unflashed video cards. It ca
 
 Together, **BM2 + OCLP** becomes a 1-2 punch for all our unsupported Mac users. 
 
-### Get Started using OpenCore Legacy Patcher
+### Get Started using OpenCore Legacy Patcher Today!
 https://dortania.github.io/OpenCore-Legacy-Patcher/
 
 ### First Time User Guide (from an unsupported Mac)

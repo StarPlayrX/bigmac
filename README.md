@@ -5,7 +5,11 @@
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
-#### Reminder to download 11.2.3 and keep it in safe place. This can be done from bigmac and check your /Users/Shared folder. ;)
+#### Special Announcement:
+BigMac will be adopting OCLP as a bootloader and kext injection. We will first including read me, videos and a Wiki showing how BM2 + OCLP can work together. BigMac 2 creates easy to use installer disk that provide unsealed installs that can be backed up and restored using CloneToolX, BigMac's own backup disk utililty. OCLP provides a GUI bootloader for both Flashed and Unflashed video cards. It can also inject Kext's, such as latebloom, so the System Disk does not have to be patched directly. Together, BM2 + OCLP becomes a 1-2 punch for all unsupported Mac users. Plus the postInstall phase of BM2 with OCLP is largely no longer needed, make it so much easier getting started.
+
+### Get Started using OpenCore Legacy Patcher
+https://dortania.github.io/OpenCore-Legacy-Patcher/
 
 ### First Time User Guide (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)

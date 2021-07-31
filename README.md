@@ -14,7 +14,7 @@ OCLP provides a GUI bootloader for both flashed and unflashed video cards. It ca
 
 Together, **BM2 + OCLP** becomes a 1-2 punch for all our unsupported Mac users. 
 
-Disclaimer: OCLP is a property of **Dortania**. BigMac2 is unaffiliated with OCLP, Dortania and its contributors.
+Disclaimer: OCLP is a property of Dortania. BigMac2 is unaffiliated with OCLP, Dortania and its contributors.
 
 ### Get Started using OpenCore Legacy Patcher Today!
 https://dortania.github.io/OpenCore-Legacy-Patcher/

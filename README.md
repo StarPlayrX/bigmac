@@ -6,7 +6,13 @@
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
 ### Special Announcement:
-**BigMac** will be adopting **OpenCore Legacy Patcher** as a bootloader and kext injection. We will first included read me, videos and a Wiki showing how BM2 + OCLP can work together. Today, BigMac 2 creates easy to use installer disk that provide unsealed installs that can be backed up and restored using CloneToolX, BigMac's own backup disk utililty. OCLP provides a GUI bootloader for both Flashed and Unflashed video cards. It can also inject Kext's, such as latebloom, so the System Disk does not have to be patched directly. Together, BM2 + OCLP becomes a 1-2 punch for all unsupported Mac users. Plus the postInstall phase of BM2 with OCLP is largely no longer needed, make it so much easier getting started.
+**BigMac** will be adopting **OpenCore Legacy Patcher** as a bootloader and for kext injection. We will first include a Read Me, videos and a Wiki showing how BM2 + OCLP can work together. 
+
+BigMac 2 creates easy to use installer disk that provide unsealed installs that can be backed up and restored using CloneToolX, BigMac's own backup disk utililty. 
+
+OCLP provides a GUI bootloader for both Flashed and Unflashed video cards. It can also inject Kext's, such as latebloom, so the System Disk does not have to be patched directly.
+
+Together, **BM2 + OCLP** becomes a 1-2 punch for all unsupported Mac users. Plus the postInstall phase of BM2 with OCLP is largely unneeded, making it so much easier getting a BM+OCLP install fired up.
 
 ### Get Started using OpenCore Legacy Patcher
 https://dortania.github.io/OpenCore-Legacy-Patcher/

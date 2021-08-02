@@ -12,7 +12,7 @@ BigMac 2 creates an easy to use installer disk that provide unsealed installs th
 
 OCLP provides a GUI bootloader for both flashed and unflashed video cards. It can also inject Kext's, such as latebloom, so the System Disk does not have to be patched directly.
 
-Plans are being layed out on how the Open Core bootloader and Kext injection can co-exist with BigMac's installer/recovery disk.
+Plans are being layed out on how the Open Core bootloader and it's Kext injection can co-exist with BigMac's installer/recovery disk.
 
 Together, **BM2 + OCLP** becomes a 1-2 punch for all our unsupported Mac users. 
 

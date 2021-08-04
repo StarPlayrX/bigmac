@@ -10,7 +10,7 @@ A future version of BigMac will include the Open Core boot loader. The new BM wi
 
 With that we are keeping an eye on the Latebloom.kext which at this point it is best suited for OC. 
 
-### First Time User Guide (from an unsupported Mac)
+### First Time User Guide macOS 11.2.3 (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)
 * If Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
@@ -28,7 +28,7 @@ With that we are keeping an eye on the Latebloom.kext which at this point it is 
 
  * If you cannot disable SIP, do this from a Recovery Disk or Create install media disk.
 
-### Installation from a Supported Intel Mac
+### Installation of macOS 11.2.3 from a Supported Intel Mac 
   * Boot into Recovery: Cmd-R at boot
   * Open Terminal. These next steps are required to run BigMac2 and CloneToolX from a bigmac2 install disk from a Supported Mac:
     * `csrutil`
@@ -51,10 +51,13 @@ With that we are keeping an eye on the Latebloom.kext which at this point it is 
    * If success, you can now clone your system to BigMac. Besure to remove the live snapshot on the clone using bigmac delete snapshot.
    * Install any other post install items from bigMac2 and also check Bless and update KCs.
   
+### Future OC instructions when BM includes OC integration:
+  * placeholder
+  
 ### Monterey Beta 2 is Experimental
 * This is what we know so far:
   * Legacy WiFi cards will not work. Upgrade to 802.11ac/BT4LE Cards
-  * BlueTooth 4LE wth 20702 Cards are currently not working with Monterey Beta 3.
+  * BlueTooth 4LE wth 20702 Cards are currently only work with beta 1.
   * Will be testing an ASUS Bluetooth 5LE Card soon.
   * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
   * If the progress bar boots slowly and not far, that usually means that it will boot up.

@@ -10,9 +10,6 @@ A future version of BigMac will include the Open Core boot loader. The new BM wi
 
 With that we are keeping an eye on the Latebloom.kext which at this point it is best suited for OC. 
 
-### Get Started using OpenCore Legacy Patcher Today!
-https://dortania.github.io/OpenCore-Legacy-Patcher/
-
 ### First Time User Guide (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)
 * If Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`

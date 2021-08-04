@@ -6,9 +6,11 @@
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
 ### Special Announcement:
-A future version of BigMac will include the Open Core boot loader. The new BM will play nice with OC and vice versa. This won't be your typical OpenCore implementation, but it will eliminate post install patches as it will rely on OC to inject the Kexts. Unless there is something that requires a system patch. This integration will allow non flashed video cards as well, but if you do have a flashed video card we will have some nice options for that as well.
+A future version of BigMac will include the Open Core bootloader. The new BM will play nice with OC and vice versa. This won't be your typical OpenCore implementation, but it will eliminate post install patches as it will rely on OC to inject the Kexts. Unless there is something that requires a system patch. This integration will allow non flashed video cards as well, but if you do have a flashed video card we will have some nice options for that as well.
 
-With that we are keeping an eye on the Latebloom.kext which at this point it is best suited for OC. 
+This will make things easier for everyone in the near future.
+
+With that we are keeping an eye on the Latebloom.kext which at this point it is best suited for OC. However this intergration will still be considered highly experimental as it's possible to still get a many race condition startup locks. It's terrible that this seems to something unsupported mac users will have to deal with post macOS 11.2.3. And please note that 11.0.1 - 11.2.3 also have a Wireless and Firewire related Race Condition. It does not happen often, but I've seen it man times where the machine will go into an infinite loop with the FireWire GUID <ptr> is missing error.
 
 ### First Time User Guide macOS 11.2.3 (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)

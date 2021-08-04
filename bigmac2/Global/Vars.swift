@@ -25,8 +25,6 @@ var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/0
 //Monterey 12.0 Beta 4 Download
 var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/31/06/071-71557-A_F68IOP9JSU/bjx1ln0wuifn37408kguq3obcd05itznjk/InstallAssistant.pkg"
 
-
-
 //Application names
 let macOS11 = "macOS Big Sur"
 let macOS12 = "macOS Monterey beta"

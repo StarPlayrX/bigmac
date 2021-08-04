@@ -59,9 +59,10 @@ With that we are keeping an eye on the Latebloom.kext which at this point it is 
 ### Monterey Beta 2 is Experimental
 * This is what we know so far:
   * Legacy WiFi cards will not work. Upgrade to 802.11ac/BT4LE Cards
-  * BlueTooth 4LE wth 20702 Cards are currently only work with beta 1.
-  * Will be testing an ASUS Bluetooth 5LE Card soon.
-  * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices!
+  * BlueTooth 4LE 20702B0 Cards are currently only working with beta 1.
+  * Having zero luck with USB Bluetooth cards on Monterery.
+  * We will be testing IntelWireless WiFi / BT combo cards soon with third party drivers.
+  * USB 2.0 devices will only work with a USB 3.0 Hub or Switch. This includes Apple USB 2.0 Devices. ;(
   * If the progress bar boots slowly and not far, that usually means that it will boot up.
   * With Race Condition, a full system seems to boot better when not in Verbose mode. This could just be voodoo.
   * For AMD cards MouSSE is not needed. It's only needed on Mojave. I run an RX 580 8GB flashed and a Radeon Pro WX4100 non flashed. Neither need MouSSE. It will be removed from future versions of bigmac2.

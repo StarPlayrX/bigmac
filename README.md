@@ -5,14 +5,11 @@
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
-### Special Announcement:
-A future version of BigMac will include the Open Core bootloader. The new BM will play nice with OC and vice versa. This won't be your typical OpenCore implementation, but it will eliminate post install patches as it will rely on OC to inject the Kexts. Unless there is something that requires a system patch. This integration will allow non flashed video cards as well, but if you do have a flashed video card we will have some nice options for that as well.
+### Bluetooth, WiFi, Handoff possible on Monterey:
+This weekend I started experimenting with a Lenovo WiFi 802.11ac/Bluetooth 4.2LE PCIe card using a combination of Open Source drivers that mess well with Apple's and was able to get Handoff working with Monterey Beta 2 and currently have WiFi and BT working on Big Sir 11.2.3 and Monterey Beta 2 and 3.
 
-This will make things easier for everyone in the near future.
+The culprit for my BCM 20702B0 card not working after Monterey Beta 1 is USB. Many users are modding the card and re-routing USB to a USB 3.0 card or USB 2.0 Hub. I use the same idea and routed the USB from the Lenovo PCIe card to a USB 3.0 port. This works on both Big Sur and Monterey. I lose a PCIe slot, but I can live with that.
 
-With that we are keeping an eye on the Latebloom.kext which at this point it is best suited for OC. However this intergration will still be considered highly experimental as it's possible to still get many race condition startup locks in a row. Unsupported mac users will have to deal with post macOS 11.2.3. Please note that 11.0.1 - 11.2.3 also have a Firewire related Race Condition. It does not happen often, but I've seen it manu times where the machine will go into an infinite loop printing `FireWire GUID <ptr> is missing error` to the console. This same condition happen periodically in all version of Big Sur and Monterey.
-
-We have decided that BigMac will not be including the OpenCore Legacy Patcher, but our own implementation of OC instead. We do not want to add confusion that BM is OCLP or vice versa. BM will simply be adding the OC bootloader and later will include customizations as we replace the Post Install patches with Kext injection.
 
 ### First Time User Guide macOS 11.2.3 (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)

@@ -5,7 +5,7 @@
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 
-### Bluetooth, WiFi, Handoff possible on Monterey:
+### Bluetooth, WiFi, Handoff possible on Monterey (Mac Pro 3,1 4,1 5,1):
 This weekend I started experimenting with a Lenovo WiFi 802.11ac/Bluetooth 4.2LE PCIe card using a combination of Open Source drivers that mess well with Apple's and was able to get Handoff working with Monterey Beta 2 and currently have WiFi and BT working on Big Sir 11.2.3 and Monterey Beta 2 and 3.
 
 The culprit for my BCM 20702B0 card not working after Monterey Beta 1 is USB. Many users are modding the card and re-routing USB to a USB 3.0 card or USB 2.0 Hub. I use the same idea and routed the USB from the Lenovo PCIe card to a USB 3.0 port. This works on both Big Sur and Monterey. I lose a PCIe slot, but I can live with that.

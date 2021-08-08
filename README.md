@@ -1,7 +1,7 @@
 # 🍔 Big Mac 2
 
 
-### For hobbyists who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
+### For Mac enthusiasts who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
  * <a id="raw-url" href="https://github.com/StarPlayrX/bigmac/wiki/Installing-on-Mac-Pro-3,1-Early-2008-Video-(Flashed-AMD-Video-Card)">New Video: Installing on a Mac Pro 3,1 with a Flashed AMD Video Card</a>
  * <a id="raw-url" href="https://starplayrx.com/bigmac2/bigmac2_v2.0.5.dmg">New Download: bigmac2_v2.0.5.dmg 23.1MB</a>
 

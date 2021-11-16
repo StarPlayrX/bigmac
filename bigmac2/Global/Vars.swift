@@ -9,8 +9,8 @@ import Foundation
 var installVersionIsLegacy = true
 
 //Menu items
-var installLegacyVersion = "macOS 11.2.3"
-var installmacOS12Version = "macOS Monterey beta 4"
+var installLegacyVersion = "macOS 11.6.1"
+var installmacOS12Version = "macOS Monterey 12.0.1"
 
 var usersSharedBigMac2 = "/Users/Shared/bigmac2/"
 var installAssistantPkg = "InstallAssistant.pkg"

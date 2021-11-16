@@ -16,14 +16,11 @@ var usersSharedBigMac2 = "/Users/Shared/bigmac2/"
 var installAssistantPkg = "InstallAssistant.pkg"
 
 
-//MacOS 11.2.3 Download
-var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/12/32/071-14766-A_Q2H6ELXGVG/zx8saim8tei7fezrmvu4vuab80m0e8a5ll/InstallAssistant.pkg"
+//MacOS 11.6.1 Download
+var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/43/03/002-23589-A_JLC10H5DJX/7qxktjph49leko1s3jwaqdlh2b3uzyrlfv/InstallAssistant.pkg"
 
-//Monterey 12.0 Beta 3 Download
-//var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/02/08/071-63739-A_G5RYVW5JHT/dfz5gp3s0jm9vl7m30oewq141zkpv8edr8/InstallAssistant.pkg"
-
-//Monterey 12.0 Beta 4 Download
-var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/31/06/071-71557-A_F68IOP9JSU/bjx1ln0wuifn37408kguq3obcd05itznjk/InstallAssistant.pkg"
+//Monterey 12.0.1 Download
+var globalDownloadMacOSpkg12 = "https://swcdn.apple.com/content/downloads/39/60/002-23774-A_KNETE2LDIN/4ll6ahj3st7jhqfzzjt1bjp1nhwl4p4zx7/InstallAssistant.pkg"
 
 //Application names
 let macOS11 = "macOS Big Sur"

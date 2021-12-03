@@ -24,7 +24,7 @@ var globalDownloadMacOSpkg12 = "https://swcdn.apple.com/content/downloads/39/60/
 
 //Application names
 let macOS11 = "macOS Big Sur"
-let macOS12 = "macOS Monterey beta"
+let macOS12 = "macOS Monterey"
 
 //short OS names
 let OS11 = "macOS11"

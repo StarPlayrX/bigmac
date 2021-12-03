@@ -71,7 +71,8 @@ extension ViewController {
         
         let path = "\(usersSharedBigMac2)\(bigmacDmg)"
         
-        if !checkIfFileExists(path: path) {
+        // MARK: - Force redownload for awhile...
+        if !checkIfFileExists(path: path) || 1 == 1  {
             
             if cancelTask() { return }
             

@@ -1,4 +1,6 @@
-# 🍔 Big Mac 2
+# 🍔 Big Mac 2.0.9 build 9
+
+Added Support for Monterey 12.0.1 release as of 12.2.2021
 
 
 ### For Mac enthusiasts who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 

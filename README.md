@@ -1,9 +1,10 @@
-# 🍔 Big Mac 2
+# 🍔 Big Mac 2.0.9 build 9
 
+Added Support for Monterey 12.0.1 release as of 12.2.2021
+
+Becuase of race conditions during macOS boot, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will soon produce a guide on how to make the two products work seamlessly with each other.
 
 ### For Mac enthusiasts who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
-
-When compling from source, always clean your build folder. BigMac stores small DMG within itself.
 
 ### Bluetooth, WiFi, Handoff possible on Monterey (Mac Pro 3,1 4,1 5,1):
 This weekend I started experimenting with a Lenovo WiFi 802.11ac/Bluetooth 4.2LE PCIe card using a combination of Open Source drivers that mess well with Apple's and was able to get Handoff working with Monterey Beta 2 and currently have WiFi and BT working on Big Sir 11.2.3 and Monterey Beta 2 and 3.

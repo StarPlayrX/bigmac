@@ -2,7 +2,7 @@
 
 Added Support for Monterey 12.0.1 release as of 12.2.2021
 
-Becuase of race conditions during macOS boot, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will soon produce a guide on how to make the two products work seamlessly with each other.
+Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will eventually produce a guide on how to make the two products work seamlessly with each other.
 
 ### For Mac enthusiasts who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

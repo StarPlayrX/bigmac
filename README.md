@@ -16,7 +16,7 @@ The culprit for my BCM 20702B0 card not working after Monterey Beta 1 is USB. Ma
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)
 * If Bigmac2 app does not run, try resigning it: `codesign --force --deep --sign - /Applications/bigmac2.app`
 * If you have Bluetooth 2 EDR Card, remove it. You can reinstall it later after you run the Disable Bluetooth patch
-* If you have not installed dosdude1's APFS ROM Patcher, do that first.
+* For 2008 Mac Pros: If you have not installed dosdude1's APFS ROM Patcher, do that first. (2009 - 2012 Mac Pros with upgraded firmware do not need this),
 * If you want native WiFi and BT4, do yourself a huge favor and get a 802.11ac/BT4LE Broadcom black iMac style combo card. This will also give you Airdrop and Handoff without any weird hacks.
 * Install BigMac 2 to an external hard drive or USB Flash thumb drive (should be relatively fast and min of 32 GB)
 * Next disable SIP. Boot BigMac 2 up from an external USB 2.0 on an unsupported Mac:

@@ -1,7 +1,6 @@
 # 🍔 Big Mac 2.0.9 build 9
 
------------------------------------------------------
-### Attention Critical Bug in BigMac2.
+---
 
 For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.
 
@@ -10,7 +9,7 @@ This will be fixed as soon as Bug #1 is corrected.
 workaround open terminal:
  
 sudo /Applications/bigmac2.app/Contents/MacOS/bigmac2
------------------------------------------------------
+---
 
 Added Support for macOS Big Sur 11.6.8, "macOS Monterey 12.5 as of 8.13.22
 

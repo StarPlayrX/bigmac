@@ -1,5 +1,26 @@
 # 🍔 Big Mac 2.0.9 build 9
 
+Attention Critical Bug in BigMac2
+
+It is not currently downloading the BigMac2 installer disk.
+
+You can get it here manually:
+
+https://starplayrx.com/bigmac2/bigmac2.dmg
+
+and place it in
+
+/Users/Shared/bigmac2
+
+Do tihs before creating an installer disk.
+
+Looking into the situation and will address an update and a signed release once it's fixed.
+
+Thank you!
+
+
+
+
 Added Support for macOS Big Sur 11.6.8, "macOS Monterey 12.5 as of 8.13.22
 
 Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will eventually produce a guide on how to make the two products work seamlessly with each other.

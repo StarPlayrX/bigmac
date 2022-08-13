@@ -6,7 +6,7 @@
 
 For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.
 
-This will be fixed as soon as Bug #1 is corrected.
+This will be fixed as soon as possible with a new priveleged launcher.
 
 workaround open terminal:
  

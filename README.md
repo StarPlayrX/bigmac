@@ -1,6 +1,20 @@
 # 🍔 Big Mac 2.0.9 build 9
 
-Added Support for Monterey 12.0.1 release as of 12.2.2021
+---
+
+# Critical Bug
+
+For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.
+
+This will be fixed as soon as possible with a new priveleged launcher.
+
+workaround open terminal:
+ 
+sudo /Applications/bigmac2.app/Contents/MacOS/bigmac2
+
+---
+
+Added Support for macOS Big Sur 11.6.8, "macOS Monterey 12.5 as of 8.13.22
 
 Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will eventually produce a guide on how to make the two products work seamlessly with each other.
 

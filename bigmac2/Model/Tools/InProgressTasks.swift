@@ -72,13 +72,13 @@ extension ViewController {
         let path = "\(usersSharedBigMac2)\(bigmacDmg)"
         
         // MARK: - Force redownload for awhile...
-        if !checkIfFileExists(path: path) || 1 == 1  {
+        if !checkIfFileExists(path: path) {
             
             if cancelTask() { return }
             
             let function: () = downloadBigMac2(dmg:"\(https)://\(domain)/\(bigmac2)/\(bigmacDmg)")
             que(label: bigmacDmg, function: function)
-            
+ 
         } else {
             isoBootMedia()
         }

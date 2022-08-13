@@ -52,8 +52,7 @@ extension ViewController {
     
     func downloadBigMac2(dmg: String) {
         //Remove pre-existing file
-        runCommand(binary: "/bin/rm", arguments: ["-Rf","\(usersSharedBigMac2)\(bigmacDmg)"]) //Future check if it's complete and has right checksum
-                
+        runCommand(binary: "/bin/rm", arguments: ["-Rf","\(usersSharedBigMac2)\(bigmacDmg)"])
         DispatchQueue.main.async { [self] in
             downloadLabel.stringValue = globalDispatch?.label ?? "Downloading disk"
         }

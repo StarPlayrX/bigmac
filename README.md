@@ -1,28 +1,7 @@
 # 🍔 Big Mac 2.0.9 build 9
 
-=================================================================================================
-
-### Attention Critical Bug in BigMac2. Bug #1
-
-It is not currently downloading the BigMac2 installer disk.
-
-You can get it here manually:
-
-https://starplayrx.com/bigmac2/bigmac2.dmg
-
-and place it in
-
-/Users/Shared/bigmac2
-
-Do tihs before creating an installer disk.
-
-Looking into the situation and will address an update and a signed release once it's fixed.
-
-Thank you!
-
-=================================================================================================
-
-### Attention Critical Bug in BigMac2. Bug #2
+-----------------------------------------------------
+### Attention Critical Bug in BigMac2.
 
 For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.
 
@@ -31,8 +10,7 @@ This will be fixed as soon as Bug #1 is corrected.
 workaround open terminal:
  
 sudo /Applications/bigmac2.app/Contents/MacOS/bigmac2
-
-=================================================================================================
+-----------------------------------------------------
 
 Added Support for macOS Big Sur 11.6.8, "macOS Monterey 12.5 as of 8.13.22
 

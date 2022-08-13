@@ -9,18 +9,18 @@ import Foundation
 var installVersionIsLegacy = true
 
 //Menu items
-var installLegacyVersion = "macOS Big Sur 11.6.2"
-var installmacOS12Version = "macOS Monterey 12.1"
+var installLegacyVersion = "macOS Big Sur 11.6.8"
+var installmacOS12Version = "macOS Monterey 12.5"
 
 var usersSharedBigMac2 = "/Users/Shared/bigmac2/"
 var installAssistantPkg = "InstallAssistant.pkg"
 
 
 //MacOS 11.6.2 Download
-var globalDownloadMacOSpkg11 = "http://swcdn.apple.com/content/downloads/04/42/002-42341-A_4PL6G0S8GN/cs65avpi1aelh133lc36fy0ste3lihe71n/InstallAssistant.pkg"
+var globalDownloadMacOSpkg11 = "https://swcdn.apple.com/content/downloads/29/18/012-40387-A_6L2BGPAEXT/jvvolxk1xmh2vzw6sde7p2o1px2k6ycmom/InstallAssistant.pkg"
 
 //Monterey 12.1 Download
-var globalDownloadMacOSpkg12 = "http://swcdn.apple.com/content/downloads/06/34/002-42435-A_MA7OBDUK86/6xzypeod1xebasc92qkw2iv44e1j9pv09f/InstallAssistant.pkg"
+var globalDownloadMacOSpkg12 = "https://swcdn.apple.com/content/downloads/22/05/012-42714-A_04QVESBZ2P/lnob1ikkx0mi6yz5x339ttchkxri53151v/InstallAssistant.pkg"
 
 //Application names
 let macOS11 = "macOS Big Sur"

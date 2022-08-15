@@ -15,10 +15,6 @@ These Macs should all support Metal v2. I do not see any reason why they will no
 
 ---
 
-🔜 Coming soon: Unique security features not available on supported Macs. More to come as the software develops.
-
----
-
 # 🐞 Critical Bug
 
 For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.

@@ -2,7 +2,7 @@
 
 Ace Ventura
 
-BigMac2 will do its best to support the following Macs which Apple recently decided to become unsupported:
+BigMac2 is planning to add support for the following Unsupported Macs.
 
 - iMac (models from 2015)
 - MacBook Air (models from 2015 and 2017 models)

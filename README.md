@@ -1,8 +1,6 @@
 # 🍔 Big Mac 2.0.9 build 9
 
-Ace Ventura
-
-BigMac2 is planning to add support for the following Unsupported Macs.
+BigMac2 is planning to add Ventura support for the following Unsupported Macs.
 
 - iMac (models from 2015)
 - MacBook Air (models from 2015 and 2017 models)

@@ -11,7 +11,7 @@ BigMac2 is planning to add Ventura support for the following Unsupported Macs.
 
 I believe all there models can be supported and they also will not have to worry about race conditons.
 
-These Macs should all support Metal v2. I do not see any reason why they will not work with BigMac2.
+These Macs should all support Metal v2. I do not see any reason why they will not work with BigMac2 provided support gets added.
 
 ---
 

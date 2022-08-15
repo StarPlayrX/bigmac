@@ -4,12 +4,12 @@ Ace Ventura
 
 BigMac2 will do its best to support the following Macs which Apple recently decided to become unsupported:
 
-iMac (models from 2015)
-MacBook Air (models from 2015 and 2017 models)
-MacBook Pro (2015 and 2016 models)
-Mac mini (2014 models)
-Mac Pro (2013 model: cylinder/trash can)
-MacBook (2016 model)
+- iMac (models from 2015)
+- MacBook Air (models from 2015 and 2017 models)
+- MacBook Pro (2015 and 2016 models)
+- Mac mini (2014 models)
+- Mac Pro (2013 model: cylinder/trash can)
+- MacBook (2016 model)
 
 I believe all there models can be supported and they also will not have to worry about race conditons.
 

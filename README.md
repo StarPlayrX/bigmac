@@ -1,5 +1,3 @@
----
-
 # 🍔 After reviewing Big Mac 2 and its technicial issues expanding it. I've decided to start working on BigMac 3. The plan is to turn it into a menu bar app and have it designed in the order operations show proceed. This will be an entire overall. It will have some nice features like a GUI for sudo that will work with admin/password, touch id, apple watch and even a yubikey!  
 
 One reason for this is Monterey 12.4 requires sudo for Apple Software Restore and I am not able to use other forms of privileges with it. So the best thing will be to have a gui for sudo. It will also work it the terminal as well, but it will be smart enough not to affect ssh.

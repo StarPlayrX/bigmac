@@ -4,7 +4,7 @@ I've decided to start working on BigMac 3. The plan is to turn it into a menu ba
 
 BigMac3 will have some nice features like a GUI for sudo and it will support not only admin/password, but Touch ID, Apple Watch and even a Yubikey!  
 
-One reason for this is Monterey 12.4 requires sudo for Apple Software Restore and I am not able to use other forms of privileges with it. So the best thing will be to have a gui for sudo. It will also work it the terminal as well, but it will be smart enough not to affect ssh.
+One reason for this is Monterey 12.4 requires sudo for Apple Software Restore and using other privileges doesn't work! The best alternative is an option for sudo.
 
 BigMac 3 plans to support
 

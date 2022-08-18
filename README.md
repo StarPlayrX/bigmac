@@ -2,11 +2,11 @@
 
 I've decided to start working on BigMac 3. The plan is to turn it into a menu bar app and have it designed in the order show operations should proceed. This will be an complete overall, but hopefully it will be much easier to troubleshoot. 
 
-BigMac3 will have some nice features like a GUI for sudo and it will support not only admin/password, but Touch ID, Apple Watch and even a Yubikey! And this change will work within the terminal as well, but smart enough not to affect ssh.
+BigMac 3 will have some nice features like a GUI for sudo and it will support not only admin/password, but Touch ID, Apple Watch and even a Yubikey! This change will work within the terminal as well, but smart enough not to affect ssh.
 
-The main reason for this is Monterey 12.4 requires sudo for Apple Software Restore. Using other types of admin privileges doesn't work! The best alternative is to give sudo a full gui.
+The main reason for this is Monterey 12.4 requires sudo for Apple Software Restore. Using other types of admin privileges doesn't work which is driving me bonkers! The best alternative is to give sudo a full gui.
 
-BigMac 3 will only ask for privileges when it needs it. Usually when "Installing..." you will be asked for your credentials. For more common operations such as downloading, bigmac2 will use your downloads folder. Easy peasy.
+BigMac 3 will only ask for privileges when it needs it. Usually when "Installing..." you will be asked for your credentials. For more common operations such as downloading, bigmac2 will use your downloads folder. Easy peasy. 
 
 BigMac 3 plans to support
 
@@ -18,6 +18,10 @@ BigMac 3 plans to support
 - MacBook (2016 model)
 
 and previous models that are capable of running Metal
+
+When?
+
+Hope to have something later this fall. As parts are working, it will be uploaded. There will be a check list etc etc
 
 ---
 

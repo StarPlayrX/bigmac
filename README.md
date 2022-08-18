@@ -2,7 +2,7 @@
 
 I've decided to start working on BigMac 3. The plan is to turn it into a menu bar app and have it designed in the order show operations should proceed. This will be an complete overall, but hopefully it will be much easier to troubleshoot. 
 
-BigMac3 will have some nice features like a GUI for sudo and it will support not only admin/password, but Touch ID, Apple Watch and even a Yubikey!  
+BigMac3 will have some nice features like a GUI for sudo and it will support not only admin/password, but Touch ID, Apple Watch and even a Yubikey! And this change will work within the terminal as well, but smart enough not to affect ssh.
 
 One reason for this is Monterey 12.4 requires sudo for Apple Software Restore and using other types of admin privileges doesn't work! The best alternative is to give sudo a full gui.
 

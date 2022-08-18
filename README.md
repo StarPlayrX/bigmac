@@ -6,6 +6,8 @@ BigMac3 will have some nice features like a GUI for sudo and it will support not
 
 The main reason for this is Monterey 12.4 requires sudo for Apple Software Restore. Using other types of admin privileges doesn't work! The best alternative is to give sudo a full gui.
 
+BigMac 3 will only ask for privileges when it needs it. Usually when "Installing..." you will be asked for your credentials. For more common operations such as downloading, bigmac2 will use your downloads folder. Easy peasy.
+
 BigMac 3 plans to support
 
 - iMac (models from 2015)

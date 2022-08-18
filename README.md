@@ -1,6 +1,10 @@
-# 🍔 Big Mac 2.0.9 build 9
+---
 
-BigMac2 is planning to add Ventura support for the following Unsupported Macs.
+# 🍔 After reviewing Big Mac 2 and its technicial issues expanding it. I've decided to start working on BigMac 3. The plan is to turn it into a menu bar app and have it designed in the order operations show proceed. This will be an entire overall. It will have some nice features like a GUI for sudo that will work with admin/password, touch id, apple watch and even a yubikey!  
+
+One reason for this is Monterey 12.4 requires sudo for Apple Software Restore and I am not able to use other forms of privileges with it. So the best thing will be to have a gui for sudo. It will also work it the terminal as well, but it will be smart enough not to affect ssh.
+
+BigMac 3 plans to support
 
 - iMac (models from 2015)
 - MacBook Air (models from 2015 and 2017 models)
@@ -8,6 +12,15 @@ BigMac2 is planning to add Ventura support for the following Unsupported Macs.
 - Mac mini (2014 models)
 - Mac Pro (2013 model: cylinder/trash can)
 - MacBook (2016 model)
+
+and previous models that are capable of running Metal
+
+---
+
+# 🍔 Big Mac 2.0.9 build 10
+
+BigMac2 is planning to add Ventura support for the following Unsupported Macs.
+
 
 I believe all there models can be supported and they also will not have to worry about race conditons.
 

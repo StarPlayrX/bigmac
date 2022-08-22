@@ -1,3 +1,21 @@
+One new development that is plaguing the development of BigMac 2 and 3 is the state of Apple Software Restore or ASR.
+
+When running it as privileged / sudo as root within bigmac, it cannot clone the 800MB installer image and will receive the following error:
+
+Couldn't set up partitions on target device - operation DeleteAPFSVolume, line #5502 - Resource busy
+
+This same command works fine in the Terminal.
+
+bigmac2 is currently in a broken state until I find a fix. One workaround is to go back a 100% shell script experience, or a hybrid that does this step in terminal via a menu bar app.
+
+in case you are wondering what is the command that is being skipped here it is:
+
+sudo /usr/sbin/asr -s /Users/Shared/bigmac2/bigmac2.dmg -t /Volumes/bigmac2 -nov -nop -er
+
+^ If you run this command manually, you should be able to consider creating the installer disk.
+
+---
+
 🍔 After reviewing Big Mac 2 and its technicial issues expanding it.
 
 I've decided to start working on BigMac 3. The plan is to turn it into a menu bar app and have it designed in the order show operations should proceed. This will be an complete overall, but hopefully it will be much easier to troubleshoot. 

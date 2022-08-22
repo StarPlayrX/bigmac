@@ -16,6 +16,8 @@ sudo /usr/sbin/asr -s /Users/Shared/bigmac2/bigmac2.dmg -t /Volumes/bigmac2 -nov
 
 ^ If you run this command manually, you should be able to consider creating the installer disk.
 
+My guess is the permissions when run from an app even as root, do not carry over to asr's child processes.
+
 ---
 
 🍔 After reviewing Big Mac 2 and its technicial issues expanding it.

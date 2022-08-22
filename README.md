@@ -1,3 +1,5 @@
+🍔 Apple Software Restore - seriously broken when run from within an app!
+
 One new development that is plaguing the development of BigMac 2 and 3 is the state of Apple Software Restore or ASR.
 
 When running it as privileged / sudo as root within bigmac, it cannot clone the 800MB installer image and will receive the following error:

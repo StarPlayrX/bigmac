@@ -1,68 +1,8 @@
-🍔 Apple Software Restore - seriously broken when run from within an app!
-
-One new development that is plaguing the development of BigMac 2 and 3 is the state of Apple Software Restore or ASR.
-
-When running it as privileged / sudo as root within bigmac, it cannot clone the 800MB installer image and will receive the following error:
-
-Couldn't set up partitions on target device - operation DeleteAPFSVolume, line #5502 - Resource busy
-
-This same command works fine in the Terminal.
-
-bigmac2 is currently in a broken state until I find a fix. One workaround is to go back a 100% shell script experience, or a hybrid that does this step in terminal via a menu bar app.
-
-in case you are wondering what is the command that is being skipped here it is:
-
-sudo /usr/sbin/asr -s /Users/Shared/bigmac2/bigmac2.dmg -t /Volumes/bigmac2 -nov -nop -er
-
-^ If you run this command manually, you should be able to continue creating the installer disk.
-
-My guess is the permissions when run from an app even as root, do not carry over to asr's child processes.
-
----
-
-🍔 After reviewing Big Mac 2 and its technicial issues expanding it.
-
-I've decided to start working on BigMac 3. The plan is to turn it into a menu bar app and have it designed in the order show operations should proceed. This will be an complete overall, but hopefully it will be much easier to troubleshoot. 
-
-BigMac 3 will have some nice features like a GUI for sudo and it will support not only admin/password, but Touch ID, Apple Watch and even a Yubikey! This change will work within the terminal as well, but smart enough not to affect ssh.
-
-The main reason for this is Monterey 12.4 requires sudo for Apple Software Restore. Using other types of admin privileges doesn't work which is driving me bonkers! The best alternative is to give sudo a full gui.
-
-BigMac 3 will only ask for privileges when it needs it. Usually when "Installing..." you will be asked for your credentials. For more common operations such as downloading, bigmac2 will use your downloads folder. Easy peasy. 
-
-BigMac 3 plans to support
-
-- iMac (models from 2015)
-- MacBook Air (models from 2015 and 2017 models)
-- MacBook Pro (2015 and 2016 models)
-- Mac mini (2014 models)
-- Mac Pro (2013 model: cylinder/trash can)
-- MacBook (2016 model)
-
-and previous models that are capable of running Metal
-
-When?
-
-Hope to have something later this fall. As parts are working, it will be uploaded. There will be a check list etc etc
-
----
-
-# 🍔 Big Mac 2.0.9 build 10
-
-BigMac2 is planning to add Ventura support for the following Unsupported Macs.
-
-
-I believe all there models can be supported and they also will not have to worry about race conditons.
-
-These Macs should all support Metal v2. I do not see any reason why they will not work with BigMac2 provided support gets added.
-
----
-
-# 🐞 Critical Bug
+# 🐞 Bug
 
 For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.
 
-This will be fixed as soon as possible with a new priveleged launcher.
+This will be fixed as soon as possible with a new privileged launcher.
 
 workaround open terminal:
  

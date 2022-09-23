@@ -1,18 +1,7 @@
-# 🐞 Bug
-
-For those who are using TouchID for sudo, there is a problem with BigMac2's priveleged launcher.
-
-This will be fixed as soon as possible with a new privileged launcher.
-
-workaround open terminal:
- 
-sudo /Applications/bigmac2.app/Contents/MacOS/bigmac2
-
----
 
 Added Support for macOS Big Sur 11.6.8, "macOS Monterey 12.5 as of 8.13.22
 
-Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will eventually produce a guide on how to make the two products work seamlessly with each other.
+Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. I will eventually produce a guide on how to make the two products work seamlessly with each other. Update: this may no longer be an issue with current versionf of Big Sur and Monterey. There may be some issues updating to the proper firmwares. Investigating.
 
 ### For Mac enthusiasts who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 

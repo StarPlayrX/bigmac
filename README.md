@@ -8,7 +8,7 @@ This weekend I started experimenting with a Lenovo WiFi 802.11ac/Bluetooth 4.2LE
 
 The culprit for my BCM 20702B0 card not working after Monterey Beta 1 is USB. Many users are modding the card and re-routing USB to a USB 3.0 card or USB 2.0 Hub. I use the same idea and routed the USB from the Lenovo PCIe card to a USB 3.0 port. This works on both Big Sur and Monterey. I lose a PCIe slot, but I can live with that.
 
-Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. Update: the race condition may no longer be an issue with current version of Big Sur and Monterey. There may be some issues updating to the proper firmwares. Investigating.
+Because of race conditions during macOS boot with Mac Pros years 2008 to 2012, Open Core Legacy Patcher is recommended and OCLP can compliement BigMac2. Update: the race condition may no longer be an issue with current version of Big Sur and Monterey. There may be some issues updating to the proper firmware for a new OS version. Investigating.
 
 ### First Time User Guide macOS 11.2.3 (from an unsupported Mac)
 * If running Bigmac2 recovery / install disk from OWC 2.5" SSD, use a 4x PCIe slot (on Mac Pro 3,1 use the 3rd PCIe slot, not the 1st or 2nd 16x slots)

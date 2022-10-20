@@ -1,5 +1,5 @@
 
-Added Support for macOS Big Sur 11.6.8, "macOS Monterey 12.5 as of 8.13.22
+Added Support for macOS Big Sur 11.6.8, macOS Monterey 12.5 as of 8.13.22
 
 ### For Mac enthusiasts who want to run macOS Big Sur or macOS Monterey on Unsupported Mac hardware. 
 
